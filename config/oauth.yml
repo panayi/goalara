@@ -1,0 +1,29 @@
+development:
+  application_id: 105515539546378
+  api_key: 105515539546378
+  secret_key: d3b35843465b725a3144f490c7fdc61b
+  canvas_page_name: Goalara
+  callback_url: http://goalara778801.heroku.com/oauth/callback
+  pretty_errors: true
+  set_asset_host_to_callback_url: true
+  tunnel:
+  public_host_username:
+  public_host:
+  public_port: 4007
+  local_port: 3000
+  server_alive_interval: 0
+
+production:
+  application_id: 105515539546378
+  api_key: 105515539546378
+  secret_key: d3b35843465b725a3144f490c7fdc61b
+  canvas_page_name: Goalara
+  callback_url: http://goalara778801.heroku.com/oauth/callback
+  pretty_errors: true
+  set_asset_host_to_callback_url: true
+  tunnel:
+  public_host_username:
+  public_host:
+  public_port:
+  local_port:
+  server_alive_interval: 0

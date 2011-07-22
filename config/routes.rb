@@ -6,6 +6,10 @@ GoalaraCom::Application.routes.draw do
   resources :organizations
 
   resources :teams
+  
+  match "/oauth/start" => "oauth#start"
+  match "/oauth/callback" => "oauth#callback"
+  match "/oauth/client" => "oauth#client"
 
   # The priority is based upon order of creation:
   # first created -> highest priority.

@@ -28,6 +28,8 @@ gem 'formtastic', :git => 'http://github.com/justinfrench/formtastic', :branch =
 
 gem 'scrapi'
 
+gem 'oauth2'
+
 gem 'acts_as_taggable_on_steroids', :git => 'git://github.com/Agiley/acts_as_taggable_on_steroids.git'
 
 # Bundle the extra gems:
