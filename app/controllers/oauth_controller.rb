@@ -16,7 +16,7 @@ class OauthController < ApplicationController
     session[:fb_user] = JSON.parse access_token.get('/me')
     # in reality you would at this point store the access_token.token value as well as
     # any user info you wanted
-
+    
     redirect_to :controller => :articles, :action => :index, :token => access_token.token
   end
 
