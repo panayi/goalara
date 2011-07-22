@@ -17,7 +17,7 @@ class OauthController < ApplicationController
     # in reality you would at this point store the access_token.token value as well as
     # any user info you wanted
 
-    redirect_to :controller => :users, :action => :login_process_facebook, :token => access_token.token
+    redirect_to :controller => :articles, :action => :index, :token => access_token.token
   end
 
   protected
