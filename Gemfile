@@ -18,8 +18,6 @@ gem 'sqlite3'
 # gem 'ruby-debug'
 # gem 'ruby-debug19', :require => 'ruby-debug'
 
-gem 'pauldix-feedzirra'
-
 gem 'whenever', :require => false
 
 gem 'feedzirra'
