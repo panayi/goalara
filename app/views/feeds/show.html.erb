@@ -1,0 +1,30 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Feed url:</b>
+  <%= @feed.feed_url %>
+</p>
+
+<p>
+  <b>Site name:</b>
+  <%= @feed.site_name %>
+</p>
+
+<p>
+  <b>Site url:</b>
+  <%= @feed.site_url %>
+</p>
+
+<p>
+  <b>Site logo:</b>
+  <%= @feed.site_logo %>
+</p>
+
+<p>
+  <b>Content unique div:</b>
+  <%= @feed.content_unique_div %>
+</p>
+
+
+<%= link_to 'Edit', edit_feed_path(@feed) %> |
+<%= link_to 'Back', feeds_path %>

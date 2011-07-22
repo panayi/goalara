@@ -1,0 +1,8 @@
+Kerkida				http://www.kerkida.net/rss/general/latest_news.php
+Politis Sports		http://www.politis-sports.com/rss/footballrss.xml
+Protathlima.com		http://www.protathlima.com/rss/sports.jsp
+SigmaLive Sports	http://www.sigmalive.com/rss/latest/10
+Supermpala.com		http://www.supermpala.com/feed
+Ael-limassol.net	http://www.ael-limassol.net/ael/feed/
+Apoelfc.com.cy		http://www.apoelfc.com.cy/nqcontent.cfm?a_id=1296&tt=graphic&feed=rss
+Shootandgoal.com	http://www.shootandgoal.com/rss.php

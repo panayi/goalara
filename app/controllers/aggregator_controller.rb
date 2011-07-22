@@ -1,0 +1,2 @@
+class AggregatorController < ApplicationController
+end

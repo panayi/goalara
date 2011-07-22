@@ -1,0 +1,30 @@
+<h1>Listing feeds</h1>
+
+<table>
+  <tr>
+    <th>Feed url</th>
+    <th>Site name</th>
+    <th>Site url</th>
+    <th>Site logo</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @feeds.each do |feed| %>
+  <tr>
+    <td><%= feed.feed_url %></td>
+    <td><%= feed.site_name %></td>
+    <td><%= feed.site_url %></td>
+    <td><%= feed.site_logo %></td>
+	<td><%= feed.content_unique_div %></td>	
+    <td><%= link_to 'Show', feed %></td>
+    <td><%= link_to 'Edit', edit_feed_path(feed) %></td>
+    <td><%= link_to 'Destroy', feed, :confirm => 'Are you sure?', :method => :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Feed', new_feed_path %>
