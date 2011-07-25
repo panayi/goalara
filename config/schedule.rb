@@ -18,7 +18,7 @@
 # end
 set :environment, :development
 #set :output, "/log/whenever.log"
-every 15.minutes do
+every 1.minutes do
   runner "Article.update_all_feeds", environment => "development"
 end
 
