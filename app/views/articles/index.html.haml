@@ -1,0 +1,35 @@
+%div{:style => "position: static;", :class => "local"}
+  %h3 Sort by:
+  %ul{:id => 'order_by'}
+    %li 
+      = link_to "Newest", request.url, :class => "selected", :"data-value" => 'newest'
+    %li 
+      = link_to "Most Popular", request.url, :"data-value" => 'popular'
+    %li 
+      = link_to "Most Commented", request.url, :onclick => 'return false;', :"data-value" => 'commented'
+  %h3 Filter by Team:
+  %ul{:id => 'team_id'}
+    %li
+      = link_to 'All', request.url, :"data-value" => 'all', :class => "selected"
+    - @teams.each do |team|
+      %li 
+        = link_to team.name, request.url, :"data-value" => team.id
+  %h3 Filter by Organization
+  %ul{:id => 'organization_id'}
+    %li
+      = link_to 'All', request.url,  :"data-value" => 'all', :class => "selected"
+    - @organizations.each do |organization|
+      %li 
+        = link_to organization.name, request.url, :"data-value" => organization.id
+        
+    
+
+%div{:class => "browser"}
+  %ul
+    - @articles.each do |article|
+      %li
+        = link_to image_tag(article.image), :controller => "viewers", :action => "show", :id => article.id
+        %h3
+          = article.title
+        %span
+          = truncate_words(article.summary, 200).join(' ')

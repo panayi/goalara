@@ -1,0 +1,47 @@
+#header
+  #auth_nav.message_layer.clearfix
+    .notices.clearfix
+      %ul.account
+        %li
+          %a{:href => "http://www.ted.com/session/new"} Sign In
+        %li.last
+          %a{:href => "http://www.ted.com/pages/114"} Register
+  .nav.clearfix
+    %a{:href => "/"}
+      %img{:alt => "Ted Logo", :src => "/images/ted_logo.gif"}/
+    %ul.main
+      %li
+        %a{:href => "/themes"} Themes
+      %li
+        %a{:href => "/speakers"} Speakers
+      %li
+        %a{:href => "/talks"} Talks
+      %li
+        %a{:href => "/OpenTranslationProject"} Translations
+    %ul
+      %li
+        %a{:href => "/registration"} TED Conferences
+      %li
+        %a{:href => "/tedx"} TEDx Events
+      %li
+        %a{:href => "http://www.tedprize.org"} TED Prize
+      %li
+        %a{:href => "/fellows"} TED Fellows
+    %ul
+      %li
+        %a{:href => "/conversations"}
+          TED Conversations
+          %img.new{:alt => "NEW", :src => "/images/new.gif"}/
+      %li
+        %a{:href => "/profiles"} TED Community
+    %ul
+      %li
+        %a{:href => "/pages/about"} About TED
+      %li
+        %a{:href => "http://blog.ted.com/"} TED Blog
+      %li
+        %a{:href => "/initiatives"} TED Initiatives
+    #search
+      %form{:action => "/search", :method => "get"}
+        %input.text{:name => "q", :type => "text", :value => "Search"}
+          %input.button{:type => "submit", :value => "submit"}

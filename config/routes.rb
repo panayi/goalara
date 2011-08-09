@@ -1,4 +1,6 @@
 GoalaraCom::Application.routes.draw do
+  resources :viewers
+
   resources :feeds
 
   resources :articles
@@ -7,9 +9,15 @@ GoalaraCom::Application.routes.draw do
 
   resources :teams
   
+  resources :frontpage
+  
   match "/oauth/start" => "oauth#start"
   match "/oauth/callback" => "oauth#callback"
   match "/oauth/client" => "oauth#client"
+  
+  match "/articles/set_teams" => "articles#set_teams"
+  
+  root :to => "frontpage#index"
 
   # The priority is based upon order of creation:
   # first created -> highest priority.

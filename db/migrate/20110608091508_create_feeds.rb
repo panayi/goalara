@@ -5,7 +5,7 @@ class CreateFeeds < ActiveRecord::Migration
       t.string :site_name
       t.string :site_url
       t.string :site_logo
-
+      t.string :category_unique_div
       t.timestamps
     end
   end

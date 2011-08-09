@@ -1,0 +1,1936 @@
+$accent-color: #FF2B06
+
+*
+  font-family: arial,helvetica,sans-serif
+  margin: 0
+  padding: 0
+
+html
+  height: 100%
+
+body
+  height: 100%
+  background: none repeat scroll 0 0 white
+  font-size: 62.5%
+  margin: 0
+  padding: 0
+  text-align: center
+  &.sf_tedx
+    background: url("i/bg_tedx.png") repeat scroll 0 0 transparent
+  &.sf_beta, &.sf_local
+    background: url("i/bg_beta.png") repeat scroll 0 0 transparent
+  &.sf_beta #wrapper, &.sf_local #wrapper
+    background: none repeat scroll 0 0 #FFFFFF
+
+em
+  font-style: italic !important
+
+a
+  color: $accent-color
+  outline: medium none
+  text-decoration: none
+  &:link, &:visited
+    color: $accent-color
+    outline: medium none
+    text-decoration: none
+  &:hover, &:active
+    outline: medium none
+    text-decoration: underline
+  &.largeLink
+    font-size: 1.4em
+    font-weight: bold
+  &.external
+    background: url("/images/icon_external_link.gif") no-repeat scroll right center transparent
+    padding-right: 15px
+
+img
+  border: 0 none
+  display: block
+
+.floatright
+  display: inline
+  float: right
+
+.floatleft
+  display: inline
+  float: left
+
+.alignright
+  text-align: right
+
+.hide
+  height: 0
+  overflow: hidden
+  position: absolute
+  width: 0
+
+form
+  fieldset
+    border: 0 none
+    margin: 0
+    padding: 0
+  legend
+    display: none
+
+select
+  color: #545454 !important
+  option
+    padding: 2px 0 !important
+
+form
+  input.submit
+    background: url("../images/button_submit.gif") no-repeat scroll left top transparent
+    float: right
+    height: 20px
+    margin: 6px 0 0
+    text-indent: -9999px
+    width: 54px
+    &:hover
+      background: url("../images/button_submit.gif") no-repeat scroll -54px 0 transparent
+  .hover input.submit
+    background: url("../images/button_submit.gif") no-repeat scroll -54px 0 transparent
+  input.go
+    background: url("../images/button_go.gif") no-repeat scroll left top transparent
+    float: right
+    height: 24px
+    margin: -3px 0 0
+    text-indent: -9999px
+    width: 46px
+    &:hover
+      background: url("../images/button_go.gif") no-repeat scroll 0 -24px transparent
+  .hover input.go
+    background: url("../images/button_go.gif") no-repeat scroll 0 -24px transparent
+  input.submit_comment
+    background: url("../images/button_submit_comment.gif") no-repeat scroll left top transparent
+    height: 22px
+    margin: 8px 0 0
+    text-indent: -9999px
+    width: 91px
+    &:hover
+      background: url("../images/button_submit_comment_over.gif") no-repeat scroll left top transparent
+  .hover input.submit_comment
+    background: url("../images/button_submit_comment_over.gif") no-repeat scroll left top transparent
+  input.edit_message
+    background: url("../images/button_submit.gif") no-repeat scroll left top transparent
+    height: 22px
+    margin: 8px 0 0
+    text-indent: -9999px
+    width: 48px
+    &:hover
+      background: url("../images/button_submit_over.gif") no-repeat scroll left top transparent
+  .hover input.edit_message
+    background: url("../images/button_submit_over.gif") no-repeat scroll left top transparent
+  input.cancel
+    background: url("../images/button_cancel.gif") no-repeat scroll left top transparent
+    height: 24px
+    margin: 8px 0 0
+    text-indent: -9999px
+    width: 66px
+    &:hover
+      background: url("../images/button_cancel.gif") no-repeat scroll 0 -24px transparent
+  .hover input.cancel
+    background: url("../images/button_cancel.gif") no-repeat scroll 0 -24px transparent
+  input.add_comment
+    background: url("../images/button_add_comment.gif") no-repeat scroll left top transparent
+    height: 22px
+    margin: 8px 0 0
+    text-indent: -9999px
+    width: 78px
+    &:hover
+      background: url("../images/button_add_comment_over.gif") no-repeat scroll left top transparent
+  .hover input.add_comment
+    background: url("../images/button_add_comment_over.gif") no-repeat scroll left top transparent
+  input.browse_for_photo
+    background: url("../images/button_browse_for_photo.gif") no-repeat scroll left top transparent
+    height: 22px
+    margin: 0
+    text-indent: -9999px
+    width: 89px
+    &:hover
+      background: url("../images/button_browse_for_photo_over.gif") no-repeat scroll left top transparent
+  .hover input.browse_for_photo
+    background: url("../images/button_browse_for_photo_over.gif") no-repeat scroll left top transparent
+  input.add
+    background: url("../images/button_add.gif") no-repeat scroll left top transparent
+    height: 22px
+    margin: 0
+    text-indent: -9999px
+    width: 34px
+    &:hover
+      background: url("../images/button_add_over.gif") no-repeat scroll left top transparent
+  .hover input.add
+    background: url("../images/button_add_over.gif") no-repeat scroll left top transparent
+  input.save_profile
+    background: url("../images/button_save_profile.gif") no-repeat scroll left top transparent
+    height: 22px
+    margin: 0
+    text-indent: -9999px
+    width: 81px
+    &:hover
+      background: url("../images/button_save_profile_over.gif") no-repeat scroll left top transparent
+  .hover input.save_profile
+    background: url("../images/button_save_profile_over.gif") no-repeat scroll left top transparent
+  input.save_account
+    background: url("../images/button_save_account.gif") no-repeat scroll left top transparent
+    height: 22px
+    margin: 0
+    text-indent: -9999px
+    width: 91px
+    &:hover
+      background: url("../images/button_save_account_over.gif") no-repeat scroll left top transparent
+  .hover input.save_account
+    background: url("../images/button_save_account_over.gif") no-repeat scroll left top transparent
+  input.save
+    background: url("../images/button_save.gif") no-repeat scroll left top transparent
+    height: 22px
+    margin: 0
+    text-indent: -9999px
+    width: 40px
+    &:hover
+      background: url("../images/button_save_over.gif") no-repeat scroll left top transparent
+  .hover input.save
+    background: url("../images/button_save_over.gif") no-repeat scroll left top transparent
+  input.rate
+    background: url("../images/button_rate.gif") no-repeat scroll left top transparent
+    height: 22px
+    margin: 0
+    text-indent: -9999px
+    width: 39px
+    &:hover
+      background: url("../images/button_rate_over.gif") no-repeat scroll left top transparent
+  .hover input.rate
+    background: url("../images/button_rate_over.gif") no-repeat scroll left top transparent
+  input
+    &.button_add
+      background-color: #FFFFFF
+      border: 1px solid #DDDDDD
+      color: #FF2A06
+      cursor: pointer
+      font-size: 1em
+      height: 22px
+      width: 34px
+      &:hover
+        background-color: #FF2A06
+        color: #FFFFFF
+    &.dojoButtonAdd
+      height: 19px
+      line-height: 14px
+      position: relative
+      top: 2px
+
+div.advert
+
+#container
+  background: none repeat scroll 0 0 #FFFFFF
+  height: 100%
+  margin: 0 auto
+  min-height: 100%
+  padding: 0
+  text-align: left
+  width: 900px
+
+html > body #container
+  height: auto
+
+#container #msg_layer
+  background-color: #252525
+  height: 144px
+  margin: 187px 0 0 !important
+  padding: 7px
+  position: absolute
+  width: 548px
+  z-index: 9999
+  p
+    color: #FFFFFF
+    font-size: 1.6em
+    line-height: 1.3em
+    margin: 0
+    padding: 0 180px 0 0
+  a.small
+    font-size: 1.1em
+  div.close
+    position: absolute
+    right: 8px
+    top: 8px
+    z-index: 1000
+
+div.transparent_msglayer
+  background-color: #000000
+  height: 100%
+  left: 0
+  opacity: 0.35
+  position: absolute
+  top: 0
+  width: 100%
+  z-index: 9998
+
+#container #confirmation_layer
+  background: none repeat scroll 0 0 #545454
+  margin: 2px 0 5px
+  padding: 14px 10px
+  p
+    color: #FFFFFF
+    font-size: 1.5em
+
+#header
+  height: 1%
+  margin-bottom: 3px
+  padding: 0
+  position: relative
+  div.nav
+    border-bottom: 3px solid #FF2A06
+    position: relative
+  img
+    float: left
+    margin: 0 48px 0 0
+    padding: 17px 0 41px
+    &.new
+      display: inline
+      float: none
+      margin: 0 0 0 5px
+      padding: 0
+      position: relative
+      top: 2px
+  ul
+    border-top: 1px solid #8D8D8D
+    float: left
+    list-style: none outside none
+    margin-top: 15px
+    width: 142px
+    li
+      border-bottom: 1px solid #E2E2E2
+      a
+        border-bottom: 1px solid #FFFFFF
+        border-top: 1px solid #FFFFFF
+        color: #888888
+        display: block
+        font-size: 1.1em
+        height: 15px
+        margin: 0
+        padding: 2px 0 0 3px
+    &.main
+      margin-right: 11px
+      width: 135px
+      li a
+        color: #222222
+        font-weight: bold
+    li a
+      &:hover, &:active
+        background-color: #EDEDED
+        color: $accent-color
+        text-decoration: none
+      &.selected
+        background-color: #EDEDED
+
+#search
+  bottom: 5px
+  clear: both
+  position: absolute
+  right: 0
+  form
+    background: url("../images/bg_search.gif") no-repeat scroll 0 0 transparent
+    height: 21px
+    width: 272px
+    input.text
+      background: none repeat scroll 0 0 transparent
+      border: 0 none
+      color: #666666
+      float: left
+      font-size: 11px
+      font-weight: bold
+      margin: 5px 0 0 21px
+      outline: 0 none
+      width: 230px
+
+input
+  &.dojoDropDown
+  &.dojoDropDownShort
+    width: 162px !important
+
+#search form input.button
+  background: none repeat scroll 0 0 transparent
+  border: medium none
+  cursor: pointer
+  float: left
+  height: 21px
+  text-indent: -5000px
+  width: 21px
+
+#header div.message_layer
+  background-color: #ECECEC
+  padding: 6px
+  p
+    color: #545454
+    font-size: 1.1em
+  div.notices
+    p
+      float: left
+    .msg
+      clear: left
+      display: block
+      float: right
+      margin: 3px 0 0
+  ul.account
+    border: 0 none
+    display: inline
+    float: right
+    margin: -1px 0 0 7px
+    width: auto
+    li
+      border-right: 1px solid #666666
+      display: inline
+      margin-right: 2px
+      padding-right: 5px
+      &.last
+        border: 0 none
+        margin-right: 0
+        padding-right: 0
+      a
+        border: 0 none
+        color: #FF0000
+        display: inline
+        height: auto
+        padding: 0
+        position: relative
+        top: 1px
+
+#body
+  background: none repeat scroll 0 0 #FFFFFF
+  h1
+    color: #000000
+    font-size: 2.4em
+    font-weight: normal
+    margin-left: 7px
+    margin-top: 5px
+    min-height: 65px
+    width: 620px
+    a
+      color: #000000
+      &.grey
+        color: #666666
+  h2 a.grey
+    color: #666666
+  h1
+    a.black
+      color: #000000
+    span
+      color: #000000
+      font-weight: normal
+      a
+        color: #666666
+      &.grey
+        color: #666666
+        font-weight: normal
+  h2.crumbs
+    color: #666666
+    font-size: 1.6em
+    font-weight: bold
+    margin-bottom: 6px
+    margin-left: 7px
+    margin-top: 12px
+    text-transform: uppercase
+  p
+    margin: 0 0 1em
+  .botw
+    color: #0A2171
+  .partnerTalk
+    color: #006633
+  .shortTalk
+    color: #FF6600
+  .video_container .shortTalk
+    color: inherit
+  dl.box
+    dt, dd
+  .pos
+    color: #227F28
+    font-weight: bold
+  .neg
+    color: #D22811
+    font-weight: bold
+
+#local
+  #sublocalnav
+    margin: 15px 7px 0
+    ul
+      background: url("../images/border_sublocal_nav.gif") repeat-x scroll left bottom transparent
+      list-style: none outside none
+      margin-bottom: 7px
+      padding-bottom: 8px
+      li
+        font-size: 1.2em
+        line-height: 1.7em
+        margin-bottom: 1px
+        &.bullet a
+          display: block
+          font-weight: normal
+        a
+          color: #333333
+          display: block
+          font-weight: bold
+          height: 1%
+          padding: 0 7px
+          text-decoration: none
+          &.selected
+            background: none repeat scroll 0 0 #E5E5E5
+            color: #FF0000
+          &:hover
+            background: none repeat scroll 0 0 #E5E5E5
+            color: #FF0000
+            background: url("../images/localnav_bullet.gif") no-repeat scroll right center #e5e5e5
+        &.bullet a:hover
+          background: url("../images/localnav_bullet.gif") no-repeat scroll right center #e5e5e5
+        a.selected:hover, &.bullet a.selected:hover
+          background: none repeat scroll 0 0 #E5E5E5
+      &.blog li a
+        background: url("../images/icon_external_link_dark.gif") no-repeat scroll right center transparent
+        display: inline
+        padding-right: 13px
+        &:hover
+          background: url("../images/icon_external_link_dark.gif") no-repeat scroll right center transparent
+          text-decoration: underline
+  div.sidebarAd
+    margin: 22px 7px 0
+
+#loadingindicator
+  position: absolute
+  right: 5px
+  top: 0
+
+div.homeloading
+  display: block
+  height: 16px
+  #loadingindicator
+    display: inline
+    float: left
+    margin: 0
+    position: static
+
+#maincontent
+  display: inline
+  float: left
+
+#body
+  #local, #contextual
+    display: inline
+    float: left
+
+#maincontent
+  margin-bottom: 10px
+  padding-bottom: 6px
+  padding-left: 307px
+  width: 593px
+
+#body #local
+  margin-bottom: 10px
+  margin-left: -900px
+  width: 224px
+
+#wrapper
+  background: url("../images/localnav_caps.gif") repeat-y scroll left bottom transparent
+  padding-bottom: 6px
+  #local
+    background: url("../images/localnav_bg.gif") no-repeat scroll 0 0 #f4f4f4
+    margin-bottom: 0
+
+#body #contextual
+  background: none repeat scroll 0 0 blue
+  margin-left: 1%
+  width: 25%
+
+a span.bull
+  left: 0
+  position: relative
+  top: -0.1em
+
+#body
+  div.about div.subscribe div
+    &.topcap
+      background: url("../images/bg_subscribe_corners.gif") no-repeat scroll 0 -6px transparent
+      height: 6px
+    &.botcap
+      background: url("../images/bg_subscribe_corners.gif") no-repeat scroll 0 0 transparent
+      height: 6px
+    &.main
+      background: none repeat scroll 0 0 #FFFFFF
+      padding: 10px
+  #contextual div.about div.subscribe h3, #maincontent div.about div.subscribe h3
+    background: none repeat scroll 0 0 transparent
+    font-size: 1.2em
+    padding: 0
+    text-transform: uppercase
+  div.about div.subscribe
+    p
+      font-size: 12px !important
+    form
+      margin: 0 0 10px
+    input
+      &.formTextInput
+        color: #999999
+        display: inline
+        float: left
+        margin: 0
+        position: static
+        width: 210px
+      &.subscribe
+        background: url("../images/button_subscribe.gif") no-repeat scroll left top transparent
+        display: inline
+        float: left
+        height: 20px
+        margin: 2px 0 0 6px
+        text-indent: -9999px
+        width: 74px
+    img.rssIcon
+      float: left
+      height: 15px
+      margin-right: 10px
+    span.rssSpacer
+      color: #999999
+      margin-left: 8px
+      margin-right: 8px
+    input.subscribe:hover
+      background: url("../images/button_subscribe.gif") no-repeat scroll -74px 0 transparent
+
+div.talkListContainer.horiz
+  background: none repeat scroll 0 0 #FFFFFF
+  height: 570px
+  margin: 0
+  overflow: hidden
+  position: relative
+  width: auto
+  dl.talkMedallion
+    background: none repeat scroll 0 0 #F2F2F2
+    display: inline
+    float: left
+    height: 100px
+    margin: 0 4px 4px 0
+    padding: 5px 6px
+    position: relative
+    width: 318px
+    &.medium
+      background: none repeat scroll 0 0 #F2F2F2
+      display: inline
+      float: left
+      height: 84px
+      margin: 0 0 1px 1px
+      padding: 5px 6px
+      position: relative
+      width: 268px
+
+dl.talkMedallion img
+  &.new
+    position: absolute
+    right: 4px
+    top: 6px
+  &.play_icon
+    left: 4px
+    top: 4px
+
+div.talkListContainer.horiz dl.talkMedallion
+  dt.thumbnail
+    display: inline
+    float: left
+    margin: 0 7px 0 0
+    position: relative
+  &.medium dd
+    float: left
+    width: 140px
+  dd
+    h4
+      font-size: 1.1em
+      span
+        color: #666666
+        font-size: 0.9em
+      a
+        color: #000000
+    p
+      color: #666666
+      font-size: 1.1em
+      margin: 0 !important
+      &.ratings
+        bottom: 6px
+        left: 145px
+        position: absolute
+        span.first
+          color: #000000
+          font-weight: bold
+
+#footer
+  background: none repeat scroll 0 0 #DAD8D6
+  clear: both
+  color: #666666
+  font-weight: bold
+  height: 3em
+  line-height: 3em
+  margin-top: 20px
+  text-transform: uppercase
+  a.smalllogo
+    background: url("../images/logo_ted_small.gif") no-repeat scroll left top transparent
+    display: inline
+    float: left
+    height: 18px
+    line-height: 18px
+    margin-left: 7px
+    margin-right: 40px
+    margin-top: 0.6em
+    width: 47px
+  ul
+    display: inline
+    float: left
+    list-style: none outside none
+    li
+      color: #545454
+      display: inline
+      font-size: 0.9em
+      &.legal
+        margin-right: 8px
+      a
+        color: #545454
+        text-decoration: none
+  form
+    display: inline
+    float: right
+    margin-right: 6px
+    margin-top: 0.5em
+    input
+      &.text
+        -moz-border-bottom-colors: none
+        -moz-border-image: none
+        -moz-border-left-colors: none
+        -moz-border-right-colors: none
+        -moz-border-top-colors: none
+        border-color: #949494 -moz-use-text-color -moz-use-text-color #E9E9E9
+        border-right: 0 none
+        border-style: solid none none solid
+        border-width: 1px 0 0 1px
+        color: #666666
+        float: left
+        font-size: 11px
+        font-weight: bold
+        height: 16px
+        padding: 2px 5px 0
+        width: 192px
+      &.button
+        float: left
+
+div.error
+  label
+    color: $accent-color !important
+  select, input.text, textarea.textbox
+    background: none repeat scroll 0 0 #FFDFDA !important
+
+.error span
+  color: $accent-color !important
+  display: block !important
+  font-size: 0.7857em !important
+  margin: 0 !important
+  padding: 2px 0 0 !important
+  a
+    text-decoration: underline
+  &.asterisk
+    display: inline !important
+
+div.error h4, p.error
+  color: $accent-color !important
+
+div.error
+  label span, h4 span
+    display: inline !important
+    font-size: 1em !important
+
+.notification span
+  color: #0D8D06 !important
+  display: block !important
+  font-size: 0.7857em !important
+  margin: 0 !important
+  padding: 0 !important
+
+form ul.error_list
+  color: $accent-color
+  font-size: 1.1em
+  list-style: none outside none
+
+.clearfix:after, #body:after
+  clear: both
+  content: "."
+  display: block
+  height: 0
+  visibility: hidden
+
+.clearfix, #body
+  display: inline-block
+
+* html
+  .clearfix, #body
+    height: 1%
+
+.clearfix, #body
+  display: block
+
+div
+  &.yui-skin-ted
+    position: relative
+  &.formItemLine
+    margin-bottom: 14px
+
+label
+  &.formItemLabel
+    color: #545454
+    display: block
+    font-size: 1.1em
+    font-weight: bold
+    margin: 0 6px 0 0
+  &.formItemLabelBySide
+    color: #545454
+    float: left
+    font-size: 1.1em
+    font-weight: bold
+    height: 1.454em
+    margin: 0 14px 0 0
+    padding-top: 4px
+
+input
+  &.formTextInput
+    border: 1px solid #DCDCDC
+    color: #000000
+    font-size: 1.1em
+    height: 1.454em
+    margin: 0 14px 14px 0
+    padding: 2px 4px 0
+    position: relative
+    top: -4px
+    width: 249px
+  &.formTextInputBySide
+    border: 1px solid #DCDCDC
+    color: #666666
+    font-size: 1.1em
+    height: 1.454em
+    margin: 0 14px 0 0
+    padding: 2px 4px 0
+    width: 249px
+
+textarea
+  &.short
+    border: 1px solid #DCDCDC
+    color: #666666
+    font-size: 1.1em
+    height: 5em
+    margin: 0
+    padding: 4px 4px 0
+  &.wide
+    width: 523px
+  &.narrow
+    width: 249px
+
+span.errorMessage
+  color: #FF0000
+
+.yui-skin-sam
+  .yui-ac
+    float: none !important
+    font-family: arial
+    font-size: 100%
+    position: relative
+  .yui-ac-input
+    position: relative
+    width: 100%
+
+div.createprofile #maincontent div
+  &.career input.yui-ac-input
+    float: none !important
+  &.aboutme input.yui-ac-input
+    margin: 0 !important
+  &.career div.divider div.clearfix div.yui-ac-container, &.aboutme div.yui-ac-container
+    margin: 0
+    top: 0
+  &.career div.divider div.clearfix div.yui-ac-container div
+    float: none
+  &.aboutme div.yui-ac-content li
+    display: block !important
+    margin: 0 !important
+
+.yui-skin-sam
+  .yui-ac-container
+    float: none !important
+    margin: 0 14px
+    position: relative
+    top: -9px
+  .yui-ac-content
+    background: none repeat scroll 0 0 #FFFFFF
+    border: 1px solid #808080
+    overflow: hidden
+    position: absolute
+    width: 100%
+    z-index: 9050
+  .yui-ac-shadow
+    background: none repeat scroll 0 0 #000000
+    margin: 0.3em
+    opacity: 0.1
+    position: absolute
+    width: 100%
+    z-index: 9049
+  .yui-ac iframe
+    opacity: 0
+    padding-bottom: 0.3em
+    padding-right: 0.3em
+  .yui-ac-content
+    ul
+      margin: 0 !important
+      padding: 0
+      width: 100%
+    li
+      cursor: default
+      font-size: 1.1em
+      list-style: none outside none
+      margin-bottom: 0 !important
+      margin-left: 0
+      margin-right: 0
+      margin-top: 0
+      padding: 2px 5px !important
+      white-space: nowrap
+      &.yui-ac-prehighlight
+        background: none repeat scroll 0 0 #B3D4FF
+      &.yui-ac-highlight
+        background: none repeat scroll 0 0 #426FD9
+        color: #FFFFFF !important
+
+hr.black
+  -moz-border-bottom-colors: none
+  -moz-border-image: none
+  -moz-border-left-colors: none
+  -moz-border-right-colors: none
+  -moz-border-top-colors: none
+  border-color: -moz-use-text-color -moz-use-text-color #000000
+  border-style: none none solid
+  border-width: 0 0 2px
+  clear: both
+  font-size: 0
+  height: 0
+  line-height: 0
+  margin: 15px 0
+
+div
+  &.hr
+    background-attachment: scroll
+    background-color: transparent
+    background-image: url("../images/border_dotted.gif")
+    background-repeat: repeat-x
+    height: 15px
+    margin-top: 10px
+  &.whitespace
+    background-color: #FFFFFF
+    height: 6px
+  &.hr hr
+    display: none
+  &.vr
+    float: left
+    width: 6px
+  &#signinHolder
+    height: 320px
+  &.columnInMain_2
+    background-color: #E8E8E8
+    float: left
+    height: 100%
+    width: 329px
+  &.columnInMain_3
+    background-color: #E8E8E8
+    float: left
+    height: 100%
+    width: 217px
+  &.box
+    background-color: #E8E8E8
+    clear: both
+  &.boxContent
+    padding: 15px 10px
+  &#selectcountry
+    select
+      border-color: #DCDCDC
+      border-style: solid
+      border-width: 1px
+      font-size: 1.1em
+      height: 1.6em
+      margin: 0 17px 12px 0
+      padding: 1px
+      width: 256px
+    label
+      color: #545454
+      display: block
+      font-weight: bold
+      margin: 0 0 6px
+  &#selectcity label, &#selectzipcode label
+    color: #545454
+    display: block
+    font-weight: bold
+    margin: 0 0 6px
+
+span.caption
+  color: #666666
+  font-size: 1em
+  font-style: italic
+
+.fourohfour
+  h2
+    color: #666666
+    font-family: arial,helvetica,sans-serif
+    font-size: 1.6em
+  h3
+    color: #000000
+    font-family: arial,helvetica,sans-serif
+    font-size: 1.4em
+  p
+    color: #3F3F3F
+    font-family: arial,helvetica,sans-serif
+    font-size: 1.2em
+    line-height: 1.6em
+
+.ui-dialog
+  background-color: #FEFEFE
+  background-repeat: no-repeat
+  font-size: 1em
+  padding: 11px 11px 10px
+  text-align: left
+  width: 438px
+  .login
+    margin-left: 9px
+  span.ui-dialog-title
+    display: block
+    font-size: 1.8em
+    font-weight: bold
+    margin-bottom: 20px
+    margin-top: 5px
+  p
+    color: #323232
+    font-size: 1.2em
+    margin-bottom: 20px
+    width: 350px
+  div
+    &.clearfix
+      margin-bottom: 20px
+    &.column
+      float: left
+      font-size: 1.2em
+      margin-right: 8px
+      padding-right: 10px
+      width: 192px
+  label
+    color: #323232
+    font-size: 1.1em
+    &.block
+      display: block
+      font-weight: bold
+      margin-bottom: 3px
+  .ui-icon-closethick
+    background-image: url("/images/commenting/button_close.png")
+    display: block
+    height: 13px
+    position: absolute
+    right: 10px
+    top: 10px
+    width: 12px
+  input
+    &.text
+      font-size: 1.2em
+      width: 190px
+    &.submit
+      margin-right: 2px
+      margin-top: 0
+  p.after_form
+    margin-top: 50px
+  dl.downloads
+    margin-left: 9px
+    dd
+      margin-bottom: 15px
+  span.error
+    color: $accent-color
+  div.column h3
+    background-color: #DEDEDE
+    color: #323232
+    font-size: 1.2em
+    margin-bottom: 15px
+    padding-bottom: 6px
+    padding-left: 9px
+    padding-top: 6px
+    text-transform: uppercase
+    width: 192px
+
+.ui-widget-overlay
+  height: 100%
+  left: 0
+  position: absolute
+  top: 0
+  width: 100%
+
+.ui-icon
+  background-repeat: no-repeat
+  display: block
+  overflow: hidden
+  text-indent: -99999px
+
+.ui-widget-shadow
+  background: none repeat scroll 0 0 #2D2D2D
+  border-radius: 11px 11px 11px 11px
+  margin: -11px 0 0 -11px
+  opacity: 0.9
+  padding: 11px
+
+.ui-corner-all
+  border-radius: 11px 11px 11px 11px
+
+.ui-corner-all-small
+  border-radius: 3px 3px 3px 3px
+
+.ui-tabs
+  padding: 0.2em
+  .ui-tabs-nav
+    list-style: none outside none
+    padding: 0.2em 0.2em 0
+    position: relative
+    li
+      border-bottom-width: 0 !important
+      float: left
+      margin: 0 0.2em -1px 0
+      padding: 0
+      position: relative
+      a
+        float: left
+        padding: 0.5em 1em
+        text-decoration: none
+      &.ui-tabs-selected
+        border-bottom-width: 0
+        padding-bottom: 1px
+        a
+          cursor: text
+      &.ui-state-disabled a, &.ui-state-processing a
+        cursor: text
+      a
+        cursor: pointer
+  &.ui-tabs-collapsible .ui-tabs-nav li.ui-tabs-selected a
+    cursor: pointer
+  .ui-tabs-panel
+    background: none repeat scroll 0 0 transparent
+    border-width: 0
+    display: block
+    padding: 1em 1.4em
+  .ui-tabs-hide
+    display: none !important
+  &.simple .ui-tabs-nav li
+    &.ui-tabs-selected a
+      color: #000000
+    a
+      float: none
+      padding: 0
+
+.ui-selectmenu
+  display: block
+  height: 17px
+  overflow: hidden
+  position: relative
+  text-decoration: none
+
+a.ui-selectmenu
+  background: none repeat scroll 0 0 white
+  text-decoration: none
+
+.ui-selectmenu-icon
+  margin-top: -8px
+  position: absolute
+  right: 6px
+  top: 50%
+
+.ui-selectmenu-menu
+  list-style: none outside none
+  margin: 0
+  overflow: auto
+  padding: 0
+  position: absolute
+  top: 0
+  visibility: hidden
+
+.ui-selectmenu-open
+  visibility: visible
+
+.ui-selectmenu-menu-popup
+  margin-top: -1px
+
+.ui-selectmenu-menu-dropdown
+
+.ui-selectmenu-menu li
+  border-bottom: 1px dotted transparent
+  border-left-width: 0 !important
+  border-right-width: 0 !important
+  border-top: 1px dotted transparent
+  display: block
+  font-weight: normal !important
+  margin: 0
+  padding: 0
+  a
+    display: block
+    line-height: 1.4em
+    outline: medium none
+    padding: 2px 5px
+    text-decoration: none
+
+.ui-selectmenu-status
+  display: block
+  line-height: 1.4em
+  outline: medium none
+  padding: 2px 5px
+  text-decoration: none
+
+.ui-selectmenu-menu li.ui-selectmenu-hasIcon a, .ui-selectmenu-hasIcon .ui-selectmenu-status
+  margin-left: 5px
+  padding-left: 20px
+  position: relative
+
+.ui-selectmenu-menu li .ui-icon
+  left: 0
+  margin-top: -8px
+  position: absolute
+  top: 1em
+
+.ui-selectmenu-status
+  .ui-icon
+    left: 0
+    margin-top: -8px
+    position: absolute
+    top: 1em
+  line-height: 1.4em
+
+.ui-selectmenu-open li
+  &.ui-selectmenu-item-focus a, &.ui-selectmenu-item-selected
+
+.ui-selectmenu-menu li span, .ui-selectmenu-status span
+  display: block
+  margin-bottom: 0.2em
+
+.ui-selectmenu-menu
+  li
+    .ui-selectmenu-item-header
+      font-weight: bold
+    .ui-selectmenu-item-content
+    .ui-selectmenu-item-footer
+      opacity: 0.8
+  .ui-selectmenu-group
+    font-size: 1em
+    .ui-selectmenu-group-label
+      display: block
+      font-weight: bold
+      line-height: 1.4em
+      padding: 0.6em 0.5em 0
+    ul
+      margin: 0
+      padding: 0
+
+.touch_switch
+  display: none
+  label
+    font-size: 1.1em
+    position: relative
+    top: -5px
+  .switch
+    background: url("/images/on-off.png") no-repeat scroll 0 0 transparent
+    border-radius: 3px 3px 3px 3px
+    display: inline-block
+    height: 21px
+    width: 73px
+    &.off
+      background-position: -43px 0
+
+#sfWebDebugDatabaseLogs li
+  margin: 10px 0
+
+.touch_switch
+  display: block
+
+.flair
+  background-color: #FFFFFF
+  border: 1px solid #999999
+  border-radius: 4px 4px 4px 4px
+  color: #666666 !important
+  cursor: pointer
+  display: inline-block
+  font-size: 10px
+  font-weight: normal
+  line-height: 12px
+  margin: 0 1px 4px 0
+  padding: 3px 6px
+  text-transform: uppercase
+  &:hover
+    border-color: #444444
+    color: #444444 !important
+    text-decoration: none
+
+body
+  .signed-out
+    display: none
+  &.signed-out
+    .signed-in
+      display: none
+    .signed-out
+      display: block
+
+#tooltip
+  background-color: #333333
+  border-bottom: 1px solid #000000
+  border-radius: 4px 4px 4px 4px
+  box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.4)
+  opacity: 0.9
+  padding: 10px
+  position: absolute
+  width: 170px
+  z-index: 3000
+  h3, div.body
+    color: #FFFFFF
+    font-size: 11px
+    font-weight: normal
+    line-height: 14px
+    margin: 0
+    padding: 0
+    text-align: left
+
+.buttonItem
+  background-color: #DF3C3C
+  background-image: -moz-linear-gradient(0% 100% 90deg, #b61d1d, #df4040)
+  border-radius: 4px 4px 4px 4px
+  box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.4)
+  color: #FFFFFF
+  cursor: pointer
+  display: inline-block
+  font-size: 12px
+  font-weight: bold
+  padding: 3px 18px 3px 16px
+  &:hover
+    background-color: #444444
+    background-image: -moz-linear-gradient(0% 100% 90deg, #6a6a6a, #909090)
+    text-decoration: none
+  &.disabled
+    background-color: #444444
+    background-image: -moz-linear-gradient(0% 100% 90deg, #6a6a6a, #909090)
+    color: #999999
+    cursor: text
+  &.tedcred
+    background-color: #F7C64A
+    background-image: -moz-linear-gradient(0% 100% 90deg, #f7aa4a, #f7c64a)
+    border-bottom: 1px solid #444444
+    color: #000000
+    display: inline-block
+    font-size: 10px
+    font-weight: normal
+    margin: 0 0 4px
+    padding: 3px 10px
+    text-shadow: 1px 1px 0 #FBD7A4
+    text-transform: uppercase
+    &:hover
+      text-decoration: none
+
+.ui-dialog .ui-dialog-buttonpane button
+  background: url("i/bgButton.png") repeat scroll 0 100% #e8e8e8
+  border: 0 none
+  border-radius: 3px 3px 3px 3px
+  box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.55)
+  color: #333333
+  display: inline-block
+  font-family: helvetica,arial,sans-serif
+  font-size: 11px
+  padding: 2px 10px
+  white-space: nowrap
+  &:hover
+    color: #CC0000
+
+div#body
+  &.browseTemplate #maincontent
+    background: none repeat scroll 0 0 transparent
+    display: block
+    float: none
+    margin: 0
+    padding: 0
+    width: 900px
+    background: url("../images/bg_browse_grad_left.jpg") no-repeat scroll left bottom transparent
+    border-bottom: 3px solid #8E8E8E
+  &.homepage
+    #maincontent, #talkcontent
+      border-bottom: 3px solid $accent-color
+    h1
+      min-height: 0
+
+#body p.explore
+  color: #777777
+  font-size: 1.2em
+  margin-left: 7px
+  span
+    display: inline
+    float: left
+  a.play
+    display: block
+    float: left
+    height: 13px
+    margin: 0 0 0 3px
+    position: relative
+    top: 1px
+    width: 18px
+    img
+      display: inline
+      vertical-align: middle
+
+div
+  &.browseTemplate h3
+    color: #000000
+    font-size: 2em
+    font-weight: normal
+    margin: 12px 0 22px
+  &#body.browseTemplate #maincontent div.container
+    background: url("../images/bg_browse_grad_right.jpg") no-repeat scroll right top transparent
+    border-bottom: 2px solid #FFFFFF
+    margin: 0
+    padding: 0
+  &.browseTemplate #maincontent div
+    &.local
+      display: inline
+      float: left
+      margin: 0 0 0 6px
+      padding: 0 0 50px
+      width: 148px
+      select
+        max-width: 200px
+      div.langSelection
+        background: url("../images/bg_translatedTalks_box.jpg") no-repeat scroll left top transparent
+        height: 125px
+        left: -15px
+        margin-top: 35px
+        padding: 60px 14px 0
+        position: relative
+        width: 184px
+        h3
+          display: none
+        p
+          color: #000000
+          font-size: 1.2em
+        select
+          color: #000000 !important
+      p
+        color: #666666
+        font-size: 1.1em
+        margin: -11px 0 9px
+        padding: 0
+        &.link
+          color: #666666
+          font-size: 1.1em
+          margin: 4px 0 0
+          padding: 0
+        &.deselect
+          color: #666666
+          font-size: 1.1em
+          margin: -5px 0 8px
+          padding: 0
+        &.listlink
+          color: #666666
+          font-size: 1.1em
+          margin: -15px 0 25px
+          padding: 0
+        &.view
+          font-size: 1em
+          margin: 0
+      h3
+        color: #000000
+        font-size: 1.4em
+        font-weight: normal
+        margin-bottom: 11px
+      ul
+        list-style: none outside none
+        margin: 0 0 25px
+        padding: 0
+        li
+          margin-bottom: 3px
+          padding: 0
+          a
+            background: url("../images/icon_filter.gif") no-repeat scroll 1px 1px transparent
+            color: #545454
+            display: block
+            font-size: 1.1em
+            height: 13px
+            padding: 0 0 0 18px
+            &.selected
+              background: url("../images/icon_filter_over.gif") no-repeat scroll left 1px #eaeaea
+              text-decoration: none
+            &:hover
+              background-color: #EAEAEA
+              text-decoration: none
+      input.go
+        display: block
+        float: none
+        margin: 4px 0
+      p
+        margin-top: 10px
+      div
+        &.summary ul
+          margin-left: 14px
+          li
+            color: #777777
+            display: inline
+            font-size: 1.1em
+            line-height: 1.6em
+        &.attributes
+          margin: 0
+          padding: 0 0 0 14px
+          ul
+            float: left
+            list-style: none outside none
+            margin: 0 14px 14px 0
+            padding: 0
+            width: 141px
+            &.col2
+              margin-right: 0
+            li
+              margin-bottom: 3px
+              padding: 0
+              a
+                color: #545454
+                display: block
+                height: 1.2em
+                line-height: 1.2em
+                padding: 0 0 0 18px
+                &.selected
+                  background: url("../images/icon_filter_over.gif") no-repeat scroll 1px 1px #e8e8e8
+                  text-decoration: none
+                &:hover
+                  background-color: #E8E8E8
+                  text-decoration: none
+    &.themes_links
+      bottom: 5px
+      left: -4px
+      margin-left: 10px
+      position: relative
+      a
+        font-size: 1.1em
+        line-height: 1.363em
+    &.browser
+      float: right
+      min-height: 400px
+      width: 743px
+      div.heading
+        background: url("../images/border_dotted.gif") repeat-x scroll left bottom transparent
+        margin: 0 0 6px
+        padding: 0 0 5px
+      h2
+        color: #666666
+        font-size: 1.1em
+        font-weight: normal
+        line-height: 1.8em
+  &.sortby
+    float: right
+    form
+      margin: 0
+      padding: 5px 0 0
+    label
+      color: #666666
+      float: left
+      font-size: 1.1em
+      line-height: 1.8em
+    select
+      border: 1px solid #DCDCDC
+      color: #CECECE
+      float: left
+      font-size: 1.1em
+      height: 1.5em
+      margin: 0 0 10px 9px
+      padding: 1px 0 0
+      width: 164px
+  &.browser #atoz
+    margin: 0 0 17px
+    #alpha_tabs
+      background: none repeat scroll 0 0 transparent
+      border: 0 none
+    ul
+      &.ui-tabs-nav a:hover
+        text-decoration: underline
+      background: none repeat scroll 0 0 transparent
+      border: 0 none
+      display: inline
+      float: left
+      line-height: 1
+      padding: 0
+    li
+      background: none repeat scroll 0 0 transparent
+      border: 0 none
+      color: #000000
+      display: inline
+      float: left
+      font-size: 1.1em
+      margin: 0 8px 0 0
+      a
+        color: $accent-color
+      &.ui-tabs-selected a
+        color: #000000
+        &:hover
+          text-decoration: none
+      &.all
+        margin: 0 10px 0 0
+      a.selected
+        color: #000000
+  &.browseTemplate
+    #maincontent div.home_links
+      bottom: 5px
+      margin: 75px 0 0 5px
+      position: relative
+      div
+        color: #666666
+        font-size: 1.1em
+        line-height: 1.363em
+        margin: 0 20px 0 0
+    div.moreFeatures
+      margin: 0 0 20px
+      ul
+        display: inline
+        float: left
+        list-style: none outside none
+        margin: 21px 30px 0 0
+        padding: 0
+        width: 192px
+        p
+          font-size: 1.1em
+        &.wide
+          display: inline
+          float: left
+          list-style: none outside none
+          margin: 21px 26px 0 7px
+          padding: 0
+          width: 422px
+        &.sponsor
+          background-color: #F2F2F2
+          margin: 13px 0 0 -9px
+          padding: 8px 17px 20px 9px
+          width: 202px
+        li
+          display: inline
+          line-height: 1.6em
+          img
+            margin: 8px 0 15px
+          h4
+            color: #000000
+            font-size: 1.4em
+            font-weight: normal
+            margin: 0
+            padding: 0 0 1px
+            &.bottomborder
+              background: url("/images/dottedborder_grey.gif") repeat-x scroll left bottom transparent
+              color: #000000
+              font-size: 1.4em
+              font-weight: normal
+              padding: 0 0 10px
+  &#body.browseTemplate div.moreFeatures ul li p
+    color: #666666
+    display: block
+    margin: 0
+    padding: 0
+  &.browseTemplate div.moreFeatures ul
+    li p
+      em, strong
+        color: #000000
+    &.wide li dl
+      &.latest
+        display: inline
+        float: left
+        margin: 0 0 19px
+        width: 192px
+      &.marginleft
+        margin: 0 0 0 30px
+      &.latest
+        dt
+          font-size: 1.1em
+          font-weight: bold
+          margin: 9px 0 3px 5px
+          width: 191px
+        dd
+          width: 196px
+        ul
+          &.talks
+            margin: 0
+            li
+              background: none repeat scroll 0 0 #F5F5F5
+              color: #666666
+              display: block
+              float: left
+              height: 52px
+              margin: 0 0 5px
+              padding: 5px 5px 5px 0
+              width: 186px
+              p
+                display: inline
+                float: left
+                width: 100px
+                a
+                  color: #000000
+                  &:hover
+                    color: #000000
+                span.black
+                  color: #191818
+                  font-size: 1em
+                  font-weight: bold
+                em
+                  color: #666666
+          &.comments, &.blog
+            margin: 0 0 10px 5px
+            padding: 0
+
+* + html div.browseTemplate div.moreFeatures ul.wide li dl.latest ul
+  &.comments, &.blog
+    margin-left: -11px
+
+div
+  &.browseTemplate
+    div
+      &.moreFeatures ul
+        &.wide li dl.latest ul
+          &.comments li
+            color: #666666
+            display: block
+            font-size: 1.1em
+            margin: 0 0 2px
+            width: 196px
+          &.blog li
+            color: #666666
+            display: block
+            font-size: 1.1em
+            margin: 0 0 2px
+            width: 196px
+            span.black
+              color: #000000
+        li dl.latest ul.talks li img
+          display: inline
+          float: left
+          margin: 0 5px
+          &.play_icon
+            background: url("../images/play_icon.gif") no-repeat scroll left top transparent
+            left: 15px
+            position: relative
+            top: 4px
+      &.moreThemes
+        padding: 0 0 15px 10px
+        ul
+          float: leftcontainer
+          list-style: none outside none
+          margin: 0 0 0 2px
+          width: 220px
+          li
+            font-size: 1.1em
+            line-height: 1.454em
+      &.moreTalks
+        padding: 0 0 30px 10px
+        h3
+          margin-bottom: 16px
+        dl
+          display: inline
+          float: left
+          font-size: 1.1em
+          margin-left: 2px
+          width: 220px
+          dt
+            line-height: 1.36em
+            padding-bottom: 1px
+          dd
+            line-height: 1.36em
+            padding-bottom: 7px
+            padding-right: 11px
+    #maincontent div.pagination
+      margin-right: 7px
+      position: relative
+  &#body
+    &.browseList #maincontent, &.browseMembers #maincontent
+      background: none repeat scroll 0 0 transparent
+      border: 0 none
+      div.container
+        background: none repeat scroll 0 0 transparent
+        border: 0 none
+  &.browseList #maincontent div.browser, &.browseMembers #maincontent div.browser
+    width: 672px
+  &.browseTemplate div.moreFeatures.alt
+    margin: 30px 0 0
+    a
+      font-size: 12px
+      line-height: 16px
+      &:visited
+        font-size: 12px
+        line-height: 16px
+    ul
+      display: block
+      float: none
+      margin: 0 0 8px
+      padding: 0
+      width: 100%
+      li
+        background: url("/css/i/bulletGray.png") no-repeat scroll 0 7px transparent
+        display: block
+        float: none
+        font-size: 12px
+        line-height: 16px
+        margin: 0 0 5px
+        padding: 0 0 0 11px
+        a
+          color: #000000
+          display: block
+          margin: 0 0 2px
+          &:visited
+            color: #000000
+            display: block
+            margin: 0 0 2px
+    h4
+      background: url("/images/dottedborder_grey.gif") repeat-x scroll left bottom transparent
+      color: #000000
+      display: block
+      float: none
+      font-size: 14px
+      font-weight: bold
+      margin: 0 0 12px
+      padding: 0 0 8px
+    div
+      &#featuresA
+        display: inline-block
+        float: left
+        margin: 0 10px 0 0
+        width: 349px
+        p
+          font-size: 12px
+          margin: 0 0 25px 12px !important
+      &#featuresB
+        display: inline-block
+        float: left
+        margin: 0 10px 0 0
+        width: 339px
+        li
+          color: #888888
+          display: block
+          float: none
+          font-size: 11px
+          line-height: 14px
+          margin: 0 0 15px
+          padding: 0 10px 0 45px
+        p
+          font-size: 12px
+          margin: 0 0 25px 46px !important
+        li
+          &.debates
+            background: url("/css/i/navDebatesSmAlt.png") no-repeat scroll 0 1px transparent
+          &.questions
+            background: url("/css/i/navQuestionsSmAlt.png") no-repeat scroll 0 1px transparent
+          &.ideas
+            background: url("/css/i/navIdeasSmAlt.png") no-repeat scroll 0 1px transparent
+      &#featuresC
+        display: inline-block
+        float: left
+        width: 192px
+    ul#social
+      margin: 40px 0 0
+      padding: 0
+      width: 100%
+      li
+        list-style-type: none
+        margin: 0 0 10px
+        padding: 0 0 0 24px
+        &.rss
+          background: url("/css/i/iconRSS.png") no-repeat scroll 0 0 transparent
+        &.facebook
+          background: url("/css/i/iconFacebook.png") no-repeat scroll 0 0 transparent
+        &.twitter
+          background: url("/css/i/iconTwitter.png") no-repeat scroll 0 0 transparent
+        a
+          display: inline
+          &:visited
+            display: inline
+  &#body.browseList #maincontent
+    border-bottom: medium none
+  &.browseList
+    #maincontent div
+      &.themes_links
+        bottom: 20px
+        float: left
+        margin: -15px 0 0 10px
+        position: relative
+      &.browser dl dd ul
+        height: 8.5em
+        position: relative
+    div
+      &.header
+        float: left
+        width: 225px
+      &.eventHeader
+        background-image: url("/images/bg_event_header.gif")
+        float: left
+        height: 123px
+        margin-bottom: 16px
+        margin-top: -16px
+        position: relative
+        width: 664px
+  &.eventHeader
+    p
+      color: #333333
+      font-size: 1.2em
+      left: 325px
+      position: absolute
+      top: 41px
+      width: 290px
+    img
+      left: 27px
+      position: absolute
+      top: 0
+  &.speakerListContainer dl.speakerMedallion, &.themeListContainer dl.themeMedallion, &.fellowListContainer dl.fellowMedallion
+    background-color: #F2F2F2
+    display: inline
+    float: left
+    height: 10.9em
+    margin: 2px
+    width: 330px
+  &.speakerListContainer dl.speakerMedallion dt, &.themeListContainer dl.themeMedallion dt, &.fellowListContainer dl.fellowMedallion dt
+    background: none repeat scroll 0 0 #D6D6D6
+    float: left
+    height: 99px
+    margin: 5px 0 5px 6px
+    overflow: hidden
+    position: relative
+    width: 132px
+  &.speakerListContainer dl.speakerMedallion dd, &.themeListContainer dl.themeMedallion dd, &.fellowListContainer dl.fellowMedallion dd
+    float: left
+    width: 184px
+  &.speakerListContainer dl.speakerMedallion dd ul, &.themeListContainer dl.themeMedallion dd ul, &.fellowListContainer dl.fellowMedallion dd ul
+    list-style: none outside none
+    margin: 7px 0 0
+    padding: 0 0 0 7px
+  &.speakerListContainer dl.speakerMedallion dd ul li, &.themeListContainer dl.themeMedallion dd ul li, &.fellowListContainer dl.fellowMedallion dd ul li
+    font-size: 1.1em
+    line-height: 1.363em
+  &.speakerListContainer dl.speakerMedallion dd ul li h4, &.themeListContainer dl.themeMedallion dd ul li h4, &.fellowListContainer dl.fellowMedallion dd ul li h4
+    color: #191818
+    font-size: 1em
+    font-weight: bold
+  &.speakerListContainer dl.speakerMedallion dd ul li h4 a, &.themeListContainer dl.themeMedallion dd ul li h4 a
+    color: #191818
+    width: 150px
+  &.fellowListContainer dl.fellowMedallion dd ul li
+    h4
+      a
+        color: #191818
+        width: 150px
+      line-height: 1.363em
+      margin: 0
+    &.event
+      color: #666666
+      font-size: 1em
+      text-transform: uppercase
+    &.countries
+      color: #666666
+  &.browseList #maincontent div
+    &.local a
+      font-size: 1em
+    &.browser h2
+      background: url("../images/border_dotted.gif") repeat-x scroll left bottom transparent
+      margin-bottom: 8px
+      padding-bottom: 5px
+
+#sidebox
+  float: left
+  width: 400px
+  border-right: 1px solid #FF2B06
+  position: fixed
+#article_viewer
+  margin-left: 401px
+  height: auto
+  visibility: hidden
+  border-style: none

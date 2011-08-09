@@ -1,0 +1,19 @@
+%p#notice= notice
+%p
+  %b Feed url:
+  = @feed.feed_url
+%p
+  %b Site name:
+  = @feed.site_name
+%p
+  %b Site url:
+  = @feed.site_url
+%p
+  %b Site logo:
+  = @feed.site_logo
+%p
+  %b Content unique div:
+  = @feed.content_unique_div
+= link_to 'Edit', edit_feed_path(@feed)
+|
+\#{link_to 'Back', feeds_path}

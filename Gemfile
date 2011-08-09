@@ -46,6 +46,10 @@ gem 'sass'
 
 gem 'compass'
 
+gem 'jquery-rails'
+
+gem 'acts_as_commentable_with_threading'
+
 # Bundle the extra gems:
 # gem 'bj'
 # gem 'nokogiri'

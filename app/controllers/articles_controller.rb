@@ -2,11 +2,14 @@ class ArticlesController < ApplicationController
   # GET /articles
   # GET /articles.xml
   def index
-    @articles = Article.all
+    @articles = Article.get_articles(params)
+    
+    @teams = Team.all
+    @organizations = Organization.all
 
     respond_to do |format|
       format.html # index.html.erb
-      format.xml  { render :xml => @articles }
+      format.xml  {render :partial => "list.html.haml"}
     end
   end
 
@@ -79,6 +82,11 @@ class ArticlesController < ApplicationController
       format.html { redirect_to(articles_url) }
       format.xml  { head :ok }
     end
+  end
+  
+  def set_teams
+    @articles = Article.find(:all)
+    Article.update_all(:team_id => params[:team_ids])
   end
   
   

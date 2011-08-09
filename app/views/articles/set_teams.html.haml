@@ -1,0 +1,6 @@
+- form_tag set_teams_path, :method => :put do
+  - @articles.each do |article|
+    - fields_for "article[#{article.id}]", article do |f|
+      = f.text_field :title
+      = puts '-----------------------'
+  = submit_tag 'Update'

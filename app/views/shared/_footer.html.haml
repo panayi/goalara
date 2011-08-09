@@ -1,0 +1,25 @@
+#footer.clearfix
+  %p
+    %a.smalllogo{:href => "/", :title => "TED.com"} TED
+  %ul
+    %li.legal © TED Conferences, LLC
+    %li
+      %a{:href => "/contact"} Contact us
+      |
+    %li
+      %a{:href => "http://partners.ted.com"} Advertising/partnership
+      |
+    %li
+      %a{:href => "/pages/jobs"} Careers
+      |
+    %li
+      %a{:href => "/help"} Help
+      |
+    %li
+      %a{:href => "/termsofuse"} Terms of Use
+      |
+    %li
+      %a{:href => "/privacy"} Privacy Policy
+  %form#form_newsletter_signup{:action => "/newsletter/signup", :method => "post", :name => "form_newsletter_signup"}
+    %input#newsletterSignup_email_address.text{:name => "newsletterSignup[email_address]", :type => "text", :value => "Enter email for newsletter signup"}
+      %input.button{:src => "/images/button_search.gif", :type => "image", :value => "submit"}

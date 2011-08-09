@@ -1,0 +1,24 @@
+%ul#commentList-30.l-0
+- @comments.each do |comment|
+  %li#id.comment
+    .comment
+      = link_to image_tag("/images/users/" + user_photo(comment.user_id, 'small'), :alt => 'thumb') user_path(comment.user_id), :target => "_blank"
+      .commentHeader
+        %h4
+          = link_to image_tag("/images/users/" + user_name(comment.user_id), :alt => 'thumb') user_path(comment.user_id), :target => "_blank"
+        %ul.actions
+          %li.score 0
+          %li.vote
+            %a.voteUp
+          %li
+            %span.edit
+              %a.edit Edit
+            %a.delete Delete
+            %a.reply Reply
+      .flairWrap
+      .commentBody
+        %span.date.fresh 
+          = comment.created_at.to_s(:friendly):
+        %span.commentText 
+          = comment.body
+        %a.flag.tip{:href => "#"}

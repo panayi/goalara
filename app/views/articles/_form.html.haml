@@ -1,0 +1,43 @@
+/
+  <haml:loud> semantic_form_for(@article) do |f| </haml:loud><haml:block>
+  <haml:silent>   if @article.errors.any?
+  </haml:silent><haml:block>    <div id="error_explanation">
+  <h2><haml:loud> pluralize(@article.errors.count, &quot;error&quot;) </haml:loud> prohibited this article from being saved:</h2>
+  
+  <ul>
+  <haml:silent>       @article.errors.full_messages.each do |msg|
+  </haml:silent><haml:block>        <li><haml:loud> msg </haml:loud></li>
+  </haml:block>      </ul>
+  </div>
+  </haml:block>
+  <div class="field">
+  <haml:loud> f.label :title </haml:loud><br />
+  <haml:loud> f.text_field :title </haml:loud>
+  </div>
+  <div class="field">
+  <haml:loud> f.label :summary </haml:loud><br />
+  <haml:loud> f.text_area :summary </haml:loud>
+  </div>
+  <div class="field">
+  <haml:loud> f.label :content </haml:loud><br />
+  <haml:loud> f.text_area :content </haml:loud>
+  </div>
+  <div class="field">
+  <haml:loud> f.label :url </haml:loud><br />
+  <haml:loud> f.text_field :url </haml:loud>
+  </div>
+  <div class="field">
+  <haml:loud> f.label :published_at </haml:loud><br />
+  <haml:loud> f.text_field :published_at </haml:loud>
+  </div>
+  <div class="field">
+  <haml:loud> f.label :guid </haml:loud><br />
+  <haml:loud> f.text_field :guid </haml:loud>
+  </div>
+  <div class="actions">
+  <haml:loud> f.submit </haml:loud>
+  </div>
+  </haml:block>
+= semantic_form_for @article do |form|
+  = form.inputs
+  = form.buttons

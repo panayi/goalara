@@ -1,0 +1,22 @@
+%p#notice= notice
+%p
+  %b Title:
+  = @article.title
+%p
+  %b Summary:
+  = @article.summary
+%p
+  %b Content:
+  = @article.content
+%p
+  %b Url:
+  = @article.url
+%p
+  %b Published at:
+  = @article.published_at
+%p
+  %b Guid:
+  = @article.guid
+= link_to 'Edit', edit_article_path(@article)
+|
+\#{link_to 'Back', articles_path}
