@@ -14,7 +14,7 @@ class ViewersController < ApplicationController
   # GET /viewers/1.xml
   def show
     @article = Article.find_by_id(params[:id])
-    @comments = @article.comments.recent.limit(10).all
+    @comments = @article.comment_threads.limit(10).all
     respond_to do |format|
       format.html # show.html.erb
       format.xml  { render :xml => @viewer }
