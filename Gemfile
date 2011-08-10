@@ -28,7 +28,9 @@ gem 'formtastic', :git => 'http://github.com/justinfrench/formtastic', :branch =
 
 gem 'scrapi'
 
-gem 'oauth2'
+gem 'devise'
+
+gem "oa-oauth", :require => "omniauth/oauth"
 
 gem 'acts_as_taggable_on_steroids', :git => 'git://github.com/Agiley/acts_as_taggable_on_steroids.git'
 

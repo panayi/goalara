@@ -1,4 +1,8 @@
 GoalaraCom::Application.routes.draw do
+  devise_for :users
+
+  resources :users
+
   resources :viewers
 
   resources :feeds
@@ -11,13 +15,15 @@ GoalaraCom::Application.routes.draw do
   
   resources :frontpage
   
-  match "/oauth/start" => "oauth#start"
-  match "/oauth/callback" => "oauth#callback"
-  match "/oauth/client" => "oauth#client"
+  # match "/oauth/start" => "oauth#start"
+  #   match "/oauth/callback" => "oauth#callback"
+  #   match "/oauth/client" => "oauth#client"
   
   match "/articles/set_teams" => "articles#set_teams"
   
   root :to => "frontpage#index"
+  
+  devise_for :users, :controllers => { :omniauth_callbacks => "users/omniauth_callbacks" }
 
   # The priority is based upon order of creation:
   # first created -> highest priority.

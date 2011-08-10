@@ -1,0 +1,1742 @@
+
+---
+teams:
+  columns:
+  - id
+  - name
+  - logo_image
+  - created_at
+  - updated_at
+  records: 
+---
+  - - 1
+    - Apoel
+    - apoel.gif
+    - '2011-08-01 15:08:18.519680'
+    - '2011-08-01 15:08:18.519680'
+  - - 2
+    - Apollon Limassol
+    - apollon_limassol.jpg
+    - '2011-08-01 15:08:18.524881'
+    - '2011-08-01 15:08:18.524881'
+  - - 3
+    - Omonoia
+    - omonoia.gif
+    - '2011-08-01 15:08:18.527416'
+    - '2011-08-01 15:08:18.527416'
+  - - 4
+    - Anorthosi
+    - anorthosis.jpg
+    - '2011-08-01 15:08:18.529702'
+    - '2011-08-01 15:08:18.529702'
+  - - 5
+    - AEL Limassol
+    - ael_limassol.gif
+    - '2011-08-01 15:08:18.531917'
+    - '2011-08-01 15:08:18.531917'
+  - - 6
+    - Nea Salamina
+    - nea_salamina.gif
+    - '2011-08-01 15:08:18.535414'
+    - '2011-08-01 15:08:18.535414'
+  - - 7
+    - Olympiakos Nicosia
+    - olympiakos_nicosia.gif
+    - '2011-08-01 15:08:18.537867'
+    - '2011-08-01 15:08:18.537867'
+  - - 8
+    - Aris Limassol
+    - aris_limassol.gif
+    - '2011-08-01 15:08:18.540251'
+    - '2011-08-01 15:08:18.540251'
+  - - 9
+    - AEK Larnaca
+    - aek_larnaca.gif
+    - '2011-08-01 15:08:18.542488'
+    - '2011-08-01 15:08:18.542488'
+  - - 10
+    - APEP Pitsilias
+    - apep_pitsilias.gif
+    - '2011-08-01 15:08:18.545196'
+    - '2011-08-01 15:08:18.545196'
+  - - 11
+    - APOP Kinyras
+    - apop_kinyras.gif
+    - '2011-08-01 15:08:18.547478'
+    - '2011-08-01 15:08:18.547478'
+  - - 12
+    - AEP Paphos
+    - aep_paphos.gif
+    - '2011-08-01 15:08:18.549670'
+    - '2011-08-01 15:08:18.549670'
+  - - 13
+    - Ethnikos Achnas
+    - ethnikos_achnas.gif
+    - '2011-08-01 15:08:18.552107'
+    - '2011-08-01 15:08:18.552107'
+  - - 14
+    - Doxa Katokopias
+    - doxa_katokopias.gif
+    - '2011-08-01 15:08:18.556873'
+    - '2011-08-01 15:08:18.556873'
+  - - 15
+    - ENP
+    - enp.gif
+    - '2011-08-01 15:08:18.559131'
+    - '2011-08-01 15:08:18.559131'
+  - - 16
+    - Ermis Aradippou
+    - ermis_aradippou.gif
+    - '2011-08-01 15:08:18.561213'
+    - '2011-08-01 15:08:18.561213'
+  - - 17
+    - AOAN
+    - aoan.gif
+    - '2011-08-01 15:08:18.563164'
+    - '2011-08-01 15:08:18.563164'
+  - - 18
+    - ASIL
+    - asil.gif
+    - '2011-08-01 15:08:18.565414'
+    - '2011-08-01 15:08:18.565414'
+  - - 19
+    - Akritas Chlorakas
+    - akritas_chlorakas.gif
+    - '2011-08-01 15:08:18.568506'
+    - '2011-08-01 15:08:18.568506'
+  - - 20
+    - Alki
+    - alki.gif
+    - '2011-08-01 15:08:18.571662'
+    - '2011-08-01 15:08:18.571662'
+  - - 21
+    - Atromitos Geroskipou
+    - atromitos_geroskipou.gif
+    - '2011-08-01 15:08:18.574077'
+    - '2011-08-01 15:08:18.574077'
+  - - 22
+    - Digenis Morfou
+    - digenis_morfou.gif
+    - '2011-08-01 15:08:18.576434'
+    - '2011-08-01 15:08:18.576434'
+  - - 23
+    - MEAP
+    - meap.gif
+    - '2011-08-01 15:08:18.579405'
+    - '2011-08-01 15:08:18.579405'
+  - - 24
+    - PAEEK
+    - paeek.gif
+    - '2011-08-01 15:08:18.581896'
+    - '2011-08-01 15:08:18.581896'
+  - - 25
+    - Othellos Athienou
+    - othellos_athienou.gif
+    - '2011-08-01 15:08:18.584859'
+    - '2011-08-01 15:08:18.584859'
+  - - 26
+    - Omonoia Aradippou
+    - omonoia_aradippou.gif
+    - '2011-08-01 15:08:18.588061'
+    - '2011-08-01 15:08:18.588061'
+  - - 27
+    - Onisilos Sotiras
+    - onisilos_sotiras.gif
+    - '2011-08-01 15:08:18.591215'
+    - '2011-08-01 15:08:18.591215'
+  - - 28
+    - Frenaros
+    - frenaros.gif
+    - '2011-08-01 15:08:18.593721'
+    - '2011-08-01 15:08:18.593721'
+
+---
+organizations:
+  columns:
+  - id
+  - name
+  - description
+  - level
+  - created_at
+  - updated_at
+  records: 
+---
+  - - 1
+    - A' Football League
+    - ''
+    - national
+    - '2011-08-01 15:08:18.608801'
+    - '2011-08-01 15:08:18.608801'
+  - - 2
+    - B' Football League
+    - ''
+    - national
+    - '2011-08-01 15:08:18.614320'
+    - '2011-08-01 15:08:18.614320'
+
+---
+articles:
+  columns:
+  - id
+  - title
+  - summary
+  - content
+  - category
+  - url
+  - published_at
+  - guid
+  - feed_id
+  - team_id
+  - tf_idf_content
+  - created_at
+  - updated_at
+  - image
+  - organization_id
+  records: 
+---
+  - - 115
+    - Νέος δροσερός διαγωνισμός από το MyShop.com.cy!
+    - ! "Το MyShop.com.cy, το ταχύτερα αναπτυσσόμενο ηλεκτρονικό κατάστημα τεχνολογίας,
+      διοργανώνει ΝΕΟ μεγάλο διαγωνισμό και χαρίζει σε 3 τυχερούς εκπτωτικά κουπόνια
+      συνολικής αξίας \x80350 (\x8050, \x80100 και \x80200 αντίστοιχα) για αγορές
+      τους από το MyShop.com.cy!"
+    - ":: Νέος δροσερός διαγωνισμός από το MyShop.com.cy!\r\n\t\t\t:: Ημερομηνία δημοσίευσης:\r\n\t\t\t01-08-2011\r\n\t\t\t-
+      \r\n\t\t\tΏρα:\r\n\t\t\t22:23\r\n\t\t\r\n\t\t\t\r\n.str_photo_header {\r\n\tbackground-color:#000000;\r\n\tfont-size:13px;\r\n\tcolor:#ffffff;\r\n
+      \  \tfont-weight:none;\r\n}\r\n.str_photo_table {\r\n\tbackground-color:#F7FBFD;\r\n
+      \  \tborder:2px solid #D8DFE2;\r\n}\r\n.str_photo {\r\n\tbackground-color:#ffffff;\r\n
+      \  \tborder:0px solid #dddddd;\r\n   \tcursor:hand;\r\n\tpadding:5px;\r\n}\r\n\r\n\t\t\t<!--//
+      <![CDATA[\r\n    /* [id21] League - Story - Textlink - Top */\r\n    OA_show(21);\r\n//
+      ]]> -->Το MyShop.com.cy, το ταχύτερα αναπτυσσόμενο ηλεκτρονικό κατάστημα τεχνολογίας,
+      διοργανώνει ΝΕΟ μεγάλο διαγωνισμό και χαρίζει σε 3 τυχερούς εκπτωτικά κουπόνια
+      συνολικής αξίας €350 (€50, €100 και €200 αντίστοιχα) για αγορές τους από το
+      MyShop.com.cy! \r\nΤα εκπτωτικά κουπόνια μπορούν να χρησιμοποιηθούν για οποιαδήποτε
+      αγορά σε όλα τα είδη του καταστήματος. \r\nΓια τη συμμετοχή στο διαγωνισμό,
+      δεν απαιτείται η αγορά προϊόντος.\r\nΑπλά ακολουθήστε τα πιο κάτω βήματα και
+      αυτόματα δηλώνετε συμμετοχή:1. Γίνετε μέλος στο MyShop.com.cy \r\n2. Κάντε ένα
+      Like! στη σελίδα μας στο FacebookΟι μεγάλοι τυχεροί θα ανακοινωθούν στην ιστοσελίδα
+      MyShop.com.cy και στη σελίδα μας στο Facebook την Δευτέρα 29 Αυγούστου 2011.\r\nΓια
+      περισσότερες πληροφορίες και όρους συμμετοχής κάνε κλικ εδώ [+]Καλή επιτυχία
+      σε όλους!MyShop.com.cy - το #1 ηλεκτρονικό κατάστημα τεχνολογίας στη Κύπρο!\r\n\t\t"
+    - ! "              \t\tProtathlima.com  \x95  Πρωτάθλημα Marfin Laiki              \t"
+    - http://www.protathlima.com/content/league/story.jsp?league_id=1&id=77300
+    - Mon, 1 Aug 2011 00:00:00 -0700
+    - http://www.protathlima.com/content/league/story.jsp?league_id=1&id=77300
+    - 1
+    - 2
+    - ! ' neos droseros diagwnismos myshop com cy taxytera anaptyssomeno hlektroniko
+      katasthma texnologias diorganwnei neo megalo diagwnismo xarizei tyxeroys ekptwtika
+      koyponia synolikhs aksias antistoixa agores mporoyn xrhsimopoihthoyn opoiadhpote
+      agora eidh katasthmatos symmetoxh apaiteitai proiontos apla akoloythhste pio
+      katw vhmata aytomata dhlwnete ginete melos kante like sth selida facebookoi
+      megaloi tyxeroi anakoinwthoyn istoselida facebook deytera perissoteres plhrofories
+      oroys symmetoxhs kane klik kalh epityxia kypro'
+    - '2011-08-01 17:09:34.134998'
+    - '2011-08-05 15:29:37.222834'
+    - http://www.protathlima.com//content/images/other/28072011/eZW3QAKDxF.jpg
+    - 1
+  - - 116
+    - ! 'Τζόρβας: «Ο κίνδυνος να εκτεθείς είναι μεγάλος!»'
+    - Η νίκη του Παναθηναϊκού κόντρα στην Οντένσε στο ΟΑΚΑ την Τρίτη είναι μονόδρομος
+      σύμφωνα με τα όσα είπε ο Αλέξανδρος Τζόρβας στη συνέντευξη Τύπου. Ο γκολκίπερ
+      των «πράσινων» τόνισε ότι ο ίδιος και οι συμπαίκτες του θα πρέπει να φέρουν
+      το ματς στα μέτρα τους ενώ χαρακτήρισε  αυτονόητο ότι οι φίλαθλοι πρέπει να
+      στηρίξουν την ομάδα.
+    - ":: Τζόρβας: «Ο κίνδυνος να εκτεθείς είναι μεγάλος!»\n\t\t\t:: Ημερομηνία δημοσίευσης:\n\t\t\t01-08-2011\n\t\t\t-
+      \n\t\t\tΏρα:\n\t\t\t19:48\n\t\t\n\t\t\t\n.str_photo_header {\n\tbackground-color:#000000;\n\tfont-size:13px;\n\tcolor:#ffffff;\n
+      \  \tfont-weight:none;\n}\n.str_photo_table {\n\tbackground-color:#F7FBFD;\n
+      \  \tborder:2px solid #D8DFE2;\n}\n.str_photo {\n\tbackground-color:#ffffff;\n
+      \  \tborder:0px solid #dddddd;\n   \tcursor:hand;\n\tpadding:5px;\n}\n\n\t\t\t<!--//
+      <![CDATA[\n    /* [id21] League - Story - Textlink - Top */\n    OA_show(21);\n//
+      ]]> -->Η νίκη του Παναθηναϊκού κόντρα στην Οντένσε στο ΟΑΚΑ την Τρίτη είναι
+      μονόδρομος σύμφωνα με τα όσα είπε ο Αλέξανδρος Τζόρβας στη συνέντευξη Τύπου.
+      Ο γκολκίπερ των «πράσινων» τόνισε ότι ο ίδιος και οι συμπαίκτες του θα πρέπει
+      να φέρουν το ματς στα μέτρα τους ενώ χαρακτήρισε… αυτονόητο ότι οι φίλαθλοι
+      πρέπει να στηρίξουν την ομάδα.\r\nΟ τερματοφύλακας του Παναθηναϊκού, ερωτηθείς
+      για την ρεβάνς με τους Δανούς ανέφερε αρχικά: «Στα ευρωπαϊκά ματς ο κίνδυνος
+      να εκτεθείς είναι μεγάλος. Πρέπει να είμαστε μετρημένοι στα πρώτα λεπτά του
+      αγώνα αλλά υπάρχει μόνο ένα αποτέλεσμα και αυτό είναι η νίκη».\r\nΣε ότι αφορά
+      την στήριξη του κόσμου στο πρώτο εντός έδρας επίσημο ματς, τόνισε: «Είναι αυτονόητο
+      ότι πρέπει να στηριχθεί η ομάδα. Αυτός είναι ο ρόλος του οπαδού. Από κει και
+      πέρα ο καθένας μπορεί να κάνει ότι θέλει. Να μην έρθει επειδή είναι απογοητευμένος
+      από αποφάσεις ή από αποχωρήσεις ποδοσφαιριστών. Για εμένα ο οπαδός πρέπει να
+      στηρίζει την ομάδα».\r\nΌσο για την Οντένσε, επισήμανε τις δυσκολίες του αγώνα,
+      λέγοντας: «Δεν νομίζω ότι η Οντένσε είναι μια εύκολη ομάδα. Όπως είδαμε και
+      με την Κοπεγχάγη μπορεί να μην διαθέτουν κάποιον σταρ αλλά διαθέτουν τακτική,
+      παλεύουν μέχρι τα τελευταία λεπτά. Το πιο σημαντικό είναι να επιβάλλουμε τον
+      ρυθμό μας για να φέρουμε το ματς στα μέτρα μας».\r\nΤέλος, αναφορικά με την
+      ζέστη που αναμένεται να έχει στο ΟΑΚΑ, ο Τζόρβας, ξεκαθάρισε: «Όταν αρχίζει
+      ένα ματς όλα περνούν σε δεύτερη μοίρα. Το μόνο που σκέφτεσαι είναι το ματς.
+      Όπως και εμείς αποβάλλουμε το κρύο από το μυαλό τον χειμώνα έτσι θα κάνουν και
+      αυτοί».\n\t\t"
+    - ! "\n\t\tProtathlima.com  \x95  Τσάμπιονς Λιγκ  \x95  Παναθηναϊκός\n\t"
+    - http://www.protathlima.com/content/league/story.jsp?league_id=2000&id=77818
+    - Mon, 1 Aug 2011 00:00:00 -0700
+    - http://www.protathlima.com/content/league/story.jsp?league_id=2000&id=77818
+    - 1
+    - !!null 
+    - ! ' tzorvas kindynos ektetheis einai megalos nikh panathhnaikoy kontra ontense
+      oaka monodromos aleksandros gkolkiper tonise oti prepei feroyn mats metra xarakthrise
+      aytonohto termatofylakas danoys eyrwpaika metrhmenoi lepta mono sthriksh sthrixthei
+      rolos opadoy kei mporei mhn apogohteymenos emena sthrizei epishmane dyskolies
+      nomizw eykolh kopegxagh diathetoyn taktikh paleyoyn epivalloyme rythmo feroyme
+      anaforika zesth arxizei moira skeftesai apovalloyme kryo myalo aytoi'
+    - '2011-08-01 17:09:36.787865'
+    - '2011-08-01 17:10:43.166232'
+    - http://www.protathlima.com//content/images/other/27112009/CFKme93xFC.jpg
+    - !!null 
+  - - 117
+    - «Μπιανκονέρο» και με... σφραγίδα ο Βούτσινιτς!
+    - Η μεταγραφή του Μίρκο Βούτσινιτς στη Γιουβέντους ολοκληρώθηκε και τυπικά τη
+      Δευτέρα. Τετραετές συμβόλαιο υπέγραψε ο διεθνής Μαυροβούνιος άσος, μετά τις
+      ιατρικές εξετάσεις.
+    - ":: «Μπιανκονέρο» και με... σφραγίδα ο Βούτσινιτς!\n\t\t\t:: Ημερομηνία δημοσίευσης:\n\t\t\t01-08-2011\n\t\t\t-
+      \n\t\t\tΏρα:\n\t\t\t19:36\n\t\t\n\t\t\t\n.str_photo_header {\n\tbackground-color:#000000;\n\tfont-size:13px;\n\tcolor:#ffffff;\n
+      \  \tfont-weight:none;\n}\n.str_photo_table {\n\tbackground-color:#F7FBFD;\n
+      \  \tborder:2px solid #D8DFE2;\n}\n.str_photo {\n\tbackground-color:#ffffff;\n
+      \  \tborder:0px solid #dddddd;\n   \tcursor:hand;\n\tpadding:5px;\n}\n\n\t\t\t<!--//
+      <![CDATA[\n    /* [id21] League - Story - Textlink - Top */\n    OA_show(21);\n//
+      ]]> -->Η μεταγραφή του Μίρκο Βούτσινιτς στη Γιουβέντους ολοκληρώθηκε και τυπικά
+      τη Δευτέρα. Τετραετές συμβόλαιο υπέγραψε ο διεθνής Μαυροβούνιος άσος, μετά τις
+      ιατρικές εξετάσεις.\r\nΗ Μεγάλη Κυρία είχε συμφωνήσει από την Παρασκευή με τη
+      Ρόμα για την απόκτηση του Βούτσινιτς, αντί του ποσού των 15 εκατ. ευρώ. Το βράδυ
+      της Κυριακής ο ποδοσφαιριστής... προσγειώθηκε στο Τορίνο και το πρωί της Δευτέρας
+      πέρασε τις απαραίτητες ιατρικές εξετάσεις.\r\nΑφού πήγαν όλα καλά, στη συνέχεια
+      υπέγραψε το συμβόλαιο του με τους Μπιανκονέρι, διάρκειας τεσσάρων ετών, παρουσία
+      του Τζιουζέπε Μαρότα. \r\nΤην μεταγραφή ανακοίνωσε και η Γιουβέντους στην επίσημη
+      ιστοσελίδα της: «Η Γιουβέντους ανακοινώνει ότι η συμφωνία με την Ρόμα για την
+      απόκτηση του Μίρκο Βούτσινιτς ολοκληρώθηκε. Η Γιουβέντους θα πληρώσει 15 εκατ.
+      ευρώ στη Ρόμα ενώ ο παίκτης υπέγραψε συμβόλαιο διάρκειας τεσσάρων ετών».\r\nΣύμφωνα
+      με τον ιταλικό Τύπο οι ετήσιες απολαβές του Βούτσινιτς θα φτάνουν στα 3,5 εκατ.
+      ευρώ.\n\t\t"
+    - ! "\n\t\tProtathlima.com  \x95  Καμπιονάτο  \x95  Γιουβέντους\n\t"
+    - http://www.protathlima.com/content/league/story.jsp?league_id=31&id=77819
+    - Mon, 1 Aug 2011 00:00:00 -0700
+    - http://www.protathlima.com/content/league/story.jsp?league_id=31&id=77819
+    - 1
+    - !!null 
+    - ! ' mpiankonero sfragida voytsinits metagrafh mirko sth gioyventoys oloklhrwthhke
+      typika deytera tetraetes symvolaio ypegrapse diethnhs mayrovoynios asos iatrikes
+      eksetaseis megalh kyria symfwnhsei roma apokthsh anti posoy ekat eyrw vrady
+      kyriakhs podosfairisths prosgeiwthhke torino prwi deyteras perase aparaithtes
+      afoy phgan synexeia mpiankoneri diarkeias tessarwn etwn paroysia tzioyzepe marota
+      anakoinwse epishmh istoselida anakoinwnei symfwnia plhrwsei paikths italiko
+      typo ethsies apolaves ftanoyn'
+    - '2011-08-01 17:09:38.318837'
+    - '2011-08-01 17:10:39.916525'
+    - http://www.protathlima.com//content/images/other/17062009/vucinic.jpg
+    - !!null 
+  - - 118
+    - ! 'Φερέιρα: «Δεν μας αρκεί σε καμία περίπτωση η ισοπαλία»'
+    - ! 'Το σημαντικότερο για το τέλος κράτησε ο Ζεσουάλντο Φερέιρα στη συνέντευξη
+      Τύπου του αγώνα με την Οντένσε. Με δική του πρωτοβουλία, ο Πορτογάλος έστειλε
+      μήνυμα στον κόσμο της ομάδας, κάνοντας λόγο για έναν Παναθηναϊκό που δεν είναι
+      αυτός που ήταν παλιότερα, μίλησε για λάθη σε όλα επίπεδα και τόνισε: «Οι φίλαθλοι
+      έχουν συνηθίσει στα τρόπαια και σίγουρα τώρα αυτό δεν συμβαίνει. Όμως αυτός
+      δεν είναι λόγος να αγαπούν λιγότερο την ομάδα».'
+    - ":: Φερέιρα: «Δεν μας αρκεί σε καμία περίπτωση η ισοπαλία»\n\t\t\t:: Ημερομηνία
+      δημοσίευσης:\n\t\t\t01-08-2011\n\t\t\t- \n\t\t\tΏρα:\n\t\t\t19:22\n\t\t\n\t\t\t\n.str_photo_header
+      {\n\tbackground-color:#000000;\n\tfont-size:13px;\n\tcolor:#ffffff;\n   \tfont-weight:none;\n}\n.str_photo_table
+      {\n\tbackground-color:#F7FBFD;\n   \tborder:2px solid #D8DFE2;\n}\n.str_photo
+      {\n\tbackground-color:#ffffff;\n   \tborder:0px solid #dddddd;\n   \tcursor:hand;\n\tpadding:5px;\n}\n\n\t\t\t<!--//
+      <![CDATA[\n    /* [id21] League - Story - Textlink - Top */\n    OA_show(21);\n//
+      ]]> -->Το σημαντικότερο για το τέλος κράτησε ο Ζεσουάλντο Φερέιρα στη συνέντευξη
+      Τύπου του αγώνα με την Οντένσε. Με δική του πρωτοβουλία, ο Πορτογάλος έστειλε
+      μήνυμα στον κόσμο της ομάδας, κάνοντας λόγο για έναν Παναθηναϊκό που δεν είναι
+      αυτός που ήταν παλιότερα, μίλησε για λάθη σε όλα επίπεδα και τόνισε: «Οι φίλαθλοι
+      έχουν συνηθίσει στα τρόπαια και σίγουρα τώρα αυτό δεν συμβαίνει. Όμως αυτός
+      δεν είναι λόγος να αγαπούν λιγότερο την ομάδα».\r\nΑναλυτικά όσα είπε ο Φερέιρα
+      στη συνέντευξη Τύπου: \r\n«Θέλω να στείλω ένα μήνυμα στον κόσμο μας. Πιστεύω
+      πως κατάλαβαν ότι ο Παναθηναϊκός αυτή τη στιγμή δεν είναι σίγουρα ο Παναθηναϊκός
+      που υπήρξε πριν μερικά χρόνια. Αυτά όμως είναι θέματα διοίκησης. Στις ομάδες
+      διοικούν οι πρόεδροι. Η βασική αλλαγή του συλλόγου στο παρόν και στο μέλλον
+      επικεντρώνεται στον τρόπο που κάποιος σκέφτεται το ποδόσφαιρο και την ομάδα. \r\nΑυτή
+      είναι η κατάσταση στο σύλλογο. Σε αυτό το σύλλογο σκεφτόμαστε μόνο τη νίκη και
+      για να πετύχουμε δουλεύουμε κάθε μέρα σκληρά, να είμαστε σοβαροί και όλοι οι
+      ποδοσφαιριστές, όσοι είναι εδώ ή θα έρθουν, πρέπει να το κατανοήσουν καλά. Αν
+      αυτό δεν συμβεί, θα οφείλεται σε λάθη που έχουμε κάνει πολλοί άνθρωποι, μαζί
+      και εγώ. Οι φίλαθλοι μας πρέπει να το κατανοήσουν και τα συναισθήματα τους να
+      μην αλλάζουν. Οι φίλαθλοι έχουν συνηθίσει στα τρόπαια και σίγουρα τώρα αυτό
+      δεν συμβαίνει. \r\nΌμως αυτός δεν είναι λόγος οι φίλαθλοι να αγαπούν λιγότερο
+      την ομάδα. Εγώ δεν θέλω να δω κάποιον να αγαπά λιγότερο την ομάδα. Αύριο θέλω
+      να τους δω όλους, έστω και αν δεν θα μπορώ να τους μετρήσω γιατί δεν θα έχω
+      τον χρόνο. Γιατί η ομάδα είναι υποχρεωμένη να συνεχίσει να δουλεύει δυνατά,
+      με ένταση, για να ξέρει ότι ο δρόμος των επιτυχιών είναι μπροστά της. Αυτός
+      είναι ο δρόμος».\r\n«Με τέσσερις εβδομάδες προπόνησης και ένα ματς επίσημο ματς,
+      αυτό που θέλουμε είναι να νικήσουμε. Αυτό που κάνουμε καθημερινά δεν μπορεί
+      να αλλάξει γιατί δεν υπάρχει λόγος να αλλάξει. Αν αλλάξουμε τον τρόπο παιχνιδιού
+      μας, θα είναι ένα στρατηγικό λάθος. Και δεν πρόκειται να το κάνουμε. Οποιαδήποτε
+      αλλαγή από το προκαθορισμένο στιλ θα μας στερούσε πράγματα. Η Οντένσε είναι
+      μια δυνατή ομάδα. Στο πλαίσιο των δυνατοτήτων μας δουλέψαμε καλά σκεφτόμενοι
+      τον αντίπαλό μας. \r\nΠιστεύουμε πως οι Δανοί δεν θα αλλάξουν τον τρόπο που
+      παίζουν. Το μόνο που πρέπει να κάνουμε είναι να επιβεβαιώσουμε την αυτοπεποίθηση
+      μας, να διατηρήσουμε ομαδικό πνεύμα και τη φιλοδοξία μας να προχωρήσουμε. Δεν
+      υπάρχει βαθμολογία, το μόνο που παίζει ρόλο είναι η διαφορά των τερμάτων. Το
+      θετικό για μας είναι το εκτός έδρας γκολ που έχουμε πετύχει στο πρώτο ματς.
+      Θέλουμε όμως ένα αποτέλεσμα νικηφόρο. Δεν μας αρκεί σε καμία περίπτωση η ισοπαλία».\r\nΓια
+      τον τρόπο που θα αγωνιστεί ο Παναθηναϊκός, είπε: «Αυτή η ομάδα πέτυχε ένα γκολ
+      εναντίον μας, ενώ σε άλλα σημείωσε περισσότερα. Ο Παναθηναϊκός θα πρέπει να
+      παίξει με το ίδιο πνεύμα που είχε στον αγώνα στη Δανία. Θέλουμε να πετύχουμε
+      το μεγαλύτερο δυνατό αριθμό τερμάτων γιατί ξέρουμε πως ο αντίπαλος θα θέλει
+      να γκολ για να προκριθεί. Πρέπει να είμαστε έξυπνοι, να ελέγξουμε το ματς. Να
+      έχουμε περισσότερη υπομονή και πιο πολύ πνευματική διαύγεια για να το κάνουμε».\r\nΓια
+      τους νεοφερμένους στην Παιανία, τόνισε: «Δυστυχώς ο Κουίνσι δεν θα παίξει. Ο
+      Ζέκα δεν μπορεί να αγωνιστεί γιατί δεν δηλώθηκε, αλλά ο Τοτσέ ίσως παίξει, ίσως
+      όχι. Οι παίκτες μόλις έχουν φτάσει στην ομάδα και σε μια νέα χώρα και όταν οι
+      προπονήσεις δεν είναι τόσο πολλές δεν είναι εύκολο να φτάσουν στο επίπεδο που
+      χρειάζεται για να παίξουν σε αγώνα Champions League. Δεν είναι δικαιολογία αυτά
+      που λέω, πρέπει να είμαστε πραγματιστές. Μόνο το πνεύμα της αγάπης, της συνεργασίας
+      και της αλληλεγγύης είναι εκείνο που θα μας επιτρέψει να πάμε μπροστά».\r\nΤέλος,
+      ο Πορτογάλος αναφέρθηκε στα λάθη του πρώτου ματς και δήλωσε πως ο Παναθηναϊκός
+      θα είναι ακόμη καλύτερος την Τρίτη στο ΟΑΚΑ: «Στο πρώτο ματς πολλοί δεν περίμεναν
+      να δουν αυτά που έκανε η ομάδα μας. Η Οντένσε ήταν πιο καλά προετοιμασμένη και
+      το είδαμε ειδικά στα πρώτα 10 λεπτά. Στη συνέχεια ήταν ισορροπημένο παιχνίδι
+      και σταθήκαμε καλά στον αγώνα. Στο τελευταίο πεντάλεπτο δεν ελέγξαμε τις εναέριες
+      μονομαχίες και για αυτό δεχτήκαμε το γκολ. Ότι έγινε, έγινε, δεν πρόκειται να
+      δούμε το ίδιο ματς. \r\nΤώρα έχουμε θέματα τακτικής, που ρυθμίζουμε μετά το
+      πρώτο παιχνίδι. Πρέπει να έχουμε μαχητικότητα. Το θέμα είναι περισσότερο τακτικής
+      και διόρθωσης ορισμένων πραγμάτων σε σχέση με το πρώτο αγώνα. Το πιο σημαντικό
+      είναι να έχουμε αυτοπεποίθηση και να μπουν μέσα για να νικήσουν το παιχνίδι.
+      Αύριο θα είμαστε καλύτεροι από ότι ήμασταν στον πρώτο αγώνα. Μετά από 4 εβδομάδες
+      προετοιμασίας δεν μπορείς να έχεις το άριστο αποτέλεσμα».\n\t\t"
+    - ! "\n\t\tProtathlima.com  \x95  Τσάμπιονς Λιγκ  \x95  Παναθηναϊκός\n\t"
+    - http://www.protathlima.com/content/league/story.jsp?league_id=2000&id=77817
+    - Mon, 1 Aug 2011 00:00:00 -0700
+    - http://www.protathlima.com/content/league/story.jsp?league_id=2000&id=77817
+    - 1
+    - !!null 
+    - ! ' fereira den mas arkei kamia isopalia einai aytos lathh filathloi sigoyra
+      ayto ligotero thelw panathhnaikos ayta prepei exoyme giati mats kanoyme pneyma
+      gkol prwto paiksei'
+    - '2011-08-01 17:09:39.957995'
+    - '2011-08-01 17:10:43.171195'
+    - http://www.protathlima.com//content/images/other/19022011/sZPr2AD49N.jpg
+    - !!null 
+  - - 119
+    - Έρχεται ο Σανσάρα, παρελθόν ο Τζόκα
+    - ! "Έφθασε χθες βράσυ στην Κύπρο για λογαριασμό της ΠΑΕΕΚ Κερύνειας, ο Netan
+      Sansara, ο οποίος θα ενσωματωθεί με την αποστολή της προσφυγικής ομάδας. Σημειώνουμε
+      ότι το πρόγραμμα προετοιμασίας περιλαμβάνει καθημερινά διπλές προπονήσεις, ενώ
+      την Παρασκευή 5 Αυγούστου και ώρα 18:30 στο γήπεδο «ΚΕΡΥΝΕΙΑ \x96 ΕΠΙΣΤΡΟΦΗ»,
+      η ΠΑΕΕΚ θα αντιμετωπίσει σε φιλικό αγώνα τον Εθνικό Λατσιών."
+    - ":: Έρχεται ο Σανσάρα, παρελθόν ο Τζόκα\n\t\t\t:: Ημερομηνία δημοσίευσης:\n\t\t\t01-08-2011\n\t\t\t-
+      \n\t\t\tΏρα:\n\t\t\t19:10\n\t\t\n\t\t\t\n.str_photo_header {\n\tbackground-color:#000000;\n\tfont-size:13px;\n\tcolor:#ffffff;\n
+      \  \tfont-weight:none;\n}\n.str_photo_table {\n\tbackground-color:#F7FBFD;\n
+      \  \tborder:2px solid #D8DFE2;\n}\n.str_photo {\n\tbackground-color:#ffffff;\n
+      \  \tborder:0px solid #dddddd;\n   \tcursor:hand;\n\tpadding:5px;\n}\n\n\t\t\t<!--//
+      <![CDATA[\n    /* [id21] League - Story - Textlink - Top */\n    OA_show(21);\n//
+      ]]> -->Έφθασε χθες βράσυ στην Κύπρο για λογαριασμό της ΠΑΕΕΚ Κερύνειας, ο Netan
+      Sansara, ο οποίος θα ενσωματωθεί με την αποστολή της προσφυγικής ομάδας. \r\nΣημειώνουμε
+      ότι το πρόγραμμα προετοιμασίας περιλαμβάνει καθημερινά διπλές προπονήσεις, ενώ
+      την Παρασκευή 5 Αυγούστου και ώρα 18:30 στο γήπεδο «ΚΕΡΥΝΕΙΑ – ΕΠΙΣΤΡΟΦΗ», η
+      ΠΑΕΕΚ θα αντιμετωπίσει σε φιλικό αγώνα τον Εθνικό Λατσιών.\r\nΣε μία άλλη εξέλιξη,
+      αποχωρεί από την ΠΑΕΕΚ ο Da Silva Pinto Pereira Ricardo Jorge (Joca), ο οποίος
+      θα συνεχίσει την καριέρα του σε ομάδα του Ομάν, όπου έχει δελεαστική πρόταση.\n\t\t"
+    - ! "\n\t\tProtathlima.com  \x95  Β' Κατηγορία  \x95  ΠΑΕΕΚ Κερύνειας\n\t"
+    - http://www.protathlima.com/content/league/story.jsp?league_id=2&id=77816
+    - Mon, 1 Aug 2011 00:00:00 -0700
+    - http://www.protathlima.com/content/league/story.jsp?league_id=2&id=77816
+    - 1
+    - !!null 
+    - ! ' erxetai sansara parelthon tzoka efthase xthes vrasy kypro logariasmo paeek
+      keryneias netan opoios enswmatwthei apostolh prosfygikhs shmeiwnoyme programma
+      proetoimasias perilamvanei kathhmerina diples proponhseis paraskeyh aygoystoy
+      ghpedo keryneia epistrofh antimetwpisei filiko ethniko latsiwn allh ekseliksh
+      apoxwrei da silva pinto pereira ricardo jorge joca synexisei kariera oman opoy
+      deleastikh protash'
+    - '2011-08-01 17:09:41.691324'
+    - '2011-08-01 17:10:39.926588'
+    - http://www.protathlima.com//content/images/other/12052009/ael.jpg
+    - !!null 
+  - - 120
+    - Σε μονομερή διακοπή προχώρησε ο Ζε Βιτόρ
+    - Σε μονομερή διακοπή του συμβολαίου του προχώρησε ο Ζε Βιτόρ. Όπως έχουμε πληροφορηθεί
+      ο παίκτης, σε συνεννόηση με τον δικηγόρο του αποφάσισαν να
+    - ":: Σε μονομερή διακοπή προχώρησε ο Ζε Βιτόρ \n\t\t\t:: Ημερομηνία δημοσίευσης:\n\t\t\t01-08-2011\n\t\t\t-
+      \n\t\t\tΏρα:\n\t\t\t19:05\n\t\t\n\t\t\t\n.str_photo_header {\n\tbackground-color:#000000;\n\tfont-size:13px;\n\tcolor:#ffffff;\n
+      \  \tfont-weight:none;\n}\n.str_photo_table {\n\tbackground-color:#F7FBFD;\n
+      \  \tborder:2px solid #D8DFE2;\n}\n.str_photo {\n\tbackground-color:#ffffff;\n
+      \  \tborder:0px solid #dddddd;\n   \tcursor:hand;\n\tpadding:5px;\n}\n\n\t\t\t<!--//
+      <![CDATA[\n    /* [id21] League - Story - Textlink - Top */\n    OA_show(21);\n//
+      ]]> -->\n\t\t\tΣε μονομερή διακοπή του συμβολαίου του προχώρησε ο Ζε Βιτόρ.
+      Όπως έχουμε πληροφορηθεί ο παίκτης, σε συνεννόηση με τον δικηγόρο του αποφάσισαν
+      να καταγγείλουν τη συνεργασία  με την ΑΕΛ και πλέον η αθλητική δικαιοσύνη είναι
+      αυτή που θα κρίνει τι μέλλει γενέσθαι στη συγκεκριμένη διαμάχη. \r\nΌπως είναι
+      γνωστό, ΑΕΛ και Ζε Βιτόρ εδώ και καιρό δεν έχουν καταφέρει να βρουν λύση όσον
+      αφορά τον τρόπο λύση της συνεργασίας τους με αποτέλεσμα η σχέση τους να έχει
+      φτάσει στα άκρα. Την υπόθεση πλέον θα επιμεληθεί η επιτροπή επίλυσης διαφορών
+      της ΚΟΠ ενώ δεν αποκλείεται η μεριά του παίκτη να οδηγήσει την υπόθεση στην
+      αρμόδια επιτροπή της ΦΙΦΑ.   Χρήστος Ζαβός \n\t\t"
+    - ! "\n\t\tProtathlima.com  \x95  Πρωτάθλημα Marfin Laiki  \x95  Α.Ε. Λεμεσός\n\t"
+    - http://www.protathlima.com/content/league/story.jsp?league_id=1&id=77812
+    - Mon, 1 Aug 2011 00:00:00 -0700
+    - http://www.protathlima.com/content/league/story.jsp?league_id=1&id=77812
+    - 1
+    - !!null 
+    - ! ' se monomerh diakoph proxwrhse ze vitor symvolaioy opws exoyme plhroforhthei
+      paikths synennohsh dikhgoro apofasisan kataggeiloyn synergasia ael pleon athlhtikh
+      dikaiosynh krinei ti mellei genesthai sygkekrimenh diamaxh gnwsto edw kairo
+      kataferei vroyn lysh oson tropo synergasias apotelesma sxesh ftasei akra ypothesh
+      epimelhthei epitroph epilyshs diaforwn kop apokleietai meria paikth odhghsei
+      armodia fifa xrhstos zavos'
+    - '2011-08-01 17:09:43.474286'
+    - '2011-08-01 17:10:39.930261'
+    - http://www.protathlima.com//content/images/other/09012011/PwKypEQYnX.jpg
+    - !!null 
+  - - 121
+    - «Ξεφορτώθηκε» τον Νίλσεν ο Ολυμπιακός!
+    - Οριστικά παρελθόν αποτελεί από τον Ολυμπιακό ο Ματ Νίλσεν. Η Χίμκι ανακοίνωσε
+      και επίσημα την μεταγραφή του Αυστραλού πάουερ-φόργουορντ για τα επόμενα δύο
+      χρόνια, με τους Πειραιώτες να έχουν έρθει προηγουμένως σε συμφωνία με τον παίκτη
+      για την διακοπή της μεταξύ τους συνεργασίας, η οποία κανονικά ολοκληρωνόταν
+      το καλοκαίρι του 2012.
+    - ":: «Ξεφορτώθηκε» τον Νίλσεν ο Ολυμπιακός!\n\t\t\t:: Ημερομηνία δημοσίευσης:\n\t\t\t01-08-2011\n\t\t\t-
+      \n\t\t\tΏρα:\n\t\t\t18:57\n\t\t\n\t\t\t\n.str_photo_header {\n\tbackground-color:#000000;\n\tfont-size:13px;\n\tcolor:#ffffff;\n
+      \  \tfont-weight:none;\n}\n.str_photo_table {\n\tbackground-color:#F7FBFD;\n
+      \  \tborder:2px solid #D8DFE2;\n}\n.str_photo {\n\tbackground-color:#ffffff;\n
+      \  \tborder:0px solid #dddddd;\n   \tcursor:hand;\n\tpadding:5px;\n}\n\n\t\t\t<!--//
+      <![CDATA[\n    /* [id21] League - Story - Textlink - Top */\n    OA_show(21);\n//
+      ]]> -->Οριστικά παρελθόν αποτελεί από τον Ολυμπιακό ο Ματ Νίλσεν. Η Χίμκι ανακοίνωσε
+      και επίσημα την μεταγραφή του Αυστραλού πάουερ-φόργουορντ για τα επόμενα δύο
+      χρόνια, με τους Πειραιώτες να έχουν έρθει προηγουμένως σε συμφωνία με τον παίκτη
+      για την διακοπή της μεταξύ τους συνεργασίας, η οποία κανονικά ολοκληρωνόταν
+      το καλοκαίρι του 2012.\r\nΓια την μεταγραφή του Ματ Νίλσεν στην Χίμκι μίλησε
+      ο Γενικός Διευθυντής του ρωσικού κλαμπ, Βίκτορ Μπίτσκοβ, ο οποίος σχολίασε το
+      εξής: \"Ο μεταγραφικός μας σχεδιασμός έχει σχεδόν ολοκληρωθεί. Είμαστε στην
+      ευχάριστη θέση να ανακοινώσουμε την απόκτηση του Ματ Νίλσεν, ενός παίκτη ο οποίος
+      διαθέτει τα στοιχεία που ψάχναμε. Θα μας βοηθήσει πολύ στην άμυνα και θα είναι
+      πολύ επικίνδυνος για τον κάθε αντίπαλο στην επίθεση. Πρόκειται για έναν δυναμικό
+      μπασκετμπολίστα με αυτοπεποίθηση\".\r\nΟ προπονητής της Χίμκι, Ρίμας Κουρτινάιτις,
+      δήλωσε τα εξής: \"O Mάθιου είναι ένας πολύ έμπειρος παίκτης, ο οποίος έχει δουλέψει
+      σε επιτυχημένες ομάδες με σπουδαίους προπονητές. Πρόκειται για έναν δυναμικό
+      φόργουορντ. Θα μας βοηθήσει\".\r\nΗ ανακοίνωση της Χίμκι: \"Ο έμπειρος Αυστραλός
+      φόργουορντ Ματ Νίλσεν θα ανήκει στην Χίμκι για τα επόμενα δύο χρόνια\".\r\nΟ
+      33χρονος Αυστραλός φόργουορντ είχε υπογράψει πέρσι διετές συμβόλαιο με την πειραϊκή
+      ΚΑΕ έως και το 2012, αλλά δεν έπεισε με την παρουσία του στον Πειραιά, έμεινε
+      ελεύθερος και η μετακίνηση του στην Χίμκι, προκάλεσε... ανακούφιση στον Ολυμπιακό,
+      αφού γλίτωσε το \"βαρύ\" συμβόλαιο του (800 χιλιάρικα ετησίως).\r\nΠαράλληλα,
+      με τον τρόπο αυτόν, ελευθερώθηκε και μία θέση ξένου στο ερυθρόλευκο ρόστερ,
+      με τους μη γηγενείς παίκτες τώρα στην ομάδα να είναι έξι (Έρτσεγκ, Κέσελ, Χάινς,
+      Λούκας, Χάουαρντ, σύντομα θα ανακοινωθεί και ο Γκετσεβίτσιους).\n\t\t"
+    - ! "\r\n\t\tProtathlima.com  \x95  Μπάσκετ\r\n\t"
+    - http://www.protathlima.com/content/sport/story.jsp?sport_id=2&id=77815
+    - Mon, 1 Aug 2011 00:00:00 -0700
+    - http://www.protathlima.com/content/sport/story.jsp?sport_id=2&id=77815
+    - 1
+    - !!null 
+    - ! ' ksefortwthhke nilsen olympiakos olympiako mat ximki metagrafh aystraloy
+      paoyer forgoyornt epomena xronia peiraiwtes prohgoymenws paikth oloklhrwnotan
+      genikos rwsikoy klamp mpitskov opoios ekshs metagrafikos sxediasmos sxedon eyxaristh
+      thesh anakoinwsoyme diathetei psaxname vohthhsei poly amyna epikindynos prokeitai
+      enan dynamiko mpasketmpolista rimas koyrtinaitis mathioy empeiros doylepsei
+      epityxhmenes spoydaioys aystralos anhkei ypograpsei persi dietes symvolaio peiraikh
+      kae ews epeise peiraia emeine eleytheros metakinhsh anakoyfish glitwse vary
+      xiliarika ethsiws ayton eleytherwthhke ksenoy erythroleyko roster mh ghgeneis
+      eksi ertsegk kesel xains loykas xaoyarnt syntoma anakoinwthei gketsevitsioys'
+    - '2011-08-01 17:09:45.523264'
+    - '2011-08-01 17:10:43.179963'
+    - http://www.protathlima.com//content/images/other/19102010/awtk5bWBeG.jpg
+    - !!null 
+  - - 122
+    - ! 'Καντονά: «Είναι σαν να κόβω την ηρωίνη...!»'
+    - Λατρεύτηκε όσο λίγοι για τα κατορθώματά του εντός του αγωνιστικού χώρου, και
+      όχι άδικα, αλλά τα καταφέρνει μια χαρά και μακριά από αυτό. Ο λόγος για τον
+      Ερίκ Καντονά, ο οποίος για μια ακόμα φορά προκάλεσε με τις δηλώσεις του, αν
+      και αυτή τη φορά με θετικό τρόπο.
+    - ":: Καντονά: «Είναι σαν να κόβω την ηρωίνη...!»\n\t\t\t:: Ημερομηνία δημοσίευσης:\n\t\t\t01-08-2011\n\t\t\t-
+      \n\t\t\tΏρα:\n\t\t\t18:45\n\t\t\n\t\t\t\n.str_photo_header {\n\tbackground-color:#000000;\n\tfont-size:13px;\n\tcolor:#ffffff;\n
+      \  \tfont-weight:none;\n}\n.str_photo_table {\n\tbackground-color:#F7FBFD;\n
+      \  \tborder:2px solid #D8DFE2;\n}\n.str_photo {\n\tbackground-color:#ffffff;\n
+      \  \tborder:0px solid #dddddd;\n   \tcursor:hand;\n\tpadding:5px;\n}\n\n\t\t\t<!--//
+      <![CDATA[\n    /* [id21] League - Story - Textlink - Top */\n    OA_show(21);\n//
+      ]]> -->Λατρεύτηκε όσο λίγοι για τα κατορθώματά του εντός του αγωνιστικού χώρου,
+      και όχι άδικα, αλλά τα καταφέρνει μια χαρά και μακριά από αυτό. Ο λόγος για
+      τον Ερίκ Καντονά, ο οποίος για μια ακόμα φορά προκάλεσε με τις δηλώσεις του,
+      αν και αυτή τη φορά με θετικό τρόπο.\r\nΟ Γάλλος επιστρέφει στο “Ολντ Τράφορντ”,
+      για το “αντίο” στον Πολ Σκόουλς, και δήλωσε πως το να αποχωριστεί τους «κόκκινους
+      διαβόλους» είναι σαν να προσπαθεί να κόψει την ηρωίνη. Ο “βασιλιάς” την προσεχή
+      Παρασκευή θα παίξει στο φιλικό προς τιμήν του πρώην συμπαίκτη του και μίλησε
+      δίχως φόβο και πάθος για τα συναισθήματα του.\r\n“Αν είσαι εθισμένος στην ηρωίνη
+      και αν έχεις περάσει πολλά στο να το ξεπεράσεις και να απεξαρτηθείς, τότε δεν
+      γυρίζεις να πάρεις αγκαλιά τον dealer σου. Έτσι και εγώ, έτσι νιώθω για τη Γιουνάιτεντ.
+      Είναι σαν να κόβω την ηρωίνη”, ανέφερε σχετικά, μεταξύ άλλων, ο θρύλος των “κόκκινων
+      διαβόλων”.\r\nΜάλιστα, θέλοντας να δείξει πως υπάρχει επιστημονικό υπόβαθρο
+      πίσω από όσα δήλωσε, ο παλαίμαχος άσος υπογράμμισε: “Οι ψυχίατροι και οι ψυχολόγοι
+      λένε ότι το σώμα ενός ποδοσφαιριστή που αποσύρεται έχει τα ίδια συμπτώματα με
+      κάποιον που σταματά τα ναρκωτικά”.\n\t\t"
+    - ! "\n\t\tProtathlima.com  \x95  Πρέμιερ Λιγκ  \x95  Μάντσεστερ Γιουνάιτεντ\n\t"
+    - http://www.protathlima.com/content/league/story.jsp?league_id=21&id=77813
+    - Mon, 1 Aug 2011 00:00:00 -0700
+    - http://www.protathlima.com/content/league/story.jsp?league_id=21&id=77813
+    - 1
+    - !!null 
+    - ! ' kantona san kovw hrwinh latreythke ligoi katorthwmata agwnistikoy xwroy
+      adika katafernei xara erik fora prokalese dhlwseis an thetiko epistrefei olnt
+      trafornt antio pol skooyls dhlwse pws apoxwristei kokkinoys diavoloys prospathei
+      kopsei vasilias prosexh paiksei timhn sympaikth dixws fovo pathos synaisthhmata
+      eisai ethismenos exeis perasei polla kseperaseis apeksarththeis tote gyrizeis
+      pareis agkalia dealer soy etsi niwthw gioynaitent sxetika thrylos kokkinwn diavolwn
+      thelontas deiksei episthmoniko ypovathro pisw palaimaxos ypogrammise psyxiatroi
+      psyxologoi swma podosfairisth aposyretai idia symptwmata stamata narkwtika'
+    - '2011-08-01 17:09:47.297113'
+    - '2011-08-01 17:10:43.183862'
+    - http://www.protathlima.com//content/images/other/05032011/MbRtgPb8hG.jpg
+    - !!null 
+  - - 123
+    - Αγανακτισμένοι οι παίκτες του Ολυμπιακού Βόλου
+    - Στην... επίθεση περνούν οι παίκτες του Ολυμπιακού Βόλου και με ανακοίνωση που
+      υπογράφουν οι αρχηγοί Αλβάρες, Ούμπιντες και Σολάκης, εκφράζουν την αγανάκτηση
+      τους και συνάμα την θλίψη τους για τον υποβιβασμό της ομάδας.
+    - ":: Αγανακτισμένοι οι παίκτες του Ολυμπιακού Βόλου\n\t\t\t:: Ημερομηνία δημοσίευσης:\n\t\t\t01-08-2011\n\t\t\t-
+      \n\t\t\tΏρα:\n\t\t\t18:31\n\t\t\n\t\t\t\n.str_photo_header {\n\tbackground-color:#000000;\n\tfont-size:13px;\n\tcolor:#ffffff;\n
+      \  \tfont-weight:none;\n}\n.str_photo_table {\n\tbackground-color:#F7FBFD;\n
+      \  \tborder:2px solid #D8DFE2;\n}\n.str_photo {\n\tbackground-color:#ffffff;\n
+      \  \tborder:0px solid #dddddd;\n   \tcursor:hand;\n\tpadding:5px;\n}\n\n\t\t\t<!--//
+      <![CDATA[\n    /* [id21] League - Story - Textlink - Top */\n    OA_show(21);\n//
+      ]]> -->Στην... επίθεση περνούν οι παίκτες του Ολυμπιακού Βόλου και με ανακοίνωση
+      που υπογράφουν οι αρχηγοί Αλβάρες, Ούμπιντες και Σολάκης, εκφράζουν την αγανάκτηση
+      τους και συνάμα την θλίψη τους για τον υποβιβασμό της ομάδας.\r\nΑναλυτικά,
+      η ανακοίνωση:\r\n«Με τεράστια έκπληξη και θλίψη παρακολουθούμε εμείς οι επαγγελματίες
+      ποδοσφαιριστές της ΠΑΕ ΟΛΥΜΠΙΑΚΟΣ ΒΟΛΟΥ 1937 αυτό το απαράδεκτο ντόμινο των
+      εξελίξεων που αφορούν την ομάδα μας και το ανακόλουθο γαϊτανάκι των δικαστικών
+      περιπετειών όπου με περίσσια απλότητα αποφασίστηκε ο υποβιβασμός της ομάδας
+      μας, σε πρώτο βαθμό.\r\nΕάν όμως υπήρχε ψήγμα δωροδοκίας ή προκαθορισμένου παιχνιδιού
+      θα έπρεπε κάποιος ή κάποιοι από εμάς να ήταν οι αρνητικοί πρωταγωνιστές σε όλο
+      αυτό το αποδεικτικό υλικό που είδε το φως της δημοσιότητας.\r\nΠουθενά όμως
+      δεν εμπλέκεται κανένας μας αλλά ακόμη περισσότερο μας προκαλεί περιέργεια πως
+      κανένα πρόσωπο που ασκεί δικαιοδοτική εξουσία δεν μπήκε στον κόπο να μας καλέσει,
+      να μας ρωτήσει και να καταθέσουμε αν έστω κάποιος από τη διοίκηση μας είπε να
+      έχουμε μειωμένη ή «υπερτιμημένη» απόδοση ή μας είπε ότι έχει προκαθοριστεί το
+      αποτέλεσμα συγκεκριμένου αγώνα.\r\nΜε την ανακοίνωσή μας αυτή εκφράζουμε πραγματικά
+      την αγανάκτησή μας και επιθυμούμε τούτη η ανακοίνωση να αποτελέσει έστω μέρος
+      του αποδεικτικού υλικού στη δευτεροβάθμια κρίση της ΕΠΟ.\r\nΒόλος, 1.8.2011\r\nΟι
+      επαγγελματίες ποδοσφαιριστές της ΠΑΕ ΟΛΥΜΠΙΑΚΟΣ ΒΟΛΟΥ\r\nΟι αρχηγοί Leandro
+      Alvarez, Javier Umbides, Ηλίας Σολάκης».\n\t\t"
+    - ! "\n\t\tProtathlima.com  \x95  Σούπερ Λίγκα\n\t"
+    - http://www.protathlima.com/content/league/story.jsp?league_id=11&id=77814
+    - Mon, 1 Aug 2011 00:00:00 -0700
+    - http://www.protathlima.com/content/league/story.jsp?league_id=11&id=77814
+    - 1
+    - !!null 
+    - ! ' aganaktismenoi oi paiktes olympiakoy voloy epithesh pernoyn anakoinwsh ypografoyn
+      arxhgoi alvares oympintes solakhs ekfrazoyn aganakthsh synama thlipsh ypovivasmo
+      terastia ekplhksh parakoloythoyme epaggelmaties podosfairistes pae olympiakos
+      aparadekto ntomino ekseliksewn mas anakoloytho gaitanaki dikastikwn peripeteiwn
+      perissia aplothta apofasisthke ypovivasmos vathmo ean omws yphrxe pshgma dwrodokias
+      prokathorismenoy paixnidioy eprepe kapoios kapoioi emas arnhtikoi prwtagwnistes
+      apodeiktiko yliko eide fws dhmosiothtas poythena empleketai kanenas akomh prokalei
+      periergeia proswpo askei dikaiodotikh eksoysia mphke kopo kalesei rwthsei katathesoyme
+      estw eipe meiwmenh ypertimhmenh apodosh prokathoristei sygkekrimenoy ekfrazoyme
+      pragmatika epithymoyme toyth apotelesei apodeiktikoy ylikoy deyterovathmia krish
+      epo volos leandro alvarez javier umbides hlias'
+    - '2011-08-01 17:09:49.050569'
+    - '2011-08-01 17:10:39.942376'
+    - http://www.protathlima.com//content/images/other/06022011/4T2C9N4n9c.jpg
+    - !!null 
+  - - 124
+    - Μεγάλη επένδυση στην Καρπασία από Γαλατάσαραϊ...
+    - Μεγάλη επένδυση σε έκταση γης στην κατεχόμενη Καρπασία θα κάνει η τουρκική ποδοσφαιρική
+      ομάδα Γαλατάσαραϊ, σύμφωνα με την τουρκική εφημερίδα ''Βατάν''.
+    - ":: Μεγάλη επένδυση στην Καρπασία από Γαλατάσαραϊ...\n\t\t\t:: Ημερομηνία δημοσίευσης:\n\t\t\t01-08-2011\n\t\t\t-
+      \n\t\t\tΏρα:\n\t\t\t18:19\n\t\t\n\t\t\t\n.str_photo_header {\n\tbackground-color:#000000;\n\tfont-size:13px;\n\tcolor:#ffffff;\n
+      \  \tfont-weight:none;\n}\n.str_photo_table {\n\tbackground-color:#F7FBFD;\n
+      \  \tborder:2px solid #D8DFE2;\n}\n.str_photo {\n\tbackground-color:#ffffff;\n
+      \  \tborder:0px solid #dddddd;\n   \tcursor:hand;\n\tpadding:5px;\n}\n\n\t\t\t<!--//
+      <![CDATA[\n    /* [id21] League - Story - Textlink - Top */\n    OA_show(21);\n//
+      ]]> -->Μεγάλη επένδυση σε έκταση γης στην κατεχόμενη Καρπασία θα κάνει η τουρκική
+      ποδοσφαιρική ομάδα Γαλατάσαραϊ, σύμφωνα με την τουρκική εφημερίδα ''Βατάν''.\r\nΌπως
+      μεταδίδεται στην ηλεκτρονική τ/κ εφημερίδα \"Κίπρις Ποστασί\", που αναδημοσιεύει
+      το δημοσίευμα της \"Βατάν\", πρόκειται για εγκαταστάσεις που θα γίνουν σε μια
+      έκταση 100 στρεμμάτων και το τουρκικό σωματείο έχει ήδη ''κρατήσει'' τη γη.
+      Το ερώτημα, αναφέρεται, είναι αν η επένδυση θα γίνει μέσω του πρακτορείου ανάπτυξης
+      επενδύσεων (YAGA) και η έκταση θα παραχωρηθεί δωρεάν ή έχει γίνει μια συμφωνία
+      πώλησης.\r\nΗ επένδυση, προστίθεται στο δημοσίευμα, θα αφορά ένα ξενοδοχειακό
+      συγκρότημα και μια μεγάλη αθλητική εγκατάσταση με τον επικεφαλής του σχεδίου
+      αυτού Εμίρ Σαριγκιούλ να αναφέρει στην τουρκική \"Βατάν\" ότι αυτή η επένδυση
+      ''θα αποτελεί παράδειγμα για όλα τα αθλητικά σωματεία''.\r\nΟ κ. Σαριγκιούλ
+      είχε συνάντηση επί του θέματος τις προηγούμενες ημέρες με τον λεγόμενο υπουργό
+      τουρισμού, πειβάλλοντος και πολιτισμού Κεμάλ Ντουρούστ. Στις εγκαταστάσεις αυτές,
+      σημείωσε ο κ. Σαριγκιούλ, ομάδες από όλο τον κόσμο θα μπορούν να προπονούνται
+      και να διαμένουν σε ένα πολύ μεγάλο και μποντέρνο σύμπλεγμα κτιρίων. \r\nΘα
+      μετατρέψει επίσης, πρόσθεσε, τα κατεχόμενα σε πόλο έλξης, λέγοντας ότι λόγω
+      των εγκατάστασεων, αλλά και των κλιματολογικών συνθηκών, καθώς και της φυσικής
+      ομορφιάς, δίδεται η ευκαιρία να χρησιμοποιείται ο χώρος και το καλοκαίρι και
+      τον χειμώνα.\r\nΣε 3 μήνες θα έχουν ολοκληρωθεί οι σχετικές μελέτες και οι αρμόδιοι
+      της Γαλατάσαραϊ θα επιστρέψουν για συνομιλίες στα κατεχόμενα. Η έκταση περιλαμβάνει
+      και παραθαλάσσια ακτή και τα σχέδια ετοιμάζονται από την εταιρεία Iki Design
+      Group. Στα σχέδια περιλαμβάνονται μεταξύ άλλων γήπεδο γκολφ, κέντρο θαλασσοθεραπείας
+      και κέντρο εκθέσεων.\n\t\t"
+    - ! "\r\n\t\tProtathlima.com  \x95  Ποδόσφαιρο\r\n\t"
+    - http://www.protathlima.com/content/sport/story.jsp?sport_id=1&id=77810
+    - Mon, 1 Aug 2011 00:00:00 -0700
+    - http://www.protathlima.com/content/sport/story.jsp?sport_id=1&id=77810
+    - 1
+    - !!null 
+    - ! ' megalh ependysh karpasia galatasarai ektash ghs katexomenh toyrkikh podosfairikh
+      efhmerida vatan metadidetai hlektronikh k kipris postasi anadhmosieyei dhmosieyma
+      egkatastaseis stremmatwn toyrkiko swmateio krathsei gh erwthma anaferetai ginei
+      praktoreioy anaptykshs ependysewn yaga paraxwrhthei pwlhshs prostithetai ena
+      ksenodoxeiako sygkrothma egkatastash sxedioy emir sarigkioyl athlhtika swmateia
+      synanthsh epi thematos legomeno ypoyrgo toyrismoy peivallontos kemal ntoyroyst
+      aytes proponoyntai diamenoyn mponterno symplegma ktiriwn katexomena polo elkshs
+      logw egkatastasewn klimatologikwn synthhkwn omorfias didetai xrhsimopoieitai
+      xwros mhnes sxetikes meletes armodioi epistrepsoyn synomilies parathalassia
+      akth sxedia etoimazontai etaireia iki design group perilamvanontai gkolf kentro
+      thalassotherapeias ekthesewn'
+    - '2011-08-01 17:09:50.966120'
+    - '2011-08-01 17:10:43.189007'
+    - http://www.protathlima.com//content/images/other/13062011/FfYNtskrqp.jpg
+    - !!null 
+  - - 125
+    - Ακύρωσε τη συμμετοχή του στο Ντάιαμοντ Λιγκ του Λονδίνου ο Ιωάννου
+    - Ενοχλήσεις στο παλιό του τραύμα (φλεγμονή στην πελματιαία) κράτησαν τον Κύπριο
+      αργυρό παγκοσμιονίκη του ύψους Κυριάκο Ιωάννου, χαμηλά (2.22μ.) στο Ντάιομοντ
+      Λιγκ της Στοκχόλμης, και αυτό είχε ως αποτέλεσμα να καταταγεί 8ος και να περάσει
+      δεύτερος στη βαθμολογία. Στην πρώτη θέση πέρασε ο Αμερικάνος Τζέσι Ουίλιαμς
+      με 7 βαθμούς.(2.32μ. 1ος).
+    - ":: Ακύρωσε τη συμμετοχή του στο Ντάιαμοντ Λιγκ του Λονδίνου ο Ιωάννου\n\t\t\t::
+      Ημερομηνία δημοσίευσης:\n\t\t\t01-08-2011\n\t\t\t- \n\t\t\tΏρα:\n\t\t\t18:06\n\t\t\n\t\t\t\n.str_photo_header
+      {\n\tbackground-color:#000000;\n\tfont-size:13px;\n\tcolor:#ffffff;\n   \tfont-weight:none;\n}\n.str_photo_table
+      {\n\tbackground-color:#F7FBFD;\n   \tborder:2px solid #D8DFE2;\n}\n.str_photo
+      {\n\tbackground-color:#ffffff;\n   \tborder:0px solid #dddddd;\n   \tcursor:hand;\n\tpadding:5px;\n}\n\n\t\t\t<!--//
+      <![CDATA[\n    /* [id21] League - Story - Textlink - Top */\n    OA_show(21);\n//
+      ]]> -->Ενοχλήσεις στο παλιό του τραύμα (φλεγμονή στην πελματιαία) κράτησαν τον
+      Κύπριο αργυρό παγκοσμιονίκη του ύψους Κυριάκο Ιωάννου, χαμηλά (2.22μ.) στο Ντάιομοντ
+      Λιγκ της Στοκχόλμης, και αυτό είχε ως αποτέλεσμα να καταταγεί 8ος και να περάσει
+      δεύτερος στη βαθμολογία. Στην πρώτη θέση πέρασε ο Αμερικάνος Τζέσι Ουίλιαμς
+      με 7 βαθμούς.(2.32μ. 1ος).\r\nΣύμφωνα με την ΚΟΕΑΣ, ο Ιωάννου αναχωρεί την Τρίτη
+      από την Αθήνα για το Μόναχο προκειμένου να υποβληθεί σε νέες ιατρικές εξετάσεις.\r\nΟ
+      Κυριάκος ακύρωσε τη συμμετοχή του στο Ντάιαμοντ Λιγκ του Λονδίνου που θα διεξαχθεί
+      την Παρασκευή 05 Αυγούστου και ανάλογα με τη θεραπευτική αγωγή που θα του συστήσει
+      ο Γερμανός γιατρός, ο αργυρός παγκοσμιονίκης θα προσπαθήσει να είναι έτοιμος
+      για το παγκόσμιο πρωτάθλημα στο Νταεγού (27 Αυγούστου-4 Σεπτεμβρίου).\r\nΣτο
+      μεταξύ σύμφωνα με την ΚΟΕΑΣ κατά τη διάρκεια των πανελλήνιων αγώνων που διεξήχθησαν
+      την περασμένη Παρασκευή και Σάββατο 29 - 30 Ιουλίου, ο Χριστόφορος Πρωτοπαπάς
+      και η Ελπίδα Χριστουλίδου σημείωσαν ατομικές επιδόσεις, στα 3000μ. στήπλ με
+      9.24.93(7ος) και στα 5000μ. με 17.05.94(7η), αντίστοιχα.\r\nΟι επιδόσεις των
+      υπολοίπων Κυπρίων αθλητών και αθλητριών που έλαβαν μέρος στους αγώνες έχουν
+      ως εξής:\r\nΟρέστης Αντωνιάδης Δισκοβολία 2ος 56.16μ. \r\nΜιχάλης Κολοκοτρώνης
+      Σφυροβολία 5ος 64.58μ.\r\nΜαριλένα Σοφοκλέους 5000μ. 9η 17.41.04 \r\nΕλευθερία
+      Χριστοφή Τριπλούν 5η 13.02μ. \r\nΦλωρεντία Κάππα Σφαιροβολία 3η 14.28μ. \r\nΚυριάκος
+      Αντωνίου 400μ. 8ος 49.92 \r\nΑιμίλιος Ξενοφώντος Ύψος 4ος 2.05μ. \r\nΚων/νος
+      Σταύρου Ακοντισμός 8ος 60.80μ. \r\nΓαβριέλα Σοφοκλέους 1500μ. 5η 4.36.05 \r\nΜαριλένα
+      Σοφοκλέους 1500μ. 6η 4.37.81 \r\nΕλευθερία Χριστοφή Μήκος 5η 6.02μ. \r\nΦλωρεντία
+      Κάππα Σφυροβολία 7η 43.20μ.\n\t\t"
+    - ! "\r\n\t\tProtathlima.com  \x95  Αλλα Σπόρ\r\n\t"
+    - http://www.protathlima.com/content/sport/story.jsp?sport_id=0&id=77809
+    - Mon, 1 Aug 2011 00:00:00 -0700
+    - http://www.protathlima.com/content/sport/story.jsp?sport_id=0&id=77809
+    - 1
+    - !!null 
+    - ! ' akyrwse th symmetoxh ntaiamont ligk londinoy iwannoy enoxlhseis palio trayma
+      flegmonh pelmatiaia krathsan kyprio argyro pagkosmionikh ypsoys kyriako m ntaiomont
+      stokxolmhs ws katatagei os deyteros amerikanos tzesi oyiliams vathmoys symfwna
+      koeas monaxo ypovlhthei nees kyriakos paraskeyh aygoystoy therapeytikh agwgh
+      systhsei germanos giatros argyros pagkosmionikhs pagkosmio ntaegoy septemvrioy
+      panellhniwn agwnwn diekshxthhsan savvato prwtopapas elpida xristoylidoy shmeiwsan
+      atomikes epidoseis sthpl ypoloipwn kypriwn athlhtwn athlhtriwn elavan agwnes
+      oresths antwniadhs diskovolia mixalhs kolokotrwnhs sfyrovolia marilena sofokleoys
+      eleytheria xristofh triployn flwrentia kappa sfairovolia antwnioy aimilios ksenofwntos
+      ypsos kwn nos stayroy akontismos gavriela'
+    - '2011-08-01 17:09:52.874366'
+    - '2011-08-01 17:10:43.223144'
+    - http://www.protathlima.com//content/images/other/22062011/ZbBp4pbcde.jpg
+    - !!null 
+  - - 126
+    - Συμφώνησε με τον Πορτογάλο Πίντο!
+    - Σύμφωνα με πληροφορίες, ο Απόλλωνας ήρθε σε συμφωνία με τον 28χρονο (12/04/1983)
+      Πορτογάλο μέσο Νταβίντ Αλεξάντερ Πίντο Ντίας, ο οποίος την περσινή χρονιά αγωνιζόταν
+      στην πρώτη κατηγορία της Πορτογαλίας με τα χρώματα της Ναβάλ, που υποβιβάστηκε
+      στην β΄ κατηγορία.
+    - ":: Συμφώνησε με τον Πορτογάλο Πίντο!\n\t\t\t:: Ημερομηνία δημοσίευσης:\n\t\t\t01-08-2011\n\t\t\t-
+      \n\t\t\tΏρα:\n\t\t\t17:54\n\t\t\n\t\t\t\n.str_photo_header {\n\tbackground-color:#000000;\n\tfont-size:13px;\n\tcolor:#ffffff;\n
+      \  \tfont-weight:none;\n}\n.str_photo_table {\n\tbackground-color:#F7FBFD;\n
+      \  \tborder:2px solid #D8DFE2;\n}\n.str_photo {\n\tbackground-color:#ffffff;\n
+      \  \tborder:0px solid #dddddd;\n   \tcursor:hand;\n\tpadding:5px;\n}\n\n\t\t\t<!--//
+      <![CDATA[\n    /* [id21] League - Story - Textlink - Top */\n    OA_show(21);\n//
+      ]]> -->Σύμφωνα με πληροφορίες, ο Απόλλωνας ήρθε σε συμφωνία με τον 28χρονο (12/04/1983)
+      Πορτογάλο μέσο Νταβίντ Αλεξάντερ Πίντο Ντίας, ο οποίος την περσινή χρονιά αγωνιζόταν
+      στην πρώτη κατηγορία της Πορτογαλίας με τα χρώματα της Ναβάλ, που υποβιβάστηκε
+      στην β΄ κατηγορία.Με τον ποδοσφαιριστή ο οποίος είναι προσωπική επιλογή του
+      Ντιντιέ Νικόλ, υπάρχει πλήρης συμφωνία τόσο στο οικονομικό μέρος όσο και στη
+      χρονική διάρκεια του συμβολαίου και όπως λένε οι πληροφορίες, είναι θέμα χρόνου
+      για να ντυθεί και επίσημα στα «κυανόλευκα»!\r\nΟ Πίντο Ντίας ο οποίος αναμένεται
+      τις επόμενες ημέρες στην Κύπρο, αγωνίζεται στα άκρα της μεσοεπιθετικής γραμμής...\r\nΑξίζει
+      να αναφέρουμε ότι στη Ναβάλ αγωνιζόταν από το 2007, ενώ τα προηγούμενα χρόνια
+      φόρεσε τη φανέλα των Μπράγκα και Αμαδόρα.Ο Πορτογάλος ποδοσφαιριστής βρίσκεται
+      ήδη στη Βουλγαρία, σύμφωνα με νεότερες πληροφορίες και απόψε αναμένεται να ενσωματωθεί
+      με την αποστολή του Απόλλωνα, ενώ γίνονται προσπάθειες για να διευθετηθούν κάποια
+      διαδικαστικά ζητήματα, προκειμένου να μπορέσει να ταξιδέψει με την αποστολή
+      της ομάδας την ερχόμενη Τετάρτη, όταν και θα επιστρέψει στην Κύπρο για να εισέλθει
+      στο τελικό στάδιο προετοιμασίας.Γιάννης Ιωάννου\n\t\t"
+    - ! "\n\t\tProtathlima.com  \x95  Πρωτάθλημα Marfin Laiki  \x95  Απόλλωνας Λεμεσού\n\t"
+    - http://www.protathlima.com/content/league/story.jsp?league_id=1&id=77811
+    - Mon, 1 Aug 2011 00:00:00 -0700
+    - http://www.protathlima.com/content/league/story.jsp?league_id=1&id=77811
+    - 1
+    - !!null 
+    - ! ' symfwnhse portogalo pinto symfwna plhrofories apollwnas hrthe symfwnia meso
+      ntavint aleksanter ntias opoios persinh xronia agwnizotan kathgoria portogalias
+      xrwmata naval ypovivasthke podosfairisth proswpikh epilogh ntintie nikol plhrhs
+      oikonomiko meros xronikh symvolaioy lene xronoy ntythei epishma kyanoleyka anamenetai
+      epomenes kypro agwnizetai akra mesoepithetikhs grammhs aksizei anaferoyme prohgoymena
+      forese fanela mpragka amadora portogalos podosfairisths voylgaria neoteres apopse
+      enswmatwthei apostolh apollwna ginontai prospatheies dieytheththoyn diadikastika
+      zhthmata mporesei taksidepsei erxomenh tetarth epistrepsei eiselthei teliko'
+    - '2011-08-01 17:09:54.855812'
+    - '2011-08-01 17:10:43.226969'
+    - http://www.protathlima.com//content/images/other/16072011/3cKKcs85tD.jpg
+    - !!null 
+  - - 127
+    - Στις 12 Αυγούστου το φιλικό με Ομόνοια
+    - Το Διοικητικό Συμβούλιο της ΕΝΠ, ανακοίνωσε την διεξαγωγή φιλικού αγώνα με την
+      Ομόνοια Λευκωσίας, στο πλαίσιο της συμφωνίας των δύο σωματείων για τη μεταγραφή
+      του Βραζιλιάνου ’λεξ Ντα Σίλβα.
+    - ":: Στις 12 Αυγούστου το φιλικό με Ομόνοια\n\t\t\t:: Ημερομηνία δημοσίευσης:\n\t\t\t01-08-2011\n\t\t\t-
+      \n\t\t\tΏρα:\n\t\t\t17:14\n\t\t\n\t\t\t\n.str_photo_header {\n\tbackground-color:#000000;\n\tfont-size:13px;\n\tcolor:#ffffff;\n
+      \  \tfont-weight:none;\n}\n.str_photo_table {\n\tbackground-color:#F7FBFD;\n
+      \  \tborder:2px solid #D8DFE2;\n}\n.str_photo {\n\tbackground-color:#ffffff;\n
+      \  \tborder:0px solid #dddddd;\n   \tcursor:hand;\n\tpadding:5px;\n}\n\n\t\t\t<!--//
+      <![CDATA[\n    /* [id21] League - Story - Textlink - Top */\n    OA_show(21);\n//
+      ]]> -->Το Διοικητικό Συμβούλιο της ΕΝΠ, ανακοίνωσε την διεξαγωγή φιλικού αγώνα
+      με την Ομόνοια Λευκωσίας, στο πλαίσιο της συμφωνίας των δύο σωματείων για τη
+      μεταγραφή του Βραζιλιάνου Άλεξ Ντα Σίλβα.\r\nΟ αγώνας θα διεξαχθεί στο \"Τάσος
+      Μάρκου\" την Παρασκευή 12 Αυγούστου και ώρα 19:30 με γενική είσοδο €10, ενώ
+      τα παιδιά κάτω των 12 ετών, θα εισέρχονται δωρεάν...Γιάννης Ιωάννου\n\t\t"
+    - ! "\n\t\tProtathlima.com  \x95  Πρωτάθλημα Marfin Laiki  \x95  Ε.Ν. Παραλιμνίου\n\t"
+    - http://www.protathlima.com/content/league/story.jsp?league_id=1&id=77808
+    - Mon, 1 Aug 2011 00:00:00 -0700
+    - http://www.protathlima.com/content/league/story.jsp?league_id=1&id=77808
+    - 1
+    - !!null 
+    - ! ' stis aygoystoy filiko omonoia dioikhtiko symvoylio enp anakoinwse dieksagwgh
+      filikoy agwna leykwsias plaisio symfwnias twn dyo swmateiwn metagrafh vrazilianoy
+      aleks nta silva agwnas dieksaxthei tasos markoy paraskeyh genikh eisodo paidia
+      katw etwn eiserxontai dwrean giannhs iwannoy'
+    - '2011-08-01 17:09:56.764677'
+    - '2011-08-01 17:10:22.902484'
+    - http://www.protathlima.com//content/images/other/25052011/zmtnHmTKtZ.jpg
+    - !!null 
+  - - 128
+    - ! 'Τζουντ Σισέ: «Θα μου λείψει η Ελλάδα»'
+    - Η Τζουντ Σισέ αποχαιρέτησε, όπως όλα δείχνουν, για τελευταία φορά την Ελλάδα,
+      μέσω του προσωπικού της λογαριασμού στο twitter.
+    - ":: Τζουντ Σισέ: «Θα μου λείψει η Ελλάδα»\n\t\t\t:: Ημερομηνία δημοσίευσης:\n\t\t\t01-08-2011\n\t\t\t-
+      \n\t\t\tΏρα:\n\t\t\t17:02\n\t\t\n\t\t\t\n.str_photo_header {\n\tbackground-color:#000000;\n\tfont-size:13px;\n\tcolor:#ffffff;\n
+      \  \tfont-weight:none;\n}\n.str_photo_table {\n\tbackground-color:#F7FBFD;\n
+      \  \tborder:2px solid #D8DFE2;\n}\n.str_photo {\n\tbackground-color:#ffffff;\n
+      \  \tborder:0px solid #dddddd;\n   \tcursor:hand;\n\tpadding:5px;\n}\n\n\t\t\t<!--//
+      <![CDATA[\n    /* [id21] League - Story - Textlink - Top */\n    OA_show(21);\n//
+      ]]> -->Η Τζουντ Σισέ αποχαιρέτησε, όπως όλα δείχνουν, για τελευταία φορά την
+      Ελλάδα, μέσω του προσωπικού της λογαριασμού στο twitter. \r\nΗ σύζυγος του Τζιμπρίλ
+      Σισέ (ο οποίος θα παρεβρεθεί αύριο στο Ο.Α.Κ.Α. για τον αγώνα του \"τριφυλλιού\"
+      με την Οντένσε), βρίσκεται στην Αθήνα για να μεζέψει τα πράγματά της και να
+      αποχωρήσει οριστικά για Ιταλία.\r\n«Τι κουραστική δουλειά να πακετάρεις και
+      να ξεχωρίζεις πράγματα. Λατρεύω τον καιρό και θα μου λείψει πάρα πολύ η Ελλάδα»,
+      έγραψε χαρακτηριστικά η Τζουντ.\n\t\t"
+    - ! "\n\t\tProtathlima.com  \x95  Καμπιονάτο  \x95  Λάτσιο\n\t"
+    - http://www.protathlima.com/content/league/story.jsp?league_id=31&id=77801
+    - Mon, 1 Aug 2011 00:00:00 -0700
+    - http://www.protathlima.com/content/league/story.jsp?league_id=31&id=77801
+    - 1
+    - !!null 
+    - ! ' tzoynt sise moy leipsei h ellada apoxairethse deixnoyn teleytaia fora mesw
+      proswpikoy logariasmoy twitter syzygos tzimpril opoios parevrethei ayrio a k
+      trifyllioy ontense vrisketai athhna mezepsei pragmata apoxwrhsei oristika italia
+      ti koyrastikh doyleia paketareis ksexwrizeis latreyw kairo para egrapse xarakthristika'
+    - '2011-08-01 17:09:58.741251'
+    - '2011-08-01 17:10:43.231493'
+    - http://www.protathlima.com//content/images/other/17072011/pn8MBTMfXh.jpg
+    - !!null 
+  - - 129
+    - Τα προνόμια και τα οφέλη των εισιτηρίων διαρκείας...
+    - Η διοίκηση της Αναγέννησης Δερύνειας εξέδωσε ανακοίνωση με την οποία καλεί τον
+      κόσμο της ομάδας να αγοράσει εισιτήριο διαρκείας και αναλύει τα προνόμια που
+      θα έχουν οι κάτοχοι τους...
+    - ! ":: Τα προνόμια και τα οφέλη των εισιτηρίων διαρκείας...\n\t\t\t:: Ημερομηνία
+      δημοσίευσης:\n\t\t\t01-08-2011\n\t\t\t- \n\t\t\tΏρα:\n\t\t\t16:49\n\t\t\n\t\t\t\n.str_photo_header
+      {\n\tbackground-color:#000000;\n\tfont-size:13px;\n\tcolor:#ffffff;\n   \tfont-weight:none;\n}\n.str_photo_table
+      {\n\tbackground-color:#F7FBFD;\n   \tborder:2px solid #D8DFE2;\n}\n.str_photo
+      {\n\tbackground-color:#ffffff;\n   \tborder:0px solid #dddddd;\n   \tcursor:hand;\n\tpadding:5px;\n}\n\n\t\t\t<!--//
+      <![CDATA[\n    /* [id21] League - Story - Textlink - Top */\n    OA_show(21);\n//
+      ]]> -->Η διοίκηση της Αναγέννησης Δερύνειας εξέδωσε ανακοίνωση με την οποία
+      καλεί τον κόσμο της ομάδας να αγοράσει εισιτήριο διαρκείας και αναλύει τα προνόμια
+      που θα έχουν οι κάτοχοι τους...Αναλυτικά η ανακοίνωση:\r\n\"Η ομάδα μας μετά
+      το θαύμα της ανόδου, φέτος θα προσπαθήσει να σταθεί επάξια στην πρώτη κατηγορία
+      του Παγκυπρίου Πρωταθλήματος Marfin Laiki. Έχει σημασία για μας, εν μέσω οικονομικών
+      δυσκολιών για την πλειοψηφία του κόσμου, να σταθεί κάθε οπαδός και φίλος του
+      σωματείου μας δίπλα στην ομάδα αγοράζοντας εισιτήριο διαρκείας και βοηθώντας
+      έμπρακτα με την παρουσία του την αξιοπρεπή προσπάθεια που γίνεται.\r\nΤο Δ.Σ.
+      της Αναγέννησης Δερύνειας ανακοινώνει ότι η προθεσμία για έκπτωση 10% σε περσινούς
+      και νέους κατόχους που θα ΠΡΟΠΛΗΡΩΣΟΥΝ όλο το ποσό του εισιτηρίου διαρκείας
+      θα παραταθεί μέχρι την Τετάρτη 3 Αυγούστου.  \r\nΥπενθυμίζουμε επίσης ότι όσοι
+      από τους υφιστάμενους κατόχους προτείνουν ακόμα 2 νέους φίλους τους που θα αγοράσουν
+      νέα κάρτα διαρκείας τότε θα έχουν επιπλέον 5% έκπτωση.  Η έκπτωση αυτή θα ισχύει
+      μόνο μία φορά.\r\nΤέλος όλου οι κάτοχοι Εισιτηρίου Διαρκείας θα επωφελούνται
+      των πιο κάτω εκπτώσεων:\r\nΈκπτωση 10% από το χρυσοχοείο GEORGE CHRISTOU JEWELLERY
+      στη Δερύνεια.\r\nΈκπτωση 10% από το κατάστημα ρούχων NIKIS BOUTIQUE στη Δερύνεια.\r\nΈκπτωση
+      10% σε κάθε παραγγελία άνω των €20 (από Δευτέρα μέχρι Πέμπτη) από την Toronto
+      Pizza Κατάστημα Παραλιμνίου. Τηλεφωνήστε στο 23 821 888, ενημερώστε ότι είστε
+      κάτοχος εισιτηρίου διαρκείας της ΑΝΑΓΕΝΝΗΣΗΣ, δώστε την παραγγελία σας μαζί
+      με τον αριθμό που αναγράφεται στην κάρτα σας και απολαύστε με έκπτωση την Toronto
+      Pizza σας.\r\nΈκπτωση 10% από το γυμναστήριο PLAYERSROOM PERFORMANCE & FITNESS 
+      στη  Δερύνεια.\r\nΈκπτωση 10% έκπτωση στην επίσημη φανέλα τις ομάδας μας.\r\nΚαλούμε
+      όλους τους φίλους της ομάδας μας να στηρίξουν αυτή τη προσπάθεια και να ΖΗΣΟΥΝ
+      ΜΑΖΙ ΜΑΣ ΤΟ ΟΝΕΙΡΟ… της 1ης Κατηγορίας.\r\nΑναλυτικά οι τιμές και τα πακέτα:\r\nΚΕΝΤΡΙΚΟ
+      ΣΤΕΓΑΣΜΕΝΟ ΔΙΑΖΩΜΑ(GOLD CARD)      ΘΕΣΗ Α (Κεντρικά)  ΘΕΣΗ Β (Δεξιά ή αριστερά)\r\nΚΕΝΤΡΙΚΟ
+      ΔΙΑΖΩΜΑ (Κανονικό)-------------------------------€400----------------€350\r\nΚΕΝΤΡΙΚΟ
+      ΔΙΑΖΩΜΑ ( Γυναικείο/ Συνταξιούχοι)----------------€300----------------€250 \r\nΚΕΝΤΡΙΚΟ
+      ΔΙΑΖΩΜΑ (Μαθητικό*)-----------------------------€250----------------€200\r\nΚΕΝΤΡΙΚΟ
+      ΔΙΑΖΩΜΑ (Οικογενειακό**)------------------------€600----------------€550\r\nΚΕΝΤΡΙΚΟ
+      ΔΙΑΖΩΜΑ ΠΑΙΔΙΚΟ (Παιδιά 12 ετών και κάτω)--------€80----------------- €50\r\n----------------------------------------------------------------------------------------------------\r\nΚΕΡΚΙΔΑ\r\nΚΕΡΚΙΔΑ
+      (Κανονικό)------------------------------------------€250\r\nΚΕΝΤΡΙΚΟ ΔΙΑΖΩΜΑ
+      ( Γυναικείο/ Συνταξιούχοι)-----------€150               \r\nΚΕΡΚΙΔΑ (Μαθητικό*)-----------------------------------------€100\r\nΚΕΡΚΙΔΑ
+      (Οικογενειακό**)-----------------------------------€450\r\nΚΕΡΚΙΔΑ ΠΑΙΔΙΚΟ (Παιδιά
+      12 ετών και κάτω)--------------€20\r\n * Το μαθητικό πακέτο περιλαμβάνει στρατιώτες
+      και φοιτητές\r\n**Το οικογενειακό πακέτο περιλαμβάνει δυο γονείς (άντρας-γυναίκα)
+      και 1 παιδί ηλικίας 13-18\r\nΚΑΝΤΕ ΤΗΝ ΑΙΤΗΣΗ ΣΑΣ ONLINE ΤΩΡΑ!\r\nhttp://anagennisis1920.net/index.php?id=70\r\n Για
+      πληροφορίες στο 99880494 ή 99665378\"\n\t\t"
+    - ! "\n\t\tProtathlima.com  \x95  Πρωτάθλημα Marfin Laiki  \x95  Αναγέννηση Δερύνειας\n\t"
+    - http://www.protathlima.com/content/league/story.jsp?league_id=1&id=77806
+    - Mon, 1 Aug 2011 00:00:00 -0700
+    - http://www.protathlima.com/content/league/story.jsp?league_id=1&id=77806
+    - 1
+    - !!null 
+    - ! ' pronomia ofelh eisithriwn diarkeias anagennhshs deryneias eisithrio katoxoi
+      mas stathei prospatheia ekptwsh neoys katoxoys eisithrioy mexri filoys karta
+      katw deryneia katasthma paraggelia toronto pizza sas mazi kentriko diazwma thesh
+      kanoniko gynaikeio syntaksioyxoi mathhtiko oikogeneiako paidiko paidia etwn
+      kerkida paketo perilamvanei'
+    - '2011-08-01 17:10:00.786189'
+    - '2011-08-01 17:10:39.956069'
+    - http://www.protathlima.com//content/images/other/01072011/C8JcWnqAk3.jpg
+    - !!null 
+  - - 130
+    - ! 'Γόντικας: «Πώληση και μετά μεταγραφή», Ζέκα: «Θέλω τίτλους»'
+    - Ειδήσεις έβγαλε για άλλη μία φορά το "πηγαδάκι" που στήθηκε μετά το τέλος της
+      παρουσίασης του Ζεκά, ανάμεσα στον Δημήτρη Γόντικα και τους δημοσιογράφους που
+      βρέθηκαν στα γραφεία της ΠΑΕ. Παρουσιάστηκε ο Ζέκα...
+    - ":: Γόντικας: «Πώληση και μετά μεταγραφή», Ζέκα: «Θέλω τίτλους»\n\t\t\t:: Ημερομηνία
+      δημοσίευσης:\n\t\t\t01-08-2011\n\t\t\t- \n\t\t\tΏρα:\n\t\t\t16:37\n\t\t\n\t\t\t\n.str_photo_header
+      {\n\tbackground-color:#000000;\n\tfont-size:13px;\n\tcolor:#ffffff;\n   \tfont-weight:none;\n}\n.str_photo_table
+      {\n\tbackground-color:#F7FBFD;\n   \tborder:2px solid #D8DFE2;\n}\n.str_photo
+      {\n\tbackground-color:#ffffff;\n   \tborder:0px solid #dddddd;\n   \tcursor:hand;\n\tpadding:5px;\n}\n\n\t\t\t<!--//
+      <![CDATA[\n    /* [id21] League - Story - Textlink - Top */\n    OA_show(21);\n//
+      ]]> -->Ειδήσεις έβγαλε για άλλη μία φορά το \"πηγαδάκι\" που στήθηκε μετά το
+      τέλος της παρουσίασης του Ζέκα, ανάμεσα στον Δημήτρη Γόντικα και τους δημοσιογράφους
+      που βρέθηκαν στα γραφεία της ΠΑΕ. Ο προεδρεύων αντιπρόεδρος αποκάλυψε πως υπάρχουν
+      ικανοποιητικές προτάσεις για την πώληση των Μπουμσόνγκ και Σεϊταρίδη, είπε πως
+      για τον Σιμάο δεν αποτελεί προτεραιότητα η παραχώρηση του και πως περιμένει
+      υψηλότερη πρόταση από την Ουκρανική Καρπάτι, επιβεβαίωσε ότι πρώτος στόχος είναι
+      ο Κάστρο, αλλά για να γίνει οποιαδήποτε μεταγραφή θα πρέπει πρώτα να αποχωρήσουν
+      παίκτες, ενώ ξεκαθάρισε πως δεν υπάρχει κανένα ενδιαφέρον για τον Μπλάνκο. \r\nΤέλος,
+      ο επικεφαλής της διοίκησης απάντησε σε σχετική ερώτηση που του έγινε πως δεν
+      θα έπαιρνε κανέναν παίκτη από τον Ολυμπιακό Βόλου... \r\nΜετά το τέλος της παρουσίασης
+      του Ζεκά, οι ρεπόρτερ του Παναθηναϊκού έκαναν... ντου στον Δημήτρη Γόντικα,
+      τον οποίο και πολιόρκησαν για λίγα λεπτά κάνοντάς τους αρκετές ερωτήσεις για
+      τα θέματα που αφορούν την ομάδα, με τον προεδρεύοντα αντιπρόεδρο να βγάζει πολλές
+      ειδήσεις...\r\n\"Ικανοποιητική πρόταση για Μπουμσόνγκ\"Πρώτα απ' όλα, ο επικεφαλής
+      της διοίκησης αποκάλυψε πως στα γραφεία της ΠΑΕ έχει φτάσει ικανοποιητική πρόταση
+      για τον Μπουμσόνγκ, δίχως να αναφέρει το όνομα της ομάδας, αλλά όπως είπε θα
+      πρέπει να συμφωνήσει και ο Γάλλος αμυντικός για τη μεταγραφή κάτι που δεν έχει
+      συμβεί μέχρι στιγμής.\r\n\"Υπάρχει κάτι για Σεϊταρίδη και θα εξεταστεί\"Ο Δημήτρης
+      Γόντικας είπε επίσης πως υπάρχει πρόταση από ομάδα του εξωτερικού και για τον
+      Γιούρκα Σεϊταρίδη, η οποία και θα εξεταστεί. Παράλληλα, είπε πως έχουν δρομολογηθεί
+      οι αποχωρήσεις των Μουν, Λεοντίου και κάποιων άλλων παικτών που δεν υπολογίζονται...\r\n\"Δεν
+      δίνουμε τον Σιμάο, αν δεν ικανοποιηθούμε\"Οσον αφορά τον Σιμάο, ο προεδρεύων
+      αντιπρόεδρος ανέφερε πως \"περιμένουμε βελτιωμένη πρόταση από την Καρπάτι, αν
+      και δεν είναι προτεραιότητα να φύγει ο παίκτης, αν δεν πάρουμε τα λεφτά που
+      θέλουμε\". Να υπενθυμίσουμε πως η ουκρανική ομάδα προσφέρει 600.000€ για τον
+      Μοζαμβικανό και οι πράσινοι θέλουν 1 εκατ. ευρώ!\r\n\"Ναι\" για Κάστρο, \"όχι\"
+      για ΜπλάνκοΟ Δημήτρης Γόντικας ξεκαθάρισε πως για να προχωρήσει ο Παναθηναϊκός
+      σε οποιαδήποτε άλλη μεταγραφική κίνηση θα πρέπει να υπάρξουν πρώτα αποχωρήσεις.
+      Επιβεβαίωσε όμως πως η ομάδα ενδιαφέρεται για τον Αντρέ Κάστρο, ο οποίος αποτελεί
+      εισήγηση του Ζεσουάλδο Φερέιρα. Αντίθετα ξεκαθάρισε πως δεν υπάρχει κανένα θέμα
+      Μπλάνκο και ούτε καν έχει ζητηθεί η άποψη του Πορτογάλου για τον πρώην επιθετικό
+      της ΑΕΚ.\r\n\"Εγώ δεν θα έπαιρνα παίκτη από τον Ολυμπιακό Βόλου\"Ερωτηθείς για
+      το αν ο Παναθηναϊκός κινηθεί για παίκτες του Ολυμπιακού Βόλου και της Καβάλας,
+      εφόσον οι δύο ομάδες υποβιβαστούν, ο προεδρεύων αντιπρόεδρος του Τριφυλλιού
+      επεσήμανε πως αν μείνουν ελεύθεροι θα ερωτηθεί για αυτούς ο Φερέιρα, αλλά ο
+      ίδιος είπε χαρακτηριστικά πως \"εγώ δεν θα έπαιρνα παίκτη από τον Ολυμπιακό
+      Βόλου\"!\r\nΘα βραβευτεί ο ΚαραγκούνηςΟ Δημήτρης Γόντικας αποκάλυψε επίσης πως
+      πριν από τον αγώνα με την Οντένσε θα βραβευτεί με πλακέτα από την ΠΑΕ και συγκεκριμένα
+      από τον πρώην αντιπρόεδρο, Τζόνι Βεκρή, ο Γιώργος Καραγκούνης για τις 100 ευρωπαϊκές
+      συμμετοχές, που συμπλήρωσε στο ματς της Δανίας.\r\nΓενική Συνέλευση και Δ.Σ.Τέλος
+      ο επικεφαλής της διοίκησης ανέφερε πως το πρωί της Τρίτης (2/8, 11:00) θα γίνει
+      η Γενική Συνέλευση της ομάδας από την οποία θα προκύψουν τα 20 μέλη του νέου
+      Δ.Σ., που θα συγκληθεί το απόγευμα (16:00), ενώ θα προκύψει και νέα διοικούσα
+      επιτροπή. Σε ερώτηση για το αν θα μπουν χρήματα από τους μετόχους, ο Δημήτρης
+      Γόντικας δεν ήταν αισιόδοξος, ως προς αυτή την προοπτική...\"Είμαι ο Ζέκα ο
+      καλός!.. \"\r\nΜε τα καλύτερα λόγια μίλησε για τον... εαυτό του ο Πορτογάλος
+      χαφ, κατά τη διάρκεια της παρουσίασης του. \"Είμαι γρήγορος, δουλεύω ιδανικά,
+      έχω καλή τεχνική\"! Ο Ζέκα παρουσιάστηκε από τον Παναθηναϊκό, με τον νεαρό άσο
+      να σχολιάζει ότι είναι χαρούμενος που θα συνεχίσει την καριέρα του στο \"τριφύλλι\".\r\n\"Είμαι
+      ιδιαίτερα χαρούμενος που βρίσκομαι εδώ και σε έναν πολύ σημαντικό σύλλογο. Αυτό
+      που μπορώ να πω είναι πως θα κάνω τα πάντα για τον σύλλογο. Ελπίζω στο τέλος
+      της σεζόν να τελειώσουμε με πολλούς τίτλους και ευχαριστημένοι\", σχολίασε σχετικά.\r\nΓια
+      τα χαρακτηριστικά του: \"Είμαι γρήγορος παίκτης. Δουλεύω ιδανικά για την ομάδα,
+      πιστεύω πως έχω καλή τεχνική κατάρτιση\"\r\nΓια την αγωνιστική του κατάσταση:
+      \"Αυτή τη στιγμή εδώ και δυο εβδομάδες στις προπονήσεις αλλά δεν είμαι στο 100%,
+      όμως πιστεύω ότι πολύ γρήγορα θα είμαι στη διάθεση του προπονητή μου. Είμαι
+      έτοιμος να δουλέψω με τους παίκτες και τον προπονητή Παναθηναϊκού και να βοηθήσω
+      όσο μπορεί για να υλοποιήσω τις προσδοκίες που έχει ο Παναθηναϊκός\".\r\nΓια
+      το που μπορεί να αγωνιστεί: \"Αισθάνομαι ικανός να παίξω τόσο δεξιά όσο και
+      αριστερά, αλλά και στον άξονα\".\r\nΓια τον Φερέιρα: \"Εχω να σημειώσω πως είναι
+      εξαιρετικός επαγγελματίας. Είναι η ιδιαίτερη η χαρά μου που θα εργαστώ μαζί
+      του\".\n\t\t"
+    - ! "\n\t\tProtathlima.com  \x95  Σούπερ Λίγκα  \x95  Παναθηναϊκός\n\t"
+    - http://www.protathlima.com/content/league/story.jsp?league_id=11&id=77805
+    - Mon, 1 Aug 2011 00:00:00 -0700
+    - http://www.protathlima.com/content/league/story.jsp?league_id=11&id=77805
+    - 1
+    - !!null 
+    - ! ' gontikas pwlhsh metagrafh zeka thelw titloys telos paroysiashs proedreywn
+      antiproedros apokalypse pws mpoymsongk seitaridh eipe simao protash kastro epikefalhs
+      dioikhshs voloy dhmhtrhs an panathhnaikos eimai exw'
+    - '2011-08-01 17:10:02.928662'
+    - '2011-08-01 17:10:39.960963'
+    - http://www.protathlima.com//content/images/other/04062010/KghpzewZbW.jpg
+    - !!null 
+  - - 131
+    - Τελικός Μουντομπάσκετ στο... «Μπερναμπέου»;;;
+    - Η Ισπανία θα διοργανώσει το Μουντομπάσκετ του 2014 και ο πρόεδρος της ισπανικής
+      ομοσπονδίας, Χοσέ Λουίς Σάεθ, σκέφτεται να προχωρήσει σε κάτι πολύ φιλόδοξο
+      και πρωτότυπο. Να γίνει ο τελικός στο ποδοσφαρικό γήπεδο της Ρεάλ, "Σαντιάγκο
+      Μπερναμπέου"!
+    - ":: Τελικός Μουντομπάσκετ στο... «Μπερναμπέου»;;;\n\t\t\t:: Ημερομηνία δημοσίευσης:\n\t\t\t01-08-2011\n\t\t\t-
+      \n\t\t\tΏρα:\n\t\t\t16:23\n\t\t\n\t\t\t\n.str_photo_header {\n\tbackground-color:#000000;\n\tfont-size:13px;\n\tcolor:#ffffff;\n
+      \  \tfont-weight:none;\n}\n.str_photo_table {\n\tbackground-color:#F7FBFD;\n
+      \  \tborder:2px solid #D8DFE2;\n}\n.str_photo {\n\tbackground-color:#ffffff;\n
+      \  \tborder:0px solid #dddddd;\n   \tcursor:hand;\n\tpadding:5px;\n}\n\n\t\t\t<!--//
+      <![CDATA[\n    /* [id21] League - Story - Textlink - Top */\n    OA_show(21);\n//
+      ]]> -->Η Ισπανία θα διοργανώσει το Μουντομπάσκετ του 2014 και ο πρόεδρος της
+      ισπανικής ομοσπονδίας, Χοσέ Λουίς Σάεθ, σκέφτεται να προχωρήσει σε κάτι πολύ
+      φιλόδοξο και πρωτότυπο. Να γίνει ο τελικός στο ποδοσφαρικό γήπεδο της Ρεάλ,
+      \"Σαντιάγκο Μπερναμπέου\"!\r\n .Ο Σάεθ θέλει να μετατρέψει το ιστορικό γήπεδο
+      της \"Βασίλισσας\" σε γήπεδο μπάσκετ και να διεξαχθεί εκεί ο τελικός του Μουντομπάσκετ
+      προκειμένου να τον παρακολουθήσουν όσοι περισσότεροι θεατές γίνεται!\r\nΗ αναδιπλούμενη
+      οροφή που θα τοποθετηθεί στο \"Σαντιάγκο Μπερναμπέου\" αναμένεται να είναι έτοιμη
+      στο τέλος του 2013, ενώ το δημοτικό συμβούλιο της Μαδρίτης έδωσε το \"οκ\" για
+      το έργο...\n\t\t"
+    - ! "\r\n\t\tProtathlima.com  \x95  Μπάσκετ\r\n\t"
+    - http://www.protathlima.com/content/sport/story.jsp?sport_id=2&id=77804
+    - Mon, 1 Aug 2011 00:00:00 -0700
+    - http://www.protathlima.com/content/sport/story.jsp?sport_id=2&id=77804
+    - 1
+    - !!null 
+    - ! ' telikos moyntompasket mpernampeoy ispania diorganwsei proedros ispanikhs
+      omospondias xose loyis saeth skeftetai proxwrhsei kati filodokso prwtotypo ginei
+      podosfariko ghpedo real santiagko thelei metatrepsei istoriko vasilissas mpasket
+      dieksaxthei ekei prokeimenoy parakoloythhsoyn osoi perissoteroi theates ginetai
+      anadiploymenh orofh topotheththei anamenetai etoimh telos dhmotiko symvoylio
+      madriths edwse ok ergo'
+    - '2011-08-01 17:10:05.217140'
+    - '2011-08-01 17:10:36.959325'
+    - http://www.protathlima.com//content/images/other/12022010/ygprzDM2Nb.jpg
+    - !!null 
+  - - 132
+    - «Ανήθικη προσπάθεια να αναστατωθεί η Κέρκυρα»
+    - Η ΠΑΕ Α.Ο. Κέρκυρας εξέδωσε καυστική ανακοίνωση με την οποία απαντά στο δημοσίευμα
+      αθλητικής εφημερίδας περί υποβιβασμού της ομάδας στη δεύτερη κατηγορία.
+    - ":: «Ανήθικη προσπάθεια να αναστατωθεί η Κέρκυρα»\n\t\t\t:: Ημερομηνία δημοσίευσης:\n\t\t\t01-08-2011\n\t\t\t-
+      \n\t\t\tΏρα:\n\t\t\t16:11\n\t\t\n\t\t\t\n.str_photo_header {\n\tbackground-color:#000000;\n\tfont-size:13px;\n\tcolor:#ffffff;\n
+      \  \tfont-weight:none;\n}\n.str_photo_table {\n\tbackground-color:#F7FBFD;\n
+      \  \tborder:2px solid #D8DFE2;\n}\n.str_photo {\n\tbackground-color:#ffffff;\n
+      \  \tborder:0px solid #dddddd;\n   \tcursor:hand;\n\tpadding:5px;\n}\n\n\t\t\t<!--//
+      <![CDATA[\n    /* [id21] League - Story - Textlink - Top */\n    OA_show(21);\n//
+      ]]> -->Η ΠΑΕ Α.Ο. Κέρκυρας εξέδωσε καυστική ανακοίνωση με την οποία απαντά στο
+      δημοσίευμα αθλητικής εφημερίδας περί υποβιβασμού της ομάδας στη δεύτερη κατηγορία.\r\nΑναλυτικά
+      η ανακοίνωση της Κέρκυρας:\r\nΣήμερα γίναμε μάρτυρες μιας ανήθικης προσπάθειας
+      να αναστατωθεί το νησί της Κέρκυρας, πάνω στην κορύφωση της τουριστικής περιόδου,
+      όταν πληροφορηθήκαμε με πηχυαίους τίτλους αθλητικής εφημερίδας ότι η ομάδα μας
+      υποβιβάζεται στην Β’ Εθνική ! Και μάλιστα, ο υποβιβασμός της είναι ήδη προαποφασισμένος,
+      απλά θα περιμένει για περίπου ένα μήνα !\r\nΔυστυχώς , προκαλεί μόνο θλίψη το
+      γεγονός ότι υπάρχουν εφημερίδες που εξαιτίας της φτωχής αθλητικής κίνησης επιλέγουν
+      να «κατασκευάσουν» θέματα και «αποκλειστικότητες» που θίγουν κατά τρόπο συκοφαντικό
+      ομάδες και ανθρώπους, κυρίως όμως προσβάλλουν τους λειτουργούς της ποινικής
+      και αθλητικής δικαιοσύνης.\r\nΟύτε λίγο ούτε πολύ, η εφημερίδα «ΕΞΕΔΡΑ» με το
+      σημερινό της πρωτοσέλιδο αναδεικνύεται σε «Αρχάγγελο της Κάθαρσης», υποδεικνύει
+      στους Ποδοσφαιρικούς Εισαγγελείς πώς να κάνουν την δουλειά τους , και εμπλέκει
+      στο λίβελλο της ανθρώπους που ουδεμία σχέση έχουν με ο,τιδήποτε απ’ όσα γράφονται,
+      μόνο και μόνο για να εξυπηρετήσει την κανιβαλιστική διάθεση μερίδας του αναγνωστικού
+      κοινού και να προσφέρει ένα συναρπαστικό ανάγνωσμα παραλίας. Όσο για δημοσιογραφική
+      έρευνα ούτε λόγος.\r\nΠροκαλεί πραγματική κατάπληξη πως είναι δυνατόν με τόση
+      ελαφρότητα μια αθλητική εφημερίδα να προκαταλαμβάνει τις εξελίξεις και να παίζει
+      παιχνίδια σε βάρος ομάδων που πέρα από φορείς έκφρασης ανθρώπων και πόλεων,
+      είναι παράλληλα και ανώνυμες εταιρείες, τα συμφέροντα των οποίων επηρεάζονται
+      σφόδρα από τέτοιου τύπου δημοσιεύματα. Εκτός και αν όλη αυτή η μεθόδευση εξυπηρετεί
+      κάποια άλλη σκοπιμότητα.\r\nΕίναι επίσης λυπηρό και προσβλητικό το γεγονός να
+      εμφανίζονται ως “μαριονέτες της Εξέδρας”, που θα ενεργοποιήσουν αποφάσεις ήδη
+      προειλημμένες, οι Ποδοσφαιρικοί Εισαγγελείς της Ομοσπονδίας , που από τον Σεπτέμβριο
+      «θα καλέσουν» την ομάδα μας για να «υποβιβαστεί» - με αλλά λόγια για να τη στήσουν
+      στο εκτελεστικό απόσπασμα.\r\nΕίμαστε βέβαιοι ότι δεν είναι αυτή η εικόνα που
+      έχουν οι ίδιοι οι Δικαστές για τον εαυτό τους.\r\nΗ Π.Α.Ε. Α.Ο. ΚΕΡΚΥΡΑ αποκρούει
+      μετά βδελυγμίας το περιεχόμενο του σημερινού δημοσιεύματος , που «κρεμάει στα
+      μανταλάκια» τον Πρόεδρο και τον Γενικό Διευθυντή της Εταιρείας κατά τρόπο απαράδεκτο
+      , όταν από το ίδιο το δημοσίευμα δεν τους αποδίδεται καμιά εμπλοκή. Σε όσο χαμηλά
+      επίπεδα κυκλοφορίας κι αν έχει κατρακυλήσει μια εφημερίδα , αυτού του τύπου
+      ο κιτρινισμός δεν επιτρέπεται και ασφαλώς δεν θα γίνει ανεκτός .\r\nΑπό πλευράς
+      μας αποστέλλουμε εντός της ημέρας το σημερινό πρωτοσέλιδο της εφημερίδας «ΕΞΕΔΡΑ»
+      προς όλους του αρμόδιους δικαστές της ποινικής και αθλητικής δικαιοσύνης προκειμένου
+      οι υπεύθυνοι της εφημερίδας να δώσουν τις απαραίτητες εξηγήσεις εκεί που πρέπει.
+      Παράλληλα, θα κινηθούμε ως οφείλουμε για την προάσπιση των συμφερόντων μας και
+      την άσκηση παντός νομίμου δικαιώματος μας .\r\nΑς είναι απολύτως ήσυχοι οι φίλαθλοι
+      μας…\n\t\t"
+    - ! "\n\t\tProtathlima.com  \x95  Σούπερ Λίγκα\n\t"
+    - http://www.protathlima.com/content/league/story.jsp?league_id=11&id=77803
+    - Mon, 1 Aug 2011 00:00:00 -0700
+    - http://www.protathlima.com/content/league/story.jsp?league_id=11&id=77803
+    - 1
+    - !!null 
+    - ! ' anhthikh prospatheia anastatwthei kerkyra a kerkyras dhmosieyma athlhtikhs
+      efhmeridas mas prokalei mono gegonos anthrwpoys poinikhs dikaiosynhs oyte efhmerida
+      eksedra shmerino prwtoselido eisaggeleis dikastes'
+    - '2011-08-01 17:10:08.178240'
+    - '2011-08-01 17:10:43.238505'
+    - http://www.protathlima.com//content/images/other/13032011/TzWPCWSdxK.jpg
+    - !!null 
+  - - 133
+    - Μήνυμα αισιοδοξίας από Αδαμίδη στον κόσμο της ομάδας
+    - Ο πρόεδρος της ΑΕΚ, Σταύρος Αδαμίδης αναφέρθηκε στο περιεχόμενο της σημερινής
+      συνάντησης της ΠΑΕ, της Ερασιτεχνικής και του Δήμου που είχε σκοπό να τελειώσουν
+      το θέμα του μνημονίου συνεργασίας για την προσπάθεια κατασκευής γηπέδου στην
+      Νέα Φιλαδέλφεια. Και αναφερόμενος στους φιλάθλους της ομάδας, παρουσιάστηκε
+      αισιόδοξος.
+    - ":: Μήνυμα αισιοδοξίας από Αδαμίδη στον κόσμο της ομάδας\n\t\t\t:: Ημερομηνία
+      δημοσίευσης:\n\t\t\t01-08-2011\n\t\t\t- \n\t\t\tΏρα:\n\t\t\t15:58\n\t\t\n\t\t\t\n.str_photo_header
+      {\n\tbackground-color:#000000;\n\tfont-size:13px;\n\tcolor:#ffffff;\n   \tfont-weight:none;\n}\n.str_photo_table
+      {\n\tbackground-color:#F7FBFD;\n   \tborder:2px solid #D8DFE2;\n}\n.str_photo
+      {\n\tbackground-color:#ffffff;\n   \tborder:0px solid #dddddd;\n   \tcursor:hand;\n\tpadding:5px;\n}\n\n\t\t\t<!--//
+      <![CDATA[\n    /* [id21] League - Story - Textlink - Top */\n    OA_show(21);\n//
+      ]]> -->Ο πρόεδρος της ΑΕΚ, Σταύρος Αδαμίδης αναφέρθηκε στο περιεχόμενο της σημερινής
+      συνάντησης της ΠΑΕ, της Ερασιτεχνικής και του Δήμου που είχε σκοπό να τελειώσουν
+      το θέμα του μνημονίου συνεργασίας για την προσπάθεια κατασκευής γηπέδου στην
+      Νέα Φιλαδέλφεια. Και αναφερόμενος στους φιλάθλους της ομάδας, παρουσιάστηκε
+      αισιόδοξος.\r\n«Συμφωνήθηκε σήμερα το τελικό κείμενο του μνημονίου συνεργασίας.
+      Τελεί πλέον υπό την τελική έγκριση του Διοικητικού Συμβουλίου της ΠΑΕ, της Ερασιτεχνικής
+      και του Δημοτικού Συμβουλίου. Οι υπογραφές θα πέσουν στις 25 ή στις 26 Αυγούστου.
+      Από εδώ και πέρα, με αυτό το μνημόνιο το γήπεδο μπαίνει σε μία νέα φάση, στην
+      τελική του ευθεία», ανέφερε αρχικά στην ιστοσελίδα που ασχολείται με τα θέματα
+      της ΑΕΚ (aek365).\r\nΚαι συνέχισε: «Όλες οι προσπάθειες που γίνονται είναι συντονισμένες
+      και προκαθορισμένες. Δεν κάνουμε βιαστικές ενέργειες, γιατί δεν θέλουμε να καταλήξουμε
+      σε… τοίχο, όπως έγινε την τελευταία φορά. Ο κόσμος της ΑΕΚ έχει κάθε λόγο να
+      χαμογελάει σήμερα, γιατί μία μεγάλη σκόπελος ξεπεράστηκε. Πλέον και επίσημα
+      για πρώτη φορά Δήμος, ΠΑΕ και Ερασιτεχνική είναι στο ίδιο μήκος κύματος και
+      με κοινό στόχο».\r\nΕν συνεχεία ο Σταύρος Αδαμίδης αναφέρθηκε στο επόμενο βήμα
+      της κοινής προσπάθειας που θα αφορά την κατάθεση του φακέλου για την κατασκευή
+      γηπέδου προς την Πολιτεία: «Το επόμενο βήμα μετά την υπογραφή του μνημονίου
+      είναι η κατάθεση του πλήρους φακέλου στο Υπουργείο.\r\n \r\nΚάτι που θα γίνει
+      αμέσως μετά την υπογραφή του μνημονίου. Θα προσπαθήσουμε τις επόμενες ημέρες
+      από τις υπογραφές, για να κερδίσουμε χρόνο. Λείπουν κάποια τελευταία στοιχεία
+      από το φάκελο, αλλά εργαζόμαστε για να είναι όλα έτοιμα όταν πρέπει και να κατατεθεί»\n\t\t"
+    - ! "\n\t\tProtathlima.com  \x95  Σούπερ Λίγκα  \x95  ΑΕΚ Αθηνών\n\t"
+    - http://www.protathlima.com/content/league/story.jsp?league_id=11&id=77802
+    - Mon, 1 Aug 2011 00:00:00 -0700
+    - http://www.protathlima.com/content/league/story.jsp?league_id=11&id=77802
+    - 1
+    - !!null 
+    - ! ' mhnyma aisiodoksias adamidh kosmo omadas aek stayros adamidhs anaferthhke
+      shmerinhs synanthshs pae erasitexnikhs dhmoy skopo teleiwsoyn mnhmonioy synergasias
+      kataskeyhs ghpedoy nea filadelfeia anaferomenos symfwnhthhke shmera keimeno
+      pleon telikh egkrish symvoylioy dhmotikoy ypografes pesoyn mnhmonio mpainei
+      eytheia asxoleitai syntonismenes prokathorismenes viastikes energeies giati
+      katalhksoyme toixo teleytaia fora xamogelaei skopelos kseperasthke dhmos erasitexnikh
+      kymatos epomeno vhma koinhs katathesh fakeloy kataskeyh politeia ypografh plhroys
+      ypoyrgeio amesws prospathhsoyme kerdisoyme leipoyn fakelo ergazomaste etoima
+      katatethei'
+    - '2011-08-01 17:10:10.583626'
+    - '2011-08-01 17:10:43.242381'
+    - http://www.protathlima.com//content/images/other/28112010/CGtWtJ7eD7.jpg
+    - !!null 
+  - - 134
+    - Με αρχηγό αποστολής τον Πρόεδρο Νεοφύτου
+    - Αναχωρεί αύριο 2/8 στις 10 το πρωί, η αποστολή της ΟΜΟΝΟΙΑΣ για την Ολλανδία
+      στα πλαίσια του επαναληπτικού αγώνα με τη ADO DEN HAAG. Στην αποστολή συμμετέχουν
+      οι ακόλουθοι...
+    - ! ":: Με αρχηγό αποστολής τον Πρόεδρο Νεοφύτου\n\t\t\t:: Ημερομηνία δημοσίευσης:\n\t\t\t01-08-2011\n\t\t\t-
+      \n\t\t\tΏρα:\n\t\t\t15:46\n\t\t\n\t\t\t\n.str_photo_header {\n\tbackground-color:#000000;\n\tfont-size:13px;\n\tcolor:#ffffff;\n
+      \  \tfont-weight:none;\n}\n.str_photo_table {\n\tbackground-color:#F7FBFD;\n
+      \  \tborder:2px solid #D8DFE2;\n}\n.str_photo {\n\tbackground-color:#ffffff;\n
+      \  \tborder:0px solid #dddddd;\n   \tcursor:hand;\n\tpadding:5px;\n}\n\n\t\t\t<!--//
+      <![CDATA[\n    /* [id21] League - Story - Textlink - Top */\n    OA_show(21);\n//
+      ]]> -->\n\t\t\tΑναχωρεί αύριο 2/8 στις 10 το πρωί, η αποστολή της ΟΜΟΝΟΙΑΣ για
+      την Ολλανδία στα πλαίσια του επαναληπτικού αγώνα με τη ADO DEN HAAG. Στην αποστολή
+      συμμετέχουν οι ακόλουθοι:Αρχηγός αποστολήςΜιλτιάδης Νεοφύτου-ΠρόεδροςΣυνοδοίΠαύλος
+      Χρυσάνθου - Μέλος Δ.Σ\r\nΠαύλος Νικολαϊδης - Εκτελεστικός Διευθυντής\r\nΧριστάκης
+      Γεωργίου - Υπεύθυνος 1ης ομάδαςΠροπονητική ομάδαΝεόφυτος Λάρκου - Προπονητής\r\nΣοφοκλής
+      Σοφοκλέους - Βοηθός προπονητής\r\nΣτέργιος Φωτόπουλος – Προπονητής φυσικής κατάστασης\r\nΟνησίφορος
+      Ονησιφόρου - Β΄ προπονητής φυσικής κατάστασης \r\nΧριστόφορος Λοϊζου- Προπονητής
+      τερματοφυλάκωνΙατρική ομάδαΦοίβος Κυνηγός - Ιατρός\r\nΓιώργος Ευσταθίου - Χειροπράκτης\r\nΓιώργος
+      Μαύρος - Φυσιοθεραπευτής\r\nΕύρος Δρουσιώτης - Κινησιολόγος\r\nΣτέλιος Πέτρου
+      - Μασέρ\r\nΝικολάϋ Τεμέλκωφ – ΜασέρΟμάδα υποστήριξηςΑντώνης Θεοδώρου - Σεφ\r\nΜ.
+      Πιτσιλλίδης – Φροντιστής\r\nJ.Kralchev - ΦροντιστήςΠοδοσφαιριστέςΓιωργαλλίδης,
+      Λοϊζου, Φρασκαρέλι, Ντάβιντσον, Σπούνγκιν, Αλαμπί, Καρυπίδης, Σερφά, Μπουθόν,
+      Μαργκάσα, Ζεβλάρης, Χρ. Χαραλάμπους, Κασέκε, Λεάντρο, Σάλατιτς, Ντα Σίλβα, Αγκουϊάρ,
+      Μακρίδης, Αβραάμ, Εφραίμ, Χριστοφή, Τάντιτς και Ρενχίφο.\r\nΗ ομάδα θα προπονηθεί
+      τηνΤετάρτη 3/8 στο στάδιο “KYOCERA” στις 19:00 ώρα Ολλανδίας. Η προπόνηση θα
+      είναι ανοικτή για τα ΜΜΕ και τους φιλάθλους μας. Στις 18:00 ο προπονητής, κ.
+      Νεόφυτος Λάρκου, θα παραθέσει διάσκεψη Τύπου.Από επίσημη ιστοσελίδα Ομόνοιας\n\t\t"
+    - ! "\n\t\tProtathlima.com  \x95  Πρωτάθλημα Marfin Laiki  \x95  Ομόνοια Λευκωσίας\n\t"
+    - http://www.protathlima.com/content/league/story.jsp?league_id=1&id=77807
+    - Mon, 1 Aug 2011 00:00:00 -0700
+    - http://www.protathlima.com/content/league/story.jsp?league_id=1&id=77807
+    - 1
+    - !!null 
+    - ! ' arxhgo apostolhs proedro neofytoy anaxwrei ayrio stis prwi apostolh omonoias
+      ollandia plaisia epanalhptikoy ado haag symmetexoyn akoloythoi arxhgos apostolhsmiltiadhs
+      proedrossynodoipaylos xrysanthoy melos s paylos nikolaidhs ektelestikos dieythynths
+      xristakhs gewrgioy ypeythynos hs omadasproponhtikh omadaneofytos larkoy proponhths
+      sofoklhs sofokleoys vohthos stergios fwtopoylos fysikhs katastashs onhsiforos
+      onhsiforoy xristoforos loizoy termatofylakwniatrikh omadafoivos kynhgos iatros
+      giwrgos eystathioy xeiroprakths mayros fysiotherapeyths eyros droysiwths kinhsiologos
+      stelios petroy maser nikola temelkwf maseromada yposthrikshsantwnhs theodwroy
+      sef m pitsillidhs frontisths j kralchev frontisthspodosfairistesgiwrgallidhs
+      fraskareli ntavintson spoyngkin alampi karypidhs serfa mpoython margkasa zevlarhs
+      xr xaralampoys kaseke leantro salatits nta silva agkoyiar makridhs avraam efraim
+      xristofh tantits renxifo proponhthei thntetarth stadio kyocera ollandias proponhsh
+      anoikth mme filathloys k neofytos parathesei diaskepsh epishmh istoselida'
+    - '2011-08-01 17:10:13.954248'
+    - '2011-08-01 17:10:43.247534'
+    - http://www.protathlima.com//content/images/other/22062011/eDe2ZQtA5g.jpg
+    - !!null 
+  - - 135
+    - «Διάβολος» ως το 2015 ο Βαλέντσια!
+    - Ο Αντόνιο Βαλέντσια θα παραμείνει κάτοικος «Ολντ Τράφορντ», καθώς υπέγραψε νέο
+      συμβόλαιο τετραετούς διάρκειας με την Μάντσεστερ Γιουνάιτεντ.
+    - ":: «Διάβολος» ως το 2015 ο Βαλέντσια!\n\t\t\t:: Ημερομηνία δημοσίευσης:\n\t\t\t01-08-2011\n\t\t\t-
+      \n\t\t\tΏρα:\n\t\t\t15:32\n\t\t\n\t\t\t\n.str_photo_header {\n\tbackground-color:#000000;\n\tfont-size:13px;\n\tcolor:#ffffff;\n
+      \  \tfont-weight:none;\n}\n.str_photo_table {\n\tbackground-color:#F7FBFD;\n
+      \  \tborder:2px solid #D8DFE2;\n}\n.str_photo {\n\tbackground-color:#ffffff;\n
+      \  \tborder:0px solid #dddddd;\n   \tcursor:hand;\n\tpadding:5px;\n}\n\n\t\t\t<!--//
+      <![CDATA[\n    /* [id21] League - Story - Textlink - Top */\n    OA_show(21);\n//
+      ]]> -->Ο Αντόνιο Βαλέντσια θα παραμείνει κάτοικος «Ολντ Τράφορντ», καθώς υπέγραψε
+      νέο συμβόλαιο τετραετούς διάρκειας με την Μάντσεστερ Γιουνάιτεντ.\r\nΜετά την
+      επέκταση της συνεργασίας με τον 25χρονο μέσο από τον Ισημερινό, ο Σερ Άλεξ Φέργκιουσον
+      σχολίασε: «Ο Αντόνιο έχει σημαντική συμβολή στην προσπάθεια της ομάδας από την
+      στιγμή που ενσωματώθηκε στον σύλλογο. Η ταχύτητα του, οι σέντρες και η τεχνική
+      του κατάρτιση μας δίνουν μεγάλο πλεονέκτημα. \r\nΈχει έναν σιωπηλό και αθόρυβο
+      τρόπο να ανταποκρίνεται στα καθήκοντα του, ο οποίος συνοδεύεται από δυνατό χαρακτήρα,
+      και είναι χαρακτηριστικό παράδειγμα το γεγονός πως κατάφερε να ξεπεράσει γρήγορα
+      τον σοβαρότατο τραυματισμό που είχε υποστεί την περασμένη σεζόν».\r\nΟ Βαλέντσια
+      από την πλευρά του πρόσθεσε: «Είμαι ενθουσιασμένος από την παρουσία μου στην
+      Γιουνάιτεντ. Από την πρώτη μέρα στο Κάρινγκτον, αισθανόμουν ευτυχισμένος εδώ.
+      Ελπίζω πως θα συνεχίσω να βελτιώνομαι αγωνιστικά και να εξελίσσομαι σαν ποδοσφαιριστής.
+      Ανυπομονώ να συμβάλω στην προσπάθεια της ομάδας να κατακτήσει περισσότερους
+      τίτλους».\n\t\t"
+    - ! "\n\t\tProtathlima.com  \x95  Πρέμιερ Λιγκ  \x95  Μάντσεστερ Γιουνάιτεντ\n\t"
+    - http://www.protathlima.com/content/league/story.jsp?league_id=21&id=77800
+    - Mon, 1 Aug 2011 00:00:00 -0700
+    - http://www.protathlima.com/content/league/story.jsp?league_id=21&id=77800
+    - 1
+    - !!null 
+    - ! ' diavolos ws valentsia antonio parameinei katoikos olnt trafornt kathws ypegrapse
+      neo symvolaio tetraetoys diarkeias mantsester gioynaitent epektash meso ishmerino
+      ser aleks fergkioyson sxoliase shmantikh symvolh prospatheia stigmh enswmatwthhke
+      syllogo taxythta sentres texnikh katartish dinoyn megalo pleonekthma enan siwphlo
+      athoryvo antapokrinetai kathhkonta synodeyetai dynato xarakthra xarakthristiko
+      paradeigma gegonos pws katafere kseperasei grhgora sovarotato traymatismo ypostei
+      perasmenh sezon pleyra prosthese eimai enthoysiasmenos paroysia mera karingkton
+      aisthanomoyn eytyxismenos elpizw synexisw veltiwnomai agwnistika ekselissomai
+      san podosfairisths anypomonw symvalw katakthsei perissoteroys titloys'
+    - '2011-08-01 17:10:16.555975'
+    - '2011-08-01 17:10:43.251303'
+    - http://www.protathlima.com//content/images/other/12022010/abxExtFhsd.jpg
+    - !!null 
+  - - 136
+    - Χωρίς Κουίνσι και Βιτόλο με Οντένσε
+    - Ο Ζεσουάλδο Φερέιρα καταστρώνει τα πλάνα του ενόψει της ρεβάνς του Παναθηναϊκού,
+      χωρίς να υπολογίζει στις υπηρεσίες των Βίκτορ Βιτόλο και Κουίνσι Οβούσου, οι
+      οποίοι αποκλείστηκαν από την αποστολή των «πρασίνων».
+    - ":: Χωρίς Κουίνσι και Βιτόλο με Οντένσε\n\t\t\t:: Ημερομηνία δημοσίευσης:\n\t\t\t01-08-2011\n\t\t\t-
+      \n\t\t\tΏρα:\n\t\t\t15:20\n\t\t\n\t\t\t\n.str_photo_header {\n\tbackground-color:#000000;\n\tfont-size:13px;\n\tcolor:#ffffff;\n
+      \  \tfont-weight:none;\n}\n.str_photo_table {\n\tbackground-color:#F7FBFD;\n
+      \  \tborder:2px solid #D8DFE2;\n}\n.str_photo {\n\tbackground-color:#ffffff;\n
+      \  \tborder:0px solid #dddddd;\n   \tcursor:hand;\n\tpadding:5px;\n}\n\n\t\t\t<!--//
+      <![CDATA[\n    /* [id21] League - Story - Textlink - Top */\n    OA_show(21);\n//
+      ]]> -->Ο Ζεσουάλδο Φερέιρα καταστρώνει τα πλάνα του ενόψει της ρεβάνς του Παναθηναϊκού,
+      χωρίς να υπολογίζει στις υπηρεσίες των Βίκτορ Βιτόλο και Κουίνσι Οβούσου, οι
+      οποίοι αποκλείστηκαν από την αποστολή των «πρασίνων».\r\nΟ Γκανέζος εξτρέμ πραγματοποίησε
+      το ντεμπούτο του με το «τριφύλλι» στην αναμέτρηση του «TRE FOR Park», ωστόσο
+      κατά την διάρκεια της εβδομάδας υπέστη σύσπαση στον τετρακέφαλο, και δεν κατάφερε
+      να ξεπεράσει τον τραυματισμό του. Ο Κουίνσι υποβλήθηκε σε θεραπείες τις τελευταίες
+      μέρες, ,και στην προπόνηση της Δευτέρας ακολούθησε ατομικό πρόγραμμα εκγύμνασης,
+      ωστόσο δεν βρίσκεται στο απαιτούμενο επίπεδο αγωνιστικής ετοιμότητας, και κρίθηκε
+      σκόπιμο να μείνει εκτός πλάνων. \r\nΌσον αφορά στον Βιτόλο, ο Ισπανός μέσος
+      ακολουθούσε το τελευταίο χρονικό διάστημα για προληπτικούς λόγους ειδικό πρόγραμμα
+      ενδυνάμωσης για το πρόβλημα τραυματισμού στο γόνατο που τον ταλαιπώρησε την
+      περασμένη σεζόν, και οι αρχικές εκτιμήσεις έκαναν λόγο για επιστροφή τους στους
+      αγωνιστικούς χώρους στην ρεβάνς με την Οντένσε, ωστόσο ο Ζεσουάλδο Φερέιρα έκρινε
+      πως ο 27χρονος αμυντικός χαφ δεν είναι σε θέση να προσφέρει τις υπηρεσίες του
+      στους «πράσινους». \r\nΕκτός αποστολής έμειναν ακόμα ο ανέτοιμος Γιώργος Ιωαννίδης
+      αλλά και ο Νταμιέν Πλεσί, που δεν υπολογίζεται, με τους «πράσινους» να επιδίδονται
+      σε ασκήσεις που αφορούσαν στην σωστή κυκλοφορία της μπάλας, ενώ «δούλεψαν» αρκετά
+      και τις στημένες φάσεις.\r\nΗ αποστολή του Παναθηναϊκού αποτελείται από τους:
+      Τζόρβα, Καρνέζη, Καντέ, Σαριέγκι, Μπουμσόνγκ, Βύντρα, Σεϊταρίδη, Σπυρόπουλο,
+      Κατσουράνη, Καραγκούνη, Νίνη, Μαρίνο, Σιμάο, Κλέιτον, Μπιάρσμιρ, Τοτσέ, Λέτο,
+      Πετρόπουλο.\n\t\t"
+    - ! "\n\t\tProtathlima.com  \x95  Σούπερ Λίγκα  \x95  Παναθηναϊκός\n\t"
+    - http://www.protathlima.com/content/league/story.jsp?league_id=11&id=77799
+    - Mon, 1 Aug 2011 00:00:00 -0700
+    - http://www.protathlima.com/content/league/story.jsp?league_id=11&id=77799
+    - 1
+    - !!null 
+    - ! ' xwris koyinsi vitolo ontense zesoyaldo fereira katastrwnei plana enopsei
+      revans panathhnaikoy ypologizei yphresies viktor ovoysoy opoioi apokleisthkan
+      apostolh prasinwn gkanezos ekstrem pragmatopoihse ntempoyto trifylli anametrhsh
+      tre for park wstoso evdomadas ypesth syspash tetrakefalo katafere kseperasei
+      traymatismo ypovlhthhke therapeies teleytaies meres proponhsh deyteras akoloythhse
+      atomiko programma ekgymnashs apaitoymeno epipedo agwnistikhs etoimothtas krithhke
+      skopimo meinei ektos planwn ispanos mesos akoloythoyse xroniko diasthma prolhptikoys
+      logoys eidiko endynamwshs traymatismoy gonato talaipwrhse arxikes ektimhseis
+      ekanan epistrofh stoys agwnistikoys xwroys ekrine prasinoys apostolhs emeinan
+      anetoimos iwannidhs ntamien plesi ypologizetai epididontai askhseis aforoysan
+      swsth kykloforia mpalas doylepsan arketa sthmenes faseis apoteleitai tzorva
+      karnezh sariegki mpoymsongk vyntra seitaridh spyropoylo katsoyranh karagkoynh
+      ninh marino simao kleiton mpiarsmir totse leto petropoylo'
+    - '2011-08-01 17:10:19.178223'
+    - '2011-08-01 17:10:39.984418'
+    - http://www.protathlima.com//content/images/other/21072011/hwGQwfWfEb.jpg
+    - !!null 
+  - - 137
+    - ! 'Μπαλοτέλι: «Νιώθω απαίσια στο Μάντσεστερ...!»'
+    - Ο ιδιόρρυθμος επιθετικός, Μάριο Μπαλοτέλι, με δηλώσεις του στο «SkyItalia»,
+      ανέφερε πως δεν του αρέσει καθόλου η πόλη του Μάντσεστερ. Ο διεθνής Ιταλός άσος
+      πάντως ξεκαθάρισε πως δεν έχει κανένα πρόβλημα ούτε με τη Σίτι, αλλά ούτε και
+      με τον προπονητή του, Ρομπέρτο Μαντσίνι. «Νιώθω απαίσια στο Μάντσεστερ, δεν
+      μου αρέσει η πόλη», τόνισε.
+    - ":: Μπαλοτέλι: «Νιώθω απαίσια στο Μάντσεστερ...!»\n\t\t\t:: Ημερομηνία δημοσίευσης:\n\t\t\t01-08-2011\n\t\t\t-
+      \n\t\t\tΏρα:\n\t\t\t15:07\n\t\t\n\t\t\t\n.str_photo_header {\n\tbackground-color:#000000;\n\tfont-size:13px;\n\tcolor:#ffffff;\n
+      \  \tfont-weight:none;\n}\n.str_photo_table {\n\tbackground-color:#F7FBFD;\n
+      \  \tborder:2px solid #D8DFE2;\n}\n.str_photo {\n\tbackground-color:#ffffff;\n
+      \  \tborder:0px solid #dddddd;\n   \tcursor:hand;\n\tpadding:5px;\n}\n\n\t\t\t<!--//
+      <![CDATA[\n    /* [id21] League - Story - Textlink - Top */\n    OA_show(21);\n//
+      ]]> -->Ο ιδιόρρυθμος επιθετικός, Μάριο Μπαλοτέλι, με δηλώσεις του στο «SkyItalia»,
+      ανέφερε πως δεν του αρέσει καθόλου η πόλη του Μάντσεστερ. Ο διεθνής Ιταλός άσος
+      πάντως ξεκαθάρισε πως δεν έχει κανένα πρόβλημα ούτε με τη Σίτι, αλλά ούτε και
+      με τον προπονητή του, Ρομπέρτο Μαντσίνι. «Νιώθω απαίσια στο Μάντσεστερ, δεν
+      μου αρέσει η πόλη», τόνισε.\r\nΚαι συνέχισε: «Βέβαια, όλα είναι καλά με τους
+      συμπαίκτες μου και τον προπονητή, αλλά η πόλη δεν είναι του γούστου μου. Το
+      μόνο πράγμα που μπορώ να κάνω είναι να μένω στο σπίτι με την οικογένεια και
+      τους φίλους μου».\r\nΌσον αφορά το ενδιαφέρον της Μίλαν για την απόκτησή του,
+      ο διεθνής φορ σχολίασε: «Πατρίδα μου είναι η Μπρέσια, όχι το Μιλάνο. Φυσικά
+      η Μίλαν είναι ένας σπουδαίος σύλλογος και κάποια μέρα μπορεί να μιλάμε για μια
+      μεταγραφή εκεί. Προς το παρόν είμαι “δεμένος” στο Μάντσεστερ, αλλά θα δούμε».\n\t\t"
+    - ! "\n\t\tProtathlima.com  \x95  Πρέμιερ Λιγκ  \x95  Μάντσεστερ Σίτυ\n\t"
+    - http://www.protathlima.com/content/league/story.jsp?league_id=21&id=77798
+    - Mon, 1 Aug 2011 00:00:00 -0700
+    - http://www.protathlima.com/content/league/story.jsp?league_id=21&id=77798
+    - 1
+    - !!null 
+    - ! ' mpaloteli niwthw apaisia mantsester idiorrythmos epithetikos mario dhlwseis
+      skyitalia pws den aresei katholoy polh diethnhs italos asos pantws ksekatharise
+      kanena provlhma oyte siti alla proponhth romperto mantsini moy tonise synexise
+      vevaia einai sympaiktes goystoy pragma mporw kanw menw spiti oikogeneia filoys
+      oson endiaferon milan apokthsh for sxoliase patrida mpresia milano fysika enas
+      spoydaios syllogos mera milame ekei paron eimai demenos doyme'
+    - '2011-08-01 17:10:21.807102'
+    - '2011-08-01 17:10:39.988403'
+    - http://www.protathlima.com//content/images/other/17042011/xE3sJC2GP5.jpg
+    - !!null 
+  - - 138
+    - «Ποτάμι» ο ιδρώτας στο Ζλάτιμπορ...
+    - Με διπλές προπόνησεις, πρωί και απόγευμα, συνεχίζεται το βασικό στάδιο προετοιμασίας
+      του ’ρη στο Ζλάτιμπορ της Σερβίας.
+    - ":: «Ποτάμι» ο ιδρώτας στο Ζλάτιμπορ...\n\t\t\t:: Ημερομηνία δημοσίευσης:\n\t\t\t01-08-2011\n\t\t\t-
+      \n\t\t\tΏρα:\n\t\t\t14:55\n\t\t\n\t\t\t\n.str_photo_header {\n\tbackground-color:#000000;\n\tfont-size:13px;\n\tcolor:#ffffff;\n
+      \  \tfont-weight:none;\n}\n.str_photo_table {\n\tbackground-color:#F7FBFD;\n
+      \  \tborder:2px solid #D8DFE2;\n}\n.str_photo {\n\tbackground-color:#ffffff;\n
+      \  \tborder:0px solid #dddddd;\n   \tcursor:hand;\n\tpadding:5px;\n}\n\n\t\t\t<!--//
+      <![CDATA[\n    /* [id21] League - Story - Textlink - Top */\n    OA_show(21);\n//
+      ]]> -->Με διπλές προπόνησεις, πρωί και απόγευμα, συνεχίζεται το βασικό στάδιο
+      προετοιμασίας του Άρη στο Ζλάτιμπορ της Σερβίας.Ο Ντούσαν Μιτόσεβιτς, βλέπει
+      με ικανοποίηση όλους τους παίκτες του να δείχνουν ιδιαίτερο ζήλο στις προπονήσεις
+      και να δίνουν «μάχη» για να κερδίσουν φανέλα βασικού στο «νέο» Άρη που «χτίζει»
+      ο Σερβοκύπριος τεχνικός, ο οποίος έχει στόχο να καθιερωθεί ξανά στα μεγάλα σαλόνια
+      και να πάψει να είναι... ασανσέτ μεταξύ Α΄ και Β΄ κατηγορίας.\r\nΣημειώνουμε
+      ότι οι Σόσιν, Ραντοσάβλιεβιτς Γκρούιτς και Θεοφάνους, ξεπέρασαν τα μικροπροβλήματα
+      τραυματισμών που αποκόμισαν τις προηγούμενες ημέρες και τέθηκαν στη διάθεση
+      της τεχνικής ηγεσίας.Γιάννης Ιωάννου\n\t\t"
+    - ! "\n\t\tProtathlima.com  \x95  Πρωτάθλημα Marfin Laiki  \x95  Αρης Λεμεσού\n\t"
+    - http://www.protathlima.com/content/league/story.jsp?league_id=1&id=77796
+    - Mon, 1 Aug 2011 00:00:00 -0700
+    - http://www.protathlima.com/content/league/story.jsp?league_id=1&id=77796
+    - 1
+    - !!null 
+    - ! ' potami idrwtas zlatimpor diples proponhseis prwi apogeyma synexizetai vasiko
+      stadio proetoimasias arh servias ntoysan mitosevits vlepei ikanopoihsh oloys
+      deixnoyn idiaitero zhlo dinoyn maxh kerdisoyn fanela vasikoy neo xtizei servokyprios
+      texnikos stoxo kathierwthei ksana megala salonia papsei asanset metaksy a v
+      kathgorias shmeiwnoyme sosin rantosavlievits gkroyits theofanoys kseperasan
+      mikroprovlhmata traymatismwn apokomisan prohgoymenes hmeres tethhkan diathesh
+      texnikhs hgesias giannhs iwannoy'
+    - '2011-08-01 17:10:24.528902'
+    - '2011-08-01 17:10:43.257691'
+    - http://www.protathlima.com//content/images/other/05072011/QRby5SSxc8.jpg
+    - !!null 
+  - - 139
+    - Πιστωτικό ίδρυμα πήρε δάνειο και έβαλε εγγύηση... Κακά και Ρονάλντο!
+    - Η Bankia, ισπανικό πιστωτικό ίδρυμα, θέλησε να πάρει δάνειο από την Ευρωπαϊκή
+      Κεντρική Τράπεζα και για να το καταφέρει αυτό έβαλε ως εγγύηση τον Κριστιάνο
+      Ρονάλντο και τον Κακά. Το συγκεκριμένο ίδρυμα είχε το δικαίωμα να το κάνει αυτό
+      καθώς είχε δανείσει 76.5 εκ. ευρώ στη "βασίλισσα" προκειμένου η ισπανική ομάδα
+      να μπορέσει να αγοράσει τους ποδοσφαιριστές.
+    - ":: Πιστωτικό ίδρυμα πήρε δάνειο και έβαλε εγγύηση... Κακά και Ρονάλντο!\n\t\t\t::
+      Ημερομηνία δημοσίευσης:\n\t\t\t01-08-2011\n\t\t\t- \n\t\t\tΏρα:\n\t\t\t14:33\n\t\t\n\t\t\t\n.str_photo_header
+      {\n\tbackground-color:#000000;\n\tfont-size:13px;\n\tcolor:#ffffff;\n   \tfont-weight:none;\n}\n.str_photo_table
+      {\n\tbackground-color:#F7FBFD;\n   \tborder:2px solid #D8DFE2;\n}\n.str_photo
+      {\n\tbackground-color:#ffffff;\n   \tborder:0px solid #dddddd;\n   \tcursor:hand;\n\tpadding:5px;\n}\n\n\t\t\t<!--//
+      <![CDATA[\n    /* [id21] League - Story - Textlink - Top */\n    OA_show(21);\n//
+      ]]> -->Η Bankia, ισπανικό πιστωτικό ίδρυμα, θέλησε να πάρει δάνειο από την Ευρωπαϊκή
+      Κεντρική Τράπεζα και για να το καταφέρει αυτό έβαλε ως εγγύηση τον Κριστιάνο
+      Ρονάλντο και τον Κακά. Το συγκεκριμένο ίδρυμα είχε το δικαίωμα να το κάνει αυτό
+      καθώς είχε δανείσει 76.5 εκ. ευρώ στη \"βασίλισσα\" προκειμένου η ισπανική ομάδα
+      να μπορέσει να αγοράσει τους ποδοσφαιριστές.\r\nΤα δικαιώματα των δυο παικτών
+      θα περάσουν στην κατοχή της Ευρωπαϊκής Κεντρικής Τράπεζας σε περίπτωση που η
+      Bankia δεν εξοφλήσει την Ε.Κ.Τ. και ταυτόχρονα η Ρεάλ Μαδρίτης δεν αποπληρώσει
+      το δάνειο της προς το ισπανικό πιστωτικό ίδρυμα.\n\t\t"
+    - ! "\n\t\tProtathlima.com  \x95  Πριμέρα Ντιβισιόν  \x95  Ρεάλ Μαδρίτης\n\t"
+    - http://www.protathlima.com/content/league/story.jsp?league_id=41&id=77795
+    - Mon, 1 Aug 2011 00:00:00 -0700
+    - http://www.protathlima.com/content/league/story.jsp?league_id=41&id=77795
+    - 1
+    - !!null 
+    - ! ' pistwtiko idryma phre daneio evale eggyhsh kaka ronalnto bankia ispaniko
+      thelhse parei eyrwpaikh kentrikh trapeza kataferei ayto ws kristiano sygkekrimeno
+      eixe dikaiwma kanei kathws daneisei ek eyrw vasilissa prokeimenoy ispanikh mporesei
+      agorasei podosfairistes dikaiwmata paiktwn perasoyn katoxh eyrwpaikhs kentrikhs
+      trapezas periptwsh eksoflhsei e k t taytoxrona real madriths apoplhrwsei'
+    - '2011-08-01 17:10:27.263301'
+    - '2011-08-01 17:10:39.993493'
+    - http://www.protathlima.com//content/images/other/30082009/real.jpg
+    - !!null 
+  - - 140
+    - ! 'Επέλεξε Χλώρακα ο Κωνσταντή '
+    - Στον Ακρίτα Χλώρακας θα συνεχίσει την καριέρα του ο έμπειρος αριστεροπόδαρος
+      Γιώργος Κωνσταντή. Ο έμπειρος αμυντικός  έπειτα από το ενδιαφέρον πολλών ομάδων
+      για να τον εντάξουν στο δυναμικό τους εν τέλει επέλεξε την ομάδα της Χλώρακας.
+    - ":: Επέλεξε Χλώρακα ο Κωνσταντή… \n\t\t\t:: Ημερομηνία δημοσίευσης:\n\t\t\t01-08-2011\n\t\t\t-
+      \n\t\t\tΏρα:\n\t\t\t14:26\n\t\t\n\t\t\t\n.str_photo_header {\n\tbackground-color:#000000;\n\tfont-size:13px;\n\tcolor:#ffffff;\n
+      \  \tfont-weight:none;\n}\n.str_photo_table {\n\tbackground-color:#F7FBFD;\n
+      \  \tborder:2px solid #D8DFE2;\n}\n.str_photo {\n\tbackground-color:#ffffff;\n
+      \  \tborder:0px solid #dddddd;\n   \tcursor:hand;\n\tpadding:5px;\n}\n\n\t\t\t<!--//
+      <![CDATA[\n    /* [id21] League - Story - Textlink - Top */\n    OA_show(21);\n//
+      ]]> -->\n\t\t\tΣτον Ακρίτα Χλώρακας θα συνεχίσει την καριέρα του ο έμπειρος
+      αριστεροπόδαρος Γιώργος Κωνσταντή. Ο 30χρονος αμυντικός  έπειτα από το ενδιαφέρον
+      πολλών ομάδων για να τον εντάξουν στο δυναμικό τους την εφετινή περίοδο εν τέλει
+      επέλεξε την ομάδα της Χλώρακας. \r\nΜάλιστα αξίζει να σημειωθεί ότι σήμερα θα
+      δώσει για πρώτη φορά το παρών του στις προπονήσεις  υπό τις οδηγίες του παλιού
+      του γνώριμου στην ΑΕΛ Μάριου Νεοφύτου.  "
+    - ! "\n\t\tProtathlima.com  \x95  Β' Κατηγορία  \x95  Ακρίτας Χλώρακας\n\t"
+    - http://www.protathlima.com/content/league/story.jsp?league_id=2&id=77793
+    - Mon, 1 Aug 2011 00:00:00 -0700
+    - http://www.protathlima.com/content/league/story.jsp?league_id=2&id=77793
+    - 1
+    - !!null 
+    - ! ' epelekse xlwraka kwnstanth akrita xlwrakas synexisei kariera empeiros aristeropodaros
+      giwrgos xronos amyntikos epeita endiaferon pollwn omadwn entaksoyn dynamiko
+      efetinh periodo en telei malista aksizei shmeiwthei shmera dwsei prwth fora
+      parwn proponhseis ypo odhgies palioy gnwrimoy ael marioy neofytoy'
+    - '2011-08-01 17:10:29.982613'
+    - '2011-08-01 17:10:31.154347'
+    - http://www.protathlima.com//content/images/other/02102010/rjTp8hJeMw.jpg
+    - !!null 
+  - - 141
+    - Έστειλε... «αδιάβαστους» τους Ντος Ρέις και Τζάγκουιρθ
+    - Δεν πρόλαβαν καλά-καλά να ενσωματωθούν με την αποστολή του Απόλλωνα στο προπονητικό
+      κέντρο του Πράβετς, οι δύο υπό δοκιμή ποδοσφαιριστές Ντος Ρέις και Τζάγκουιρθ
+      και ο προπονητής της Λεμεσιανής ομάδας, Ντιντιέ Νικόλ, τους έδειξε την... πόρτα
+      εξόδου και ήδη αμφότεροι αναχώρησαν για τις πατρίδες τους!
+    - ":: Έστειλε... «αδιάβαστους» τους Ντος Ρέις και Τζάγκουιρθ\n\t\t\t:: Ημερομηνία
+      δημοσίευσης:\n\t\t\t01-08-2011\n\t\t\t- \n\t\t\tΏρα:\n\t\t\t14:19\n\t\t\n\t\t\t\n.str_photo_header
+      {\n\tbackground-color:#000000;\n\tfont-size:13px;\n\tcolor:#ffffff;\n   \tfont-weight:none;\n}\n.str_photo_table
+      {\n\tbackground-color:#F7FBFD;\n   \tborder:2px solid #D8DFE2;\n}\n.str_photo
+      {\n\tbackground-color:#ffffff;\n   \tborder:0px solid #dddddd;\n   \tcursor:hand;\n\tpadding:5px;\n}\n\n\t\t\t<!--//
+      <![CDATA[\n    /* [id21] League - Story - Textlink - Top */\n    OA_show(21);\n//
+      ]]> -->Δεν πρόλαβαν καλά-καλά να ενσωματωθούν με την αποστολή του Απόλλωνα στο
+      προπονητικό κέντρο του Πράβετς, οι δύο υπό δοκιμή ποδοσφαιριστές Ντος Ρέις και
+      Τζάγκουιρθ και ο προπονητής της Λεμεσιανής ομάδας, Ντιντιέ Νικόλ, τους έδειξε
+      την... πόρτα εξόδου και ήδη αμφότεροι αναχώρησαν για τις πατρίδες τους!\r\nΟι
+      δύο παίκτες οι οποίοι αγωνίστηκαν στο χθεσινό φιλικό με τη Σλάβια Σόφιας, έδειξαν
+      κάποια καλά στοιχεία, όμως οι πληροφορίες αναφέρουν ότι ο Γάλλος τεχνικός ψάχνει
+      κάτι καλύτερο στις θέσεις που αγωνίζονται, με αποτέλεσμα να τους απορρίψει και
+      να αρχίσει εκ νέου το ψάξιμο για την ενίσχυση της ομάδας.\r\nΣημειώνουμε ότι
+      ενός των επόμενων ημερών, αναμένονται στο νησί μας ο διεθνής Τογκολέζος επιθετικός
+      Τόμας Ντοσεβί και ο Σενεγαλέζος με Γαλλικό διαβατήριο αριστερος χαφ(ακόμα να
+      διαρρεύσει το όνομα του στον Τύπο, με τους διοικούντες να κρατάνε το στόμα τους
+      ερμητικά κλειστό για την συγκεκριμένη περίπτωση), οι οποίοι θα πάρουν χρόνο
+      συμμετοχής στα φιλικά παιχνίδια του Απόλλωνα στην Κύπρο και θα αξιολογηθούν
+      από την τεχνική ηγεσία, που λάβει και τις αποφάσεις για το μέλλον τους στην
+      ομάδα...Γιάννης Ιωάννου\n\t\t"
+    - ! "\n\t\tProtathlima.com  \x95  Πρωτάθλημα Marfin Laiki  \x95  Απόλλωνας Λεμεσού\n\t"
+    - http://www.protathlima.com/content/league/story.jsp?league_id=1&id=77792
+    - Mon, 1 Aug 2011 00:00:00 -0700
+    - http://www.protathlima.com/content/league/story.jsp?league_id=1&id=77792
+    - 1
+    - !!null 
+    - ! ' esteile adiavastoys toys ntos reis tzagkoyirth prolavan kala enswmatwthoyn
+      apollwna proponhtiko kentro pravets oi dyo ypo dokimh lemesianhs ntintie nikol
+      edeikse porta eksodoy amfoteroi anaxwrhsan patrides opoioi agwnisthkan xthesino
+      slavia sofias edeiksan stoixeia anaferoyn gallos texnikos psaxnei kalytero theseis
+      agwnizontai aporripsei arxisei ek neoy psaksimo enisxysh shmeiwnoyme enos epomenwn
+      hmerwn anamenontai nhsi diethnhs togkolezos epithetikos tomas ntosevi senegalezos
+      galliko diavathrio aristeros xaf diarreysei onoma typo dioikoyntes kratane stoma
+      ermhtika kleisto sygkekrimenh paroyn symmetoxhs filika paixnidia aksiologhthoyn
+      texnikh hgesia lavei apofaseis mellon'
+    - '2011-08-01 17:10:32.760507'
+    - '2011-08-01 17:10:43.264717'
+    - http://www.protathlima.com//content/images/other/16072011/amZ4tWcKE3.jpg
+    - !!null 
+  - - 142
+    - ! 'ΠΑ.Σ.Π.: «Πού είναι η ΚΟΠ;»'
+    - Ο Παγκύπριος Σύνδεσμος Ποδοσφαιριστών(ΠΑ.Σ.Π.) εξέδωσε ανακοίνωση με την οποία
+      εκφράζει την ανησυχία του για φλέγοντα θέματα που αφορούν το μέλλον του κυπριακού
+      ποδοσφαίρου...
+    - ":: ΠΑ.Σ.Π.: «Πού είναι η ΚΟΠ;»\n\t\t\t:: Ημερομηνία δημοσίευσης:\n\t\t\t01-08-2011\n\t\t\t-
+      \n\t\t\tΏρα:\n\t\t\t13:55\n\t\t\n\t\t\t\n.str_photo_header {\n\tbackground-color:#000000;\n\tfont-size:13px;\n\tcolor:#ffffff;\n
+      \  \tfont-weight:none;\n}\n.str_photo_table {\n\tbackground-color:#F7FBFD;\n
+      \  \tborder:2px solid #D8DFE2;\n}\n.str_photo {\n\tbackground-color:#ffffff;\n
+      \  \tborder:0px solid #dddddd;\n   \tcursor:hand;\n\tpadding:5px;\n}\n\n\t\t\t<!--//
+      <![CDATA[\n    /* [id21] League - Story - Textlink - Top */\n    OA_show(21);\n//
+      ]]> -->\n\t\t\tΟ Παγκύπριος Σύνδεσμος Ποδοσφαιριστών(ΠΑ.Σ.Π.) εξέδωσε ανακοίνωση
+      με την οποία εκφράζει την ανησυχία του για φλέγοντα θέματα που αφορούν το μέλλον
+      του κυπριακού ποδοσφαίρου...Αναλυτικά:«Μας ανησυχεί έντονα το γεγονός ότι για
+      φλέγοντα θέματα που αφορούν το μέλλον του κυπριακού ποδοσφαίρου δεν έχουμε την
+      ανταπόκριση της Ομοσπονδίας. Τονίζουμε δημόσια ότι το θέμα της ασφάλισης των
+      ποδοσφαιριστών είναι πολύ σημαντικό να υλοποιηθεί άμεσα και αναμένουμε από την
+      Ομοσπονδία όπως τηρήσει την υπόσχεση και την σχετική ανακοίνωση της (βλέπε ανακοίνωση
+      19/4) και προχωρήσει σε άμεση προκήρυξη προσφορών για ένα Ενιαίο Ασφαλιστικό
+      Σχέδιο όπου θα βοηθήσει οικονομικά τόσο τις ομάδες αλλά θα διασφαλίσει ταυτόχρονα
+      και τους ποδοσφαιριστές.\r\n«Κουραστήκαμε» πια να δεχόμαστε καταγγελίες από
+      μέλη μας για ακάλυπτες επιταγές ομάδων που αφορούν τα έξοδα ιατροφαρμακευτικής
+      περίθαλψης ποδοσφαιριστών. Πρέπει επιτέλους να δοθεί ένα τέλος σε αυτή την κωμωδία. \r\nΌποια
+      ομάδα δεν έχει ασφαλισμένους τους ποδοσφαιριστές της δεν πρέπει να δικαιούται
+      να ξεκινά το πρωτάθλημα. Είναι υποχρέωση του κάθε εργοδότη να έχει ασφαλισμένους
+      τους υπαλλήλους του ιδιαίτερα σε επαγγέλματα με κινδύνους.\r\nΕπίσης, δεν λάβαμε 
+      καμία απάντηση σε επιστολή μας που στείλαμε από τις 05 Ιουλίου 2011 και αφορά
+      τα πρωταθλήματα U21. Απ’ ότι φαίνετε επειδή το θέμα δεν ακουμπά τα άμεσα οικονομικά
+      συμφέροντα της Ομοσπονδίας δεν την ενδιαφέρει και πολύ. Εμείς σας αποστέλλουμε
+      την επιστολή αυτή γιατί πιστεύουμε ότι πρέπει να γίνουν αλλαγές άμεσα και δεν
+      πρέπει να προχωρούμε με τον ίδιο σχεδιασμό που είχαμε πριν 20 χρόνια».Επιμέλεια:
+      Γιάννης Ιωάννου\n\t\t"
+    - ! "\n\t\tProtathlima.com  \x95  Πρωτάθλημα Marfin Laiki\n\t"
+    - http://www.protathlima.com/content/league/story.jsp?league_id=1&id=77794
+    - Mon, 1 Aug 2011 00:00:00 -0700
+    - http://www.protathlima.com/content/league/story.jsp?league_id=1&id=77794
+    - 1
+    - !!null 
+    - ! ' pa s p kop pagkyprios syndesmos podosfairistwn anakoinwsh opoia ekfrazei
+      anhsyxia flegonta themata aforoyn mellon kypriakoy podosfairoy anhsyxei entona
+      den antapokrish omospondias tonizoyme dhmosia thema asfalishs ylopoihthei amesa
+      omospondia thrhsei yposxesh vlepe amesh prokhryksh prosforwn ena eniaio asfalistiko
+      sxedio oikonomika diasfalisei podosfairistes koyrasthkame pia dexomaste kataggelies
+      akalyptes epitages eksoda iatrofarmakeytikhs perithalpshs prepei epiteloys dothei
+      kwmwdia asfalismenoys dikaioytai ksekina ergodoth ypallhloys epaggelmata kindynoys
+      lavame apanthsh epistolh steilame prwtathlhmata u fainete akoympa allages proxwroyme
+      sxediasmo'
+    - '2011-08-01 17:10:35.527211'
+    - '2011-08-01 17:10:43.268856'
+    - http://www.protathlima.com//content/images/other/14042011/56WDNEnbZ2.jpg
+    - !!null 
+  - - 143
+    - ! 'Τσίλντρες: «Τα καλύτερα μου χρόνια στον Ολυμπιακό!»'
+    - Με τα καλύτερα λόγια μίλησε ο Τζος Τσίλντρες για τον Ολυμπιακό και τους αδελφούς
+      Αγγελόπουλος, αναφέρθηκε στην ελληνική εμπειρία που έζησε και όσα συνάντησε,
+      ενώ μίλησε και για το περίφημο λοκ-άουτ που στέλνει τους συμπατριώτες του προς...
+      Ευρώπη.
+    - ":: Τσίλντρες: «Τα καλύτερα μου χρόνια στον Ολυμπιακό!»\n\t\t\t:: Ημερομηνία
+      δημοσίευσης:\n\t\t\t01-08-2011\n\t\t\t- \n\t\t\tΏρα:\n\t\t\t13:12\n\t\t\n\t\t\t\n.str_photo_header
+      {\n\tbackground-color:#000000;\n\tfont-size:13px;\n\tcolor:#ffffff;\n   \tfont-weight:none;\n}\n.str_photo_table
+      {\n\tbackground-color:#F7FBFD;\n   \tborder:2px solid #D8DFE2;\n}\n.str_photo
+      {\n\tbackground-color:#ffffff;\n   \tborder:0px solid #dddddd;\n   \tcursor:hand;\n\tpadding:5px;\n}\n\n\t\t\t<!--//
+      <![CDATA[\n    /* [id21] League - Story - Textlink - Top */\n    OA_show(21);\n//
+      ]]> -->Με τα καλύτερα λόγια μίλησε ο Τζος Τσίλντρες για τον Ολυμπιακό και τους
+      αδελφούς Αγγελόπουλος, αναφέρθηκε στην ελληνική εμπειρία που έζησε και όσα συνάντησε,
+      ενώ μίλησε και για το περίφημο λοκ-άουτ που στέλνει τους συμπατριώτες του προς...
+      Ευρώπη.\r\nΑναλυτικά τι δήλωσε στο ESPN ο άλλοτε άσος του Ολυμπιακού:\r\nΓια
+      τον λόγο που δεν σκέφτεται να μετακομίσει στην Ευρώπη: «Ο λόγος δεν είναι ότι
+      δεν πέρασα καλά. Ήταν δύο από τις καλύτερες σεζόν της ζωής μου. Παρότι ακούγονται
+      σε κάποιους σαν εύκολα λεφτά, δεν είναι. Είναι σίγουρα ένας εκπληκτικός τρόπος
+      να βγάλεις λεφτά, όπως είναι γενικά το να παίζεις μπάσκετ και να πληρώνεσαι.
+      Η κατάσταση στην Ευρώπη θυμίζει περισσότερο το μπάσκετ στα κολέγια. Υπάρχει
+      αίσθηση αλληλεγγύης και θα έλεγα σε πολλούς να πάνε για την εμπειρία και όχι
+      για τα χρήματα».\r\nΓια την εμπειρία του στον Ολυμπιακό: «Στο δικό μου συμβόλαιο
+      υπήρχε ειδικός όρο ότι για κάθε είδους πρόβλημα η υπόθεση θα εκδικαζόταν στο
+      αθλητικό δικαστήριο της Ελβετίας, επομένως υπήρχε μια βασική εξασφάλιση. Κάθε
+      αθλητής πρέπει να ξέρει σε ποια ομάδα και σε ποια διοίκηση πάει. Η δική μου
+      διοίκηση ήταν εξαιρετική, με πλήρωσε μέχρι και το τελευταίο σεντ.\r\n \r\nΔεν
+      θα πω ότι οι σταρ του ΝΒΑ θα έχουν τη μεταχείριση που συνήθισαν από τους διαιτητές
+      και τους προπονητές. Κάθε διοίκηση ωστόσο, κάνει το καλύτερο που μπορεί. Στη
+      δική μου περίπτωση τα πράγματα ήταν εξαιρετικά. Μέναμε στα καλύτερα ξενοδοχεία,
+      είχαμε πτήσεις τσάρτερ για τις μετακινήσεις μας και οι ιδιοκτήτες, όπως αρκετοί
+      ακόμα στην Ευρώπη, δεν είχαν στόχο να βγάλουν χρήματα αλλά έδιναν λεφτά για
+      την ομάδας τους επειδή αγαπούν το παιχνίδι».\r\nΓια την ατμόσφαιρα στα ντέρμπι:
+      «Όντως τα γήπεδα είναι εχθρικά. Παίζεις και ξαφνικά ακούς κροτίδες, βλέπεις
+      να πέφτουν αντικείμενα και τρέχεις για κάλυψη. Τελικά όμως, αυτό που σου μένει
+      είναι το πάθος και η αγάπη που υπάρχει για το παιχνίδι».\r\nΓια το αν πρέπει
+      οι NBAers που θα πάνε Ευρώπη, να πιάνουν όσα πέφτουν μέσα στο γήπεδο: «Ποτέ
+      να μην το κάνουν. Αυτό ήταν το πρώτο που μου είπαν. Ποτέ μην πιάνεις κάτι. Μπορεί
+      να ανατιναχθεί. \"Κλώτσα το\", μου έλεγαν».\r\nΓια το λοκ άουτ: «Είμαστε τόσο
+      μακριά, όσο η Ανατολή και η Δύση. Δεν θα έλεγα ότι η σεζόν βρίσκεται ακόμα σε
+      κίνδυνο. Ελπίζω δηλαδή, να έχουμε μια σεζόν έστω μικρότερη. Έχουμε προετοιμαστεί
+      βέβαια και για το ενδεχόμενο να μην υπάρξει καθόλου σεζόν, το έχει πει και ο
+      πρόεδρος μας, Ντέρεκ Φίσερ. Σε σχέση με το προηγούμενο λοκ άουτ, όσοι το έζησαν
+      λένε ότι οι παίκτες τώρα είναι δέκα φορές πιο δεμένοι. Και υπάρχει και η προοπτική
+      του εξωτερικού».\n\t\t"
+    - ! "\n\t\tProtathlima.com  \x95  NBA\n\t"
+    - http://www.protathlima.com/content/league/story.jsp?league_id=4000&id=77790
+    - Mon, 1 Aug 2011 00:00:00 -0700
+    - http://www.protathlima.com/content/league/story.jsp?league_id=4000&id=77790
+    - 1
+    - !!null 
+    - ! ' tsilntres kalytera moy xronia olympiako empeiria lok aoyt eyrwph htan sezon
+      lefta paizeis mpasket elega pane xrhmata yphrxe poia dioikhsh dikh paixnidi
+      peftoyn pote mhn'
+    - '2011-08-01 17:10:38.537574'
+    - '2011-08-01 17:10:43.273568'
+    - http://www.protathlima.com//content/images/other/08052010/Hc4MRas5WM.jpg
+    - !!null 
+  - - 144
+    - Αντίστροφη μέτρηση για το... «αιώνιο» ντέρμπι
+    - Πραγματοποιήθηκε σήμερα το μεσημέρι η δημοσιογραφική διάσκεψη για τον αγώνα
+      LTV Super Cup, ανάμεσα στον πρωταθλητή ΑΠΟΕΛ και την κυπελλούχο Ομόνοια.
+    - ":: Αντίστροφη μέτρηση για το... «αιώνιο» ντέρμπι\n\t\t\t:: Ημερομηνία δημοσίευσης:\n\t\t\t01-08-2011\n\t\t\t-
+      \n\t\t\tΏρα:\n\t\t\t13:03\n\t\t\n\t\t\t\n.str_photo_header {\n\tbackground-color:#000000;\n\tfont-size:13px;\n\tcolor:#ffffff;\n
+      \  \tfont-weight:none;\n}\n.str_photo_table {\n\tbackground-color:#F7FBFD;\n
+      \  \tborder:2px solid #D8DFE2;\n}\n.str_photo {\n\tbackground-color:#ffffff;\n
+      \  \tborder:0px solid #dddddd;\n   \tcursor:hand;\n\tpadding:5px;\n}\n\n\t\t\t<!--//
+      <![CDATA[\n    /* [id21] League - Story - Textlink - Top */\n    OA_show(21);\n//
+      ]]> -->Πραγματοποιήθηκε σήμερα το μεσημέρι η δημοσιογραφική διάσκεψη για τον
+      αγώνα LTV Super Cup, ανάμεσα στον πρωταθλητή ΑΠΟΕΛ και την κυπελλούχο Ομόνοια,
+      που είναι προγραμματισμένος να διεξαχθεί την ερχόμενη Κυριακή 7 Αυγούστου (20:00)
+      στο Στάδιο ΓΣΠ. \r\nΜε απόφαση του Διοικητικού Συμβουλίου της ΚΟΠ, ο συγκεκριμένος
+      αγώνας θα είναι αφιερωμένος στη μνήμη των αδικοχαμένων θυμάτων της τραγωδίας
+      της 11ης Ιουλίου στη ναυτική βάση \"Ευάγγελος Φλωράκης\" στο Μαρί και στη μνήμη
+      του πρώην Υπουργού Παιδείας και Πολιτισμού Άκη Κλεάνθους.\r\nΤο κοινό μήνυμα
+      όλων, ήταν όπως ο αγώνας διεξαχθεί μέσα σε αθλητοπρεπή πλαίσια, μακριά από έκτροπα και
+      αντιπαραθέσεις μεταξύ των οπαδών των δύο ομάδων της Λευκωσίας.Από πλευράς ΚΟΠ
+      παρών στο πάνελ της συνέντευξης τύπου ήταν ο Αντρέας Σάντης: «Είναι ένα παιχνίδι
+      που γίνεται σε περίοδο πολλών προβλημάτων για την Κύπρο και το ποδόσφαιρο μας.
+      Ως ένδειξη σεβασμού σε αυτούς τους οποίους αφιερώνουμε το παιχνίδι να επιδείξουμε
+      το μέγιστο βαθμό σεβασμού και αθλητοπρέπειας. Δεν πάμε γήπεδο για να εκτονωθούμε,
+      αλλά για να απολαύσουμε ποδόσφαιρο. Θέλουμε ως ΚΟΠ να ευχηθούμε κάθε επιτυχία
+      στην Ευρώπη και είμαστε βέβαιοι ότι θα τα καταφέρουν οι ομάδες μας».\r\nΕπίσης,
+      ο 2ος αναπληρωτής πρόεδρος της ΚΟΠ ενημέρωσε για κάποιες επιμέρους λεπτομέρειες
+      για τον αγώνα, όπως παραδείγματος χάριν σε περίπτωση που τελειώσει ισόπαλο το
+      παιχνίδι, οι δύο ομάδες θα πάνε κατευθείαν στα πέναλτι. Παράλληλα τονίστηκε ότι το
+      ματς θα διευθύνουν Κύπριοι διαιτητές και οι κάρτες ισχύουν κανονικά για το πρωτάθλημα...\r\nΑκολούθως,
+      μίλησαν οι Πρόεδροι, οι προπονητές και οι αρχηγοί των δύο διαγωνιζόμενων ομάδων...Αναλυτικά:\r\nΦοίβος
+      Ερωτοκρίτου (Πρόεδρος ΑΠΟΕΛ): «Δεν υπάρχει καμία αμφιβολία ότι όλα όσα συμβαίνουν
+      σήμερα στην Κυπριακή κοινωνία, μας επηρεάζουν όλους, όμως ας αφήσουμε τις αντιπαραθέσεις
+      για τους πολιτικούς. Εμάς, το μόνο που πρέπει να μας ενδιαφέρει είναι το ποδόσφαιρο
+      και είναι υποχρέωση μας να τιμήσουμε τους ανθρώπους που έχασαν τη ζωή τους για
+      μας. Καλώ όλους τους φιλάθλους να στηρίξουν τις ομάδες τους χωρίς έκτροπα και
+      αντιπαραθέσεις, γιατί αν δεν γίνει αυτό, φοβάμαι ότι δεν θα αρχίσουμε καλά τη
+      νέα χρονιά και δεν θα απολαύσουμε παιχνίδι».Μιλτιάδης Νεοφύτου (Πρόεδρος Ομόνοιας):
+      «Αντιμετωπίζουμε τον θεσμό του Σούπερ Καπ με πολλή σοβαρότητα, γιατί έχουμε
+      καλή παράδοση στη διοργάνωση και θέλουμε να κατακτήσουμε το τρόπαιο. Την Κυριακή
+      θα γίνει ένα παιχνίδι ανάμεσα σε δύο μεγάλες ομάδες, που τις διακρίνει ο αλληλοσεβασμός
+      σε όλα τα επίπεδα και αναμένουμε από τον κόσμο και των δύο ομάδων να συμπεριφερθεί
+      ανάλογα. Στόχος όλων μας είναι η αποτελεσματική αντιμετώπιση και απαλλαγή όλων
+      των φαινομένων βίας. Το χρωστάμε αυτό και στο ποδόσφαιρο και στον κόσμο μας
+      και ελπίζω ότι ο καθένας θα βάλει το δικό του λιθαράκι για να γίνει ο στόχος
+      μας πραγματικότητα».Ιβάν Γιοβάνοβιτς (Προπονητής ΑΠΟΕΛ): «Κάθε παιχνίδι μεταξύ
+      του ΑΠΟΕΛ και της Ομόνοιας έχει ξεχωριστό ενδιαφέρο, επειδή είναι δύο ομάδες
+      που παίζουν καλό ποδόσφαιρο. Αυτά τα παιχνίδια είναι μία πολύ καλή ευκαιρία
+      για να έρθει πολύς κόσμος στο ΓΣΠ και να απολαύσει ποδοσφαιρικό θεάμα. Εύχομαι
+      όλες οι ομάδες μας που παίζουν στην Ευρώπη να προκριθούν στην επόμενη φάση,
+      για να έχουμε την καλύτερη διάθεση για το Κυριακάτικο παιχνίδι».Νεόφυτος Λάρκου
+      (Προπονητής Ομόνοιας): «Το Σούπερ Καπ μας ενδιαφέρει και θέλουμε να το κατακτήσουμε,
+      όμως έρχεται δυστυχώς σε ακατάλληλη περίοδο, τρεις μόλις ημέρες μετά τον επαναληπτικό
+      αγώνα με τη Ντε Χάαγκ, ενώ υπάρχει την Τετάρτη και φιλική αναμέτρηση της Εθνικής
+      μας ομάδας. Οι παίκτες μου δεν είναι απόλυτα έτοιμοι αυτή την περίοδο, όμως
+      θα δώσουμε τον καλύτερο μας εαυτό και εύχομαι ο καλύτερος να κερδίσει».Μαρίνος
+      Σατσιάς (Αρχηγός ΑΠΟΕΛ): «Θέλουμε να δώσουμε δύναμη και κουράγιο στις οικογένειες
+      των αδικοχαμένων θυμάτων της τραγωδίας στο Μαρί και ελπίζω να διεξαχθεί ένας
+      αγώνας χωρίς παρατράγουδα».Κωνσταντίνος Μακρίδης (Αρχηγός Ομόνοιας): «Συγχαρητήρια
+      στην ΚΟΠ και στην LTV που αφιέρωσαν τον αγώνα στους αδικοχαμένους συνανθρώπους
+      μας. Το Σούπερ Καπ είναι πολύ σημαντικό για μας και θέλουμε να το κατακτήσουμε.
+      Μπορεί να μην έχουμε πολλά παιχνίδια στα πόδια μας, όμως δεν παύει να θέλουμε
+      το τρόπαιο. Εύχομαι να κυλήσουν όλα ομαλά και ο αγώνας να γίνει μέσα σε αθλητοπρεπή
+      πλαίσια».Επιμέλεια: Γιάννης Ιωάννου - Παναγιώτης Χριστοφή\n\t\t"
+    - ! "\n\t\tProtathlima.com  \x95  Σούπερ Καπ\n\t"
+    - http://www.protathlima.com/content/league/story.jsp?league_id=6&id=77791
+    - Mon, 1 Aug 2011 00:00:00 -0700
+    - http://www.protathlima.com/content/league/story.jsp?league_id=6&id=77791
+    - 1
+    - !!null 
+    - ! ' antistrofh metrhsh aiwnio ntermpi ltv apoel kyriakh gsp kop agwnas mnhmh
+      adikoxamenwn thymatwn tragwdias mari olwn athlhtopreph ektropa antiparatheseis
+      dyo paixnidi periodo podosfairo mas sevasmoy apolaysoyme theloyme omades omonoias
+      soyper kap katakthsoyme tropaio eyxomai dwsoyme'
+    - '2011-08-01 17:10:41.593508'
+    - '2011-08-01 17:10:43.278765'
+    - http://www.protathlima.com//content/images/other/29092010/zJk5KRm7We.jpg
+    - !!null 
+
+---
+feeds:
+  columns:
+  - id
+  - feed_url
+  - site_name
+  - site_url
+  - site_logo
+  - category_unique_div
+  - created_at
+  - updated_at
+  - content_unique_div
+  - image_unique_div
+  records: 
+---
+  - - 1
+    - http://www.protathlima.com/rss/sports.jsp
+    - Protathlima.com
+    - http://www.protathlima.com/
+    - http://www.protathlima.com/content/header_logo.jpg
+    - table.navigation_table
+    - '2011-08-01 15:08:18.382405'
+    - '2011-08-01 15:08:18.382405'
+    - table.str_inc_Table
+    - html>body>div:nth-of-type(2)>div:nth-of-type(2)>table:nth-of-type(2) tr:nth-of-type(2)>td:nth-of-type(1)
+
+---
+comments:
+  columns:
+  - id
+  - title
+  - body
+  - commentable_id
+  - commentable_type
+  - user_id
+  - created_at
+  - updated_at
+  - subject
+  - parent_id
+  - lft
+  - rgt
+  records: 
+---
+  - - 1
+    - First comment.
+    - This is the first comment.
+    - 115
+    - Article
+    - !!null 
+    - '2011-08-05 17:21:09.115904'
+    - '2011-08-05 17:21:09.115904'
+    - !!null 
+    - !!null 
+    - !!null 
+    - !!null 
+  - - 2
+    - Second comment.
+    - This is the second comment.
+    - 115
+    - Article
+    - !!null 
+    - '2011-08-05 17:21:24.650384'
+    - '2011-08-05 17:21:24.650384'
+    - !!null 
+    - !!null 
+    - !!null 
+    - !!null 
+    
