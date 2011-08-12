@@ -3,14 +3,10 @@ login: &login
   encoding: utf8
   reconnect: false
   pool: 5
-  username: root
-  password: vI.4XVZb7K8h_tDPl0O&)
-  socket:  <%=
-    ['/Applications/XAMPP/xamppfiles/sbin/mysqld.sock' #osx-xampp local?
-     '/opt/local/var/run/mysql5/mysqld.sock', # darwinports
-     '/opt/local/var/run/mysqld/mysqld.sock', # darwinports, again
-     '/var/run/mysqld/mysqld.sock',           # ubuntu/debian (linode)
-     '/tmp/mysql.sock'].select { |f| File.exist? f }.first %>
+  username: goalara_db
+  password: koTGDkg0o,xzWOE7x87F
+  socket: '/Applications/XAMPP/xamppfiles/var/mysql/mysql.sock'
+  host: localhost
 
 
 development:
@@ -19,7 +15,7 @@ development:
   
 test:
   database: goalara_test
- <<: *login
+  <<: *login
  
 production:
   database: goalara_production

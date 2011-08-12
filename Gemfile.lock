@@ -99,6 +99,7 @@ GEM
     multi_json (1.0.3)
     multi_xml (0.2.2)
     multipart-post (1.1.3)
+    mysql (2.8.1)
     nokogiri (1.4.4)
     oa-core (0.2.6)
     oa-oauth (0.2.6)
@@ -166,6 +167,7 @@ DEPENDENCIES
   haml
   htmlentities
   jquery-rails
+  mysql
   nokogiri
   oa-oauth
   rails (= 3.0.7)
