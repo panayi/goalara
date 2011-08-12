@@ -5,7 +5,8 @@ login: &login
   pool: 5
   username: goalara_db
   password: koTGDkg0o,xzWOE7x87F
-  socket: '/Applications/XAMPP/xamppfiles/var/mysql/mysql.sock'
+  #socket: '/Applications/XAMPP/xamppfiles/var/mysql/mysql.sock'
+  socket: '/tmp/mysqld.sock'
   host: localhost
 
 
