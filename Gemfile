@@ -8,11 +8,9 @@ gem 'mysql2', '< 0.3'
 gem 'sqlite3'
 gem 'rake'
 
-# Use unicorn as the web server
-# gem 'unicorn'
-
 # Deploy with Capistrano
-# gem 'capistrano'
+gem 'capistrano'
+gem 'rvm'
 
 # To use debugger (ruby-debug for Ruby 1.8.7+, ruby-debug19 for Ruby 1.9.2+)
 # gem 'ruby-debug'
@@ -25,8 +23,6 @@ gem 'feedzirra'
 gem 'scrapi'
 
 gem 'formtastic', :git => 'http://github.com/justinfrench/formtastic', :branch => 'master'
-
-gem 'scrapi'
 
 gem 'devise'
 
