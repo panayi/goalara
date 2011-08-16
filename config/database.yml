@@ -1,18 +1,16 @@
 login: &login
-  adapter:  mysql
-  encoding: utf8
-  reconnect: false
-  pool: 5
-  username: goalara_db
-  password: koTGDkg0o,xzWOE7x87F
-  #socket: '/Applications/XAMPP/xamppfiles/var/mysql/mysql.sock'
-  socket: '/tmp/mysqld.sock'
-  host: localhost
-
+  
 
 development:
   database: goalara_development
-  <<: *login
+  adapter:  mysql2
+  encoding: utf8
+  reconnect: false
+  pool: 5
+  username: root
+  password: admin
+  socket: '/tmp/mysql.sock'
+  host: localhost
   
 test:
   database: goalara_test
