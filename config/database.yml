@@ -4,9 +4,9 @@ development:
   encoding: utf8
   reconnect: false
   pool: 5
-  username: root
-  password: admin
-  socket: '/tmp/mysql.sock'
+  username: goalara_db
+  password: koTGDkg0o,xzWOE7x87F
+  # socket: '/tmp/mysql.sock'
   host: localhost
   
 test:
@@ -15,9 +15,9 @@ test:
   encoding: utf8
   reconnect: false
   pool: 5
-  username: root
-  password: admin
-  socket: '/tmp/mysql.sock'
+  username: goalara_db
+  password: koTGDkg0o,xzWOE7x87F
+  # socket: '/tmp/mysql.sock'
   host: localhost
   
  
@@ -27,9 +27,9 @@ production:
   encoding: utf8
   reconnect: false
   pool: 5
-  username: root
-  password: admin
-  socket: '/tmp/mysql.sock'
+  username: goalara_db
+  password: koTGDkg0o,xzWOE7x87F
+  # socket: '/tmp/mysql.sock'
   host: localhost
   
 

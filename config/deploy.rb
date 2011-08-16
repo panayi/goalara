@@ -27,7 +27,7 @@ set :scm, :git
 set :scm_username, "panayi"
 set :repository, "git@github.com:panayi/goalara.git"
 set :branch, "master"
-set :git_enable_submodules, 0
+set :git_enable_submodules, 1
 
 # tasks
 namespace :deploy do
