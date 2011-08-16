@@ -22,13 +22,13 @@ gem 'feedzirra'
 
 gem 'scrapi'
 
-gem 'formtastic', :git => 'http://github.com/justinfrench/formtastic', :branch => 'master'
+gem 'formtastic'     # , :git => 'http://github.com/justinfrench/formtastic', :branch => 'master'
 
 gem 'devise'
 
 gem "oa-oauth", :require => "omniauth/oauth"
 
-gem 'acts_as_taggable_on_steroids', :git => 'git://github.com/Agiley/acts_as_taggable_on_steroids.git'
+gem 'acts_as_taggable_on_steroids'   # , :git => 'git://github.com/Agiley/acts_as_taggable_on_steroids.git'
 
 gem 'tf_idf'
 

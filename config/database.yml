@@ -1,6 +1,3 @@
-login: &login
-  
-
 development:
   database: goalara_development
   adapter:  mysql2
@@ -14,11 +11,27 @@ development:
   
 test:
   database: goalara_test
-  <<: *login
+  adapter:  mysql2
+  encoding: utf8
+  reconnect: false
+  pool: 5
+  username: root
+  password: admin
+  socket: '/tmp/mysql.sock'
+  host: localhost
+  
  
 production:
   database: goalara_production
-  <<: *login
+  adapter:  mysql2
+  encoding: utf8
+  reconnect: false
+  pool: 5
+  username: root
+  password: admin
+  socket: '/tmp/mysql.sock'
+  host: localhost
+  
 
 
 
