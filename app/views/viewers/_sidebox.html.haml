@@ -1,24 +1,51 @@
-%ul#commentList-30.l-0
-- @comments.each do |comment|
-  %li#id.comment
-    .comment
-      = link_to image_tag("/images/users/" + user_photo(comment.user_id, 'small'), :alt => 'thumb') + user_path(comment.user_id), :target => "_blank"
-      .commentHeader
-        %h4
-          = link_to image_tag("/images/users/" + user_name(comment.user_id), :alt => 'thumb') + user_path(comment.user_id), :target => "_blank"
-        %ul.actions
-          %li.score 0
-          %li.vote
-            %a.voteUp
-          %li
-            %span.edit
-              %a.edit Edit
-            %a.delete Delete
-            %a.reply Reply
-      .flairWrap
-      .commentBody
-        %span.date.fresh 
-          = comment.created_at.to_s(:friendly)
-        %span.commentText 
-          = comment.body
-        %a.flag.tip{:href => "#"}
+#header_info
+  .logo_wrapper.floatleft
+    = link_to image_tag("/images/logo_small.png",  :alt =>  'Goalara.com'), "/"
+  .header_comments.floatright
+    %strong 
+      = @comments.size.to_s + ' Σχόλια'
+%div{:style => "clear:both"}
+#conversation
+  #discussion.silverBorderPanel
+    .comment-container
+      %ul#commentList-30.l-0
+        - @comments.each do |comment|
+          %li#id.comment
+            .comment
+              = link_to image_tag("/images/users/" + comment.user.avatar, :alt => comment.user.fullname + ' image'), user_path(comment.user_id), :target => "_blank"
+              .commentHeader
+                %h4
+                  = link_to comment.user.fullname, user_path(comment.user_id), :target => "_blank"
+                %ul.actions
+                  %li.score 0
+                  %li.vote
+                    %a.voteUp
+                  %li
+                    / %span.edit
+                    /              %a.edit Edit
+                    /              %a.delete Delete
+                    /              %a.reply Reply
+              .flairWrap
+              .commentBody
+                %span.date.fresh 
+                  = comment.created_at.to_s(:friendly)
+                %span.commentText 
+                  = comment.body
+                %a.flag.tip{:href => "#"}
+                
+.commentAddForm.clearfix.secondary
+  .formItemLine.signed-out
+    %p.signin
+      %a.signin{:href => "http://www.ted.com/users/signin"} Sign in to add comments
+      or
+      %a{:href => "http://www.ted.com/pages/view/id/114"} Join (It's free and fast!)
+  .signed-in
+    %label.formItemLabel
+    %form{:action => "", :method => "post"}
+      %textarea{:cols => "", :name => "newComment", :rows => ""}
+      %span.button.primary
+        %span
+          %input.submit{:name => "submit", :type => "submit", :value => "Submit"}
+      %p.charactersUsed
+        Characters remaining:
+        %em.commentOK 2000

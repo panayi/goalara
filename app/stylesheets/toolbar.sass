@@ -1,0 +1,52 @@
+div
+  &#floatingbar
+    overflow: hidden
+    width: 100%
+    height: 0px
+    position: absolute
+    top: 0
+    left: 0
+    color: #000
+    font-family: Arial
+    font-weight: bold
+    background-image: url('../images/tui.png')
+    z-index: 100
+  &#content
+    padding: 1em
+
+@media screen
+  body>div#floatingbar
+    position: fixed
+
+#floatingbar ul
+  list-style-type: none
+  li
+    float: left
+    padding: 19px 0 0 16px
+    color: #666
+    margin-top: -3px
+    a
+      text-decoration: none
+      color: #fff
+      padding: 10px
+      font-size: 12px
+      font-weight: normal
+      font-family: Arial
+      &:hover
+        color: #000033
+      img
+        float: left
+        border: none
+
+.translateicon
+  float: right
+  margin-right: -5px
+
+#google_translate_element
+  margin-top: -20px
+
+.bottomBarLinkRight
+  float: right
+
+.stico_default
+  background-image: none

@@ -43,6 +43,8 @@ a
     background: url("/images/icon_external_link.gif") no-repeat scroll right center transparent
     padding-right: 15px
 
+ul
+  list-style: none
 img
   border: 0 none
   display: block
@@ -1929,8 +1931,755 @@ div
   width: 400px
   border-right: 1px solid #FF2B06
   position: fixed
+  height: 100%
 #article_viewer
   margin-left: 401px
   height: auto
   visibility: hidden
   border-style: none
+
+
+div#conversation
+  padding: 3px 8px 10px 15px
+  overflow-y: scroll
+  height: 70%
+  border-bottom: 15px solid #eee
+  border-top: 15px solid #eee
+
+.conversation #discussion
+  margin: 20px 18px
+  width: 614px
+
+div#discussion
+  h3
+    color: #000000
+    float: left
+    font-size: 12px
+    padding: 0 0 7px
+    text-transform: uppercase
+  ul
+    list-style: none outside none
+    margin: 0
+    padding: 0
+    height: 100%
+  p
+    &.signin
+      margin: 0
+    &.info
+      color: #595959
+      float: left
+      font-size: 0.9em
+      margin-top: 6px
+
+label.info
+  color: #595959
+  display: inline-block
+  font-size: 11px
+  line-height: 18px
+  margin: 10px 5px 10px 0
+  vertical-align: middle
+
+#sort-comments
+  display: inline-block
+  font-size: 11px
+  height: 22px
+  margin: 10px 0
+  padding: 2px 0 0
+  vertical-align: middle
+  width: 189px
+
+select#sort-comments
+  font-size: 11px
+  padding: 3px 3px 1px
+
+div#discussion div
+  &.flairWrap
+    margin: 7px 0
+  &.add_comment
+    margin: 0 14px
+    p
+      color: #595959
+      font-size: 14px
+      font-weight: bold
+      margin: 0
+      padding: 10px 0 5px
+      em
+        font-style: italic
+        font-weight: normal
+        margin: 0
+        padding: 0
+    form
+      text-align: right
+    textarea
+      border: 1px solid #DCDCDC
+      font-size: 14px
+      height: 88px
+      padding: 4px
+  &.comment
+    border-top: 1px solid #CCCCCC
+    overflow: hidden
+    padding: 8px 16px 5px 0
+    position: relative
+
+.conversation li.comment
+  background: none repeat scroll 0 0 transparent
+
+div#discussion div.comment
+  a
+    color: #FF2A06
+    &:visited
+      color: #FF2A06
+  h4 a
+    color: #000000
+    &:visited
+      color: #000000
+
+ul
+  &.l-0 div.comment
+    margin-bottom: 5px
+  &.l-1 div.comment, &.l-2 div.comment, &.l-3 div.comment
+    border-top: 1px dotted #CCCCCC
+    margin-bottom: 5px
+
+li.comment
+  ul.l-1 li.comment
+    background-image: url("/images/commenting/thread-1.png")
+    background-position: 22px 11px
+    background-repeat: no-repeat
+    padding-left: 42px
+  li.comment
+    ul.l-2 li.comment
+      background-image: url("/images/commenting/thread-2.png")
+      background-position: 11px 11px
+      margin: 0
+    li.comment ul.l-3 li.comment
+      background-image: url("/images/commenting/thread-3.png")
+      background-position: 0 11px
+
+ul.l-0 div
+  &.hasPhoto
+    height: auto !important
+    min-height: 60px
+  &.comment div.commentHeader
+    height: 18px
+
+div
+  &.commentHeader span.buttonItem
+    margin: 0 0 0 5px
+  &.comment
+    img.profile
+      display: inline-block
+      float: left
+      height: 50px
+      margin-bottom: 10px
+      margin-right: 10px
+      width: 50px
+    h4
+      border: medium none
+      display: inline-block
+      float: left
+      font-size: 12px
+      font-weight: normal
+      height: auto
+      margin: 0
+      padding: 0
+
+li
+  &.disabled div.comment h4
+    border: medium none
+    display: inline-block
+    float: left
+    font-size: 12px
+    font-weight: normal
+    height: auto
+    margin: 0
+    padding: 0
+  &.comment h4 a, &.disabled li.comment h4 a
+    border: medium none
+    color: #000000
+    font-weight: bold
+    text-decoration: none
+    &:visited
+      border: medium none
+      color: #000000
+      font-weight: bold
+      text-decoration: none
+  &.comment h4 a:hover, &.disabled li.comment h4 a:hover
+    color: #FE0D0D
+    text-decoration: underline
+  &.comment ul.actions
+    display: inline-block
+    float: right
+    li
+      display: inline-block
+      float: right
+      font-size: 11px
+      height: 14px
+      padding-top: 2px
+      vertical-align: middle
+      width: 125px
+      a
+        margin: 0 5px 0 0
+        vertical-align: middle
+        &:visited
+          margin: 0 5px 0 0
+          vertical-align: middle
+        &:hover
+          cursor: pointer
+      &.score
+        color: #000000
+        font-weight: bold
+        text-align: left
+        width: 15px
+        &.pos
+          color: #339900
+          font-weight: normal
+      &.vote
+        font-weight: bold
+        height: 16px
+        margin: 0 2px
+        padding-top: 0
+        width: 14px
+        a
+          display: block
+          float: right
+          height: 16px
+          width: 14px
+  a.voteUp
+    background: url("/images/commenting/iconUp.png") no-repeat scroll 0 0 transparent
+    background: url("/images/commenting/iconUp.png") no-repeat scroll 0 0 transparent
+    &:hover
+      background: url("/images/commenting/iconUp.png") no-repeat scroll 0 -16px transparent
+  &.up .voteUp
+    background: url("/images/commenting/iconUp.png") no-repeat scroll 0 -32px transparent
+  &.comment
+    a
+      &.move
+        bottom: 5px
+        position: absolute
+        right: 45px
+      &.flag
+        background: url("/images/commenting/iconFlag.png") no-repeat scroll 0 0 transparent
+        bottom: 5px
+        height: 16px
+        position: absolute
+        right: 2px
+        width: 22px
+        &:hover
+          background-position: 0 -16px
+        &.flagged
+          background-position: 0 -32px
+    span
+      &.date
+        color: #666666
+        font-weight: bold
+      &.fresh
+        color: #009DB2
+        font-weight: bold
+    a.toggle
+      display: none
+
+div
+  &.re-enabled a.toggle
+    display: inline-block
+  &.commentBody
+    clear: both
+    font-size: 12px
+    line-height: 18px
+    margin: 5px 30px 10px 0
+    overflow-x: hidden
+    padding: 5px 0 0
+
+li.comment
+  span.button
+    display: inline-block
+    float: right
+    margin: 0 15px 0 0
+    &.secondary
+      margin-right: 5px
+  .replyArrow
+    display: block
+    margin: -7px 0 -1px 23px
+    position: relative
+
+textarea
+  border: 1px solid #DCDCDC
+  color: #555555
+  font-family: helvetica,arial,sans-serif
+  font-size: 11px
+  height: 100px
+  margin: 0
+  padding: 2px 5px
+  width: 95%
+
+li.comment
+  textarea
+    background-color: #FCFCFC
+    border: 1px solid #DAD8D6
+    border-radius: 2px 2px 2px 2px
+    height: 100px
+    margin: 0 0 8px
+  p
+    color: #595959
+    font-size: 10px
+    margin: 0 0 1px !important
+
+div#discussion li.comment div.disabled
+  border-top: medium none
+  margin: 5px 0
+  padding: 0 0 10px
+
+li.comment div.disabled
+  img.profile, ul.actions, div.flairWrap, .tedcred
+    display: none
+
+.conversation div.disabled
+  margin: 5px 0
+  padding: 0 0 3px
+  ul.actions li.score
+    margin-right: 10px
+
+ul
+  &.l-1 div.disabled
+    background-position: 22px 10px
+  &.l-2 div.disabled
+    background-position: 11px 10px
+  &.l-3 div.disabled
+    background-position: 0 10px
+
+div.disabled div.commentHeader
+  border-bottom: medium none
+  border-top: medium none
+  height: 15px
+  padding: 0
+
+.conversation div.disabled div.commentHeader
+  background-color: #F2F2F2
+  border-bottom: 1px dotted #838383
+  border-top: 1px dotted #838383
+  height: 15px
+  padding: 6px 0 0 6px
+
+div
+  &.disabled
+    h4 a
+      color: #BDBDBD
+      &:visited
+        color: #BDBDBD
+    a.toggle
+      display: inline-block
+    div.commentBody
+      display: none
+  &#discussion li.deleted div.comment
+    border-top: medium none
+    margin: 0 0 15px
+    padding: 0
+
+ul
+  &.l-1 li.deleted
+    background-position: 22px 10px
+  &.l-2 li.deleted
+    background-position: 11px 10px
+  &.l-3 li.deleted
+    background-position: 0 10px
+
+div.deleted div.commentHeader
+  border-bottom: 1px dotted #838383
+  border-top: 1px dotted #838383
+  height: 15px
+  margin-bottom: 8px
+  padding: 5px 6px 0
+
+.conversation div.deleted div.commentHeader
+  background: none repeat scroll 0 0 transparent
+
+div.deleted div
+  &.commentHeader h4
+    color: #666666
+    font-size: 11px
+    font-style: italic
+  &.commentBody
+    display: none
+
+ul
+  &.l-1 li.reply
+    background-position: 22px 4px
+    margin: 10px 0 0
+    padding: 0 0 15px
+  &.l-2 li.reply
+    background-position: 11px 4px
+    margin: 10px 0 0
+  &.l-3 li.reply
+    background-position: 0 4px
+    margin: 10px 0 0
+  &.l-0 textarea
+    width: 431px
+  &.l-1 textarea
+    width: 477px
+  &.l-2 textarea
+    width: 435px
+  &.l-3 textarea
+    width: 393px
+
+.conversation ul
+  &.l-0 textarea
+    width: 550px
+  &.l-1 textarea
+    width: 546px
+  &.l-2 textarea
+    width: 504px
+  &.l-3 textarea
+    width: 462px
+
+li.comment ul.actions li a.reply.disabled
+  color: #666666
+  &:visited
+    color: #666666
+  &:hover
+    color: #666666
+    cursor: text
+    text-decoration: none
+
+p
+  &.charactersUsed
+    font-size: 11px
+    font-weight: bold
+    em
+      color: #888888
+      font-style: normal
+      &.commentOK
+        color: #888888
+        font-style: normal
+      &.commentWarning
+        color: #701202
+      &.commentCritical
+        color: #FF2B06
+  span.attributed
+    color: #999999
+
+div.commentAddForm
+  clear: both
+  padding: 0 4px
+
+.conversation div.commentAddForm
+  background-color: #E7E2DA
+  border: 1px solid #FFFFFF
+  border-radius: 2px 2px 2px 2px
+  box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.4)
+  padding: 15px 20px 5px
+  width: 608px
+
+div.commentAddForm
+  label.formItemLabel
+    color: #000000
+    display: block
+    font-size: 12px
+    font-weight: bold
+    margin-bottom: 3px
+  p
+    color: #777777
+    font-size: 11px
+    &.closingDesc
+      color: #000000
+      font-size: 12px
+      margin: 15px 0
+  textarea
+    color: #000000
+    height: 100px
+    margin-bottom: 8px
+    padding-top: 3px
+
+.conversation div.commentAddForm textarea
+  width: 596px
+
+div
+  &.commentAddForm
+    .button
+      float: right
+      margin: 0
+    div
+      &.expireMsg p
+        color: #000000
+        margin: 0
+      &.expireClock div
+        &.clockWrap
+          margin: 0 0 2px
+          span
+            border: medium none
+            font-size: 12px
+            height: 16px
+            line-height: 12px
+            margin: 0 2px 0 0
+            padding: 5px 1px 0 2px
+            width: 14px
+            &.separator
+              height: 20px
+              padding: 5px 1px 0 0
+              width: 4px
+        &.message p
+          margin: 0
+  &.commentLoader
+    background-image: url("/images/commenting/load_more_comments.png")
+    background-position: 0 bottom
+    background-repeat: no-repeat
+    border-top: 1px solid #C2C2C2
+    font-size: 12px
+    font-weight: bold
+    height: 42px
+    margin: 0 0 20px
+    padding-top: 20px
+    text-align: center
+
+.conversation div.commentLoader
+  background-image: url("/images/commenting/load_more_comments_wide.png")
+  width: 618px
+
+div.commentLoader.empty
+  background-image: url("/images/commenting/load_no_more.png")
+
+.conversation div.commentLoader.empty
+  background-image: url("/images/commenting/load_no_more_wide.png")
+
+div.commentLoader
+  a
+    color: #000000
+    cursor: pointer
+    display: block
+    height: 42px
+    line-height: 42px
+    width: 100%
+  &.empty a
+    cursor: auto
+  img
+    margin-top: 13px
+  &.empty a:hover
+    text-decoration: none
+
+img.sortLoader
+  display: none
+
+.ui-dialog
+  background-color: #FEFEFE
+  background-repeat: no-repeat
+  border: 11px solid rgba(45, 45, 45, 0.9)
+  font-size: 12px
+  padding: 11px 11px 10px
+  text-align: left
+  width: 438px
+  .login
+    margin-left: 9px
+  span.ui-dialog-title
+    display: block
+    font-size: 18px
+    font-weight: bold
+    margin-bottom: 0
+    margin-top: 5px
+  p
+    color: #323232
+    font-size: 12px
+    margin-bottom: 20px
+    width: 350px
+    &.error
+      color: red
+  div
+    &.clearfix
+      margin-bottom: 20px
+    &.column
+      float: left
+      font-size: 12px
+      margin-right: 6px
+      width: 192px
+  label
+    color: #323232
+    font-size: 1.1em
+    &.block
+      display: block
+      font-weight: bold
+      margin-bottom: 3px
+  .ui-icon-closethick
+    background-image: url("/images/commenting/button_close.png")
+    display: block
+    height: 13px
+    position: absolute
+    right: 10px
+    top: 10px
+    width: 12px
+  input
+    &.text
+      font-size: 12px
+      padding: 4px
+      width: 170px
+    &.submit
+      margin-right: 2px
+      margin-top: 0
+  .button
+    margin-left: 5px
+  p.after_form
+    margin-top: 50px
+  span.error
+    color: #FF2B06
+
+textarea.commentEditor
+  margin-bottom: 5px
+  margin-top: 10px
+
+div
+  &.comment
+    .edit, .delete
+      display: none
+    &.editable
+      .edit, .delete
+        display: inline
+    span.edit:after
+      content: " |"
+    &.owner
+      .reply, .flag, .voteUp
+        display: none
+  &.viewTalks p.charactersUsed em, &.viewThemes p.charactersUsed em
+    color: #888888 !important
+    font-style: normal !important
+    &.commentOK
+      color: #888888 !important
+      font-style: normal !important
+  &.viewTalks div#discussion, &.viewThemes div#discussion
+    margin-bottom: 0
+    padding-bottom: 1px
+  &.viewThemes div.commentAddForm.secondary
+    background-color: #F2F2F2
+    margin: 0
+  &.viewTalks form input.submit, &.viewThemes form input.submit
+    background: none repeat scroll 0 0 transparent
+    float: none
+    height: auto
+    margin: 0
+    text-indent: 0
+    width: auto
+  & form
+    input.submit:hover, .hover input.submit
+      background: none repeat scroll 0 0 transparent
+  &.viewThemes form
+    input.submit:hover, .hover input.submit
+      background: none repeat scroll 0 0 transparent
+  & span.button, &.viewThemes span.button
+    display: inline-block
+    vertical-align: baseline
+  & span.button span, &.viewThemes span.button span
+    background: url("../images/bgButton.png") repeat scroll 0 100% #e8e8e8
+    border-radius: 3px 3px 3px 3px
+    box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.55)
+    display: inline-block
+  & span.button
+    a, strong
+      border: 0 none
+      color: #333333
+      display: block
+      font-family: helvetica,arial,sans-serif
+      font-size: 11px
+      padding: 2px 10px
+      white-space: nowrap
+  &.viewThemes span.button
+    a, strong
+      border: 0 none
+      color: #333333
+      display: block
+      font-family: helvetica,arial,sans-serif
+      font-size: 11px
+      padding: 2px 10px
+      white-space: nowrap
+  & span.button strong, &.viewThemes span.button strong
+    font-weight: normal
+    padding: 0
+  & span.button input, &.viewThemes span.button input
+    background: none repeat scroll 0 0 transparent
+    border: 0 none
+    color: #333333
+    cursor: pointer
+    padding: 1px 10px
+    white-space: nowrap
+  & span.button input, &.viewThemes span.button input
+    padding-bottom: 0
+    padding-top: 0
+  & span.button a, &.viewThemes span.button a, &.viewTalks span.button a:hover, &.viewThemes span.button a:hover
+    text-decoration: none
+  & span.button.primary
+    a, strong, input
+      font-weight: bold
+  &.viewThemes span.button.primary
+    a, strong, input
+      font-weight: bold
+  & span.button.secondary
+    a, strong, input
+      font-weight: normal
+  &.viewThemes span.button.secondary
+    a, strong, input
+      font-weight: normal
+  & span.button.secondary
+    a, strong, input
+      font-weight: normal
+  &.viewThemes span.button.secondary
+    a, strong, input
+      font-weight: normal
+  & span.button.disabled
+    a, button, input
+      color: #B5B5B5
+      text-decoration: none
+  &.viewThemes span.button.disabled
+    a, button, input
+      color: #B5B5B5
+      text-decoration: none
+
+span.button input
+  cursor: pointer
+  font-size: 10px
+  padding: 3px 10px
+
+div.commentAddForm.secondary
+  padding: 5px 15px 0 15px
+  height: 150px
+
+div
+  & span.button input, &.viewThemes span.button input
+    cursor: pointer
+    font-size: 10px
+    padding: 3px 10px
+
+span.button.primary input
+  font-weight: normal
+
+#header_info
+  height: 50px
+  
+.logo_wrapper
+  width: 250px
+  padding: 3px 0 0 3px
+  
+.header_comments
+  background-color: #FC6D2F
+  color: white
+  font-size: 15px
+  padding: 16px
+  text-align: center
+  vertical-align: middle
+  width: 80px
+
+div
+  & span.button.primary input, &.viewThemes span.button.primary input
+    font-weight: normal
+
+span.button.secondary input
+  color: #999999
+  font-weight: normal
+
+div
+  & span.button.secondary input, &.viewThemes span.button.secondary input
+    color: #999999
+    font-weight: normal
+
+span.button input:hover
+  color: #CC0000
+
+div
+  & span.button input:hover, &.viewThemes span.button input:hover
+    color: #CC0000
+    
+#view_content

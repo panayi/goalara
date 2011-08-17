@@ -7,6 +7,8 @@ class Article < ActiveRecord::Base
   belongs_to :organization
   belongs_to :team
   
+  has_many :comments
+  
   acts_as_commentable
   
   named_scope :order_by, lambda { |*args| {:order => (args.first || 'id') } }
