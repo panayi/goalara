@@ -10,7 +10,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20110817093641) do
+ActiveRecord::Schema.define(:version => 20110916131520) do
 
   create_table "articles", :force => true do |t|
     t.string   "title"
@@ -21,12 +21,19 @@ ActiveRecord::Schema.define(:version => 20110817093641) do
     t.string   "published_at"
     t.string   "guid"
     t.integer  "feed_id"
-    t.integer  "team_id"
     t.text     "tf_idf_content"
     t.datetime "created_at"
     t.datetime "updated_at"
-    t.string   "image"
     t.integer  "organization_id"
+    t.string   "image_file_name"
+    t.string   "image_content_type"
+    t.integer  "image_file_size"
+    t.datetime "image_updated_at"
+  end
+
+  create_table "articles_teams", :id => false, :force => true do |t|
+    t.integer "article_id"
+    t.integer "team_id"
   end
 
   create_table "comments", :force => true do |t|
@@ -72,6 +79,21 @@ ActiveRecord::Schema.define(:version => 20110817093641) do
     t.integer "team_id"
   end
 
+  create_table "roles_users", :id => false, :force => true do |t|
+    t.integer "article_id"
+    t.integer "team_id"
+  end
+
+  create_table "sessions", :force => true do |t|
+    t.string   "session_id", :null => false
+    t.text     "data"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  add_index "sessions", ["session_id"], :name => "index_sessions_on_session_id"
+  add_index "sessions", ["updated_at"], :name => "index_sessions_on_updated_at"
+
   create_table "teams", :force => true do |t|
     t.string   "name"
     t.string   "logo_image"
@@ -94,6 +116,7 @@ ActiveRecord::Schema.define(:version => 20110817093641) do
     t.datetime "updated_at"
     t.string   "avatar"
     t.string   "fullname"
+    t.integer  "team_id"
   end
 
   add_index "users", ["email"], :name => "index_users_on_email", :unique => true
@@ -103,5 +126,19 @@ ActiveRecord::Schema.define(:version => 20110817093641) do
     t.datetime "created_at"
     t.datetime "updated_at"
   end
+
+  create_table "votes", :force => true do |t|
+    t.boolean  "vote",          :default => false
+    t.integer  "voteable_id",                      :null => false
+    t.string   "voteable_type",                    :null => false
+    t.integer  "voter_id"
+    t.string   "voter_type"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  add_index "votes", ["voteable_id", "voteable_type"], :name => "index_votes_on_voteable_id_and_voteable_type"
+  add_index "votes", ["voter_id", "voter_type", "voteable_id", "voteable_type"], :name => "fk_one_vote_per_user_per_entity", :unique => true
+  add_index "votes", ["voter_id", "voter_type"], :name => "index_votes_on_voter_id_and_voter_type"
 
 end

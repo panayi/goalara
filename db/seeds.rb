@@ -6,13 +6,13 @@
 #   cities = City.create([{ :name => 'Chicago' }, { :name => 'Copenhagen' }])
 #   Mayor.create(:name => 'Daley', :city => cities.first)
 
-# Feed.create(  :feed_url   =>  'http://www.kerkida.net/rss/general/latest_news.php', 
-#               :site_name  =>  'Kerkida', 
-#               :site_url   =>  'http://www.kerkida.net/',
-#               :site_logo  =>  'http://www.kerkida.net/layout/top_logo.gif',
-#               :content_unique_div   => 'td[width=\'526\']>table.ArticlePage',
-#               :category_unique_div  => 'td.Breadcrumb',
-#               :image_unique_div     => 'div#big_img_panel')
+Feed.create(  :feed_url   =>  'http://www.kerkida.net/rss/general/latest_news.php', 
+              :site_name  =>  'Kerkida', 
+              :site_url   =>  'http://www.kerkida.net/',
+              :site_logo  =>  'http://www.kerkida.net/layout/top_logo.gif',
+              :content_unique_div   => 'td[width=\'526\']>table.ArticlePage',
+              :category_unique_div  => 'td.Breadcrumb',
+              :image_unique_div     => 'div#big_img_panel')
       
 # Feed.create(  :feed_url   =>  'http://www.politis-sports.com/rss/footballrss.xml', 
 #               :site_name  =>  'Politis Sports', 
@@ -30,13 +30,13 @@ Feed.create(  :feed_url   =>  'http://www.protathlima.com/rss/sports.jsp',
               :category_unique_div  => 'table.navigation_table',
               :image_unique_div     => 'html>body>div:nth-of-type(2)>div:nth-of-type(2)>table:nth-of-type(2) tr:nth-of-type(2)>td:nth-of-type(1)')
 
-# Feed.create(  :feed_url   =>  'http://www.sigmalive.com/rss/latest/10', 
-#               :site_name  =>  'SigmaLive Sports', 
-#               :site_url   =>  'http://www.sigmalive.com/sports/',
-#               :site_logo  =>  'http://www.sigmalive.com/sites/all/themes/sports/assets/logo_sports.png',
-#               :content_unique_div   => 'div.contentContainer',
-#               :category_unique_div  => 'div.navi',
-#               :image_unique_div     => '')
+Feed.create(  :feed_url   =>  'http://www.sigmalive.com/rss/latest/10', 
+              :site_name  =>  'SigmaLive Sports', 
+              :site_url   =>  'http://www.sigmalive.com/sports/',
+              :site_logo  =>  'http://www.sigmalive.com/sites/all/themes/sports/assets/logo_sports.png',
+              :content_unique_div   => 'div.contentContainer',
+              :category_unique_div  => 'div.navi',
+              :image_unique_div     => '')
 # 
 # Feed.create(  :feed_url   =>  'http://www.supermpala.com/feed', 
 #               :site_name  =>  'SuperMpala', 
@@ -70,90 +70,90 @@ Feed.create(  :feed_url   =>  'http://www.protathlima.com/rss/sports.jsp',
 #               :category_unique_div  => '',
 #               :image_unique_div     => '')
               
-              
+
 Team.create( :name         =>  'Apoel',
-              :logo_image   =>  'apoel.gif')
-              
+              :logo_image   =>  'apoel.png')
+
 Team.create( :name         =>  'Apollon Limassol',
-              :logo_image   =>  'apollon_limassol.jpg')
-    
+              :logo_image   =>  'apollon_limassol.png')
+
 Team.create( :name         =>  'Omonoia',
-              :logo_image   =>  'omonoia.gif')
-           
+              :logo_image   =>  'omonoia.png')
+
 Team.create( :name         =>  'Anorthosi',
-              :logo_image   =>  'anorthosis.jpg')
+              :logo_image   =>  'anorthosis.png')
 
 Team.create( :name         =>  'AEL Limassol',
-              :logo_image   =>  'ael_limassol.gif')
+              :logo_image   =>  'ael_limassol.png')
 
 Team.create( :name         =>  'Nea Salamina',
-              :logo_image   =>  'nea_salamina.gif')
+              :logo_image   =>  'nea_salamina.png')
 
 Team.create( :name         =>  'Olympiakos Nicosia',
-              :logo_image   =>  'olympiakos_nicosia.gif')
+              :logo_image   =>  'olympiakos_nicosia.png')
 
 Team.create( :name         =>  'Aris Limassol',
-              :logo_image   =>  'aris_limassol.gif')
+              :logo_image   =>  'aris_limassol.png')
 
 Team.create( :name         =>  'AEK Larnaca',
-              :logo_image   =>  'aek_larnaca.gif')
-              
+              :logo_image   =>  'aek_larnaca.png')
+
 Team.create( :name         =>  'APEP Pitsilias',
-              :logo_image   =>  'apep_pitsilias.gif')
+              :logo_image   =>  'apep_pitsilias.png')
 
 Team.create( :name         =>  'APOP Kinyras',
-              :logo_image   =>  'apop_kinyras.gif')
+              :logo_image   =>  'apop_kinyras.png')
 
 Team.create( :name         =>  'AEP Paphos',
-              :logo_image   =>  'aep_paphos.gif')
+              :logo_image   =>  'aep_paphos.png')
 
 Team.create( :name         =>  'Ethnikos Achnas',
-              :logo_image   =>  'ethnikos_achnas.gif')
+              :logo_image   =>  'ethnikos_achnas.png')
 
 Team.create( :name         =>  'Doxa Katokopias',
-              :logo_image   =>  'doxa_katokopias.gif')
+              :logo_image   =>  'doxa_katokopias.png')
 
 Team.create( :name         =>  'ENP',
-              :logo_image   =>  'enp.gif')
-              
+              :logo_image   =>  'enp.png')
+
 Team.create( :name         =>  'Ermis Aradippou',
-              :logo_image   =>  'ermis_aradippou.gif')
+              :logo_image   =>  'ermis_aradippou.png')
 
 Team.create( :name         =>  'AOAN',
-              :logo_image   =>  'aoan.gif')
+              :logo_image   =>  'aoan.png')
 
 Team.create( :name         =>  'ASIL',
-              :logo_image   =>  'asil.gif')
-              
+              :logo_image   =>  'asil_lysis.png')
+
 Team.create( :name         =>  'Akritas Chlorakas',
-              :logo_image   =>  'akritas_chlorakas.gif')
+              :logo_image   =>  'akritas_chlorakas.png')
 
 Team.create( :name         =>  'Alki',
-              :logo_image   =>  'alki.gif')
+              :logo_image   =>  'alki_larnakas.png')
 
 Team.create( :name         =>  'Atromitos Geroskipou',
-              :logo_image   =>  'atromitos_geroskipou.gif')
-              
+              :logo_image   =>  'atromitos_yeroskipou.png')
+
 Team.create( :name         =>  'Digenis Morfou',
-              :logo_image   =>  'digenis_morfou.gif')
+              :logo_image   =>  'digenis_morfou.png')
 
 Team.create( :name         =>  'MEAP',
-              :logo_image   =>  'meap.gif')
+              :logo_image   =>  'meap_nisou.jpeg')
 
 Team.create( :name         =>  'PAEEK',
-              :logo_image   =>  'paeek.gif')
-              
+              :logo_image   =>  'paeek_keryneias.png')
+
 Team.create( :name         =>  'Othellos Athienou',
-              :logo_image   =>  'othellos_athienou.gif')
+              :logo_image   =>  'othellos_athienou.png')
 
 Team.create( :name         =>  'Omonoia Aradippou',
-              :logo_image   =>  'omonoia_aradippou.gif')
+              :logo_image   =>  'omonia_aradippou.png')
 
 Team.create( :name         =>  'Onisilos Sotiras',
-              :logo_image   =>  'onisilos_sotiras.gif')
-              
+              :logo_image   =>  'onisilos_sotiras.png')
+
 Team.create( :name         =>  'Frenaros',
-              :logo_image   =>  'frenaros.gif')
+              :logo_image   =>  'frenaros.png')
               
 ## mexri edw oles oi omades A' kai B' katigorias
 

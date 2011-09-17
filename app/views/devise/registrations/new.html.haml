@@ -1,0 +1,47 @@
+%h2.title 
+  = image_tag("titles/sign_up.jpg")
+
+%h3.subtitle
+  Συμπληρώστε τα απαραίτητα στοιχεια(*):
+
+- semantic_form_for(resource, :as => resource_name, :url => registration_path(resource_name)) do |f|
+  = devise_error_messages! 
+  
+  %ul.form
+    = f.input :fullname, :required => true, :label => 'Name'
+
+    = f.input :email, :required => true
+  
+    = f.input :password, :required => true
+   
+    = f.input :password_confirmation, :required => true  
+    
+    = f.input :team, :for => :team_id,  :include_blank => 'Επιλέξτε' 
+    
+    %li.submit
+      %label.label
+        &nbsp;
+      = f.submit "Εγγραφή" 
+
+
+/ 
+/   <p><%= f.label :email %><br />
+/   <%= f.email_field :email %></p>
+/ 
+/   <p><%= f.label :password %><br />
+/   <%= f.password_field :password %></p>
+/ 
+/   <p><%= f.label :password_confirmation %><br />
+/   <%= f.password_field :password_confirmation %></p>
+/ 
+/   <p><%= f.submit "Sign up" %></p>
+/ <% end %>
+/ 
+/ <%= render :partial => "devise/shared/links" %>
+/ 
+/ 
+/ <%= semantic_form_for resource do |f| %>
+/   <%= f.inputs %>
+/   <%= f.buttons %>
+/ <% end %>
+

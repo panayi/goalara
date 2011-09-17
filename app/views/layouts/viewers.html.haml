@@ -1,16 +1,24 @@
 !!!
-%html
+%html{}
   %head
     %title GoalaraCom
     = stylesheet_link_tag 'screen.css', :media => 'screen, projection'
     = stylesheet_link_tag 'print.css', :media => 'print'
     = stylesheet_link_tag 'style.css', :media => 'screen, projection'
     = stylesheet_link_tag 'toolbar.css', :media => 'screen, projection'
+    = stylesheet_link_tag 'growl/jquery.jgrowl.css', :media => 'screen, projection'
+    = stylesheet_link_tag 'jquery.loadmask.css', :media => 'screen, projection'
+    = stylesheet_link_tag 'osx.css', :media => 'screen, projection'
     /[if lt IE 8]
       <haml:loud> stylesheet_link_tag 'ie.css', :media =&gt; 'screen, projection' </haml:loud>
     = javascript_include_tag :defaults
-    = javascript_include_tag 'jquery.tinyscrollbar.min.js'
-    = javascript_include_tag 'viewer.js'  
+    / = javascript_include_tag 'jquery.tinyscrollbar.min.js'
+    = javascript_include_tag 'jquery-ui-1.8.16.custom.min.js', 'jquery.tmpl.min.js', 'jquery.jgrowl_minimized.js', 'jquery.offline.js', 'jquery.loadmask.min.js',  'jquery.ba-hashchange.min.js', 'jquery.simplemodal.js', 'osx.js', 'viewer.js'
+    
+    /'history/amplify.store.js', 'history/history.adapter.jquery.js', 'history/history.js', 'history/history.html4.js', 'ajaxify-html5.js'
+    / :javascript
+    /       if ( typeof window.JSON === 'undefined' ) { document.write('<script src="/history/json2.js"><\/script>'); }
+      
     = csrf_meta_tag
   %body#pagetype
     = yield

@@ -1,18 +1,24 @@
 require 'open-uri'
+require 'paperclip'
 
 
 class Article < ActiveRecord::Base
   
   belongs_to :feed
   belongs_to :organization
-  belongs_to :team
+  has_and_belongs_to_many :team
+  
+  time = Time.new
+  # Paperclip.options[:command_path] = "/usr/local/bin/"
+  has_attached_file :image, :styles => {:thumb => "150x150#", :medium => "300x300#", :large => "600x600#"}
+                    # :path => ":rails_root/public/articles/images/" + time.month.to_s() + "-" + time.year.to_s() + "/:id/:style/:filename"
   
   has_many :comments
   
   acts_as_commentable
   
-  named_scope :order_by, lambda { |*args| {:order => (args.first || 'id') } }
-  named_scope :filter_by, lambda { |*args| {:conditions => (args.second.nil? || args.second.empty?) ? nil : [args.first + " = ?", args.second]} }
+  scope :order_by, lambda { |*args| {:order => (args.first || 'id') } }
+  scope :filter_by, lambda { |*args| {:conditions => (args.second.nil? || args.second.empty?) ? nil : [args.first + " = ?", args.second]} }
   
   def self.get_articles(params)
     case params[:order_by]
@@ -33,10 +39,21 @@ class Article < ActiveRecord::Base
       feedzir = Feedzirra::Feed.fetch_and_parse(this_feed.feed_url)  
       feedzir.entries.each do |entry|  
         unless exists? :url => entry.url
-          parsed = parse_div_content2(entry.url, {'content' => this_feed.content_unique_div, 'category' => this_feed.category_unique_div, 'image' => this_feed.image_unique_div})
-          if parsed["image"] != nil && parsed["image"].index("http:") == nil
-            parsed["image"] = this_feed.site_url + parsed["image"]
+          
+          if entry.url == this_feed.feed_url
+            next
           end
+          
+          parsed = parse_div_content2(
+                      entry.url, 
+                      { 'content' => this_feed.content_unique_div, 
+                        'category' => this_feed.category_unique_div, 
+                        'image' => this_feed.image_unique_div
+                      },
+                      this_feed.site_url
+                      )
+          
+                        
           create!(  
             :title          => entry.title,  
             :summary        => entry.summary,
@@ -55,6 +72,10 @@ class Article < ActiveRecord::Base
           Article.update(just_created.id, 
             {:team_id => tag_team_to_article(just_created.title + ' ' + just_created.title + ' ' + just_created.content)}
             )
+          if parsed["image"] != nil 
+            parsed["image"] = add_feed_url_to_link(parsed["image"], this_feed.site_url)
+            just_created.image_from_url(parsed["image"]);
+          end
         end  
       end
     end
@@ -79,7 +100,7 @@ class Article < ActiveRecord::Base
     #return Iconv.conv('utf-8//IGNORE', 'utf-8', scraper.scrape(uri) ) 
   end
   
-  def self.parse_div_content2(url, div)
+  def self.parse_div_content2(url, div, feed_url)
     doc = Nokogiri::HTML(open(url))
     
     parsed = {}
@@ -98,22 +119,18 @@ class Article < ActiveRecord::Base
     end
     
     #image div
-    if !div["category"].nil?
-      parsed["image"] = get_image_src_from_text(doc.css(div["content"]).first.to_html)
-    else
-      parsed["image"] = nil
+    if !div["image"].nil?
+      image_html = doc.css(div["image"]+ " > img").first
+      if !image_html.nil?
+        parsed["image"] = get_image_src_from_text(image_html.to_html)
+      end
     end
-   
-    
+    if div["image"].nil? || image_html.nil?
+      parsed["image"] = find_biggest_image(doc, feed_url)
+    end
+  
     return parsed
     
-    # doc.css(div).each do |result| 
-    #       return result.to_html.force_encoding('utf-8')
-    #       # array :items
-    #       #       process div, :div_content => :text
-    #       #       result :div_content
-    #     end
-
   end
   
   
@@ -167,11 +184,47 @@ class Article < ActiveRecord::Base
   end
   
   
+  def previous(offset = 0)    
+      self.class.first(:conditions => ['id < ?', self.id], :limit => 1, :offset => offset, :order => "id DESC")
+    end
+
+  def next(offset = 0)
+      self.class.first(:conditions => ['id > ?', self.id], :limit => 1, :offset => offset, :order => "id ASC")
+  end
+
+  def image_from_url(url)
+    self.update_attribute(:image, open(url))
+  end
+
   def self.get_image_src_from_text(text)
-    text =~ /src=\"(.+)\"/
-    s = "#{$1}";
+    text =~ /src=\"([^\"\s]+)\"/
+    s = "#{$1}"
     return s
   end
   
+  def self.find_biggest_image(doc, url)
+    width_height = 0
+    main_image_url = nil
+    doc.css("img").each do |img|
+      src = add_feed_url_to_link(get_image_src_from_text(img.to_html), url)
+      dim = FastImage.size(src)
+      
+      if !dim.nil?
+        if dim[0] + dim[1] > width_height
+          width_height = dim[0] + dim[1]
+          main_image_url = src
+        end
+      end
+      
+    end
+    return main_image_url
+  end
+  
+  def self.add_feed_url_to_link(link, feed_url)
+    if link.index("http:") == nil
+      link = feed_url + link
+    end
+    return link
+  end
   
 end

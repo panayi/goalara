@@ -1,0 +1,22 @@
+%li#id.comment
+  .comment
+    = link_to image_tag(get_user_avatar(@comment.user), :alt => @comment.user.fullname + ' image', :class => "profile"), user_path(@comment.user_id), :target => "_blank"
+    .commentHeader
+      %h4
+        = link_to @comment.user.fullname, user_path(@comment.user_id), :target => "_blank"
+      %ul.actions
+        %li.score 0
+        %li.vote
+          %a.voteUp
+        %li
+          / %span.edit
+          /              %a.edit Edit
+          /              %a.delete Delete
+          /              %a.reply Reply
+    .flairWrap
+    .commentBody
+      %span.date 
+        = @comment.created_at.to_s(:friendly)
+      %span.commentText 
+        = @comment.body
+      %a.flag.tip{:href => "#"}

@@ -1,0 +1,21 @@
+xml.instruct! :xml, :version => "1.0" 
+
+xml.rss "version" => "2.0", "xmlns:dc" => "http://purl.org/dc/elements/1.1/" do
+ xml.channel do
+
+   xml.title       "Goalara.com: RSS Feed"
+   xml.link        url_for :only_path => false, :controller => 'frontpage', :action => "index"
+   xml.description "Goalara.com RSS Feed. Ενημερώσου, όπου κι αν βρίσκεσε."
+
+   @articles.each do |article|
+     xml.item do
+       xml.title        article.title
+       xml.link         article_url(article)
+       xml.description  image_tag(article.image.url(:thumb)) + article.summary 
+       xml.pubDate      article.created_at.to_s(:rfc822)
+       xml.guid         article_url(article)
+     end
+   end
+
+ end
+end

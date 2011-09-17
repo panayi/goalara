@@ -18,6 +18,8 @@ gem 'rvm'
 
 gem 'whenever', :require => false
 
+gem 'dynamic_form'
+
 gem 'feedzirra'
 
 gem 'scrapi'
@@ -47,11 +49,16 @@ gem 'compass'
 gem 'jquery-rails'
 
 gem 'acts_as_commentable_with_threading'
+gem 'thumbs_up'
 
 gem 'populator'
 gem 'faker'
 
+gem 'paperclip'
 
+gem 'fastimage'
+
+gem "rack-offline"
 
 
 # Bundle gems for the local environment. Make sure to

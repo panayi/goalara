@@ -89,6 +89,10 @@ class ArticlesController < ApplicationController
     Article.update_all(:team_id => params[:team_ids])
   end
   
-  
+  def rss
+    @articles = Article.find(:all, :order => "id DESC", :limit => 30)
+    render :layout => false
+    response.headers["Content-Type"] = "application/xml; charset=utf-8"
+  end
   
 end

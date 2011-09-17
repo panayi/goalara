@@ -1,25 +1,4 @@
-%iframe#main_frame{:src => "#{@article.url}", :width => "100%", :border => '0', :cellspacing => '0', :frameborder => '0'}
-
-:javascript
-  $(document).ready(function(){
-    $("body").css("overflow", "hidden");
-    $(window).resize(function() {
-      setHeight();
-    });
-    //$("#conversation").clickNScroll({reverse: true, acceleration: .5, rightMouse: true });
-     $('#view_content').animate({marginTop: "+=50px"}, 'slow');
-     $('#floatingbar').css({height: 0}).animate({ height: '50' }, 'slow');
-     
-  });
-  $("#main_frame").load(function(){
-    $("#main_frame").css('visibility', 'visible');
-    setHeight();
-  });
-  function setHeight() {
-    var this_height = document['body'].offsetHeight
-    parent.document.getElementById('main_frame').height = this_height;
-    $('#conversation').height(this_height - 250);
-  }
-	
-
-
+- if !@article.nil?
+  %iframe{:src => "#{@article.url}", :width => "100%", :border => '0', :cellspacing => '0', :frameborder => '0', :id => "article_iframe"}
+- else
+  %iframe{:src => "", :width => "100%", :border => '0', :cellspacing => '0', :frameborder => '0', :id => "article_iframe"}

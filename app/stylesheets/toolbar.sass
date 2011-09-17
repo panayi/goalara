@@ -1,16 +1,18 @@
+$orange: #FC6D2F
+$red: #FF2B06
+
 div
   &#floatingbar
-    overflow: hidden
     width: 100%
-    height: 0px
     position: absolute
     top: 0
     left: 0
     color: #000
     font-family: Arial
     font-weight: bold
-    background-image: url('../images/tui.png')
+    background-color: #262626
     z-index: 100
+    border-bottom: 1px solid $red
   &#content
     padding: 1em
 
@@ -18,25 +20,33 @@ div
   body>div#floatingbar
     position: fixed
 
-#floatingbar ul
+#floatingbar ul.gallery
   list-style-type: none
+  position: relative
+  height: 50px
   li
     float: left
-    padding: 19px 0 0 16px
-    color: #666
+    padding: 10px 0 0 16px
+    color: #aaa
     margin-top: -3px
     a
       text-decoration: none
-      color: #fff
-      padding: 10px
+      color: #f2f2f2
       font-size: 12px
       font-weight: normal
       font-family: Arial
-      &:hover
-        color: #000033
       img
         float: left
         border: none
+
+#floatingbar ul li.right_divider
+  background: url("../images/sprites_small.png") no-repeat scroll 190px -715px transparent
+
+#floatingbar ul li * 
+  display: block
+
+#floatingbar ul li #signin_menu
+  display: none
 
 .translateicon
   float: right
@@ -50,3 +60,207 @@ div
 
 .stico_default
   background-image: none
+  
+.total_comments
+  background: url("../images/sprites_small.png") no-repeat scroll -15px -280px transparent
+  font-size: 14px
+  height: 20px
+  padding: 20px 0 0 45px
+  width: 40px
+  
+.show_hide_articles
+  background: url("../images/sprites_small.png") no-repeat scroll -15px -771px transparent
+  height: 39px
+  width: 100px
+
+.opened
+  background: url("../images/sprites_small.png") no-repeat scroll -15px -810px transparent !important
+  
+// TODO : fix hover of anchor not displaying pointer
+.team_selector
+  background: url("../images/sprites_small.png") no-repeat scroll -15px -177px transparent
+  font-size: 13px !important
+  height: 40px
+  line-height: 2.8
+  padding: 0 0 0 25px
+  width: 280px
+  cursor: pointer
+  .image img
+    padding: 5px 10px 0 0
+    width: 24px
+    height: 24px
+  
+.navigate_buttons
+  
+#previous_article
+  background: url("../images/sprites_small.png") no-repeat scroll -15px -65px transparent
+  height: 40px
+  width: 120px
+
+#next_article
+  background: url("../images/sprites_small.png") no-repeat scroll -15px -11px transparent
+  height: 40px
+  width: 120px
+  
+//TODO: change the styling of facebook with jquery
+.liketext
+  display: none
+  
+.connect_widget_like_button
+  background: url("http://0.0.0.0:3000/images/sprites_small.png") no-repeat scroll -15px -235px transparent
+  border: none !important
+  height: 38px
+  width: 43px
+// end todo  
+
+.team_dropbox
+  z-index: 1000
+  overflow-y: scroll
+  background-color: #292929
+  height: 400px
+  margin: -6px 0 0 2px
+  width: 270px
+  border: 3px solid $orange
+  border-top: none
+  position: absolute
+  bottom: -398px
+  li
+    border-bottom: 1px solid #404040
+    clear: both
+    display: block
+    height: 62px
+    padding: 0 !important
+    width: 255px
+    .image
+      float: left
+      img
+        width: 50px
+        height: 50px
+    .name
+      font-size: 12px
+      line-height: 4.5
+      margin-left: 65px
+  li a
+    padding: 7px 0 0 16px
+  li a:hover
+    background-color: $orange
+    cursor: pointer
+  li.selected a:hover
+    background-color: transparent !important
+    cursor: auto !important
+  li.selected *
+    opacity: 0.6
+
+#panel
+  display: none
+  height: 310px
+  color: white
+  #sync_window
+    width: 198px
+    border-right: 3px solid #606060
+    padding: 11px 5px 5px 10px
+    height: 289px
+    .sync_button
+      position: absolute
+      button
+        font-size: 14px
+        font-weight: 700
+        line-height: 1.4
+        padding: 4px
+      button:hover
+        cursor: pointer
+    .sync_info
+      height: 226px   
+      position: relative
+      h2
+        padding-bottom: 2px
+        font-size: 14px
+        border-bottom: 1px solid $orange
+      ul
+        margin-top: 6px
+        li
+          padding: 3px 0
+        .label
+          float: left
+          width: 90px
+          font-weight: 700
+          line-height: 1.8
+        .value
+          font-size: 14px
+          font-weight: 700
+          color: #00cc33
+        #total_articles
+          color: white
+        .zero
+          color: red !important
+      .message
+        position: absolute
+        bottom: 25px
+        color: #ddd
+        font-size: 10px
+    
+  .wrapper
+    width: 700px
+    margin: 0 auto auto 230px
+    height: 295px
+    overflow-x: scroll
+    padding-top: 8px
+    .filter_list
+      color: white
+      position: fixed
+      margin: -3px 4px 0 0
+      padding: 4px 10px 4px 0
+      select option
+        padding: 0 !important
+        line-height: 1.2
+    ul.articles_list
+      border-top: 1px solid #CCCCCC
+      position: absolute
+      top: 29px
+      padding: 4px
+      white-space: nowrap
+      width: 500px
+      li.selected
+        border: 2px solid $orange
+      li.an_article
+        display: inline
+        list-style-type: none
+        margin-right: 20px
+        float: left
+        width: 220px
+        position: relative      
+        .details
+          position: absolute
+          background-color: #737373
+          top: 0
+          width: 216px
+          height: 30px
+          padding: 5px 2px
+          ul
+            width: 220px
+          ul li
+            padding: 0
+            height: 30px
+          ul li img
+            width: 29px
+            height: 29px
+            display: inline
+          ul li.offline
+            left: 35px
+            position: absolute
+            width: 30px
+            top: 0
+          ul li.available
+            background: url("../images/available.png?33") no-repeat scroll 0 0
+          ul li.team
+            left: 3px
+            position: absolute
+            width: 30px
+            top: 0
+          ul li.date
+            position: absolute
+            right: 3px
+            text-align: right
+            top: 8px
+
+

@@ -1,0 +1,70 @@
+#osx-modal-content
+  #osx-modal-title
+    Συγχρονισμός των άρθρων μου
+    // title goes here
+  #osx-modal-data
+    .content
+      %div.alert
+      Παρακαλούμε μην διακόψετε την διαδικασία συγχρονισμού.
+      %br
+      %br
+      = image_tag("ajax-loader.gif", {:style => "margin:auto"})
+      %br
+      Ολοκληρώθηκε ο συγχρονισμός:&nbsp;&nbsp; 
+      %span.progress
+        %span#sync_done{:style => "color:green"}
+          1
+        &nbsp;/&nbsp;
+        %span#articles_total
+          = @articles.size
+        άρθρων
+  
+  #sync_is_complete_content.hidden
+    %div
+      O συγχρονισμός των άρθρων έχει ολοκληρωθεί με επιτυχία. Όλα τα άρθρα είναι διαθέσιμα offline!
+    %button.simplemodal-close
+      OK
+/ #modal_windows_content{:style => "display:none"}
+/   %a.osx
+/   #window1
+/     .content
+/       %form#sync_team
+/         %label{:for => "email"} Επιλέξτε ομάδα:
+/         = select("team", "id", [["Eπιλέξτε", 0]] + @teams.map {|u| [u.name,u.id]}, :selected => '0')
+/         %br
+/         %br
+/         %br
+/         %br
+/         %br
+/       #buttons
+/         %button.step2.floatright
+/           Επόμενο 
+/   #window2
+/     .content
+/       #sync_message
+/         Πατήστε το κουμπί για να γίνει συγχρονισμός των άρθρων της ομάδας: 
+/         %span.selected_team
+/       %button#start_sync
+/         Εκκίνηση συγχρονισμού
+/       #alert_message
+/         Σημαντικό: Αφού πατήσετε το κουμπί ΜΗΝ διακόψετε την διαδικασία συγχρονισμού. Παραμείνετε σε αυτή την σελίδα μέχρι να ολοκληρωθεί ο συγχρονισμός!
+/       #buttons
+/         %button.step1.floatleft
+/           Προηγούμενο
+/   #window3_success
+/     .content
+/       O συγχρονισμός των άρθρων έχει ολοκληρωθεί με επιτυχία. Όλα τα άρθρα της ομάδας 
+/       %span.selected_team 
+/       βρίσκονται 
+/       %a.open_article_list 
+/         στην λίστα των άρθρων σας
+/       #buttons
+/         %button.simplemodal-close.floatright
+/           Κλείσιμο
+/   #window3_fail
+/     .content
+/       Παρουσιάστηκε κάποιο σφάλμα κατά την διαδικασία συγχρονισμού. Παρακαλούμε δοκιμάστε αργότερα
+/       #buttons
+/         %button.simplemodal-close.floatright
+/           Κλείσιμο
+/ 

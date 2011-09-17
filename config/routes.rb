@@ -1,5 +1,12 @@
 GoalaraCom::Application.routes.draw do
-  devise_for :users
+  # devise_for :users do
+  #     get "/users/sign_out" => "devise/sessions#destroy", :as => :destroy_user_session
+  #     get "/users/sign_in" => "sessions#create", :as => :new_user_session
+  #   end
+  
+  root :to => "frontpage#index"
+  
+  devise_for :users, :controllers => {:sessions => 'sessions'}
 
   resources :users
 
@@ -15,15 +22,36 @@ GoalaraCom::Application.routes.draw do
   
   resources :frontpage
   
+  resources :comments
+  
+  resources :votes
+  
+  # comment_vote_path
+  get "/comment-vote" => "comments#vote", :as => :comment_vote_path
+  
   # match "/oauth/start" => "oauth#start"
   #   match "/oauth/callback" => "oauth#callback"
   #   match "/oauth/client" => "oauth#client"
   
+  match "login" => "devise/sessions#new", :as => :new_user_session 
+  match "logout" => "devise/sessions#destroy", :as => :destroy_user_session
+  match "register" => "devise/registrations#new", :as => :new_user_registration
+  
   match "/articles/set_teams" => "articles#set_teams"
   
-  root :to => "frontpage#index"
+  match "/navigate" => "viewers#fetch"
   
-  devise_for :users, :controllers => { :omniauth_callbacks => "users/omniauth_callbacks" }
+  match "/goalara" => "viewers#index", :as => :viewer_show
+  
+  match "/application.manifest" => Rails::Offline
+  
+  match "/feed" => "articles#rss"
+  
+  
+  
+  
+  
+  # devise_for :users, :controllers => { :omniauth_callbacks => "users/omniauth_callbacks" }
 
   # The priority is based upon order of creation:
   # first created -> highest priority.

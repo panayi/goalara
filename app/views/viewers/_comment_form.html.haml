@@ -1,0 +1,26 @@
+.commentAddForm.clearfix.secondary
+  .signed-in
+    %label.formItemLabel
+      = form_tag(comments_path, :method => "post", :remote => true, :id => "add_comment") do
+        %textarea{:cols => "", :name => "body", :rows => ""}
+        - if !@article.nil?
+          %input{:name => "commentable_id", :type => "hidden", :value => "#{@article.id}" }    
+        - else
+          %input{:name => "commentable_id", :type => "hidden", :value => "" } 
+        %input{:name => "user_id", :type => "hidden", :value => "#{current_user.id if current_user}"}
+        %input{:name => "commentable_type", :type => "hidden", :value => "Article"}
+        - if !user_signed_in?
+          .formItemLine.signed-out
+          
+            %p.signin
+              Για να σχολιάσετε,
+              = link_to 'συνδεθείτε', :class => "sign_in"
+              ή 
+              = link_to 'δημιουργήστε λογαριασμό', new_user_registration_path
+        - else
+          %span.button.primary
+            %span
+              %input.submit{:name => "submit", :type => "submit", :value => "Submit"}
+          %p.charactersUsed
+            Characters remaining:
+            %em.commentOK 2000

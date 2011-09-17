@@ -193,6 +193,9 @@ Devise.setup do |config|
   # up on your models and hooks.
   # config.omniauth :github, 'APP_ID', 'APP_SECRET', :scope => 'user,public_repo'
   config.omniauth :facebook, "105515539546378", "d3b35843465b725a3144f490c7fdc61b"
+  
+  config.http_authenticatable_on_xhr = false
+  config.navigational_formats = [:html, :json]
 
   # ==> Warden configuration
   # If you want to use other strategies, that are not supported by Devise, or

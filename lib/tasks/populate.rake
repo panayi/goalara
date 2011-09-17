@@ -4,7 +4,7 @@ namespace :db do
     require 'populator'
     require 'faker'
     
-    [Comment, User].each(&:delete_all)
+    # [Article].each(&:delete_all)
     
     Article.update_feeds
     

@@ -1,35 +1,45 @@
+%ul.list_teams
+  - @teams.each do |team|
+    %li.floatleft
+      = team_logo(team.logo_image)
+%div.clearfix
 %div{:style => "position: static;", :class => "local"}
-  %h3 Sort by:
+  %h3 Ταξινόμηση κατά:
   %ul{:id => 'order_by'}
     %li 
-      = link_to "Newest", request.url, :onclick => 'return false;', :class => "selected", :"data-value" => 'newest'
+      = link_to "Ημερομηνία", request.url, :class => "selected", :"data-value" => 'newest'
     %li 
-      = link_to "Most Popular", request.url, :onclick => 'return false;', :"data-value" => 'popular'
+      = link_to "Δημοφιλέστερα", request.url,  :"data-value" => 'popular'
     %li 
-      = link_to "Most Commented", request.url, :onclick => 'return false;', :"data-value" => 'commented'
-  %h3 Filter by Team:
+      = link_to "Περισσότερα σχόλια", request.url, :"data-value" => 'commented'
+  %h3 Εμφάνιση άρθρων για:
   %ul{:id => 'filter_by'}
     %li
-      = link_to 'All', request.url, :onclick => 'return false;', :"data-value" => 'all'
+      = link_to 'Όλες τις ομάδες', request.url,  :"data-value" => 'all', :class => "selected"
     - @teams.each do |team|
       %li 
-        = link_to team.name, request.url, :onclick => 'return false;', :"data-value" => team.id
-  %h3 Filter by Organization
-  %ul{:id => 'filter_by'}
-    %li
-      = link_to 'All', request.url, :onclick => 'return false;', :"data-value" => 'all'
-    - @organizations.each do |organization|
-      %li 
-        = link_to organization.name, request.url, :onclick => 'return false;', :"data-value" => organization.id
+        = link_to team.name, request.url,  :"data-value" => team.id
+  / %h3 Filter by Organization
+  /   %ul{:id => 'filter_by'}
+  /     %li
+  /       = link_to 'All', request.url, :onclick => 'return false;', :"data-value" => 'all'
+  /     - @organizations.each do |organization|
+  /       %li 
+  /         = link_to organization.name, request.url, :onclick => 'return false;', :"data-value" => organization.id
         
     
 
 %div{:class => "browser"}
-  %ul
+  %ul.articles_list#articles_list
     - @articles.each do |article|
-      %li
-        = link_to image_tag(article.image), :controller => 'viewers', :action => 'show', :id => article.id
-        %h3
-          = article.title
-        %span
-          = truncate_words(article.summary, 200).join(' ')
+      %li.an_article{:"data-id" => "#{article.id}", :"data-team-id" => "#{get_article_teams_ids(article)}", :"data-comment-count" => "#{article.comment_threads.size}", :"data-date" => "#{format_datetime_for_sort(article.created_at.to_s())}"}
+        %a{:href => "#{article_url(article)}", :class => 'article_image'}
+          = image_tag(article.image.url(:medium))
+          %div.description
+            %div.description_content
+              = article.title
+              %div.abstract{:style => "display:none"}
+                = shorten(article.summary)
+  %ul#shuffler.hidden
+  %ul#original.hidden
+              

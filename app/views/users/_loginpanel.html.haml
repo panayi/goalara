@@ -1,0 +1,24 @@
+%fieldset#signin_menu
+  #left_panel.floatleft
+    %form#signin{:action => "#{new_user_session_path}", :method => "post"}
+      %span.title Login with your Goalara.com account
+      %label{:for => "username"} Username or email
+      %input#username{:name => "username", :tabindex => "4", :title => "username", :type => "text", :value => ""}
+        %p
+          %label{:for => "password"} Password
+          %input#password{:name => "password", :tabindex => "5", :title => "password", :type => "password", :value => ""}
+        %p.remember
+          %input#signin_submit{:tabindex => "6", :type => "submit", :value => "Sign in"}
+            %input#remember{:name => "remember_me", :tabindex => "7", :type => "checkbox", :value => "1"}
+              %label{:for => "remember"} Remember me
+        %p.forgot
+          %a#resend_password_link{:href => "#"} Forgot your password?
+        %p.forgot-username
+          %a#forgot_username_link{:href => "#", :title => "If you remember your password, try logging in with your email"} Forgot your username?
+  #right_panel.floatleft
+    %span.title or with your Facebook account
+    = link_to image_tag("facebook_alt.png"), user_omniauth_authorize_path(:facebook)
+  #bottom_panel.clearfix
+    %h2.speech
+      I don't have Facebook or an account at Goalara.com
+      %a#create_account_link{:href => "#{new_user_registration_path}", :title => "If you remember your password, try logging in with your email"} Create an account at Goalara.com instantly

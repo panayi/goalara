@@ -1,18 +1,92 @@
-#floatingbar
-  %ul.gallery.clearfix
-    %li
-      / Begin Logo
-    %li
-      / Begin Sign In
-      = link_to "Sign in", new_user_session_path, :class => 'a2a_dd'
-    %li
-      / Begin Select Team
-    %li
-      / Begin Total comments
-    %li
-      / Begin Add to Favorites
-    %li
-      / Begin Facebook Like
-    %li
-      / Begine Navigate Previous-Next
-   
+%div#panel
+  %div#sync_window.floatleft
+    %div.sync_info
+      %h2
+        Τα άρθρα μου
+      %ul
+        %li
+          %div.label
+            Αριθμός άρθρων:
+          %div#total_articles.value
+            = @articles.size
+        %li
+          %div.label
+            Διαθέσιμα offline:
+          %div#available_offline.value.zero
+            0   
+      %div.message
+        Τα άρθρα που είναι διαθέσιμα offline είναι μαρκαρισμένα με το σύμβολο 
+        = image_tag("available.png", {:width => "14", :height => "14", :style => "display:inline"})
+        %p{:style => "margin-top: 10px"}
+          Για να έχετε πρόσβαση σε όλα τα άρθρα όταν βρίσκεστε εκτός σύνδεσης (offline), πατήστε το πιο κάτω κουμπί συγχονισμού:
+    %div.sync_button
+      %button#start_sync.osx
+        Συγχρονισμός άρθρων
+  %div.wrapper
+    %div.filter_list
+      Εμφάνιση άρθρων για:
+      = collection_select(:team, :id, @teams, :id, :name, options ={:prompt => "Όλες τις ομάδες"})
+    %div.clearfix
+    %ul.articles_list#articles_list
+      - @articles.each do |article|
+        %li.an_article{:"data-article-id" => "#{article.id}", :"data-team-id" => "#{!article.team.empty? ? article.team.first.id : ''}"}
+          %div.details
+            %ul
+              %li.team
+                - if !article.team.empty?
+                  = image_tag(article.team.first.logo_image)
+              %li.offline
+              %li.date
+                = article.created_at
+          %a{:href => "#{article_url(article)}", :class => 'article_image'}
+            = image_tag(article.image.url(:medium))
+            %div.description
+              %div.description_content
+                = article.title
+%ul.gallery
+  %li.right_divider.login_part{:style => "width:200px;position:relative;padding-left:15px"}
+    = render :partial => "user_top_panel"
+  %li{:style => "width:70px"}
+    / Begin Total comments
+    %span.total_comments
+      - if !@comments.nil?
+        = @comments.size
+  %li{:style => "width:100px"}
+    / Begin Add to Favorites
+    = link_to "", "#" , :onclick => "return false;", :class => "show_hide_articles"
+  %li{:style => "width:100px;padding-top:24px"}
+    / Begin Facebook Like
+    #fb-root
+    %script{:src => "http://connect.facebook.net/en_US/all.js#appId=267779433232955&xfbml=1"}
+    %fb:like{:action => "like", :font => "", :href => request.url, :layout => "button_count", :send => "true", :show_faces => "true", :width => "450"}
+  %li.show_current_team{:style => "width:284px;position:absolute; right:302px;bottom:0px"}
+    / Begin Select Team
+    %a{:onclick => "return false;", :class => "team_selector"}
+      %span.image
+        = image_tag("ball_xsmall.png")
+      %span.name
+        Όλες οι ομάδες
+    %ul.team_dropbox{:style =>"display:none"}
+      %li{:id => "tid_all", :"data-teamID" => "all" }
+        %a{:onclick => "return false;"}
+          %span.image
+            = image_tag "ball_medium.jpg"
+          %span.name
+            Όλες οι ομάδες
+      - @teams.each do |team|
+        %li{:id => "tid_#{team.id}", :"data-teamID" => "#{team.id}" }
+          %a{:onclick => "return false;"}
+            %span.image
+              = team_logo(team.logo_image, 'list_image')
+            %span.name{:href => "#", :onclick => "return false;" }
+              = team.name
+          
+%ul.gallery.navigation_buttons{:style => "position:absolute; bottom: 0px; right:20px"}
+  - if !@navigation_buttons.nil?
+    = @navigation_buttons
+
+%input{:type => "hidden", :id => "sync_pointer", :value => 0}
+
+:javascript
+  total_articles_available = "#{@articles.size}"
+  

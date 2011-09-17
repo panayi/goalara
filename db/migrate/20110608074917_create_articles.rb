@@ -9,7 +9,6 @@ class CreateArticles < ActiveRecord::Migration
       t.string :published_at
       t.string :guid
       t.integer :feed_id
-      t.integer :team_id
       t.text :tf_idf_content
       t.timestamps
     end

@@ -1,18 +1,7 @@
 class FrontpageController < ApplicationController
   def index
     
-    if !params[:order_by]
-      @order_by = 'id'
-    else
-      @order_by = params[:order_by]
-    end
-    
-    if !params[:filter_by]
-      @articles = Article.order(@order_by).all
-    else
-      @articles = Article.order(@order_by).where(params[:type] + '= ?', params[:filter_by])
-    end
-    
+    @articles = Article.find(:all, :order => "id DESC")
     @teams = Team.all
     @organizations = Organization.all
     

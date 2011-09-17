@@ -1,4 +1,6 @@
 $accent-color: #FF2B06
+$orange: #FC6D2F
+$blue: #3399dd
 
 *
   font-family: arial,helvetica,sans-serif
@@ -14,7 +16,9 @@ body
   font-size: 62.5%
   margin: 0
   padding: 0
-  text-align: center
+  text-align: left
+  min-width: 1024px !important
+  width: expression((document.body.clientWidth < 1024) ? '1024px' : 'auto')
   &.sf_tedx
     background: url("i/bg_tedx.png") repeat scroll 0 0 transparent
   &.sf_beta, &.sf_local
@@ -76,16 +80,16 @@ form
 
 select
   color: #545454 !important
-  option
-    padding: 2px 0 !important
+  
+#panel select option
+  padding: 2px 0 !important
 
 form
   input.submit
     background: url("../images/button_submit.gif") no-repeat scroll left top transparent
     float: right
     height: 20px
-    margin: 6px 0 0
-    text-indent: -9999px
+    margin: 3px 0
     width: 54px
     &:hover
       background: url("../images/button_submit.gif") no-repeat scroll -54px 0 transparent
@@ -276,16 +280,18 @@ div.transparent_msglayer
 
 #header
   height: 1%
-  margin-bottom: 3px
-  padding: 0
+  border-bottom: 3px solid #FC6D2F
+  padding-bottom: 10px
   position: relative
+  ul li
+    padding-bottom: 5px
   div.nav
-    border-bottom: 3px solid #FF2A06
+    border-bottom: 3px solid $blue
     position: relative
-  img
+  .logo_area
     float: left
     margin: 0 48px 0 0
-    padding: 17px 0 41px
+    padding: 17px 0 28px
     &.new
       display: inline
       float: none
@@ -293,37 +299,23 @@ div.transparent_msglayer
       padding: 0
       position: relative
       top: 2px
-  ul
-    border-top: 1px solid #8D8D8D
-    float: left
-    list-style: none outside none
-    margin-top: 15px
-    width: 142px
-    li
-      border-bottom: 1px solid #E2E2E2
-      a
-        border-bottom: 1px solid #FFFFFF
-        border-top: 1px solid #FFFFFF
-        color: #888888
-        display: block
-        font-size: 1.1em
-        height: 15px
-        margin: 0
-        padding: 2px 0 0 3px
-    &.main
-      margin-right: 11px
-      width: 135px
-      li a
-        color: #222222
-        font-weight: bold
-    li a
-      &:hover, &:active
-        background-color: #EDEDED
-        color: $accent-color
-        text-decoration: none
-      &.selected
-        background-color: #EDEDED
+    .moto
+      font-size: 15px
+      padding: 5px 0 0 3px
 
+.likes
+  margin-left: 8px
+  color: #888
+  .count
+    font-family: Georgia,"Times New Roman",Times,serif
+    font-size: 21px
+    line-height: 0.5
+    margin-bottom: 7px
+  .desc
+    font-family: Georgia,"Times New Roman",Times,serif
+    font-size: 11px
+    
+    
 #search
   bottom: 5px
   clear: both
@@ -659,6 +651,7 @@ div.talkListContainer.horiz dl.talkMedallion
 #footer
   background: none repeat scroll 0 0 #DAD8D6
   clear: both
+  border-top: 3px solid $blue
   color: #666666
   font-weight: bold
   height: 3em
@@ -1021,7 +1014,7 @@ span.caption
       font-weight: bold
       margin-bottom: 3px
   .ui-icon-closethick
-    background-image: url("/images/commenting/button_close.png")
+    background-image: url("../images/commenting/button_close.png")
     display: block
     height: 13px
     position: absolute
@@ -1261,14 +1254,6 @@ a.ui-selectmenu
     color: #444444 !important
     text-decoration: none
 
-body
-  .signed-out
-    display: none
-  &.signed-out
-    .signed-in
-      display: none
-    .signed-out
-      display: block
 
 #tooltip
   background-color: #333333
@@ -1347,10 +1332,8 @@ div#body
     padding: 0
     width: 900px
     background: url("../images/bg_browse_grad_left.jpg") no-repeat scroll left bottom transparent
-    border-bottom: 3px solid #8E8E8E
   &.homepage
     #maincontent, #talkcontent
-      border-bottom: 3px solid $accent-color
     h1
       min-height: 0
 
@@ -1389,7 +1372,7 @@ div
       display: inline
       float: left
       margin: 0 0 0 6px
-      padding: 0 0 50px
+      padding: 0 0 20px
       width: 148px
       select
         max-width: 200px
@@ -1930,19 +1913,19 @@ div
   float: left
   width: 400px
   border-right: 1px solid #FF2B06
+  background-color: white
   position: fixed
   height: 100%
 #article_viewer
   margin-left: 401px
   height: auto
-  visibility: hidden
   border-style: none
 
 
-div#conversation
+#conversation
   padding: 3px 8px 10px 15px
   overflow-y: scroll
-  height: 70%
+  height: 60%
   border-bottom: 15px solid #eee
   border-top: 15px solid #eee
 
@@ -2031,8 +2014,16 @@ div#discussion div.comment
       color: #FF2A06
   h4 a
     color: #000000
+    float: left
+    margin: 2px 0 0 3px
     &:visited
       color: #000000
+  a.profile_picture
+    background: url("../images/sprites_small.png") no-repeat scroll -21px -651px transparent
+    width: 44px
+    height: 44px
+    float: left
+    display: block
 
 ul
   &.l-0 div.comment
@@ -2043,17 +2034,17 @@ ul
 
 li.comment
   ul.l-1 li.comment
-    background-image: url("/images/commenting/thread-1.png")
+    background-image: url("../images/commenting/thread-1.png")
     background-position: 22px 11px
     background-repeat: no-repeat
     padding-left: 42px
   li.comment
     ul.l-2 li.comment
-      background-image: url("/images/commenting/thread-2.png")
+      background-image: url("../images/commenting/thread-2.png")
       background-position: 11px 11px
       margin: 0
     li.comment ul.l-3 li.comment
-      background-image: url("/images/commenting/thread-3.png")
+      background-image: url("../images/commenting/thread-3.png")
       background-position: 0 11px
 
 ul.l-0 div
@@ -2070,10 +2061,10 @@ div
     img.profile
       display: inline-block
       float: left
-      height: 50px
-      margin-bottom: 10px
-      margin-right: 10px
-      width: 50px
+      height: 28px
+      margin-left: 7px
+      margin-top: 7px
+      width: 28px 
     h4
       border: medium none
       display: inline-block
@@ -2109,6 +2100,7 @@ li
     text-decoration: underline
   &.comment ul.actions
     display: inline-block
+    width: 65px
     float: right
     li
       display: inline-block
@@ -2139,19 +2131,26 @@ li
         height: 16px
         margin: 0 2px
         padding-top: 0
-        width: 14px
+        width: 38px
         a
           display: block
-          float: right
+          float: left
           height: 16px
           width: 14px
   a.voteUp
-    background: url("/images/commenting/iconUp.png") no-repeat scroll 0 0 transparent
-    background: url("/images/commenting/iconUp.png") no-repeat scroll 0 0 transparent
+    background: url("../images/commenting/iconUp.png") no-repeat scroll 0 0 transparent
     &:hover
-      background: url("/images/commenting/iconUp.png") no-repeat scroll 0 -16px transparent
-  &.up .voteUp
-    background: url("/images/commenting/iconUp.png") no-repeat scroll 0 -32px transparent
+      background: url("../images/commenting/iconUp.png") no-repeat scroll 0 -16px transparent
+  a.up
+    background: url("../images/commenting/iconUp.png") no-repeat scroll 0 -32px transparent
+    
+  a.voteDown
+    background: url("../images/commenting/iconDown.png") no-repeat scroll 0 -48px transparent
+    &:hover
+      background: url("../images/commenting/iconDown.png") no-repeat scroll 0 -16px transparent
+  a.down
+    background: url("../images/commenting/iconDown.png") no-repeat scroll 0 -32px transparent
+  
   &.comment
     a
       &.move
@@ -2159,7 +2158,7 @@ li
         position: absolute
         right: 45px
       &.flag
-        background: url("/images/commenting/iconFlag.png") no-repeat scroll 0 0 transparent
+        background: url("../images/commenting/iconFlag.png") no-repeat scroll 0 0 transparent
         bottom: 5px
         height: 16px
         position: absolute
@@ -2186,7 +2185,7 @@ div
     clear: both
     font-size: 12px
     line-height: 18px
-    margin: 5px 30px 10px 0
+    margin: 5px 6px 10px 0
     overflow-x: hidden
     padding: 5px 0 0
 
@@ -2292,6 +2291,13 @@ div.deleted div.commentHeader
 
 .conversation div.deleted div.commentHeader
   background: none repeat scroll 0 0 transparent
+  
+.user_team
+  padding-left: 5px
+  float: left
+  img
+    width: 18px
+    height: 18px
 
 div.deleted div
   &.commentHeader h4
@@ -2419,7 +2425,7 @@ div
         &.message p
           margin: 0
   &.commentLoader
-    background-image: url("/images/commenting/load_more_comments.png")
+    background-image: url("../images/commenting/load_more_comments.png")
     background-position: 0 bottom
     background-repeat: no-repeat
     border-top: 1px solid #C2C2C2
@@ -2431,14 +2437,14 @@ div
     text-align: center
 
 .conversation div.commentLoader
-  background-image: url("/images/commenting/load_more_comments_wide.png")
+  background-image: url("../images/commenting/load_more_comments_wide.png")
   width: 618px
 
 div.commentLoader.empty
-  background-image: url("/images/commenting/load_no_more.png")
+  background-image: url("../images/commenting/load_no_more.png")
 
 .conversation div.commentLoader.empty
-  background-image: url("/images/commenting/load_no_more_wide.png")
+  background-image: url("../images/commenting/load_no_more_wide.png")
 
 div.commentLoader
   a
@@ -2497,7 +2503,7 @@ img.sortLoader
       font-weight: bold
       margin-bottom: 3px
   .ui-icon-closethick
-    background-image: url("/images/commenting/button_close.png")
+    background-image: url("../images/commenting/button_close.png")
     display: block
     height: 13px
     position: absolute
@@ -2647,14 +2653,14 @@ span.button.primary input
   font-weight: normal
 
 #header_info
-  height: 50px
+  height: 18px
   
 .logo_wrapper
   width: 250px
   padding: 3px 0 0 3px
   
 .header_comments
-  background-color: #FC6D2F
+  background-color: $orange
   color: white
   font-size: 15px
   padding: 16px
@@ -2682,4 +2688,356 @@ div
   & span.button input:hover, &.viewThemes span.button input:hover
     color: #CC0000
     
+.user_avatar
+  & img
+    width: 32px
+    height: 32px
+    padding: 0 4px
+    
+.user_name
+  margin-left: 10px
+  font-size: 12px
+  a
+    padding-top: 3px
+    &.small
+      font-size: 11px !important
+
 #view_content
+  margin-top: 50px
+  
+.loader
+  display: block
+  position: absolute
+  top: 200px
+  left: 50%
+
+.hidden
+  display: none !important
+
+//login panel
+#logincontainer
+  width: 780px
+  margin: 0 auto
+  position: relative
+
+#content
+  width: 520px
+  min-height: 500px
+
+a
+  &:link, &:visited
+    color: #27b
+    text-decoration: none
+  &:hover
+    text-decoration: underline
+  img
+    border-width: 0
+
+#topnav
+  padding: 10px 0px 12px
+  font-size: 11px
+  line-height: 23px
+  text-align: right
+  a.sign_in
+    background: #88bbd4
+    padding: 4px 6px 6px
+    text-decoration: none
+    font-weight: bold
+    color: #fff
+    -webkit-border-radius: 4px
+    -moz-border-radius: 4px
+    border-radius: 4px
+    *background: transparent url("..images/login/signin-nav-bg-ie.png") no-repeat 0 0
+    *padding: 4px 12px 6px
+    &:hover
+      background: #59B
+      *background: transparent url("..images/login/signin-nav-bg-hover-ie.png") no-repeat 0 0
+      *padding: 4px 12px 6px
+      *background-position: 0 3px!important
+    *background-position: 0 3px!important
+
+a.sign_in
+  position: relative
+  margin-left: 3px
+  span
+    background-image: url("..images/login/toggle_down_light.png")
+    background-repeat: no-repeat
+    background-position: 100% 50%
+    padding: 4px 16px 6px 0
+    
+.login_part a:hover
+  color: $accent-color !important
+
+#topnav a.menu-open
+  background: #ddeef6!important
+  color: #666!important
+  outline: none
+
+#small_signup
+  display: inline
+  float: none
+  line-height: 23px
+  margin: 25px 0 0
+  width: 170px
+
+a.sign_in.menu-open span
+  background-image: url("..images/login/toggle_up_dark.png")
+  color: #789
+
+
+ul li #signin_menu
+  background-color: #505050
+  border: 1px none transparent
+  -moz-border-radius-bottomleft: 5px
+  -moz-border-radius-bottomright: 5px
+  -webkit-border-bottom-left-radius: 5px
+  -webkit-border-bottom-right-radius: 5px
+  color: $accent-color
+  display: none
+  font-size: 11px
+  left: 25px
+  margin-right: 0
+  margin-top: 5px
+  padding: 20px
+  position: absolute
+  text-align: left
+  top: 40px
+  width: 455px
+  z-index: 100
+  input
+    &[type=text], &[type=password]
+      display: block
+      -moz-border-radius: 4px
+      -webkit-border-radius: 4px
+      border: 1px solid #ACE
+      font-size: 13px
+      margin: 0 0 5px
+      padding: 5px
+      width: 203px
+  p
+    margin: 0
+  a
+    color: #6AC
+  label
+    font-weight: normal
+    display: block
+    margin-top: 10px
+  p
+    &.remember
+      padding: 10px 0
+      input,label
+        display: inline !important
+    &.forgot, &.complete
+      clear: both
+      margin: 5px 0
+    &.create_account
+      padding-top: 10px
+    a
+      color: #3399dd !important
+  #left_panel
+    width: 210px
+    padding-right: 20px
+    border-right: 1px solid #ccc
+    margin-bottom: 15px
+  #right_panel
+    width: 200px
+    padding-left: 20px
+  #bottom_panel
+    clear: both
+    padding-top: 20px
+    border-top: 1px solid #ccc
+    -moz-border-radius-bottomleft: 5px
+    -moz-border-radius-bottomright: 5px
+    -webkit-border-bottom-left-radius: 5px
+    -webkit-border-bottom-right-radius: 5px
+    h2
+      font-family: Georgia,Helvetica,Verdana,sans-serif
+      font-size: 12px
+      display: inline
+    a
+      font-size: 13px
+      text-decoration: underline
+  #doomed_panel
+    clear: both
+    background-color: $accent-color
+    display: none
+    padding: 10px
+    margin: 10px 0
+    color: #e4f606
+  .the_title
+    padding-bottom: 5px
+    font-weight: bold
+  
+#signin_submit
+  -moz-border-radius: 4px
+  -webkit-border-radius: 4px
+  background: #3399dd url('..images/login/bg-btn-blue.png') repeat-x scroll 0 0
+  border: 1px solid #39D
+  color: #fff
+  text-shadow: 0 -1px 0 #3399dd
+  padding: 4px 10px 5px
+  font-size: 11px
+  margin: 0 5px 0 0
+  font-weight: bold
+  &::-moz-focus-inner
+    padding: 0
+    border: 0
+  &:hover, &:focus
+    background-position: 0 -5px
+    cursor: pointer
+
+.opacity
+  opacity: 0.25 !important
+
+.positive
+  color: #227F28 !important
+
+.negative
+  color: #D22811 !important
+
+#no_article
+  #inner
+    padding: 30px 0 0 30px
+    h1
+      font-size: 18px
+      font-weight: 700
+    h2
+      font-size: 14px
+    h1,h2
+      padding: 10px 0
+    ul
+      list-style: none
+      width: 300px
+      li
+        padding: 8px
+        border-bottom: 1px solid #d2d2d2
+        .image img
+          width: 22px
+          height: 22px
+          float: left
+        .name
+          font-weight: 700
+          font-size: 13px
+          padding: 0 20px
+          line-height: 2
+        .count
+          float: right
+
+.hidden
+  display: none
+.alert
+  color: red
+  padding: 3px 0
+
+a.article_image
+  position: relative
+  margin-top: 30px
+  img
+    width: 220px
+    height: 220px
+  .description
+    position: absolute
+    bottom: 0
+    left: 0
+    width: 220px
+    background-color: black
+    font-size: 15px
+    color: white
+    opacity: 0.6
+    filter: alpha(opacity=60)
+  .description_content
+    padding: 10px
+    margin: 0
+    overflow: hidden
+    white-space: normal
+  a.article_image:hover
+    text-decoration: none 
+
+.browser ul
+  margin-top: 10px
+  li.an_article
+    float: left
+    margin: 0 10px 20px 0
+    height: 237px
+    width: 237px
+    position: relative
+    a.article_image
+      position: static
+      img
+        width: 237px
+        height: 237px
+    .description
+      width: 237px
+    .abstract
+      padding-top: 6px
+      margin-top: 4px
+      border-top: 1px dashed white
+      font-size: 12px
+      line-height: 1.4
+
+ul.list_teams 
+  border-bottom: 3px solid $orange
+  height: 36px
+  padding: 6px 9px 0 15px
+  li
+    padding-right: 5px
+    margin-bottom: 4px
+    img
+      width: 30px
+      height: 30px
+
+.sign_in
+  background: url("../images/sprites_small.png") no-repeat scroll -15px -597px transparent
+  height: 30px
+  padding: 5px 0 0 55px
+  width: 120px
+  
+#header a.sign_in
+  display: block
+  background: url("../images/sprites_small.png") no-repeat scroll -15px -590px transparent
+  height: 53px
+  background-color: #505050
+  
+#header #signin_menu
+  top: 67px
+  right: 0 !important
+  left: auto
+  
+.title
+  border-bottom: 3px solid #ffff00
+  margin-bottom: 30px
+  
+ul.form 
+  padding: 10px 0
+  background-color: #ffffcc
+  li
+    padding: 10px
+    &.submit
+      padding-top: 25px
+      input
+        width: auto !important
+        padding: 15px
+    .label
+      line-height: 2
+      font-size: 13px
+      width: 160px
+      display: block
+      float: left
+    input
+      margin-left: 3px
+      width: 250px
+      padding: 3px 5px
+      color: #444
+      font-weight: bold
+    .inline-errors
+      color: red
+      margin-left: 163px !important
+      padding-top: 3px
+
+#error_explanation
+  color: red
+  padding: 10px
+  ul 
+    padding-left: 3px
+    li
+    padding: 3px 
