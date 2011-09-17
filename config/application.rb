@@ -8,6 +8,8 @@ Bundler.require(:default, Rails.env) if defined?(Bundler)
 
 # ENV["RAILS_ASSET_ID"] = "" # disable timestamps at end of asset files for offline
 
+ENV['BUNDLER_HOME'] = "/vendor/cache"
+
 module GoalaraCom
   class Application < Rails::Application
     # Settings in config/environments/* take precedence over those specified here.

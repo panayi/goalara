@@ -54,7 +54,7 @@ a:link, a:visited {
 /* line 40, ../../app/stylesheets/style.sass */
 a:hover, a:active {
   outline: medium none;
-  text-decoration: underline;
+  text-decoration: none !important;
 }
 /* line 43, ../../app/stylesheets/style.sass */
 a.largeLink {
