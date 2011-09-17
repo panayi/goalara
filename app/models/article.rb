@@ -7,6 +7,7 @@ class Article < ActiveRecord::Base
   belongs_to :feed
   belongs_to :organization
   has_and_belongs_to_many :team
+
   
   time = Time.new
   # Paperclip.options[:command_path] = "/usr/local/bin/"
@@ -136,7 +137,7 @@ class Article < ActiveRecord::Base
   
   def self.tag_team_to_article (data)
     
-    articles = Article.find(:all, :conditions => "tf_idf_content IS NOT NULL AND team_id IS NOT NULL") 
+    articles = Article.find :all, :conditions => [ "tf_idf_content IS NOT NULL AND teams.id is not ?", nil], :include => :team
     
     if !articles.empty?
       lsi = Classifier::LSI.new
