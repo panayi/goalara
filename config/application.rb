@@ -6,7 +6,7 @@ require 'rails/all'
 # you've limited to :test, :development, or :production.
 Bundler.require(:default, Rails.env) if defined?(Bundler)
 
-# ENV["RAILS_ASSET_ID"] = "" # disable timestamps at end of asset files for offline
+ENV["RAILS_ASSET_ID"] = "" # disable timestamps at end of asset files for offline
 
 ENV['BUNDLER_HOME'] = "/vendor/cache"
 
