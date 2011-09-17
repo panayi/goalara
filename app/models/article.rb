@@ -31,7 +31,9 @@ class Article < ActiveRecord::Base
       order_by = 'id'
     end
     
-    Article.order_by(order_by).filter_by('team_id', params[:team_id]).filter_by('organization_id', params[:organization_id])
+    Article.order_by(order_by)
+           .all(:include => :teams, :conditions => ["teams.id = ?", params[:team_id]])
+           .filter_by('organization_id', params[:organization_id])
   end
   
   def self.update_feeds() 
@@ -70,9 +72,9 @@ class Article < ActiveRecord::Base
           calculate_tf_idf
                              
           just_created = Article.last
-          Article.update(just_created.id, 
-            {:team_id => tag_team_to_article(just_created.title + ' ' + just_created.title + ' ' + just_created.content)}
-            )
+          
+          just_created.team_ids = Article::tag_team_to_article(just_created.title + ' ' + just_created.title + ' ' + just_created.content)
+          
           if parsed["image"] != nil 
             parsed["image"] = add_feed_url_to_link(parsed["image"], this_feed.site_url)
             just_created.image_from_url(parsed["image"]);
@@ -142,7 +144,9 @@ class Article < ActiveRecord::Base
     if !articles.empty?
       lsi = Classifier::LSI.new
       articles.each{ |a|
-        lsi.add_item a.tf_idf_content, Team.find(a.team_id).name.to_sym
+        teams = a.team.collect(&:name)
+        
+        lsi.add_item a.tf_idf_content, *teams
       }
       result = lsi.classify data
       
