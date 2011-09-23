@@ -4,13 +4,14 @@ $red: #FF2B06
 div
   &#floatingbar
     width: 100%
-    position: absolute
+    position: static
     top: 0
     left: 0
     color: #000
     font-family: Arial
     font-weight: bold
     background-color: #262626
+    font-size: 11px
     z-index: 100
     border-bottom: 1px solid $red
   &#content
@@ -162,13 +163,18 @@ div
     height: 289px
     .sync_button
       position: absolute
-      button
-        font-size: 14px
+      a
+        background: url("../images/green_button.png") no-repeat scroll 0 0
+        font-size: 11px
         font-weight: 700
         line-height: 1.4
-        padding: 4px
-      button:hover
+        padding: 12px 18px 26px 10px
+        width: 140px
+        display: block
+        color: #ddd
+      a:hover
         cursor: pointer
+        color: #fff
     .sync_info
       height: 226px   
       position: relative
@@ -182,7 +188,7 @@ div
           padding: 3px 0
         .label
           float: left
-          width: 90px
+          width: 103px
           font-weight: 700
           line-height: 1.8
         .value
@@ -200,11 +206,11 @@ div
         font-size: 10px
     
   .wrapper
-    width: 700px
-    margin: 0 auto auto 230px
+    margin: 0 19px auto 230px
     height: 295px
     overflow-x: scroll
-    padding-top: 8px
+    overflow-y: hidden
+    padding: 8px 8px 0 0
     .filter_list
       color: white
       position: fixed
@@ -215,11 +221,9 @@ div
         line-height: 1.2
     ul.articles_list
       border-top: 1px solid #CCCCCC
-      position: absolute
-      top: 29px
-      padding: 4px
+      padding: 6px 4px 0 4px
       white-space: nowrap
-      width: 500px
+      margin-top: 21px
       li.selected
         border: 2px solid $orange
       li.an_article
@@ -228,7 +232,9 @@ div
         margin-right: 20px
         float: left
         width: 220px
-        position: relative      
+        position: relative
+        &:hover:not(.selected)
+          border: 1px solid #ccc      
         .details
           position: absolute
           background-color: #737373

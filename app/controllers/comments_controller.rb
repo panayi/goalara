@@ -1,6 +1,8 @@
 class CommentsController < ApplicationController
     respond_to :html, :xml, :json
     
+    skip_authorization_check
+    
     before_filter :authenticate_user!
 
     def create
@@ -9,7 +11,9 @@ class CommentsController < ApplicationController
 
       if @comment.save
         if request.xhr?
-          render :partial => "comments/sidebox_single_comment.html.haml", :locals => { :comment => @comment }, :layout => false, :status => :created
+          data = render_to_string :partial => "comments/sidebox_single_comment.html.haml", :locals => { :comment => @comment }, :layout => false, :status => :created
+          result = {"data" => data}
+          render :json => result.to_json
         else
           redirect_to session[:return_to]
         end

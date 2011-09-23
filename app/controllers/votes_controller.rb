@@ -1,5 +1,9 @@
 class VotesController < ApplicationController
   
+  skip_authorization_check
+  
+  before_filter :authenticate_user!
+  
   # GET /teams/new
   # GET /teams/new.xml
   def new

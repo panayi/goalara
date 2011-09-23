@@ -4,36 +4,83 @@ require 'paperclip'
 
 class Article < ActiveRecord::Base
   
+  self.per_page = 24
+  
   belongs_to :feed
   belongs_to :organization
   has_and_belongs_to_many :team
-
   
+  is_impressionable
+  
+  has_many :comments
+
+  acts_as_commentable
+
   time = Time.new
   # Paperclip.options[:command_path] = "/usr/local/bin/"
   has_attached_file :image, :styles => {:thumb => "150x150#", :medium => "300x300#", :large => "600x600#"}
                     # :path => ":rails_root/public/articles/images/" + time.month.to_s() + "-" + time.year.to_s() + "/:id/:style/:filename"
   
-  has_many :comments
+  validates_attachment_content_type :image, :content_type => ["image/jpeg", "image/pjpeg", "image/png", "image/x-png", "image/gif"]
   
-  acts_as_commentable
+  
+  scope :belongs_to_team, lambda { |*team_id|
+    unless team_id.first.nil?
+      { :include => :team, :conditions =>
+        ["teams.id = ?", team_id]
+      }
+    end
+  }
+  
+  scope :has_team, lambda {
+      { :include => :team, :conditions =>
+        ["teams.id is not null"]
+      }
+  }
+  
+  scope :today_or_yesterday, lambda { 
+    where("articles.created_at IS NOT NULL AND date(articles.created_at) >= ?", Date.yesterday)
+  }
+  
+  
+  scope :published_since, lambda { |ago|
+    published.where("articles.created_at >= ?", ago)
+  }
   
   scope :order_by, lambda { |*args| {:order => (args.first || 'id') } }
   scope :filter_by, lambda { |*args| {:conditions => (args.second.nil? || args.second.empty?) ? nil : [args.first + " = ?", args.second]} }
   
   def self.get_articles(params)
-    case params[:order_by]
-    when "popular"
-      order_by = 'views'
-    when "comments"
-      order_by = 'comments'
-    else
-      order_by = 'id'
+    if params[:team_id] == "all"
+      params[:team_id] = nil
     end
     
-    Article.order_by(order_by)
-           .all(:include => :teams, :conditions => ["teams.id = ?", params[:team_id]])
-           .filter_by('organization_id', params[:organization_id])
+    case params[:order_by]
+    when 'popular'
+      return Article.has_team.
+                     today_or_yesterday.
+                     belongs_to_team(params[:team_id]).
+                     paginate(:page => params[:page]).
+                     sort{ |u| -u.impressionist_count }
+
+    
+    # TODO ===  Sort by:  {number of comments}
+    #when 'commented'
+      #
+      # @articles = Article.belongs_to_team(params[:team_id]).all(:select=> "articles.*, COUNT(articles.id) AS comments_count",
+      #                                 :joins => :comments, 
+      #                                 :group => "articles.id", 
+      #                                 :order => "comments_count")
+        
+    else #sort by date
+      return Article.has_team.
+                     today_or_yesterday.
+                     belongs_to_team(params[:team_id]).
+                     order_by("articles.id").
+                     paginate(:page => params[:page])
+                     
+    end
+    
   end
   
   def self.update_feeds() 
@@ -48,13 +95,13 @@ class Article < ActiveRecord::Base
           end
           
           parsed = parse_div_content2(
-                      entry.url, 
-                      { 'content' => this_feed.content_unique_div, 
-                        'category' => this_feed.category_unique_div, 
-                        'image' => this_feed.image_unique_div
-                      },
-                      this_feed.site_url
-                      )
+              entry.url, 
+              { 'content' => this_feed.content_unique_div, 
+                'category' => this_feed.category_unique_div, 
+                'image' => this_feed.image_unique_div
+              },
+              this_feed.site_url
+              )
           
                         
           create!(  
@@ -70,10 +117,9 @@ class Article < ActiveRecord::Base
           )
           # calculates tf-idf content and stores into Article.tf_idf_content
           calculate_tf_idf
-                             
-          just_created = Article.last
           
-          just_created.team_ids = Article::tag_team_to_article(just_created.title + ' ' + just_created.title + ' ' + just_created.content)
+          #TODO: uncomment the line below!!!
+          tag_team_to_article_bayes(Article.last)
           
           if parsed["image"] != nil 
             parsed["image"] = add_feed_url_to_link(parsed["image"], this_feed.site_url)
@@ -103,7 +149,7 @@ class Article < ActiveRecord::Base
     #return Iconv.conv('utf-8//IGNORE', 'utf-8', scraper.scrape(uri) ) 
   end
   
-  def self.parse_div_content2(url, div, feed_url)
+  def self.parse_div_content2(url, div, site_url)
     doc = Nokogiri::HTML(open(url))
     
     parsed = {}
@@ -116,21 +162,27 @@ class Article < ActiveRecord::Base
 
     #category div
     if !div["category"].nil?
-      parsed["category"] = doc.css(div["category"]).first.content
+      element = doc.css(div["category"])
+      if !element.first.nil?
+        parsed["category"] = element.first.content
+      end
     else
       parsed["category"] = nil
     end
     
     #image div
-    if !div["image"].nil?
-      image_html = doc.css(div["image"]+ " > img").first
-      if !image_html.nil?
-        parsed["image"] = get_image_src_from_text(image_html.to_html)
-      end
-    end
-    if div["image"].nil? || image_html.nil?
-      parsed["image"] = find_biggest_image(doc, feed_url)
-    end
+    parsed["image"] = find_biggest_image(doc, site_url)
+    
+    # if !div["image"].nil?
+    #       image_html = doc.css(div["image"] + " > img").first
+    #       if !image_html.nil?
+    #         parsed["image"] = get_image_src_from_text(image_html.to_html)
+    #       end
+    #     end
+    #     if div["image"].nil? || image_html.nil?
+    #       parsed["image"] = find_biggest_image(doc, feed_url)
+    #     end
+    
   
     return parsed
     
@@ -139,13 +191,12 @@ class Article < ActiveRecord::Base
   
   def self.tag_team_to_article (data)
     
-    articles = Article.find :all, :conditions => [ "tf_idf_content IS NOT NULL AND teams.id is not ?", nil], :include => :team
+    articles = Article.has_team
     
     if !articles.empty?
       lsi = Classifier::LSI.new
       articles.each{ |a|
         teams = a.team.collect(&:name)
-        
         lsi.add_item a.tf_idf_content, *teams
       }
       result = lsi.classify data
@@ -154,6 +205,39 @@ class Article < ActiveRecord::Base
     else
       return nil
     end
+  end
+  
+  
+  def self.tag_team_to_article_bayes(this_article)
+    
+    articles = Article.has_team
+
+    if !articles.empty?
+      bayes = Classifier::Bayes.new
+      
+      Team.all.each do |team|
+        bayes.add_category team.name
+      end
+      
+      #train
+      articles.each{ |a|
+        a.team.each do |t|
+          bayes.train t.name, a.tf_idf_content
+        end
+      } 
+      
+      #Classify
+      result = bayes.classifications this_article.tf_idf_content
+      result.sort_by{|k,v| -v}
+      matched_teams = [ Team.find_by_name(result.keys[0].to_s).id,
+                        Team.find_by_name(result.keys[1].to_s).id]
+      
+      
+      this_article.team_ids = matched_teams
+      
+      
+    end
+    
   end
   
   
@@ -191,11 +275,12 @@ class Article < ActiveRecord::Base
   
   def previous(offset = 0)    
       self.class.first(:conditions => ['id < ?', self.id], :limit => 1, :offset => offset, :order => "id DESC")
-    end
+  end
 
   def next(offset = 0)
-      self.class.first(:conditions => ['id > ?', self.id], :limit => 1, :offset => offset, :order => "id ASC")
+    self.class.first(:conditions => ['id > ?', self.id], :limit => 1, :offset => offset, :order => "id ASC")
   end
+  
 
   def image_from_url(url)
     self.update_attribute(:image, open(url))
@@ -208,28 +293,41 @@ class Article < ActiveRecord::Base
   end
   
   def self.find_biggest_image(doc, url)
-    width_height = 0
+    objective_function = 0
     main_image_url = nil
     doc.css("img").each do |img|
-      src = add_feed_url_to_link(get_image_src_from_text(img.to_html), url)
+      src = add_site_url_to_link(img.attributes["src"].value, url)
       dim = FastImage.size(src)
-      
-      if !dim.nil?
-        if dim[0] + dim[1] > width_height
-          width_height = dim[0] + dim[1]
+      if !dim.nil? 
+        aspect_ratio_gaussian = 2.72**(-( (dim[0]/dim[1]-1)**2 ) / 0.7)
+        if aspect_ratio_gaussian < 0.25 #probably an ad
+          next
+        end
+    
+        if src.index(url) == nil #means is coming from other domain
+          next
+        end
+        
+        width_height = dim[0] + dim[1]
+        if width_height > objective_function
+          objective_function = width_height
           main_image_url = src
         end
       end
       
     end
+    
     return main_image_url
+    
   end
   
-  def self.add_feed_url_to_link(link, feed_url)
+  def self.add_site_url_to_link(link, site_url)
     if link.index("http:") == nil
-      link = feed_url + link
+      link = site_url + link
     end
-    return link
+    
+    link
+    
   end
   
 end

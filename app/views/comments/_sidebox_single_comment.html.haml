@@ -1,13 +1,25 @@
 %li#id.comment
   .comment
-    = link_to image_tag(get_user_avatar(@comment.user), :alt => @comment.user.fullname + ' image', :class => "profile"), user_path(@comment.user_id), :target => "_blank"
+    = link_to image_tag(get_user_avatar(@comment.user), :alt => @comment.user.fullname + ' image', :class => "profile"), user_path(@comment.user_id), :target => "_blank", :class => "profile_picture"
     .commentHeader
       %h4
         = link_to @comment.user.fullname, user_path(@comment.user_id), :target => "_blank"
+        %span.user_team
+          = user_team_logo(@comment.user)
       %ul.actions
-        %li.score 0
+        - votes = @comment.plusminus
+        - if votes > 0
+          %li.score.positive 
+            = "+" + votes.to_s()
+        - elsif votes < 0
+          %li.score.negative
+            = votes
+        - else
+          %li.score
+            = votes
         %li.vote
-          %a.voteUp
+          = link_to "",  "/", :remote => true, :class => "voteUp"
+          = link_to "",  "/", :remote => true, :class => "voteDown" 
         %li
           / %span.edit
           /              %a.edit Edit
@@ -16,7 +28,7 @@
     .flairWrap
     .commentBody
       %span.date 
-        = @comment.created_at.to_s(:friendly)
+        = comment.created_at.to_s(:friendly)
       %span.commentText 
-        = @comment.body
-      %a.flag.tip{:href => "#"}
+        = comment.body
+      / %a.flag.tip{:href => "#"}

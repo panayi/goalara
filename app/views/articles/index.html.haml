@@ -1,35 +1,45 @@
+= title "Παίρνεις την μπάλα μαζί σου!"
+
+%ul.list_teams
+  - @teams.each do |team|
+    %li.floatleft
+      = team_logo(team.logo_image)
+%div.clearfix
 %div{:style => "position: static;", :class => "local"}
-  %h3 Sort by:
+  %h3 Ταξινόμηση κατά:
   %ul{:id => 'order_by'}
     %li 
-      = link_to "Newest", request.url, :class => "selected", :"data-value" => 'newest'
+      = link_to "Νεότερα", request.url, :class => "selected", :"data-value" => 'newest'
     %li 
-      = link_to "Most Popular", request.url, :"data-value" => 'popular'
-    %li 
-      = link_to "Most Commented", request.url, :onclick => 'return false;', :"data-value" => 'commented'
-  %h3 Filter by Team:
-  %ul{:id => 'team_id'}
+      = link_to "Δημοφιλέστερα", request.url,  :"data-value" => 'popular'
+    / %li 
+    /       = link_to "Περισσότερα σχόλια", request.url, :"data-value" => 'commented'
+  %h3 Εμφάνιση άρθρων για:
+  %ul{:id => 'filter_by'}
     %li
-      = link_to 'All', request.url, :"data-value" => 'all', :class => "selected"
+      = link_to 'Όλες τις ομάδες', request.url,  :"data-value" => 'all', :class => "selected"
     - @teams.each do |team|
       %li 
-        = link_to team.name, request.url, :"data-value" => team.id
-  %h3 Filter by Organization
-  %ul{:id => 'organization_id'}
-    %li
-      = link_to 'All', request.url,  :"data-value" => 'all', :class => "selected"
-    - @organizations.each do |organization|
-      %li 
-        = link_to organization.name, request.url, :"data-value" => organization.id
-        
-    
+        = link_to team.name, request.url,  :"data-value" => team.id
+  / %h3 Filter by Organization
+  /   %ul{:id => 'filter_by'}
+  /     %li
+  /       = link_to 'All', request.url, :onclick => 'return false;', :"data-value" => 'all'
+  /     - @organizations.each do |organization|
+  /       %li 
+  /         = link_to organization.name, request.url, :onclick => 'return false;', :"data-value" => organization.id        
+  %div.loading{:style => "display:none"}
+    = image_tag("ajax-loader.gif")
+
 
 %div{:class => "browser"}
-  %ul
-    - @articles.each do |article|
-      %li
-        = link_to image_tag(article.image), :controller => "viewers", :action => "show", :id => article.id
-        %h3
-          = article.title
-        %span
-          = truncate_words(article.summary, 200).join(' ')
+  %ul.articles_list#articles_list.clearfix
+    = render :partial => "list"
+  
+  %div.loading{:style => "display:none"}
+    = image_tag("ajax-loader.gif", :class => "center")
+    
+  %div#pagination_links.hidden
+    = render :partial => "pagination_links"
+  
+  %ul#shuffler.hidden

@@ -1,0 +1,39 @@
+- @comments.each do |comment|
+  %li#id.comment
+    .comment
+      = link_to image_tag(get_user_avatar(comment.user), :alt => comment.user.fullname + ' image', :class => "profile"), user_path(comment.user_id), :target => "_blank", :class => "profile_picture"
+      .commentHeader
+        %h4
+          = link_to comment.user.fullname, user_path(comment.user_id), :target => "_blank"
+          %span.user_team
+            = user_team_logo(comment.user)
+        %ul.actions
+          - votes = comment.plusminus
+          - if votes > 0
+            %li.score.positive 
+              = "+" + votes.to_s()
+          - elsif votes < 0
+            %li.score.negative
+              = votes
+          - else
+            %li.score
+              = votes
+          %li.vote
+            - if current_user.nil?
+              = link_to "",  "/", :remote => true, :class => "voteUp"
+              = link_to "",  "/", :remote => true, :class => "voteDown" 
+            - else
+              = link_to "",  new_vote_path(:user_id => current_user.id, :comment_id => comment.id, :vote => "up"), :remote => true, :class => "voteUp voting"
+              = link_to "",  new_vote_path(:user_id => current_user.id, :comment_id => comment.id, :vote => "down"), :remote => true, :class => "voteDown voting"
+          %li
+            / %span.edit
+            /              %a.edit Edit
+            /              %a.delete Delete
+            /              %a.reply Reply
+      .flairWrap
+      .commentBody
+        %span.date 
+          = comment.created_at.to_s(:friendly)
+        %span.commentText 
+          = comment.body
+        / %a.flag.tip{:href => "#"}

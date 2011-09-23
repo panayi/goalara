@@ -1,0 +1,66 @@
+/* line 1, ../../app/stylesheets/admin.sass */
+#set_teams {
+  position: relative;
+  margin: 20px 0;
+}
+/* line 4, ../../app/stylesheets/admin.sass */
+#set_teams ul.articles {
+  width: 500px;
+  height: 500px;
+  margin: 0 10px;
+  overflow-y: scroll;
+  overflow-x: hidden;
+}
+/* line 10, ../../app/stylesheets/admin.sass */
+#set_teams ul.articles li {
+  width: 460px;
+  padding: 10px;
+  margin-top: 15px;
+}
+/* line 14, ../../app/stylesheets/admin.sass */
+#set_teams ul.articles li .the_title {
+  background-color: black;
+  color: white;
+  padding: 6px;
+  font-size: 14px;
+}
+/* line 19, ../../app/stylesheets/admin.sass */
+#set_teams ul.articles li .content {
+  padding: 6px;
+  border: 1px solid #eeeeee;
+}
+/* line 22, ../../app/stylesheets/admin.sass */
+#set_teams ul.articles li.selected {
+  background-color: red;
+}
+/* line 26, ../../app/stylesheets/admin.sass */
+#set_teams ul.teams {
+  position: absolute;
+  margin-left: 500px;
+  width: 350px;
+  top: 0;
+  right: 5px;
+  margin: 0 10px;
+}
+/* line 33, ../../app/stylesheets/admin.sass */
+#set_teams ul.teams li {
+  float: left;
+  display: inline;
+  width: 70px;
+  height: 50px;
+  margin: 9px 4px 9px 4px;
+  padding: 9px;
+}
+/* line 40, ../../app/stylesheets/admin.sass */
+#set_teams ul.teams li .name {
+  margin: auto;
+}
+/* line 42, ../../app/stylesheets/admin.sass */
+#set_teams ul.teams li img {
+  width: 50px;
+  height: 50px;
+}
+/* line 45, ../../app/stylesheets/admin.sass */
+#set_teams ul.teams li.selected {
+  background-color: red;
+}

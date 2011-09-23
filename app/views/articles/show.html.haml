@@ -1,22 +1,40 @@
-%p#notice= notice
-%p
-  %b Title:
-  = @article.title
-%p
-  %b Summary:
-  = @article.summary
-%p
-  %b Content:
-  = @article.content
-%p
-  %b Url:
-  = @article.url
-%p
-  %b Published at:
-  = @article.published_at
-%p
-  %b Guid:
-  = @article.guid
-= link_to 'Edit', edit_article_path(@article)
-|
-\#{link_to 'Back', articles_path}
+#topbar
+  #floatingbar
+    = render :partial => "topbar"
+#view_content
+
+  // Begin sidebox
+  #sidebox
+    #header_info
+      .logo_wrapper.floatleft
+        = link_to image_tag("/images/logo_small.png",  :alt =>  'Goalara.com'), "/"
+      .header_comments.floatright
+        %strong 
+          - if !@comments.nil?
+            %span 
+              = @comments.size.to_s
+            Σχόλια
+          - else
+            %span
+            Σχόλια
+    %div{:style => "clear:both"}
+    #conversation
+      #discussion.silverBorderPanel
+        .comment-container
+          #comments_loading.loader_img{:style => "display:none"}
+            = image_tag "loader.gif", :class => 'loader'
+          %ul#commentList-30.l-0
+            // Comments go here
+            
+    = render :partial => "comment_form"
+           
+    
+ 
+  #article_viewer
+    .loader_img{:style => "display:none"}
+      = image_tag "loader.gif", :class => 'loader'
+    %div#no_article
+    %div#main_frame.hidden
+      = render :partial => "article-iframe"
+
+= render :partial => "articles/sync_modal_window.html.haml"

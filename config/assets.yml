@@ -1,0 +1,39 @@
+embed_assets: on
+package_assets: always
+
+javascripts:
+  common:
+    - public/javascripts/jquery.min.js
+    - public/javascripts/jquery-ui-1.8.16.custom.min.js
+    - public/javascripts/jquery_ujs.js
+    - public/javascripts/application.js
+  frontpage:
+    - public/javascripts/jquery.quicksand.js
+    - public/javascripts/frontpage.js
+    - public/javascripts/admin.js
+  navigator:
+    - public/javascripts/jquery.tmpl.min.js
+    - public/javascripts/jquery.jgrowl_minimized.js
+    - public/javascripts/jquery.offline.js
+    - public/javascripts/jquery.loadmask.min.js
+    - public/javascripts/jquery.ba-hashchange.min.js
+    - public/javascripts/jquery.simplemodal.js
+    - public/javascripts/osx.js
+    - public/javascripts/navigator.js
+    
+    
+
+stylesheets:
+  common:
+    - public/stylesheets/screen.css
+    - public/stylesheets/print.css
+    - public/stylesheets/style.css
+  navigator:
+    - public/stylesheets/screen.css
+    - public/stylesheets/toolbar.css
+    - public/stylesheets/growl/jquery.jgrowl.css
+    - public/stylesheets/jquery.loadmask.css
+    - public/stylesheets/osx.css
+  frontpage:
+    - public/stylesheets/admin.css
+    

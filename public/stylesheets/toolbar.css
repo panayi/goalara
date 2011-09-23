@@ -1,41 +1,42 @@
 /* line 5, ../../app/stylesheets/toolbar.sass */
 div#floatingbar {
   width: 100%;
-  position: absolute;
+  position: static;
   top: 0;
   left: 0;
   color: black;
   font-family: Arial;
   font-weight: bold;
   background-color: #262626;
+  font-size: 11px;
   z-index: 100;
   border-bottom: 1px solid #ff2b06;
 }
-/* line 16, ../../app/stylesheets/toolbar.sass */
+/* line 17, ../../app/stylesheets/toolbar.sass */
 div#content {
   padding: 1em;
 }
 
 @media screen {
-  /* line 20, ../../app/stylesheets/toolbar.sass */
+  /* line 21, ../../app/stylesheets/toolbar.sass */
   body > div#floatingbar {
     position: fixed;
   }
 }
-/* line 23, ../../app/stylesheets/toolbar.sass */
+/* line 24, ../../app/stylesheets/toolbar.sass */
 #floatingbar ul.gallery {
   list-style-type: none;
   position: relative;
   height: 50px;
 }
-/* line 27, ../../app/stylesheets/toolbar.sass */
+/* line 28, ../../app/stylesheets/toolbar.sass */
 #floatingbar ul.gallery li {
   float: left;
   padding: 10px 0 0 16px;
   color: #aaaaaa;
   margin-top: -3px;
 }
-/* line 32, ../../app/stylesheets/toolbar.sass */
+/* line 33, ../../app/stylesheets/toolbar.sass */
 #floatingbar ul.gallery li a {
   text-decoration: none;
   color: #f2f2f2;
@@ -43,49 +44,49 @@ div#content {
   font-weight: normal;
   font-family: Arial;
 }
-/* line 38, ../../app/stylesheets/toolbar.sass */
+/* line 39, ../../app/stylesheets/toolbar.sass */
 #floatingbar ul.gallery li a img {
   float: left;
   border: none;
 }
 
-/* line 42, ../../app/stylesheets/toolbar.sass */
+/* line 43, ../../app/stylesheets/toolbar.sass */
 #floatingbar ul li.right_divider {
   background: url("../images/sprites_small.png") no-repeat scroll 190px -715px transparent;
 }
 
-/* line 45, ../../app/stylesheets/toolbar.sass */
+/* line 46, ../../app/stylesheets/toolbar.sass */
 #floatingbar ul li * {
   display: block;
 }
 
-/* line 48, ../../app/stylesheets/toolbar.sass */
+/* line 49, ../../app/stylesheets/toolbar.sass */
 #floatingbar ul li #signin_menu {
   display: none;
 }
 
-/* line 51, ../../app/stylesheets/toolbar.sass */
+/* line 52, ../../app/stylesheets/toolbar.sass */
 .translateicon {
   float: right;
   margin-right: -5px;
 }
 
-/* line 55, ../../app/stylesheets/toolbar.sass */
+/* line 56, ../../app/stylesheets/toolbar.sass */
 #google_translate_element {
   margin-top: -20px;
 }
 
-/* line 58, ../../app/stylesheets/toolbar.sass */
+/* line 59, ../../app/stylesheets/toolbar.sass */
 .bottomBarLinkRight {
   float: right;
 }
 
-/* line 61, ../../app/stylesheets/toolbar.sass */
+/* line 62, ../../app/stylesheets/toolbar.sass */
 .stico_default {
   background-image: none;
 }
 
-/* line 64, ../../app/stylesheets/toolbar.sass */
+/* line 65, ../../app/stylesheets/toolbar.sass */
 .total_comments {
   background: url("../images/sprites_small.png") no-repeat scroll -15px -280px transparent;
   font-size: 14px;
@@ -94,19 +95,19 @@ div#content {
   width: 40px;
 }
 
-/* line 71, ../../app/stylesheets/toolbar.sass */
+/* line 72, ../../app/stylesheets/toolbar.sass */
 .show_hide_articles {
   background: url("../images/sprites_small.png") no-repeat scroll -15px -771px transparent;
   height: 39px;
   width: 100px;
 }
 
-/* line 76, ../../app/stylesheets/toolbar.sass */
+/* line 77, ../../app/stylesheets/toolbar.sass */
 .opened {
   background: url("../images/sprites_small.png") no-repeat scroll -15px -810px transparent !important;
 }
 
-/* line 80, ../../app/stylesheets/toolbar.sass */
+/* line 81, ../../app/stylesheets/toolbar.sass */
 .team_selector {
   background: url("../images/sprites_small.png") no-repeat scroll -15px -177px transparent;
   font-size: 13px !important;
@@ -116,33 +117,33 @@ div#content {
   width: 280px;
   cursor: pointer;
 }
-/* line 88, ../../app/stylesheets/toolbar.sass */
+/* line 89, ../../app/stylesheets/toolbar.sass */
 .team_selector .image img {
   padding: 5px 10px 0 0;
   width: 24px;
   height: 24px;
 }
 
-/* line 95, ../../app/stylesheets/toolbar.sass */
+/* line 96, ../../app/stylesheets/toolbar.sass */
 #previous_article {
   background: url("../images/sprites_small.png") no-repeat scroll -15px -65px transparent;
   height: 40px;
   width: 120px;
 }
 
-/* line 100, ../../app/stylesheets/toolbar.sass */
+/* line 101, ../../app/stylesheets/toolbar.sass */
 #next_article {
   background: url("../images/sprites_small.png") no-repeat scroll -15px -11px transparent;
   height: 40px;
   width: 120px;
 }
 
-/* line 106, ../../app/stylesheets/toolbar.sass */
+/* line 107, ../../app/stylesheets/toolbar.sass */
 .liketext {
   display: none;
 }
 
-/* line 109, ../../app/stylesheets/toolbar.sass */
+/* line 110, ../../app/stylesheets/toolbar.sass */
 .connect_widget_like_button {
   background: url("http://0.0.0.0:3000/images/sprites_small.png") no-repeat scroll -15px -235px transparent;
   border: none !important;
@@ -150,7 +151,7 @@ div#content {
   width: 43px;
 }
 
-/* line 116, ../../app/stylesheets/toolbar.sass */
+/* line 117, ../../app/stylesheets/toolbar.sass */
 .team_dropbox {
   z-index: 1000;
   overflow-y: scroll;
@@ -163,7 +164,7 @@ div#content {
   position: absolute;
   bottom: -398px;
 }
-/* line 127, ../../app/stylesheets/toolbar.sass */
+/* line 128, ../../app/stylesheets/toolbar.sass */
 .team_dropbox li {
   border-bottom: 1px solid #404040;
   clear: both;
@@ -172,149 +173,152 @@ div#content {
   padding: 0 !important;
   width: 255px;
 }
-/* line 134, ../../app/stylesheets/toolbar.sass */
+/* line 135, ../../app/stylesheets/toolbar.sass */
 .team_dropbox li .image {
   float: left;
 }
-/* line 136, ../../app/stylesheets/toolbar.sass */
+/* line 137, ../../app/stylesheets/toolbar.sass */
 .team_dropbox li .image img {
   width: 50px;
   height: 50px;
 }
-/* line 139, ../../app/stylesheets/toolbar.sass */
+/* line 140, ../../app/stylesheets/toolbar.sass */
 .team_dropbox li .name {
   font-size: 12px;
   line-height: 4.5;
   margin-left: 65px;
 }
-/* line 143, ../../app/stylesheets/toolbar.sass */
+/* line 144, ../../app/stylesheets/toolbar.sass */
 .team_dropbox li a {
   padding: 7px 0 0 16px;
 }
-/* line 145, ../../app/stylesheets/toolbar.sass */
+/* line 146, ../../app/stylesheets/toolbar.sass */
 .team_dropbox li a:hover {
   background-color: #fc6d2f;
   cursor: pointer;
 }
-/* line 148, ../../app/stylesheets/toolbar.sass */
+/* line 149, ../../app/stylesheets/toolbar.sass */
 .team_dropbox li.selected a:hover {
   background-color: transparent !important;
   cursor: auto !important;
 }
-/* line 151, ../../app/stylesheets/toolbar.sass */
+/* line 152, ../../app/stylesheets/toolbar.sass */
 .team_dropbox li.selected * {
   opacity: 0.6;
 }
 
-/* line 154, ../../app/stylesheets/toolbar.sass */
+/* line 155, ../../app/stylesheets/toolbar.sass */
 #panel {
   display: none;
   height: 310px;
   color: white;
 }
-/* line 158, ../../app/stylesheets/toolbar.sass */
+/* line 159, ../../app/stylesheets/toolbar.sass */
 #panel #sync_window {
   width: 198px;
   border-right: 3px solid #606060;
   padding: 11px 5px 5px 10px;
   height: 289px;
 }
-/* line 163, ../../app/stylesheets/toolbar.sass */
+/* line 164, ../../app/stylesheets/toolbar.sass */
 #panel #sync_window .sync_button {
   position: absolute;
 }
-/* line 165, ../../app/stylesheets/toolbar.sass */
-#panel #sync_window .sync_button button {
-  font-size: 14px;
+/* line 166, ../../app/stylesheets/toolbar.sass */
+#panel #sync_window .sync_button a {
+  background: url("../images/green_button.png") no-repeat scroll 0 0;
+  font-size: 11px;
   font-weight: 700;
   line-height: 1.4;
-  padding: 4px;
+  padding: 12px 18px 26px 10px;
+  width: 140px;
+  display: block;
+  color: #dddddd;
 }
-/* line 170, ../../app/stylesheets/toolbar.sass */
-#panel #sync_window .sync_button button:hover {
+/* line 175, ../../app/stylesheets/toolbar.sass */
+#panel #sync_window .sync_button a:hover {
   cursor: pointer;
+  color: white;
 }
-/* line 172, ../../app/stylesheets/toolbar.sass */
+/* line 178, ../../app/stylesheets/toolbar.sass */
 #panel #sync_window .sync_info {
   height: 226px;
   position: relative;
 }
-/* line 175, ../../app/stylesheets/toolbar.sass */
+/* line 181, ../../app/stylesheets/toolbar.sass */
 #panel #sync_window .sync_info h2 {
   padding-bottom: 2px;
   font-size: 14px;
   border-bottom: 1px solid #fc6d2f;
 }
-/* line 179, ../../app/stylesheets/toolbar.sass */
+/* line 185, ../../app/stylesheets/toolbar.sass */
 #panel #sync_window .sync_info ul {
   margin-top: 6px;
 }
-/* line 181, ../../app/stylesheets/toolbar.sass */
+/* line 187, ../../app/stylesheets/toolbar.sass */
 #panel #sync_window .sync_info ul li {
   padding: 3px 0;
 }
-/* line 183, ../../app/stylesheets/toolbar.sass */
+/* line 189, ../../app/stylesheets/toolbar.sass */
 #panel #sync_window .sync_info ul .label {
   float: left;
-  width: 90px;
+  width: 103px;
   font-weight: 700;
   line-height: 1.8;
 }
-/* line 188, ../../app/stylesheets/toolbar.sass */
+/* line 194, ../../app/stylesheets/toolbar.sass */
 #panel #sync_window .sync_info ul .value {
   font-size: 14px;
   font-weight: 700;
   color: #00cc33;
 }
-/* line 192, ../../app/stylesheets/toolbar.sass */
+/* line 198, ../../app/stylesheets/toolbar.sass */
 #panel #sync_window .sync_info ul #total_articles {
   color: white;
 }
-/* line 194, ../../app/stylesheets/toolbar.sass */
+/* line 200, ../../app/stylesheets/toolbar.sass */
 #panel #sync_window .sync_info ul .zero {
   color: red !important;
 }
-/* line 196, ../../app/stylesheets/toolbar.sass */
+/* line 202, ../../app/stylesheets/toolbar.sass */
 #panel #sync_window .sync_info .message {
   position: absolute;
   bottom: 25px;
   color: #dddddd;
   font-size: 10px;
 }
-/* line 202, ../../app/stylesheets/toolbar.sass */
+/* line 208, ../../app/stylesheets/toolbar.sass */
 #panel .wrapper {
-  width: 700px;
-  margin: 0 auto auto 230px;
+  margin: 0 19px auto 230px;
   height: 295px;
   overflow-x: scroll;
-  padding-top: 8px;
+  overflow-y: hidden;
+  padding: 8px 8px 0 0;
 }
-/* line 208, ../../app/stylesheets/toolbar.sass */
+/* line 214, ../../app/stylesheets/toolbar.sass */
 #panel .wrapper .filter_list {
   color: white;
   position: fixed;
   margin: -3px 4px 0 0;
   padding: 4px 10px 4px 0;
 }
-/* line 213, ../../app/stylesheets/toolbar.sass */
+/* line 219, ../../app/stylesheets/toolbar.sass */
 #panel .wrapper .filter_list select option {
   padding: 0 !important;
   line-height: 1.2;
 }
-/* line 216, ../../app/stylesheets/toolbar.sass */
+/* line 222, ../../app/stylesheets/toolbar.sass */
 #panel .wrapper ul.articles_list {
   border-top: 1px solid #cccccc;
-  position: absolute;
-  top: 29px;
-  padding: 4px;
+  padding: 6px 4px 0 4px;
   white-space: nowrap;
-  width: 500px;
+  margin-top: 18px;
 }
-/* line 223, ../../app/stylesheets/toolbar.sass */
+/* line 227, ../../app/stylesheets/toolbar.sass */
 #panel .wrapper ul.articles_list li.selected {
   border: 2px solid #fc6d2f;
 }
-/* line 225, ../../app/stylesheets/toolbar.sass */
+/* line 229, ../../app/stylesheets/toolbar.sass */
 #panel .wrapper ul.articles_list li.an_article {
   display: inline;
   list-style-type: none;
@@ -323,7 +327,11 @@ div#content {
   width: 220px;
   position: relative;
 }
-/* line 232, ../../app/stylesheets/toolbar.sass */
+/* line 236, ../../app/stylesheets/toolbar.sass */
+#panel .wrapper ul.articles_list li.an_article:hover:not(.selected) {
+  border: 1px solid #cccccc;
+}
+/* line 238, ../../app/stylesheets/toolbar.sass */
 #panel .wrapper ul.articles_list li.an_article .details {
   position: absolute;
   background-color: #737373;
@@ -332,40 +340,40 @@ div#content {
   height: 30px;
   padding: 5px 2px;
 }
-/* line 239, ../../app/stylesheets/toolbar.sass */
+/* line 245, ../../app/stylesheets/toolbar.sass */
 #panel .wrapper ul.articles_list li.an_article .details ul {
   width: 220px;
 }
-/* line 241, ../../app/stylesheets/toolbar.sass */
+/* line 247, ../../app/stylesheets/toolbar.sass */
 #panel .wrapper ul.articles_list li.an_article .details ul li {
   padding: 0;
   height: 30px;
 }
-/* line 244, ../../app/stylesheets/toolbar.sass */
+/* line 250, ../../app/stylesheets/toolbar.sass */
 #panel .wrapper ul.articles_list li.an_article .details ul li img {
   width: 29px;
   height: 29px;
   display: inline;
 }
-/* line 248, ../../app/stylesheets/toolbar.sass */
+/* line 254, ../../app/stylesheets/toolbar.sass */
 #panel .wrapper ul.articles_list li.an_article .details ul li.offline {
   left: 35px;
   position: absolute;
   width: 30px;
   top: 0;
 }
-/* line 253, ../../app/stylesheets/toolbar.sass */
+/* line 259, ../../app/stylesheets/toolbar.sass */
 #panel .wrapper ul.articles_list li.an_article .details ul li.available {
   background: url("../images/available.png?33") no-repeat scroll 0 0;
 }
-/* line 255, ../../app/stylesheets/toolbar.sass */
+/* line 261, ../../app/stylesheets/toolbar.sass */
 #panel .wrapper ul.articles_list li.an_article .details ul li.team {
   left: 3px;
   position: absolute;
   width: 30px;
   top: 0;
 }
-/* line 260, ../../app/stylesheets/toolbar.sass */
+/* line 266, ../../app/stylesheets/toolbar.sass */
 #panel .wrapper ul.articles_list li.an_article .details ul li.date {
   position: absolute;
   right: 3px;

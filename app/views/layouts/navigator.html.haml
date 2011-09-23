@@ -1,0 +1,26 @@
+!!!
+%html{:manifest => "/application.manifest"}
+  %head
+    %title Goalara.com - #{yield(:title) || 'Παίρνεις την μπάλα παντού'}
+    
+    
+    = include_stylesheets :common, :navigator
+    
+    / = auto_discovery_link_tag(:atom, url_for(:action => 'rss', :controller => 'articles'))
+    /[if lt IE 8]
+      <haml:loud> stylesheet_link_tag 'ie.css', :media =&gt; 'screen, projection' </haml:loud>
+    
+    / = javascript_include_tag "https://ajax.googleapis.com/ajax/libs/jquery/1.6.4/jquery.min.js"
+    /     = javascript_include_tag "https://ajax.googleapis.com/ajax/libs/jqueryui/1.8.16/jquery-ui.min.js"
+    = include_javascripts :common, :navigator
+    
+    
+    
+    / :javascript
+    /       if ( typeof window.JSON === 'undefined' ) { document.write('<script src="/history/json2.js"><\/script>'); }
+      
+    = csrf_meta_tag
+  %body#pagetype
+    = yield
+
+        

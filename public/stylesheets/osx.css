@@ -30,6 +30,6 @@
 #osx-container span {color:#777;}
 #osx-container .sync_message{font-weight:700;}
 #osx-container button{padding:4px 11px;}
-#osx-container button#start_sync{margin:10px 0;font-weight:bold;font-size:12px;}
+#osx-container button#start_sync{margin:auto;font-weight:bold;font-size:12px;display:block;color:green}
 #osx-container button:hover{cursor:pointer;}
 #osx-container #alert_message{color:red;font-size:10px;}

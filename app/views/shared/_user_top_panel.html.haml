@@ -1,0 +1,40 @@
+/ Begin Sign In 
+%div#user_box
+  - if user_signed_in?
+    %div.user_avatar.floatleft
+      = link_to image_tag(get_user_avatar(current_user), :alt => current_user.fullname + ' image', :class => "profile"), user_path(current_user.id), :target => "_blank", :class => "profile_picture"
+    /  = get_team_logo(current_user.team) # TODO: implement the "user has team" functionality
+    %div.user_name.floatright
+      = link_to current_user.fullname, user_path(current_user)
+      %div{:style =>"height:8px"}
+      = link_to "Sign out", destroy_user_session_path, :class => "small floatright", :id => "signout"
+  - else 
+    %a.sign_in{:href => "#"}
+      Συνδεθείτε 
+      %br 
+      ή Εγγραφείτε
+    %fieldset#signin_menu
+      #left_panel.floatleft
+        %form#signin{:action => "#{new_user_session_path}", :method => "post"}
+          %span.the_title Login with your Goalara.com account
+          %label{:for => "email"} Email
+          %input#email{:name => "user[email]", :tabindex => "4", :title => "email", :type => "text", :value => ""}
+            %p
+              %label{:for => "password"} Password
+              %input#password{:name => "user[password]", :tabindex => "5", :title => "password", :type => "password", :value => ""}
+            %p.remember
+              %input#signin_submit{:tabindex => "6", :type => "submit", :value => "Sign in"}
+                %input#remember{:name => "remember_me", :tabindex => "7", :type => "checkbox", :value => "1"}
+                  %label{:for => "remember"} Remember me
+            %p.forgot
+              %a#resend_password_link{:href => "#"} Forgot your password?
+            %p.forgot-username
+              %a#forgot_username_link{:href => "#", :title => "If you remember your password, try logging in with your email"} Forgot your username?
+      #right_panel.floatleft
+        %span.the_title or with your Facebook account
+        = link_to image_tag("facebook_alt.png"), user_omniauth_authorize_path(:facebook)
+      #doomed_panel.clearfix
+      #bottom_panel.clearfix
+        %h2.speech
+          I don't have Facebook or an account at Goalara.com
+          %a#create_account_link{:href => "#{new_user_registration_path}", :title => "If you remember your password, try logging in with your email"} Create an account at Goalara.com instantly

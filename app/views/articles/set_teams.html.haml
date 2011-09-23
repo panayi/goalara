@@ -1,6 +1,20 @@
-- form_tag set_teams_path, :method => :put do
-  - @articles.each do |article|
-    - fields_for "article[#{article.id}]", article do |f|
-      = f.text_field :title
-      = puts '-----------------------'
-  = submit_tag 'Update'
+#set_teams
+  %div.submit_button.floatright
+    %button#update Update
+  %ul.articles.floatleft
+    - @articles.each do |article|
+      %li{:"data-article-id" => "#{article.id}"}
+        .the_title
+          = article.title
+        .content  
+          = article.content.strip
+
+
+  %ul.teams.floatleft
+    - @teams.each do |team| 
+      %li{:"data-team-id" => "#{team.id}"} 
+        = team_logo(team.logo_image)
+        #name
+          = team.name
+          
+  

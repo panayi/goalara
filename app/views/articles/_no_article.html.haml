@@ -1,0 +1,19 @@
+#inner
+  %h1.title
+    Δεν βρέθηκαν άρθρα για την ομάδα που επιλέξατε.
+
+  %h2.subtitle
+    Δείτε τα άρθρα για
+    %a#view_all_teams.select_new_team{ :"data-teamID" => "all"}
+      όλες τις ομάδες
+    ή επιλέξτε μια ομάδα:
+  
+  %ul.list_teams_articles
+    - @teams.each do |team|
+      %li{:id => "tid_#{team.id}" }
+        %span.image
+          = image_tag(team.logo_image, :class => 'list_image')
+        %a.select_new_team.name{:href => "", onclick => "return false;", :href => "#", :"data-teamID" => "#{team.id}"}
+          = team.name
+        %div.count
+          = team.article.size.to_s() + " άρθρα"

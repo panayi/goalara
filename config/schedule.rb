@@ -18,8 +18,8 @@
 # end
 set :environment, :development
 #set :output, "/log/whenever.log"
-every 1.minutes do
-  runner "Article.update_all_feeds", environment => "development"
+every 30.minutes do
+  runner "Article.update_feeds", environment => "development"
 end
 
 # Learn more: http://github.com/javan/whenever

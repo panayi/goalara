@@ -4,7 +4,7 @@ GoalaraCom::Application.routes.draw do
   #     get "/users/sign_in" => "sessions#create", :as => :new_user_session
   #   end
   
-  root :to => "frontpage#index"
+  root :to => "articles#index"
   
   devise_for :users, :controllers => {:sessions => 'sessions'}
 
@@ -32,16 +32,18 @@ GoalaraCom::Application.routes.draw do
   # match "/oauth/start" => "oauth#start"
   #   match "/oauth/callback" => "oauth#callback"
   #   match "/oauth/client" => "oauth#client"
+  devise_scope :user do
   
-  match "login" => "devise/sessions#new", :as => :new_user_session 
-  match "logout" => "devise/sessions#destroy", :as => :destroy_user_session
-  match "register" => "devise/registrations#new", :as => :new_user_registration
+    match "login" => "sessions#sign_in_and_redirect", :as => :new_user_session 
+    match "logout" => "sessions#destroy", :as => :destroy_user_session
+    match "register" => "devise/registrations#new", :as => :new_user_registration
+  end
   
-  match "/articles/set_teams" => "articles#set_teams"
+  match "set_teams" => "articles#set_teams"
   
-  match "/navigate" => "viewers#fetch"
+  match "/navigate" => "articles#fetch"
   
-  match "/goalara" => "viewers#index", :as => :viewer_show
+  match "news" => "articles#show", :as => :navigator
   
   match "/application.manifest" => Rails::Offline
   

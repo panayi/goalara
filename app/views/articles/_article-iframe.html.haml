@@ -1,0 +1,4 @@
+- if !@article.nil?
+  %iframe{:src => "#{@article.url}", :width => "100%", :border => '0', :cellspacing => '0', :frameborder => '0', :id => "article_iframe"}
+- else
+  %iframe{:src => "", :width => "100%", :border => '0', :cellspacing => '0', :frameborder => '0', :id => "article_iframe"}

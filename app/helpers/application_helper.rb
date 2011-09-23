@@ -59,6 +59,18 @@ module ApplicationHelper
     return image_tag("teams/converted/" + filename, :class => html_class)
   end
   
+  def feed_logo(filename, html_class = '')
+     return image_tag("feeds/converted/" + filename, :class => html_class)
+  end
+  
+  def article_image(article, logo)
+    if !article.image_file_name.nil?
+      image_tag(article.image.url(:medium))
+    else
+      feed_logo(logo)
+    end
+  end
+  
   
   def get_facebook_page_likes(fb_page_url)
     result = ActiveSupport::JSON.decode(open(fb_page_url))
@@ -67,7 +79,7 @@ module ApplicationHelper
   end
   
   def article_url(article)
-    return "/goalara#" + article.id.to_s() + "/" + remove_http(article.url)
+    return "/news#" + article.id.to_s() + "/" + remove_http(article.url)
   end
   
   def get_article_teams_ids(article)
