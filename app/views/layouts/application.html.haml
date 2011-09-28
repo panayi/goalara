@@ -1,5 +1,5 @@
 !!!
-%html{:manifest => "/application.manifest"}
+%html{}
   %head
     %title Goalara.com - #{yield(:title) || 'Παίρνεις την μπάλα παντού'}
     
@@ -9,8 +9,7 @@
     /[if lt IE 8]
       <haml:loud> stylesheet_link_tag 'ie.css', :media =&gt; 'screen, projection' </haml:loud>
     
-    = javascript_include_tag "https://ajax.googleapis.com/ajax/libs/jquery/1.6.4/jquery.min.js"
-    = include_javascripts :common, :frontpage
+    = include_javascripts :jquery, :common, :frontpage
    
     = csrf_meta_tag
     

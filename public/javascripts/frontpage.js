@@ -6,6 +6,7 @@ var selected_team;
 
 $(function(){
 	shuffler = $('#shuffler');
+	$('#shuffler').html($("#articles_list").html());
 	
 	//on mouserover article(frontpage)
 	$(".browser .an_article").mouseenter(function(){
@@ -156,7 +157,6 @@ function success(json, mode){
 		$("#shuffler").html(json.data);
 		sort_articles(json.data);
 		$(window).unbind();
-		
 	}
 	else
 	{

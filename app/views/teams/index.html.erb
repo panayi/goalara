@@ -11,7 +11,7 @@
 
 <% @teams.each do |team| %>
   <tr>
-    <td><%= team.name %></td>
+    <td><%= translate(team.name) %></td>
     <td><%= image_tag(team.logo_image, :class => 'list_image') %></td>
     <td><%= link_to 'Show', team %></td>
     <td><%= link_to 'Edit', edit_team_path(team) %></td>

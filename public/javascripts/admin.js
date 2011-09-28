@@ -63,10 +63,10 @@ function get_article_teams(article_id){
 function set_article_teams(article_id, team_ids){
 	$.ajax({
 	    type: "POST",
-		url: '/set_teams',
+		url: '/set_teams.json',
 		data: jQuery.param({'team_ids': team_ids, 'id': article_id }),
-		dataType: "xml",
-		success: function(xml) {
+		dataType: "json",
+		success: function(json) {
 			$("#set_teams .articles li[data-article-id ='"+article_id+"']").hide('slow');		
 		}
 	});

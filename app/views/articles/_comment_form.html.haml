@@ -11,9 +11,9 @@
           
             %p.signin
               Για να σχολιάσετε,
-              = link_to 'συνδεθείτε', :class => "sign_in"
+              = link_to 'συνδεθείτε', "#", :class => "sign_panel"
               ή 
-              = link_to 'δημιουργήστε λογαριασμό', new_user_registration_path
+              = link_to 'δημιουργήστε λογαριασμό',  "#", :class => "sign_panel"
         - else
           %span.button.primary
             %span

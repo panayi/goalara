@@ -20,7 +20,11 @@ class UsersController < ApplicationController
   # GET /users/1.xml
   def show
     @user = User.find(params[:id])
-
+    
+    @total_comments = Comment.where(:user_id => params[:id]).count
+    @total_viewed_articles = Impression.where(:user_id => params[:id]).count('impressionable_id', :distinct => true)
+    
+    
     respond_to do |format|
       format.html # show.html.erb
       format.xml  { render :xml => @user }
@@ -31,9 +35,10 @@ class UsersController < ApplicationController
   # GET /users/new.xml
   def new
     @user = User.new
-
+    @title_image = "titles/sign_up.jpg"
+    
     respond_to do |format|
-      format.html # new.html.erb
+      format.html {render :layout => 'pages'} # new.html.erb
       format.xml  { render :xml => @user }
     end
   end

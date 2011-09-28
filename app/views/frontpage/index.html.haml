@@ -3,7 +3,7 @@
 %ul.list_teams
   - @teams.each do |team|
     %li.floatleft
-      = team_logo(team.logo_image)
+      = link_to team_logo(team.logo_image), '/news/' + slug(team.name)
 %div.clearfix
 %div{:style => "position: static;", :class => "local"}
   %h3 Ταξινόμηση κατά:
@@ -20,7 +20,7 @@
       = link_to 'Όλες τις ομάδες', request.url,  :"data-value" => 'all', :class => "selected"
     - @teams.each do |team|
       %li 
-        = link_to team.name, request.url,  :"data-value" => team.id
+        = link_to translate(team.name), request.url,  :"data-value" => team.id
   / %h3 Filter by Organization
   /   %ul{:id => 'filter_by'}
   /     %li

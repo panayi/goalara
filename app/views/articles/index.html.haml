@@ -20,7 +20,7 @@
       = link_to 'Όλες τις ομάδες', request.url,  :"data-value" => 'all', :class => "selected"
     - @teams.each do |team|
       %li 
-        = link_to team.name, request.url,  :"data-value" => team.id
+        = link_to translate(team.name), request.url,  :"data-value" => team.id
   / %h3 Filter by Organization
   /   %ul{:id => 'filter_by'}
   /     %li

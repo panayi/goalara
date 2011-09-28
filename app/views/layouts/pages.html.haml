@@ -1,0 +1,29 @@
+!!!
+%html{}
+  %head
+    %title Goalara.com - #{yield(:title) || 'Παίρνεις την μπάλα παντού'}
+    
+    = include_stylesheets :common
+    
+    / = auto_discovery_link_tag(:atom, url_for(:action => 'rss', :controller => 'articles'))
+    /[if lt IE 8]
+      <haml:loud> stylesheet_link_tag 'ie.css', :media =&gt; 'screen, projection' </haml:loud>
+    
+    = include_javascripts :common
+   
+    = csrf_meta_tag
+  %body#pagetype
+    #container
+      #header
+        = render :partial => "shared/header"
+      #body.browseTemplate.homepage
+        #maincontent
+          #container.clearfix
+            / = link_to image_tag("facebook.jpg"), user_omniauth_authorize_path(:facebook)
+            / = link_to image_tag("facebook.jpg"), :controller => 'oauth', :action => 'start'
+            %h2.title 
+              = image_tag(@title_image)
+            = yield
+        .moreFeatures.alt.clearfix
+      #footer.clearfix
+        = render :partial => "shared/footer"

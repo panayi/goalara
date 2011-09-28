@@ -30,7 +30,7 @@
             - if !user_signed_in?
               .formItemLine.signed-out
                 %p.signin
-                  = link_to 'Sign in to add comments', new_user_session_path
+                  = link_to 'Sign in to add comments', new_user_session_remote_path
                   or 
                   = link_to 'Join', user_registration_path
             - else

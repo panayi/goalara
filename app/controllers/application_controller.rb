@@ -1,12 +1,20 @@
 class ApplicationController < ActionController::Base
+  
   protect_from_forgery
   
   check_authorization :unless => :devise_controller?
   
-  before_filter :xhr_to_json
+  before_filter :xhr_to_xml
+  
+  before_filter :set_locale
+  
+  def set_locale
+    I18n.locale = "el"
+  end
+  
 
-  def xhr_to_json
-    request.format = :json if request.xhr?
+  def xhr_to_xml
+    request.format = :xml if request.xhr?
   end
   
   # Get roles accessible by the current user

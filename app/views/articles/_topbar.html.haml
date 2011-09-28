@@ -16,7 +16,7 @@
             0   
       %div.message
         Τα άρθρα που είναι διαθέσιμα offline είναι μαρκαρισμένα με
-        = image_tag("available.png", {:width => "14", :height => "14", :style => "display:inline"})
+        = image_tag("available.png", {:width => "20", :height => "20", :style => "display:inline"})
         %p{:style => "margin-top: 10px"}
           Για να έχετε πρόσβαση σε όλα τα άρθρα όταν βρίσκεστε εκτός σύνδεσης (offline), πατήστε το πιο κάτω κουμπί συγχονισμού:
     %div.sync_button
@@ -25,11 +25,11 @@
   %div.wrapper
     %div.filter_list
       Εμφάνιση άρθρων για:
-      = collection_select(:team, :id, @teams, :id, :name, options ={:prompt => "Όλες τις ομάδες"})
+      = select("user", "team_id", Team.all.collect {|p| [translate(p.name), p.id]}, { :include_blank =>' Όλες τις ομάδες' })
     %div.clearfix
     %ul.articles_list#articles_list
       - @articles.each do |article|
-        %li.an_article{:"data-article-id" => "#{article.id}", :"data-team-id" => "#{!article.team.empty? ? article.team.first.id : ''}"}
+        %li.an_article{:"data-article-id" => "#{article.id}", :"data-team-id" => "#{!article.team.empty? ? article.team.first.id : ''}", :"data-team-name" => "#{!article.team.empty? ? slug(article.team.first.name) : ''}"}
           %div.details
             %ul
               %li.team
@@ -49,8 +49,7 @@
   %li{:style => "width:70px"}
     / Begin Total comments
     %span.total_comments
-      - if !@comments.nil?
-        = @comments.size
+      = @comments.size || 0
   %li{:style => "width:100px"}
     / Begin Add to Favorites
     = link_to "", "#" , :onclick => "return false;", :class => "show_hide_articles"
@@ -79,7 +78,7 @@
             %span.image
               = team_logo(team.logo_image, 'list_image')
             %span.name{:href => "#", :onclick => "return false;" }
-              = team.name
+              = translate(team.name)
           
   %li.navigation_buttons{:style => "position:absolute; right:10px"}
     - if !@navigation_buttons.nil?

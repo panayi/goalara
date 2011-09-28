@@ -1,12 +1,12 @@
 class ArticlesController < ApplicationController
   
-  skip_authorization_check  :only => [:index, :show, :rss, :fetch] 
+  skip_authorization_check  :only => [:index, :show, :rss, :fetch, :set_teams] 
   
   include ApplicationHelper
   
   impressionist :actions=>[:show,:fetch]
   
-  respond_to :json
+  respond_to :json, :xml, :html
   
   # GET /articles
   # GET /articles.xml
@@ -54,7 +54,7 @@ class ArticlesController < ApplicationController
   # GET /articles/new.xml
   def new
     @article = Article.new
-
+ 
     respond_to do |format|
       format.html # new.html.erb
       format.xml  { render :xml => @article }
@@ -121,9 +121,15 @@ class ArticlesController < ApplicationController
       a.save
     end
     
+    if request.xhr?
+      request.format = :json
+    end
+    
+    response= {:head => "ok"}
     respond_to do |format|
       format.html # set_teams.html.haml
       format.xml  { head :ok }
+      format.json  {  render :json  => response.to_json  }
     end
   end
   

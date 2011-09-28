@@ -1,5 +1,5 @@
 - @comments.each do |comment|
-  %li#id.comment
+  %li.comment
     .comment
       = link_to image_tag(get_user_avatar(comment.user), :alt => comment.user.fullname + ' image', :class => "profile"), user_path(comment.user_id), :target => "_blank", :class => "profile_picture"
       .commentHeader
@@ -20,8 +20,8 @@
               = votes
           %li.vote
             - if current_user.nil?
-              = link_to "",  "/", :remote => true, :class => "voteUp"
-              = link_to "",  "/", :remote => true, :class => "voteDown" 
+              = link_to "",  "/", :class => "cantvote voteUp"
+              = link_to "",  "/", :class => "cantvote voteDown" 
             - else
               = link_to "",  new_vote_path(:user_id => current_user.id, :comment_id => comment.id, :vote => "up"), :remote => true, :class => "voteUp voting"
               = link_to "",  new_vote_path(:user_id => current_user.id, :comment_id => comment.id, :vote => "down"), :remote => true, :class => "voteDown voting"

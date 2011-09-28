@@ -16,10 +16,22 @@
 # every 4.days do
 #   runner "AnotherModel.prune_old_records"
 # end
+
+
 set :environment, :development
-#set :output, "/log/whenever.log"
+
+set :output, "/log/whenever.log"
 every 30.minutes do
   runner "Article.update_feeds", environment => "development"
+end
+
+every :thursday, :at => '3am' do 
+  command "rm -rf #{RAILS_ROOT}/log/whenever.log"
+  runner "Article.train", environment => "development"
+end
+
+every 2.weeks do
+  rake "db:remove_old_images" 
 end
 
 # Learn more: http://github.com/javan/whenever

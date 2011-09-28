@@ -15,7 +15,7 @@ $(function(){
             $("#sidebox").toggleClass("opacity");
             $(".login_part").html(resp.user_panel);
             $(".commentAddForm").replaceWith(resp.comment_form);
-            growl("You have successfully loggend in!");
+            growl("You have successfully logged in!");
         } 
         else {
             $("#doomed_panel").html("Error: This email and password combination is incorrect.");
@@ -44,15 +44,16 @@ $(function(){
 	  return false;
     });
 
-	$(".sign_in").live('click', function(e) {
+	$(".sign_in,.sign_panel,#close_panel").live('click', function(e) {
        e.preventDefault();
        $("fieldset#signin_menu").toggle();
        $(".sign_in").toggleClass("menu-open");
        $("#sidebox").toggleClass("opacity");
+	   return false;
     });
 
     $("fieldset#signin_menu").live('mouseup', function() {
-       return false
+       return false;
     });
 
     $(document).live('mouseup', function(e) {

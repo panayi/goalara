@@ -48,4 +48,15 @@ GoalaraCom::Application.configure do
 
   # Send deprecation notices to registered listeners
   config.active_support.deprecation = :notify
+  
+  config.action_mailer.smtp_settings ={
+   :enable_starttls_auto => true,
+   :address            => 'smtp.gmail.com',
+   :port               => 587,
+   :tls                => true,
+   :domain             => 'gmail.com',
+   :authentication     => :plain,
+   :user_name          => 'panayi1954@gmail.com',
+   :password           => 'P76z99bmw' 
+   }
 end

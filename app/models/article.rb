@@ -18,10 +18,10 @@ class Article < ActiveRecord::Base
 
   time = Time.new
   # Paperclip.options[:command_path] = "/usr/local/bin/"
-  has_attached_file :image, :styles => {:thumb => "150x150#", :medium => "300x300#", :large => "600x600#"}
+  has_attached_file :image, :styles => {:thumb => "150x150#", :medium => "300x300#", :original => "600x600>"}
                     # :path => ":rails_root/public/articles/images/" + time.month.to_s() + "-" + time.year.to_s() + "/:id/:style/:filename"
   
-  validates_attachment_content_type :image, :content_type => ["image/jpeg", "image/pjpeg", "image/png", "image/x-png", "image/gif"]
+  # validates_attachment_content_type :image, :content_type => ["image/jpeg", "image/pjpeg", "image/png", "image/x-png", "image/gif"]
   
   
   scope :belongs_to_team, lambda { |*team_id|
@@ -44,7 +44,7 @@ class Article < ActiveRecord::Base
   
   
   scope :published_since, lambda { |ago|
-    published.where("articles.created_at >= ?", ago)
+    where("articles.created_at >= ?", ago)
   }
   
   scope :order_by, lambda { |*args| {:order => (args.first || 'id') } }
@@ -109,7 +109,6 @@ class Article < ActiveRecord::Base
             :summary        => entry.summary,
             :content        => parsed["content"],
             :category       => parsed["category"],
-            :image          => parsed["image"],
             :url            => entry.url,
             :published_at   => entry.published,  
             :guid           => entry.id,
@@ -118,12 +117,14 @@ class Article < ActiveRecord::Base
           # calculates tf-idf content and stores into Article.tf_idf_content
           calculate_tf_idf
           
-          #TODO: uncomment the line below!!!
-          tag_team_to_article_bayes(Article.last)
+          just_created = Article.last
           
-          if parsed["image"] != nil 
-            parsed["image"] = add_feed_url_to_link(parsed["image"], this_feed.site_url)
-            just_created.image_from_url(parsed["image"]);
+          #TODO: uncomment the line below!!!
+          tag_team_to_article_bayes(just_created)
+          
+          just_created.image_from_url(parsed["image"])
+          if !parsed["image"].nil?
+            
           end
         end  
       end
@@ -210,8 +211,27 @@ class Article < ActiveRecord::Base
   
   def self.tag_team_to_article_bayes(this_article)
     
-    articles = Article.has_team
+    # grab stored bayes object
+    bayes = ObjectStash.load Rails.root.join('config', 'bayes_classification.stash')
 
+    if !bayes.nil?
+      
+      #Classify
+      result = bayes.classifications this_article.tf_idf_content
+      result.sort_by{|k,v| -v}
+      matched_teams = [ Team.find_by_name(result.keys[0].to_s).id,
+                        Team.find_by_name(result.keys[1].to_s).id]
+
+      this_article.team_ids = matched_teams
+
+    end
+    
+  end
+  
+  def self.train
+    
+    articles = Article.has_team
+    
     if !articles.empty?
       bayes = Classifier::Bayes.new
       
@@ -224,21 +244,13 @@ class Article < ActiveRecord::Base
         a.team.each do |t|
           bayes.train t.name, a.tf_idf_content
         end
-      } 
+      }
       
-      #Classify
-      result = bayes.classifications this_article.tf_idf_content
-      result.sort_by{|k,v| -v}
-      matched_teams = [ Team.find_by_name(result.keys[0].to_s).id,
-                        Team.find_by_name(result.keys[1].to_s).id]
-      
-      
-      this_article.team_ids = matched_teams
-      
-      
+      #store bayes object
+      ObjectStash.store bayes, Rails.root.join('config', 'bayes_classification.stash'), {:gzip => false}
     end
-    
   end
+  
   
   
   def self.calculate_tf_idf
@@ -283,13 +295,17 @@ class Article < ActiveRecord::Base
   
 
   def image_from_url(url)
-    self.update_attribute(:image, open(url))
+    remote_image = open(url)
+    
+    def remote_image.original_filename;base_uri.path.split('/').last; end
+    
+    update_attribute(:image, remote_image)
+
   end
 
   def self.get_image_src_from_text(text)
     text =~ /src=\"([^\"\s]+)\"/
     s = "#{$1}"
-    return s
   end
   
   def self.find_biggest_image(doc, url)
@@ -297,10 +313,12 @@ class Article < ActiveRecord::Base
     main_image_url = nil
     doc.css("img").each do |img|
       src = add_site_url_to_link(img.attributes["src"].value, url)
-      dim = FastImage.size(src)
+      dim = FastImage.size(URI.encode(src))
+      
+      
       if !dim.nil? 
         aspect_ratio_gaussian = 2.72**(-( (dim[0]/dim[1]-1)**2 ) / 0.7)
-        if aspect_ratio_gaussian < 0.25 #probably an ad
+        if dim[0]/dim[1] > 2.5 || dim[1]/dim[0] > 2.5 #probably an ad
           next
         end
     
@@ -316,14 +334,14 @@ class Article < ActiveRecord::Base
       end
       
     end
-    
-    return main_image_url
+    puts main_image_url
+    main_image_url
     
   end
   
   def self.add_site_url_to_link(link, site_url)
     if link.index("http:") == nil
-      link = site_url + link
+      link = site_url + link.gsub(/^\//, "")
     end
     
     link

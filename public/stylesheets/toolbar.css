@@ -217,14 +217,15 @@ div#content {
 #panel #sync_window {
   width: 198px;
   border-right: 3px solid #606060;
-  padding: 11px 5px 5px 10px;
+  padding: 8px 5px 5px 10px;
   height: 289px;
+  margin: 3px 10px 0 0;
 }
-/* line 164, ../../app/stylesheets/toolbar.sass */
+/* line 165, ../../app/stylesheets/toolbar.sass */
 #panel #sync_window .sync_button {
   position: absolute;
 }
-/* line 166, ../../app/stylesheets/toolbar.sass */
+/* line 167, ../../app/stylesheets/toolbar.sass */
 #panel #sync_window .sync_button a {
   background: url("../images/green_button.png") no-repeat scroll 0 0;
   font-size: 11px;
@@ -235,61 +236,60 @@ div#content {
   display: block;
   color: #dddddd;
 }
-/* line 175, ../../app/stylesheets/toolbar.sass */
+/* line 176, ../../app/stylesheets/toolbar.sass */
 #panel #sync_window .sync_button a:hover {
   cursor: pointer;
   color: white;
 }
-/* line 178, ../../app/stylesheets/toolbar.sass */
+/* line 179, ../../app/stylesheets/toolbar.sass */
 #panel #sync_window .sync_info {
   height: 226px;
   position: relative;
 }
-/* line 181, ../../app/stylesheets/toolbar.sass */
+/* line 182, ../../app/stylesheets/toolbar.sass */
 #panel #sync_window .sync_info h2 {
   padding-bottom: 2px;
   font-size: 14px;
   border-bottom: 1px solid #fc6d2f;
 }
-/* line 185, ../../app/stylesheets/toolbar.sass */
+/* line 186, ../../app/stylesheets/toolbar.sass */
 #panel #sync_window .sync_info ul {
   margin-top: 6px;
 }
-/* line 187, ../../app/stylesheets/toolbar.sass */
+/* line 188, ../../app/stylesheets/toolbar.sass */
 #panel #sync_window .sync_info ul li {
   padding: 3px 0;
 }
-/* line 189, ../../app/stylesheets/toolbar.sass */
+/* line 190, ../../app/stylesheets/toolbar.sass */
 #panel #sync_window .sync_info ul .label {
   float: left;
   width: 103px;
   font-weight: 700;
   line-height: 1.8;
 }
-/* line 194, ../../app/stylesheets/toolbar.sass */
+/* line 195, ../../app/stylesheets/toolbar.sass */
 #panel #sync_window .sync_info ul .value {
   font-size: 14px;
   font-weight: 700;
   color: #00cc33;
 }
-/* line 198, ../../app/stylesheets/toolbar.sass */
+/* line 199, ../../app/stylesheets/toolbar.sass */
 #panel #sync_window .sync_info ul #total_articles {
   color: white;
 }
-/* line 200, ../../app/stylesheets/toolbar.sass */
+/* line 201, ../../app/stylesheets/toolbar.sass */
 #panel #sync_window .sync_info ul .zero {
   color: red !important;
 }
-/* line 202, ../../app/stylesheets/toolbar.sass */
+/* line 203, ../../app/stylesheets/toolbar.sass */
 #panel #sync_window .sync_info .message {
   position: absolute;
   bottom: 25px;
   color: #dddddd;
   font-size: 10px;
 }
-/* line 208, ../../app/stylesheets/toolbar.sass */
+/* line 209, ../../app/stylesheets/toolbar.sass */
 #panel .wrapper {
-  margin: 0 19px auto 230px;
   height: 295px;
   overflow-x: scroll;
   overflow-y: hidden;
@@ -312,7 +312,7 @@ div#content {
   border-top: 1px solid #cccccc;
   padding: 6px 4px 0 4px;
   white-space: nowrap;
-  margin-top: 18px;
+  margin-top: 21px;
 }
 /* line 227, ../../app/stylesheets/toolbar.sass */
 #panel .wrapper ul.articles_list li.selected {

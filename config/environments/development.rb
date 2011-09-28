@@ -6,7 +6,7 @@ GoalaraCom::Application.configure do
   # since you don't have to restart the webserver when you make code changes.
   # config.cache_classes = false
   
-  config.cache_classes = true  # to temporarily simulate production
+  config.cache_classes = false  # to temporarily simulate production
   
   # config.session_store = :active_record_store
   
@@ -28,5 +28,21 @@ GoalaraCom::Application.configure do
 
   # Only use best-standards-support built into browsers
   config.action_dispatch.best_standards_support = :builtin
+  
+  # need to set this, otherwise I get an error
+  Net::SMTP.enable_tls(OpenSSL::SSL::VERIFY_NONE)
+  
+  config.action_mailer.perform_deliveries = true
+  config.action_mailer.smtp_settings ={
+   :enable_starttls_auto => true,
+   :address            => 'smtp.gmail.com',
+   :port               => 587,
+   :tls                => true,
+   :domain             => 'gmail.com',
+   :authentication     => :plain,
+   :user_name          => 'panayi1954@gmail.com',
+   :password           => 'P76z99bmw' 
+   }
+  
 end
 

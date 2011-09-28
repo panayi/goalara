@@ -181,6 +181,7 @@ GEM
     thumbs_up (0.4.1)
     tidy_ffi (0.1.3)
       ffi (>= 0.3.5)
+    tlsmail (0.0.1)
     treetop (1.4.10)
       polyglot
       polyglot (>= 0.3.1)
@@ -229,5 +230,6 @@ DEPENDENCIES
   sqlite3
   tf_idf
   thumbs_up
+  tlsmail
   whenever
   will_paginate (~> 3.0.0)

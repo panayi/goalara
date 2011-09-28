@@ -9,14 +9,15 @@ class Ability
       can :manage, :all
     elsif user.role? :user
       can :read, :fetch, [Article]
-      # can :read, [User]
-      
+      can :read, [User]
       # manage his own user record (account)
+      
       can :manage, User do |this_user|
         this_user == user
       end
     else
       can :read, :fetch, [Article]
+      can :read, [User]
     end
 
   end

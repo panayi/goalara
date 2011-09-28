@@ -14,6 +14,6 @@
         %span.image
           = image_tag(team.logo_image, :class => 'list_image')
         %a.select_new_team.name{:href => "", onclick => "return false;", :href => "#", :"data-teamID" => "#{team.id}"}
-          = team.name
+          = translate(team.name)
         %div.count
           = team.article.size.to_s() + " άρθρα"

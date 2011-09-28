@@ -35,6 +35,7 @@ if (typeof window.innerWidth != 'undefined')
  }
 
 $(document).ready(function() {
+	
     // Bind the event.
     $(window).hashchange( function(){
       // Alerts every time the hash changes!
@@ -42,12 +43,37 @@ $(document).ready(function() {
       set_values_from_hash(hash);
       ajax_fetch_content();
     });
+	
+	if(window.location.hash === "") //means current_url: http://www.goalara.com/news
+	{
+		// check if team is present in url, like so : http://www.goalara.com/news/Apollon-Limassol
+		var segments = window.location.href.split('/');
+		var last = segments.pop();
+		var no_team = true;
+		if (last !== 'news')
+		{
+			first_of_this_team = $("ul.articles_list li[data-team-name = '"+ last +"'] a.article_image")
+			if (first_of_this_team.length > 0)
+			{
+				no_team = false;
+				window.location = first_of_this_team.attr("href");
+			}
+		}
+		
+		if(no_team)
+		{
+			window.location = $("ul.articles_list li:first a.article_image").attr("href");
+		}
+	}
+	else
+	{
+    	$(window).hashchange();
+    }
 
-    $(window).hashchange();
-    
     $("body").css("overflow", "hidden");
     $("#main_frame").css('opacity', '0');
-    $('.loader_img').show();
+    $('#sidebox').mask();
+	$('#article_viewer').height(600).mask("");
 
 	//set articles list width in topbar
     set_article_list_width();
@@ -150,7 +176,7 @@ $(document).ready(function() {
     //listen for comment adding
     $('#add_comment')
     .live("ajax:beforeSend", function(evt, xhr, settings){
-        $(this).mask("Please wait...");
+        $(this).mask("");
         growl("Your comment is being added...");
     })
     .live('ajax:success', function(evt, data, status, xhr){
@@ -162,6 +188,15 @@ $(document).ready(function() {
     });
     
     //listen for voting
+	// when user is not logged in
+	$(".cantvote").live('click', function(){
+		$(this).parent('.vote').after('<li class="tooltip">Παρακαλούμε <a class="sign_panel" href="#">συνδεθείτε</a></li>');
+		setTimeout(function() {
+		  $('.tooltip').remove();
+		}, 5000);
+		return false;
+	});
+
     $('.voting')
     .live("ajax:beforeSend", function(evt, xhr, settings){
         growl("Your vote is being submitted...");
@@ -213,7 +248,7 @@ $(document).ready(function() {
 
 
 function format_iframe() {
-    $('.loader_img').hide();
+	$("#sidebox,#article_viewer").unmask();
     $("#main_frame").css({ 'margin-left' : '0', 'margin-right' : '0'}).animate({opacity: '1'}, 'medium');
     setWidthAndHeight();
 }

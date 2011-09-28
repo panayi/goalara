@@ -1,0 +1,21 @@
+%p#notice= notice
+%div.floatleft
+  = link_to image_tag(get_user_avatar(@user), :alt => @user.fullname + ' image', :class => "profile"), user_path(@user.id), :target => "_blank", :class => "profile_picture"  
+
+%ul.clearfix.form.disabled{:style => "padding-left: 60px"}
+  %li
+    %label.label Όνομα:
+    %input{:value => "#{@user.fullname}", :readonly => "readonly"}
+  %li
+    %label.label Ομάδα:
+    %input{:value => "#{@user.team ? translate(@user.team.name): ""}", :readonly => "readonly"}  
+  %li
+    %label.label Έχει σχολιάσει:
+    %input{:value => "#{@total_comments} φορές", :readonly => "readonly"}
+  %li
+    %label.label Έχει διάβασει:
+    %input{:value => "#{@total_viewed_articles} άρθρα", :readonly => "readonly"}
+      
+- if current_user == @user
+  = link_to 'Επεξεργασία του λογαριασμού μου', edit_user_registration_path(@user)
+

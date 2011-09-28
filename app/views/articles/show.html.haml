@@ -21,8 +21,8 @@
     #conversation
       #discussion.silverBorderPanel
         .comment-container
-          #comments_loading.loader_img{:style => "display:none"}
-            = image_tag "loader.gif", :class => 'loader'
+          / #comments_loading.loader_img{:style => "display:none"}
+          /             = image_tag "loader.gif", :class => 'loader'
           %ul#commentList-30.l-0
             // Comments go here
             
@@ -31,8 +31,8 @@
     
  
   #article_viewer
-    .loader_img{:style => "display:none"}
-      = image_tag "loader.gif", :class => 'loader'
+    / .loader_img{:style => "display:none"}
+    /       = image_tag "loader.gif", :class => 'loader'
     %div#no_article
     %div#main_frame.hidden
       = render :partial => "article-iframe"

@@ -5,14 +5,15 @@
   %li.legal © Goalara.com |
 %ul{:style => "float:right;margin-right: 6px"}
   %li
-    %a{:href => "mailto:contact@goalara.com"}
-      = mail_to( "contact@goalara.com", "Επικοινωνια")
-      |
-  %li
-    = link_to("Σχετικa με το Goalara", "about")
+    = link_to("Βοηθεια", "help")
     |
   %li
-    = link_to("Βοηθεια", "help")
+    %a{:href => "mailto:contact@goalara.com"}
+      = mail_to( "contact@goalara.com", "Επικοινωνια")
+  / %li
+  /   = link_to("Σχετικa με το Goalara", "about")
+  /   |
+  
 /      |
 /    %li
 /      %a{:href => "http://partners.ted.com"} Advertising/partnership

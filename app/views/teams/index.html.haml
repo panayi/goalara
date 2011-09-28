@@ -8,7 +8,7 @@
     %th
   - @teams.each do |team|
     %tr
-      %td= team.name
+      %td= translate(team.name)
       %td= image_tag(team.logo_image, :class => 'list_image')
       %td= link_to 'Show', team
       %td= link_to 'Edit', edit_team_path(team)

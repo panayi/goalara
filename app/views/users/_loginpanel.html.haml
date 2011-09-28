@@ -1,6 +1,6 @@
 %fieldset#signin_menu
   #left_panel.floatleft
-    %form#signin{:action => "#{new_user_session_path}", :method => "post"}
+    %form#signin{:action => "#{new_user_session_remote_path}", :method => "post"}
       %span.title Login with your Goalara.com account
       %label{:for => "username"} Username or email
       %input#username{:name => "username", :tabindex => "4", :title => "username", :type => "text", :value => ""}

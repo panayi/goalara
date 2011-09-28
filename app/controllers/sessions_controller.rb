@@ -3,7 +3,7 @@ class SessionsController < Devise::SessionsController
   
   
   
-  skip_authorization_check  :only => [:index, :show, :rss, :fetch]
+  skip_authorization_check  :only => [:index, :show, :rss, :fetch, :create]
   
   def create
     resource = warden.authenticate!(:scope => resource_name, :recall => "sessions#failure")

@@ -1,0 +1,21 @@
+%h3.subtitle Συνδεθείτε
+= form_for(resource, :as => resource_name, :url => session_path(resource_name)) do |f|
+  %ul.form
+    %li
+      = f.label :email, :class => "label"
+      = f.email_field :email
+    %li
+      = f.label :password, :class => "label"
+      = f.password_field :password
+    - if devise_mapping.rememberable?
+      %li
+        = f.check_box :remember_me, {:style => "width:auto !important;margin-left:160px"}
+        = f.label :remember_me
+    %li
+      %label{:class => "label"}
+        &nbsp;
+      = f.submit "Σύνδεση"
+    %li
+      %label{:class => "label"}
+        &nbsp;
+      = render :partial => "devise/shared/links"

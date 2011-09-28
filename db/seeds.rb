@@ -26,6 +26,14 @@ Feed.create(  :feed_url   =>  'http://www.protathlima.com/rss/sports.jsp',
               :content_unique_div   => 'table.str_inc_Table',
               :category_unique_div  => 'table.navigation_table>tr>td',
               :image_unique_div     => '')
+              
+Feed.create(  :feed_url   =>  'http://www.shootandgoal.com/rss.php', 
+              :site_name  =>  'ShootAndGoal.com', 
+              :site_url   =>  'http://www.shootandgoal.com/',
+              :site_logo  =>  'shootandgoal.jpg',
+              :content_unique_div   => 'div#content',
+              :category_unique_div  => 'div#nnnooonnneeee',
+              :image_unique_div     => '')
 
 Feed.create(  :feed_url   =>  'http://www.sigmalive.com/rss/latest/10', 
               :site_name  =>  'SigmaLive Sports', 
@@ -41,6 +49,14 @@ Feed.create(  :feed_url   =>  'http://www.supermpala.com/feed',
               :site_logo  =>  'supermpala.gif',
               :content_unique_div   => 'div.section-content-left',
               :category_unique_div  => 'div.map',
+              :image_unique_div     => '')
+              
+Feed.create(  :feed_url   =>  'http://www.typos.com.cy/rss/sports.cfm', 
+              :site_name  =>  'Typos.com.cy', 
+              :site_url   =>  'http://www.typos.com.cy/',
+              :site_logo  =>  'typoscomcy.gif',
+              :content_unique_div   => 'div#col1_content',
+              :category_unique_div  => 'div#nnnooonnneeee',
               :image_unique_div     => '')
 
 # Feed.create(  :feed_url   =>  'http://www.ael-limassol.net/ael/feed/', 
@@ -59,13 +75,7 @@ Feed.create(  :feed_url   =>  'http://www.apoelfc.com.cy/nqcontent.cfm?a_id=1296
               :category_unique_div  => 'div.breadcrumbInner>div.breadcrumb>ul',
               :image_unique_div     => '')
 
-Feed.create(  :feed_url   =>  'http://www.shootandgoal.com/rss.php', 
-              :site_name  =>  'ShootAndGoal.com', 
-              :site_url   =>  'http://www.shootandgoal.com/',
-              :site_logo  =>  'shootandgoal.jpg',
-              :content_unique_div   => 'div#content',
-              :category_unique_div  => 'div#nnnooonnneeee',
-              :image_unique_div     => '')
+
               
 Feed.create(  :feed_url   =>  'http://www.apoel1926.com/rss/apoel1926_news.xml', 
               :site_name  =>  'Apoel1926.com', 
@@ -83,15 +93,23 @@ Feed.create(  :feed_url   =>  'http://www.neasalamis.com.cy/football/football-ne
               :category_unique_div  => 'div#nnnooonnneeee',
               :image_unique_div     => '')     
 
-Feed.create(  :feed_url   =>  'http://www.typos.com.cy/rss/sports.cfm', 
-              :site_name  =>  'Typos.com.cy', 
-              :site_url   =>  'http://www.typos.com.cy/',
-              :site_logo  =>  'typoscomcy.gif',
-              :content_unique_div   => 'div#col1_content',
-              :category_unique_div  => 'div#nnnooonnneeee',
-              :image_unique_div     => '')         
+    
 
               
+Team.create( :name         =>  'AEK Larnaca',
+:logo_image   =>  'aek_larnaca.png')
+                            
+Team.create( :name         =>  'AEL Limassol',
+:logo_image   =>  'ael_limassol.png')           
+
+Team.create( :name         =>  'Alki',
+:logo_image   =>  'alki_larnakas.png')
+
+Team.create( :name         =>  'Anagennisi Deryneias',
+:logo_image   =>  'anagennisi_deryneias.png')
+
+Team.create( :name         =>  'Anorthosi',
+              :logo_image   =>  'anorthosis.png')              
 
 Team.create( :name         =>  'Apoel',
               :logo_image   =>  'apoel.png')
@@ -99,14 +117,17 @@ Team.create( :name         =>  'Apoel',
 Team.create( :name         =>  'Apollon Limassol',
               :logo_image   =>  'apollon_limassol.png')
 
-Team.create( :name         =>  'Omonoia',
-              :logo_image   =>  'omonoia.png')
+Team.create( :name         =>  'Aris Limassol',
+:logo_image   =>  'aris_limassol.png')
 
-Team.create( :name         =>  'Anorthosi',
-              :logo_image   =>  'anorthosis.png')
+Team.create( :name         =>  'ENP',
+:logo_image   =>  'enp.png')
 
-Team.create( :name         =>  'AEL Limassol',
-              :logo_image   =>  'ael_limassol.png')
+Team.create( :name         =>  'Ermis Aradippou',
+              :logo_image   =>  'ermis_aradippou.png')
+              
+Team.create( :name         =>  'Ethnikos Achnas',
+:logo_image   =>  'ethnikos_achnas.png')
 
 Team.create( :name         =>  'Nea Salamina',
               :logo_image   =>  'nea_salamina.gif')
@@ -114,11 +135,10 @@ Team.create( :name         =>  'Nea Salamina',
 Team.create( :name         =>  'Olympiakos Nicosia',
               :logo_image   =>  'olympiakos_nicosia.png')
 
-Team.create( :name         =>  'Aris Limassol',
-              :logo_image   =>  'aris_limassol.png')
+Team.create( :name         =>  'Omonoia',
+:logo_image   =>  'omonoia.png')
 
-Team.create( :name         =>  'AEK Larnaca',
-              :logo_image   =>  'aek_larnaca.png')
+
 
 # Team.create( :name         =>  'APEP Pitsilias',
 #               :logo_image   =>  'apep_pitsilias.png')
@@ -129,17 +149,13 @@ Team.create( :name         =>  'AEK Larnaca',
 # Team.create( :name         =>  'AEP Paphos',
 #               :logo_image   =>  'aep_paphos.png')
 
-Team.create( :name         =>  'Ethnikos Achnas',
-              :logo_image   =>  'ethnikos_achnas.png')
+
 
 # Team.create( :name         =>  'Doxa Katokopias',
 #               :logo_image   =>  'doxa_katokopias.png')
 
-Team.create( :name         =>  'ENP',
-              :logo_image   =>  'enp.png')
 
-Team.create( :name         =>  'Ermis Aradippou',
-              :logo_image   =>  'ermis_aradippou.png')
+
 
 # Team.create( :name         =>  'AOAN',
 #               :logo_image   =>  'aoan.png')
@@ -150,11 +166,9 @@ Team.create( :name         =>  'Ermis Aradippou',
 # Team.create( :name         =>  'Akritas Chlorakas',
 #               :logo_image   =>  'akritas_chlorakas.png')
 
-Team.create( :name         =>  'Alki',
-              :logo_image   =>  'alki_larnakas.png')
+
               
-Team.create( :name         =>  'Anagennisi Deryneias',
-             :logo_image   =>  'anagennisi_deryneias.png')
+
 
 # Team.create( :name         =>  'Atromitos Geroskipou',
 #               :logo_image   =>  'atromitos_yeroskipou.png')

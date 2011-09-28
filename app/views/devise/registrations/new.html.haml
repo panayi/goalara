@@ -8,7 +8,7 @@
   = devise_error_messages! 
   
   %ul.form
-    = f.input :fullname, :required => true, :label => 'Name'
+    = f.input :fullname, :required => true, :label => 'Ονοματεπώνυμο'
 
     = f.input :email, :required => true
   
@@ -16,7 +16,11 @@
    
     = f.input :password_confirmation, :required => true  
     
-    = f.input :team, :for => :team_id,  :include_blank => 'Επιλέξτε' 
+    %li#user_team_input.select.input.optional
+      %label.label{:for => "user_team_id"}
+        Team
+      = select("user", "team_id", Team.all.collect {|p| [translate(p.name), p.id]}, { :include_blank => translate("select") })
+
     
     %li.submit
       %label.label

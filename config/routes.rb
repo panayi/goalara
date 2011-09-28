@@ -34,7 +34,7 @@ GoalaraCom::Application.routes.draw do
   #   match "/oauth/client" => "oauth#client"
   devise_scope :user do
   
-    match "login" => "sessions#sign_in_and_redirect", :as => :new_user_session 
+    match "login" => "sessions#sign_in_and_redirect", :as => :new_user_session_remote 
     match "logout" => "sessions#destroy", :as => :destroy_user_session
     match "register" => "devise/registrations#new", :as => :new_user_registration
   end
@@ -43,13 +43,14 @@ GoalaraCom::Application.routes.draw do
   
   match "/navigate" => "articles#fetch"
   
-  match "news" => "articles#show", :as => :navigator
+  match "/news/:team_name" => "articles#show"
+  match "/news" => "articles#show", :as => :navigator
   
   match "/application.manifest" => Rails::Offline
   
   match "/feed" => "articles#rss"
   
-  
+  match "/help" => "pages#help"
   
   
   

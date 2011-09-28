@@ -1,11 +1,13 @@
 embed_assets: on
-package_assets: always
+# package_assets: always
 
 javascripts:
-  common:
+  jquery:
     - public/javascripts/jquery.min.js
+  common:
     - public/javascripts/jquery-ui-1.8.16.custom.min.js
     - public/javascripts/jquery_ujs.js
+    - public/javascripts/jquery.jgrowl_minimized.js
     - public/javascripts/application.js
   frontpage:
     - public/javascripts/jquery.quicksand.js
@@ -13,7 +15,6 @@ javascripts:
     - public/javascripts/admin.js
   navigator:
     - public/javascripts/jquery.tmpl.min.js
-    - public/javascripts/jquery.jgrowl_minimized.js
     - public/javascripts/jquery.offline.js
     - public/javascripts/jquery.loadmask.min.js
     - public/javascripts/jquery.ba-hashchange.min.js

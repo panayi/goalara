@@ -2750,17 +2750,25 @@ a
   margin-top: 4px
   width: 178px
   a.sign_in
-    *background: transparent url("..images/login/signin-nav-bg-ie.png") no-repeat 0 0
+    *background: transparent url("../images/login/signin-nav-bg-ie.png") no-repeat 0 0
     &:hover
-      *background: transparent url("..images/login/signin-nav-bg-hover-ie.png") no-repeat 0 0
+      *background: transparent url("../images/login/signin-nav-bg-hover-ie.png") no-repeat 0 0
       *background-position: 0 3px!important
     *background-position: 0 3px!important
+  a#close_panel
+    height: 26px
+    width: 26px
+    background: transparent url("../images/close.png") no-repeat 0 0
+    position: absolute
+    z-index: 100
+    right: 28px
+    bottom: -15px
 
 a.sign_in
   position: relative
   margin-left: 3px
   span
-    background-image: url("..images/login/toggle_down_light.png")
+    background-image: url("../images/login/toggle_down_light.png")
     background-repeat: no-repeat
     background-position: 100% 50%
     padding: 4px 16px 6px 0
@@ -2781,7 +2789,7 @@ a.sign_in
   width: 170px
 
 a.sign_in.menu-open span
-  background-image: url("..images/login/toggle_up_dark.png")
+  background-image: url("../images/login/toggle_up_dark.png")
   color: #789
 
 
@@ -2797,7 +2805,6 @@ ul li #signin_menu
   font-size: 11px
   left: 25px
   margin-right: 0
-  margin-top: 5px
   padding: 20px
   position: absolute
   text-align: left
@@ -2857,6 +2864,7 @@ ul li #signin_menu
     a
       font-size: 13px
       text-decoration: underline
+      display:block
   #doomed_panel
     clear: both
     background-color: $accent-color
@@ -2871,7 +2879,7 @@ ul li #signin_menu
 #signin_submit
   -moz-border-radius: 4px
   -webkit-border-radius: 4px
-  background: #3399dd url('..images/login/bg-btn-blue.png') repeat-x scroll 0 0
+  background: #3399dd url('../images/login/bg-btn-blue.png') repeat-x scroll 0 0
   border: 1px solid #39D
   color: #fff
   text-shadow: 0 -1px 0 #3399dd
@@ -3047,3 +3055,44 @@ ul.articles_list
 .center
   display: block
   margin: auto
+  
+.qa
+  margin: 10px 0
+  li
+    padding: 10px 4px
+    font-size: 12px
+    line-height: 1.4
+    font-family: "Lucida Grande",Geneva,Arial,Verdana,sans-serif
+    .question
+      font-weight: 700
+      font-size: 16px
+    .answer
+      margin-top: 3px
+
+.tooltip
+  float: right
+  text-align: right
+  padding: 3px
+  background-color: #FC0
+  display: inline !important
+  width: auto !important
+  height: 30px !important
+  border: 1px solid
+  margin-top: 2px
+  
+ul.horizontal_list
+  li
+    float: left
+    display:inline
+    margin-right: 5px
+    
+ul.disabled
+  background-color: #FDFDFD
+  border: 1px dashed #CCCCCC
+  padding: 5px
+  input
+    padding: 5px !important
+    background-color: #242424
+    border: 1px dashed #CCCCCC
+    color: #fff !important
+  
